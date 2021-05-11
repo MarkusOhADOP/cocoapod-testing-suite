@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
 
   s.name         = "BidmadSDK"
-  s.version      = "2.6.3"
+  s.version      = "2.6.3-test0"
   s.summary      = "BidmadSDK, Your Need For ADS Fullfilled."
   s.description  = "This BidmadSDK allows users to communicate with Compass by ADOP."
   s.homepage     = "https://github.com/bidmad/cocoapod.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Kenneth" => "kenneth@adop.cc" }
   s.platform     = :ios, "9.0"
-  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '2.6.3' }
+  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '2.6.3-test0' }
   #s.source       = { :git => 'file:///Users/adop_mac/Dev/cocoapod' }
   #s.source       = { :git => 'https://github.com/bidmad/cocoapod.git'}
   s.resource_bundles = {
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.requires_arc     = true
 
-  s.vendored_frameworks = "BidmadSDK.framework"
+  s.vendored_frameworks = "BidmadSDK.framework", "OpenBiddingHelper.framework"
   # s.vendored_frameworks = "BidmadSDK.framework"
 
   s.dependency 'GoogleMobileAdsMediationAppLovin', '10.0.1.0'
