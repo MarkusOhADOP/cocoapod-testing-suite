@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.requires_arc     = true
 
-  s.vendored_frameworks = "BidmadSDK-CocoaPods/BidmadSDK.framework"
+  s.vendored_frameworks = "BidmadSDK.framework"
   # s.vendored_frameworks = "BidmadSDK.framework"
 
   s.dependency 'GoogleMobileAdsMediationAppLovin', '10.0.1.0'
