@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BidmadSDK"
-  s.version      = "2.6.1-Local"
+  s.version      = "2.7.5-test"
   s.summary      = "BidmadSDK, Your Need For ADS Fullfilled."
   s.description  = "This BidmadSDK allows users to communicate with Compass by ADOP."
   s.homepage     = "https://github.com/bidmad/cocoapod.git"
