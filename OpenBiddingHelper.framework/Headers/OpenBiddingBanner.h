@@ -29,11 +29,9 @@
 
 @interface OpenBiddingBanner : UIView<BIDMADOpenBiddingBannerInnerDelegate, BIDMADBannerDelegate>
 
-@property (assign, nonatomic) SEL requestSelector;
 @property (strong, nonatomic) NSDictionary* ads_dic;
 @property (nonatomic) bannerSizeType bannerType;
 @property (strong, nonatomic) id<BIDMADOpenBiddingBannerDelegate> delegate;
-@property (strong, nonatomic) id<BIDMADOpenBiddingBannerInnerDelegate> innerDelegate;
 
 @property (strong, nonatomic) NSDictionary* ecmp_rev_info;
 @property (strong, nonatomic) NSDictionary* area_info;
@@ -41,17 +39,22 @@
 @property (strong, nonatomic) NSDictionary* change_info;
 @property (strong, nonatomic) NSDictionary* date;
 
-@property (nonatomic) float arpmYpoint;
-
 @property (nonatomic) NSString* realZoneId;
 
 @property (nonatomic) NSString* zoneID;
 
 @property (nonatomic, assign) int refreshInterval;
 
-/// INITIALIZE ADS
-- (id)initWithParentViewController:(UIViewController *)parentVC adsPosition:(CGPoint)pointn bannerSize:(bannerSizeType) bannerTypeParam;
-- (id)initWithParentViewController:(UIViewController *)parentVC rootView:(UIView *)view    bannerSize:(bannerSizeType) bannerTypeParam;
+@property (nonatomic, strong) NSString* currentAdNetwork;
+
+/// Banner Size Parameter is no longer supported, Please use initWithParentViewController:(UIViewController *):(CGPoint)
+- (id)initWithParentViewController:(UIViewController *)parentVC adsPosition:(CGPoint)pointn bannerSize:(bannerSizeType) bannerTypeParam __deprecated;
+/// Banner Size Parameter is no longer supported, Please use initWithParentViewController:(UIViewController *):(UIView *)
+- (id)initWithParentViewController:(UIViewController *)parentVC rootView:(UIView *)view    bannerSize:(bannerSizeType) bannerTypeParam __deprecated;
+// INITIALIZE ADS
+- (id)initWithParentViewController:(UIViewController *)parentVC adsPosition:(CGPoint)point;
+- (id)initWithParentViewController:(UIViewController *)parentVC rootView:(UIView *)view;
+- (id)initWithParentViewController:(UIViewController *)parentVC yPoint:(int)yPoint;
 /// REQUEST ADS
 - (void)requestBannerView;
 /// DELETE ADS

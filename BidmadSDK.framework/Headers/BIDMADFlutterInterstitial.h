@@ -6,13 +6,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Flutter/Flutter.h>
 #import "BIDMADInterstitial.h"
 #import "BIDMADSetting.h"
 
+#if __has_include(<Flutter/Flutter.h>) || __has_include("Flutter.h")
+@import Flutter;
+#endif
+
 @interface BIDMADFlutterInterstitial : NSObject<BIDMADInterstitialDelegate>
 
-@property (strong, nonatomic) FlutterMethodChannel* flutterChannel;
-- (id)initInterstitial:(NSObject<FlutterPluginRegistrar>*)registrar channelName:(NSString*)chanNm;
+@property (strong, nonatomic) id flutterChannel;
+//- (id)initInterstitial:(NSObject<FlutterPluginRegistrar>*)registrar channelName:(NSString*)chanNm;
+- (id)initInterstitial:(id)registrar channelName:(NSString*)chanNm;
 
 @end

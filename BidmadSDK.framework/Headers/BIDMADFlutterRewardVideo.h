@@ -6,13 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Flutter/Flutter.h>
 #import "BIDMADRewardVideo.h"
 #import "BIDMADSetting.h"
 
+#if __has_include(<Flutter/Flutter.h>) || __has_include("Flutter.h")
+@import Flutter;
+#endif
+
 @interface BIDMADFlutterRewardVideo : NSObject<BIDMADRewardVideoDelegate>
 
-@property (strong, nonatomic) FlutterMethodChannel* flutterChannel;
-- (id)initRewardVideo:(NSObject<FlutterPluginRegistrar>*)registrar channelName:(NSString*)chanNm;
+@property (strong, nonatomic) id flutterChannel;
+- (id)initRewardVideo:(id)registrar channelName:(NSString*)chanNm;
 
 @end

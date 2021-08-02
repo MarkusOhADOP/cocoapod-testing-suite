@@ -11,6 +11,7 @@
 #import "OpenBiddingBanner.h"
 #import "OpenBiddingInterstitial.h"
 #import "OpenBiddingRewardVideo.h"
+#import "OpenBiddingRewardInterstitial.h"
 
 #import <BidmadSDK/BIDMADUtil.h>
 #if __has_include(<GoogleMobileAds/GoogleMobileAds.h>)
@@ -22,6 +23,7 @@
 @class OpenBiddingBanner;
 @class OpenBiddingInterstitial;
 @class OpenBiddingRewardVideo;
+@class OpenBiddingRewardInterstitial;
 
 #ifdef GOOGLESDK_EXIST
 @interface OpenBiddingAdmob : NSObject<GADBannerViewDelegate, GADFullScreenContentDelegate>
@@ -30,13 +32,17 @@
 @interface OpenBiddingAdmob : NSObject
 #endif
 
-@property (strong,nonatomic) OpenBiddingBanner* banner;
-@property (strong,nonatomic) OpenBiddingInterstitial* interstitial;
+@property (weak,nonatomic) OpenBiddingBanner* banner;
+@property (weak,nonatomic) OpenBiddingInterstitial* interstitial;
 @property (strong,nonatomic) OpenBiddingRewardVideo* rewardVideo;
 
 - (id)initWithAdBanner:(NSDictionary *)dic OpenBiddingBanner:(OpenBiddingBanner *)banner;
 - (id)initWithInterstitial:(NSDictionary *)dic OpenBiddingInterstitial:(OpenBiddingInterstitial *)interstitial;
 - (id)initWithRewardVideo:(NSDictionary *)dic OpenBiddingReward:(OpenBiddingRewardVideo *)rewardVideo userId:(NSString *) userId;
+- (id)initWithRewardInterstitial:(NSDictionary *)dic openBiddingRewardInterstitial:(OpenBiddingRewardInterstitial *)rewardInterstitialArg;
+- (void)loadAdmobRewardInterstitial:(UIViewController *)pvc;
+- (void)showAdmobRewardInterstitial;
+- (void)removeRewardInterstitialAds;
 
 - (void)showAdmobBanner:(UIViewController *)pvc bannerContainer:(UIView*)bannerContainer;
 - (void)showAdmobInterstitial:(UIViewController *)pvc;

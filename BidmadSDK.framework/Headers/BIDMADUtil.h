@@ -65,6 +65,8 @@
 
 + (NSInteger) iOSMajorSystemVersion;
 
++ (UIWindow*) fetchKeyWindow;
+
 + (BOOL) isIphoneX;
 
 + (BOOL) isOverIOS11;
@@ -74,5 +76,17 @@
 + (UIViewController*) topMostController;
 
 + (NSData*)bidmadResourceDataFetcherWithAssetName: (NSString*)assetName extension: (NSString*)extension;
+
++ (NSURL*)bidmadResourceURLFetcherWithAssetName: (NSString*)assetName extension: (NSString*)extension;
+
++ (NSBundle *)bundleLocationCheck;
+
++ (void)compassDataFetcherWithZoneId: (NSString *)zoneId completionBlock:(void (^)(NSDictionary *, NSError *))completionBlock;
+
++ (void) sendLog :(NSDictionary *)info :(NSString *)advertisementType :(NSString *)logType :(NSString*)sessionId :(NSString*)realZoneId;
+
++ (void) sendLog :(NSDictionary *)info : (NSString *)advertisementType : (NSString *)logType : (NSString *)recvSessionId;
+
++ (BOOL)dictionaryKeyCheck:(NSDictionary *)dictionary hasKey:(NSString *)key;
 
 @end
