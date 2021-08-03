@@ -1,20 +1,19 @@
 Pod::Spec.new do |s|
 
   s.name         = "BidmadSDK-Dev"
-  s.version      = "2.9.0"
+  s.version      = "2.9.1"
   s.platform     = :ios, "11.0"
   s.summary      = "Integrated App Monetization Solution for Mobile Apps by all Publishers"
   s.description  = "This BidmadSDK allows users to communicate with Compass by ADOP. Our mediation platform optimizes for the utmost profit."
   s.homepage     = "https://github.com/bidmad/cocoapod.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Kenneth" => "kenneth@adop.cc" }
-  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '2.9.0' }
+  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '2.9.1' }
   s.resource_bundles = {
     'bidmad_asset' => ['Assets/*']
   }
   
   s.swift_version = '5.0'
-  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => ['$(SDKROOT)/usr/lib/swift', '$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)', '$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)'] }
   s.default_subspec = 'WithAdFit'
   
   s.static_framework = true
