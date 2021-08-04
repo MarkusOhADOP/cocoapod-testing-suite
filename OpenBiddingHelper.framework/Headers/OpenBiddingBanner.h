@@ -64,8 +64,6 @@
 - (void)setParentController:(UIViewController *)parentVC;
 - (void)hideView;
 - (void)showView;
-/// UTILITY CODE : Center the X-Point coordiante
-- (void) setXPointToCenterWith: (float *) xPointToCenter;
 
 @end
 

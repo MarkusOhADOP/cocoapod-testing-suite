@@ -1,0 +1,34 @@
+//
+//  UnityReward.h
+//  BidmadSDK
+//
+//  Created by Kenneth on 2021/01/15.
+//  Copyright © 2021 ADOP Co., Ltd. All rights reserved.
+//
+
+#ifndef OpenBiddingUnityReward_h
+#define OpenBiddingUnityReward_h
+
+#import <Foundation/Foundation.h>
+#import "OpenBiddingRewardVideo.h"
+#import <BidmadSDK/BIDMADSetting.h>
+
+static NSMutableDictionary* BidmadOpenBiddingRewardDic;
+
+@interface OpenBiddingUnityReward : NSObject <BIDMADOpenBiddingRewardVideoDelegate>{
+    NSString* mZoneId;
+    id<BIDMADOpenBiddingRewardVideoDelegate> delegate;
+    @public OpenBiddingRewardVideo* bidmadReward;
+}
+
+- (id)initWithZoneId:(NSString *)zoneId;
++ (id)getInstance:(NSString *)zoneId;
+- (void)setZoneID:(NSString *)zoneId;
+- (void)setDelegate:(id) param;
+- (void)load;
+- (void)show;
+- (bool)isLoaded;
+
+@end
+
+#endif /* OpenBiddingUnityReward_h */

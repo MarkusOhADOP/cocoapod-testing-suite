@@ -1,15 +1,16 @@
 Pod::Spec.new do |s|
 
-  s.name         = "OpenBiddingHelper"
-  s.version      = "1.3.0"
+  s.name         = "OpenBiddingHelper-Dev"
+  s.version      = "1.4.0"
   s.platform     = :ios, "11.0"
   s.summary      = "OpenBiddingHelper is for Open Bidding Ads."
   s.description  = "OpenBiddingHelper is for Open Bidding Ads and is a wrapper provided by ADOP."
   s.homepage     = "https://github.com/bidmad/cocoapod.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Kenneth" => "kenneth@adop.cc" }
-  s.platform     = :ios, "10.0"
-  s.source       = { :git => 'https://github.com/bidmad/cocoapod.git', :tag => '2.8.0' }
+  s.platform     = :ios, "11.0"
+  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '2.9.2' }
+  s.swift_version = '5.0'
   
   s.static_framework = true
   s.requires_arc     = true

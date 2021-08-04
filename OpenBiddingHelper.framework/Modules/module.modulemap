@@ -6,4 +6,6 @@ framework module OpenBiddingHelper {
   header "OpenBiddingBanner.h"
   header "OpenBiddingInterstitial.h"
   header "OpenBiddingRewardVideo.h"
+  header "OpenBiddingAppOpenAd.h"
+  header "OpenBiddingRewardInterstitial.h"
 }
