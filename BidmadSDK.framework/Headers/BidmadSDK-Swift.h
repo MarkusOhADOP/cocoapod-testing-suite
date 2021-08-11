@@ -211,6 +211,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class NSString;
+@class BIDMADNativeAdView;
 @class UIViewController;
 @class NSNumber;
 
@@ -218,6 +219,7 @@ SWIFT_CLASS("_TtC9BidmadSDK19BIDMADAdmobNativeAd")
 @interface BIDMADAdmobNativeAd : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TEST_ADMOB_NATIVEAD;)
 + (NSString * _Nonnull)TEST_ADMOB_NATIVEAD SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) BIDMADNativeAdView * _Null_unspecified nativeAdView;
 - (nonnull instancetype)initWith:(NSString * _Nonnull)appid rootViewController:(UIViewController * _Nonnull)rootViewController isDebug:(BOOL)isDebug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -225,15 +227,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 @class GADAdLoader;
-
-@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADAdLoaderDelegate>
-- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
-@end
-
 @class GADNativeAd;
 
 @interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADNativeAdLoaderDelegate>
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
+@end
+
+
+@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+- (void)adLoaderDidFinishLoading:(GADAdLoader * _Nonnull)adLoader;
 @end
 
 

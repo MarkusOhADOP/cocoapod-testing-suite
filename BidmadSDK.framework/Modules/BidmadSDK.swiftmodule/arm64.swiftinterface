@@ -22,12 +22,14 @@ extension MediationTableView : UIKit.UITableViewDataSource {
 @objc open class BIDMADAdmobNativeAd : ObjectiveC.NSObject {
   public var appid: Swift.String!
   @objc public static var TEST_ADMOB_NATIVEAD: Swift.String
+  @objc public var nativeAdView: BidmadSDK.BIDMADNativeAdView!
   @objc public init(with appid: Swift.String, rootViewController: UIKit.UIViewController, isDebug: Swift.Bool = true)
   @objc override dynamic public init()
   @objc deinit
 }
 extension BIDMADAdmobNativeAd : GoogleMobileAds.GADAdLoaderDelegate {
   @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didFailToReceiveAdWithError error: Swift.Error)
+  @objc dynamic public func adLoaderDidFinishLoading(_ adLoader: GoogleMobileAds.GADAdLoader)
 }
 extension BIDMADAdmobNativeAd : GoogleMobileAds.GADNativeAdLoaderDelegate {
   @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didReceive nativeAd: GoogleMobileAds.GADNativeAd)

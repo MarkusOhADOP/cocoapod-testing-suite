@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
 
   s.name         = "BidmadSDK-Dev"
-  s.version      = "2.9.4"
+  s.version      = "2.9.5"
   s.platform     = :ios, "11.0"
   s.summary      = "Integrated App Monetization Solution for Mobile Apps by all Publishers"
   s.description  = "This BidmadSDK allows users to communicate with Compass by ADOP. Our mediation platform optimizes for the utmost profit."
   s.homepage     = "https://github.com/bidmad/cocoapod.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Kenneth" => "kenneth@adop.cc" }
-  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '2.9.3' }
+  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '2.9.5' }
   s.resource_bundles = {
     'bidmad_asset' => ['Assets/*']
   }
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.dependency 'GoogleMobileAdsMediationAdColony', '4.6.0.0'
   s.dependency 'GoogleMobileAdsMediationUnity', '3.7.2.0'
   s.dependency 'FBSDKCoreKit', '9.1.0'
-  s.dependency 'Google-Mobile-Ads-SDK', '8.3.0'
+  s.dependency 'Google-Mobile-Ads-SDK', '8.8.0'
   s.dependency 'TapjoySDK', '12.8.0'
   s.dependency 'UnityAds', '3.7.2'
   s.dependency 'FBAudienceNetwork', '6.3.1'
