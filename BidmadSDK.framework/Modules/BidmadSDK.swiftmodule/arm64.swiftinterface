@@ -2,6 +2,8 @@
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidmadSDK
 @_exported import BidmadSDK
+import Foundation
+import GoogleMobileAds
 import Swift
 import UIKit
 @objc open class MediationTableView : UIKit.UIView {
@@ -16,6 +18,41 @@ extension MediationTableView : UIKit.UITableViewDelegate {
 extension MediationTableView : UIKit.UITableViewDataSource {
   @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
   @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+@objc open class BIDMADAdmobNativeAd : ObjectiveC.NSObject {
+  public var appid: Swift.String!
+  @objc public static var TEST_ADMOB_NATIVEAD: Swift.String
+  @objc public init(with appid: Swift.String, rootViewController: UIKit.UIViewController, isDebug: Swift.Bool = true)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension BIDMADAdmobNativeAd : GoogleMobileAds.GADAdLoaderDelegate {
+  @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didFailToReceiveAdWithError error: Swift.Error)
+}
+extension BIDMADAdmobNativeAd : GoogleMobileAds.GADNativeAdLoaderDelegate {
+  @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didReceive nativeAd: GoogleMobileAds.GADNativeAd)
+}
+extension BIDMADAdmobNativeAd : GoogleMobileAds.GADNativeAdDelegate {
+  @objc dynamic public func nativeAdDidRecordImpression(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @objc dynamic public func nativeAdDidRecordClick(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @objc dynamic public func nativeAdWillPresentScreen(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @objc dynamic public func nativeAdWillDismissScreen(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @objc dynamic public func nativeAdDidDismissScreen(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  public func nativeAdWillLeaveApplication(_ nativeAd: GoogleMobileAds.GADNativeAd)
+}
+@_inheritsConvenienceInitializers @objc open class BIDMADNativeAdView : GoogleMobileAds.GADNativeAdView {
+  @objc public var iconViewCustom: UIKit.UIImageView!
+  @objc public var headlineViewCustom: UIKit.UILabel!
+  @objc public var advertiserViewCustom: UIKit.UILabel!
+  @objc public var starRatingViewCustom: UIKit.UIImageView!
+  @objc public var bodyViewCustom: UIKit.UILabel!
+  @objc public var mediaViewCustom: GoogleMobileAds.GADMediaView!
+  @objc public var priceViewCustom: UIKit.UILabel!
+  @objc public var storeViewCustom: UIKit.UILabel!
+  @objc public var callToActionViewCustom: UIKit.UIButton!
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc public protocol CompassDataRequestDelegate {
   @objc func DataRequestSuccess(_ selectedAd: Swift.Dictionary<Swift.String, Any>)

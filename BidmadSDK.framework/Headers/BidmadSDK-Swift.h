@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Foundation;
+@import GoogleMobileAds;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -210,7 +211,61 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class NSString;
+@class UIViewController;
 @class NSNumber;
+
+SWIFT_CLASS("_TtC9BidmadSDK19BIDMADAdmobNativeAd")
+@interface BIDMADAdmobNativeAd : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TEST_ADMOB_NATIVEAD;)
++ (NSString * _Nonnull)TEST_ADMOB_NATIVEAD SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWith:(NSString * _Nonnull)appid rootViewController:(UIViewController * _Nonnull)rootViewController isDebug:(BOOL)isDebug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@class GADAdLoader;
+
+@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+@end
+
+@class GADNativeAd;
+
+@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADNativeAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
+@end
+
+
+@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADNativeAdDelegate>
+- (void)nativeAdDidRecordImpression:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdDidRecordClick:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdWillPresentScreen:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdWillDismissScreen:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdDidDismissScreen:(GADNativeAd * _Nonnull)nativeAd;
+@end
+
+@class UIImageView;
+@class UILabel;
+@class GADMediaView;
+@class UIButton;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9BidmadSDK18BIDMADNativeAdView")
+@interface BIDMADNativeAdView : GADNativeAdView
+@property (nonatomic, strong) UIImageView * _Null_unspecified iconViewCustom;
+@property (nonatomic, strong) UILabel * _Null_unspecified headlineViewCustom;
+@property (nonatomic, strong) UILabel * _Null_unspecified advertiserViewCustom;
+@property (nonatomic, strong) UIImageView * _Null_unspecified starRatingViewCustom;
+@property (nonatomic, strong) UILabel * _Null_unspecified bodyViewCustom;
+@property (nonatomic, strong) GADMediaView * _Null_unspecified mediaViewCustom;
+@property (nonatomic, strong) UILabel * _Null_unspecified priceViewCustom;
+@property (nonatomic, strong) UILabel * _Null_unspecified storeViewCustom;
+@property (nonatomic, strong) UIButton * _Null_unspecified callToActionViewCustom;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @protocol CompassDataRequestDelegate;
 
 SWIFT_CLASS("_TtC9BidmadSDK13BidmadNetwork")
@@ -240,7 +295,6 @@ SWIFT_PROTOCOL("_TtP9BidmadSDK26CompassDataRequestDelegate_")
 - (void)DataRequestFail:(NSString * _Nonnull)errorReason;
 @end
 
-@class NSCoder;
 
 SWIFT_CLASS("_TtC9BidmadSDK18MediationTableView")
 @interface MediationTableView : UIView
@@ -262,6 +316,7 @@ SWIFT_CLASS("_TtC9BidmadSDK18MediationTableView")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
