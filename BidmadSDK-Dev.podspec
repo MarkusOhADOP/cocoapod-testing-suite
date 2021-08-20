@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.dependency 'TapjoySDK', '12.8.0'
   s.dependency 'UnityAds', '3.7.2'
   s.dependency 'FBAudienceNetwork', '6.3.1'
-  s.dependency 'Ads-Global', '3.4.2.8'
+  s.dependency 'Ads-Global', '3.8.1.0'
 
   s.subspec 'WithAdFit' do |withadfit|
     withadfit.dependency 'AdFitSDK', '3.7.0'
