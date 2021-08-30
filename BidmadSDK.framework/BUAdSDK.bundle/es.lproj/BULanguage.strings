@@ -36,4 +36,5 @@
 "GetRewardAfterPlaying" = "Terminar la reproducción  para reclamar recompensas";
 "Wan" = "10";
 "ViewDetail" = "Ver";
+"CommitScore" = "%@ valoración(es)";
 // Icon

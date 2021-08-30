@@ -17,6 +17,8 @@
 #define MB (1024*1024)
 #define GB (MB*1024)
 
+typedef void (^CompletionBlock)();
+
 @interface BIDMADUtil : NSObject
 
 + (NSString *)identifierForAdvertising;
@@ -88,5 +90,7 @@
 + (void) sendLog :(NSDictionary *)info : (NSString *)advertisementType : (NSString *)logType : (NSString *)recvSessionId;
 
 + (BOOL)dictionaryKeyCheck:(NSDictionary *)dictionary hasKey:(NSString *)key;
+
++ (void)cancelPerformSelectorAndThenRun: (CompletionBlock)afterCancellation;
 
 @end

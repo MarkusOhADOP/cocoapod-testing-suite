@@ -188,6 +188,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import BUAdSDK;
 @import CoreGraphics;
 @import Foundation;
 @import GoogleMobileAds;
@@ -210,21 +211,38 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+SWIFT_CLASS("_TtC9BidmadSDK8AreaInfo")
+@interface AreaInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSString;
-@class BIDMADNativeAdView;
-@class UIViewController;
 @class NSNumber;
+@class BIDMADNativeAdView;
+@class BIDMADNativeAd;
+@class UIViewController;
 
 SWIFT_CLASS("_TtC9BidmadSDK19BIDMADAdmobNativeAd")
 @interface BIDMADAdmobNativeAd : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TEST_ADMOB_NATIVEAD;)
 + (NSString * _Nonnull)TEST_ADMOB_NATIVEAD SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TEST_ADX_NATIVEAD;)
++ (NSString * _Nonnull)TEST_ADX_NATIVEAD SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic) BOOL isAdMob;
 @property (nonatomic, strong) BIDMADNativeAdView * _Null_unspecified nativeAdView;
-- (nonnull instancetype)initWith:(NSString * _Nonnull)appid rootViewController:(UIViewController * _Nonnull)rootViewController isDebug:(BOOL)isDebug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWith:(NSString * _Nonnull)appid placementId:(NSString * _Nullable)placementId nativeAdMediationManager:(BIDMADNativeAd * _Nonnull)nativeAdMediationManager rootViewController:(UIViewController * _Nonnull)rootViewController nativeAdView:(BIDMADNativeAdView * _Nonnull)nativeAdView isDebug:(BOOL)isDebug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class GADVideoController;
+
+@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADVideoControllerDelegate>
+- (void)videoControllerDidPlayVideo:(GADVideoController * _Nonnull)videoController;
+- (void)videoControllerDidEndVideoPlayback:(GADVideoController * _Nonnull)videoController;
+@end
 
 @class GADAdLoader;
 @class GADNativeAd;
@@ -240,6 +258,22 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+SWIFT_PROTOCOL("_TtP9BidmadSDK29BIDMADNativeAdCommonInterface_")
+@protocol BIDMADNativeAdCommonInterface
+- (nonnull instancetype)initWith:(NSString * _Nonnull)appid placementId:(NSString * _Nullable)placementId nativeAdMediationManager:(BIDMADNativeAd * _Nonnull)nativeAdMediationManager rootViewController:(UIViewController * _Nonnull)rootViewController nativeAdView:(BIDMADNativeAdView * _Nonnull)nativeAdView isDebug:(BOOL)isDebug;
+- (void)loadNativeAd;
+- (void)showNativeAd;
+- (void)hideNativeAd;
+@end
+
+
+@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <BIDMADNativeAdCommonInterface>
+- (void)loadNativeAd;
+- (void)showNativeAd;
+- (void)hideNativeAd;
+@end
+
+
 @interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADNativeAdDelegate>
 - (void)nativeAdDidRecordImpression:(GADNativeAd * _Nonnull)nativeAd;
 - (void)nativeAdDidRecordClick:(GADNativeAd * _Nonnull)nativeAd;
@@ -248,33 +282,145 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)nativeAdDidDismissScreen:(GADNativeAd * _Nonnull)nativeAd;
 @end
 
-@class UIImageView;
-@class UILabel;
-@class GADMediaView;
-@class UIButton;
-@class NSCoder;
+@protocol BIDMADNativeAdDelegate;
+@class UIImage;
 
-SWIFT_CLASS("_TtC9BidmadSDK18BIDMADNativeAdView")
-@interface BIDMADNativeAdView : GADNativeAdView
-@property (nonatomic, strong) UIImageView * _Null_unspecified iconViewCustom;
-@property (nonatomic, strong) UILabel * _Null_unspecified headlineViewCustom;
-@property (nonatomic, strong) UILabel * _Null_unspecified advertiserViewCustom;
-@property (nonatomic, strong) UIImageView * _Null_unspecified starRatingViewCustom;
-@property (nonatomic, strong) UILabel * _Null_unspecified bodyViewCustom;
-@property (nonatomic, strong) GADMediaView * _Null_unspecified mediaViewCustom;
-@property (nonatomic, strong) UILabel * _Null_unspecified priceViewCustom;
-@property (nonatomic, strong) UILabel * _Null_unspecified storeViewCustom;
-@property (nonatomic, strong) UIButton * _Null_unspecified callToActionViewCustom;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC9BidmadSDK14BIDMADNativeAd")
+@interface BIDMADNativeAd : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TEST_NATIVEAD_ZONEID;)
++ (NSString * _Nonnull)TEST_NATIVEAD_ZONEID SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly, copy) NSString * _Nonnull zoneID;
+@property (nonatomic, readonly, strong) UIViewController * _Nonnull rootViewController;
+@property (nonatomic, weak) id <BIDMADNativeAdDelegate> _Nullable delegate;
+@property (nonatomic, strong) BIDMADNativeAdView * _Nullable userCreatedNativeAd;
+@property (nonatomic, copy) NSDictionary<NSString *, UIImage *> * _Nullable starRatingImage;
+- (nonnull instancetype)initWith:(NSString * _Nonnull)zoneID on:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@protocol CompassDataRequestDelegate;
+
+
+SWIFT_PROTOCOL("_TtP9BidmadSDK26CompassDataRequestDelegate_")
+@protocol CompassDataRequestDelegate
+- (void)DataRequestSuccess:(NSDictionary<NSString *, id> * _Nonnull)selectedAd;
+- (void)DataRequestFail:(NSString * _Nonnull)errorReason;
+@end
+
+
+@interface BIDMADNativeAd (SWIFT_EXTENSION(BidmadSDK)) <CompassDataRequestDelegate>
+- (void)DataRequestSuccess:(NSDictionary<NSString *, id> * _Nonnull)selectedAd;
+- (void)DataRequestFail:(NSString * _Nonnull)errorReason;
+@end
+
+
+SWIFT_PROTOCOL("_TtP9BidmadSDK27BIDMADNativeAdInnerDelegate_")
+@protocol BIDMADNativeAdInnerDelegate
+- (void)onLoad;
+- (void)onShow;
+- (void)onClick;
+- (void)onFail:(NSError * _Nonnull)error;
+@end
+
+
+@interface BIDMADNativeAd (SWIFT_EXTENSION(BidmadSDK)) <BIDMADNativeAdInnerDelegate>
+- (void)onLoad;
+- (void)onShow;
+- (void)onFail:(NSError * _Nonnull)error;
+- (void)onClick;
+@end
+
+@class ReceivedAd;
+
+SWIFT_PROTOCOL("_TtP9BidmadSDK14BidmadAdCommon_")
+@protocol BidmadAdCommon
+- (nonnull instancetype)initWith:(NSString * _Nonnull)zoneID on:(UIViewController * _Nonnull)rootViewController;
+- (void)request;
+- (void)selectWithAd:(ReceivedAd * _Nonnull)ad;
+- (void)remove;
+@end
+
+
+@interface BIDMADNativeAd (SWIFT_EXTENSION(BidmadSDK)) <BidmadAdCommon>
+- (void)request;
+- (void)selectWithAd:(ReceivedAd * _Nonnull)ad;
+- (void)remove;
+- (void)show;
+- (void)hide;
+@end
+
+
+@class NSError;
+
+SWIFT_PROTOCOL("_TtP9BidmadSDK22BIDMADNativeAdDelegate_")
+@protocol BIDMADNativeAdDelegate
+- (void)bidmadNativeAdLoad;
+- (void)bidmadNativeAdShow;
+- (void)bidmadNativeAdClick;
+- (void)bidmadNativeAdAllFail:(NSError * _Nonnull)error;
+@end
+
+
+
+SWIFT_CLASS("_TtC9BidmadSDK20BIDMADPangleNativeAd")
+@interface BIDMADPangleNativeAd : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TEST_PLACEMENTID_PANGLE_NATIVEAD;)
++ (NSString * _Nonnull)TEST_PLACEMENTID_PANGLE_NATIVEAD SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TEST_APPID_PANGLE_NATIVEAD;)
++ (NSString * _Nonnull)TEST_APPID_PANGLE_NATIVEAD SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ASYNC_DEALLOCATED_WARNING;)
++ (NSString * _Nonnull)ASYNC_DEALLOCATED_WARNING SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWith:(NSString * _Nonnull)appid placementId:(NSString * _Nullable)placementId nativeAdMediationManager:(BIDMADNativeAd * _Nonnull)nativeAdMediationManager rootViewController:(UIViewController * _Nonnull)rootViewController nativeAdView:(BIDMADNativeAdView * _Nonnull)nativeAdView isDebug:(BOOL)isDebug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class BUNativeAdsManager;
+@class BUNativeAd;
+
+@interface BIDMADPangleNativeAd (SWIFT_EXTENSION(BidmadSDK)) <BUNativeAdsManagerDelegate>
+- (void)nativeAdsManagerSuccessToLoad:(BUNativeAdsManager * _Nonnull)adsManager nativeAds:(NSArray<BUNativeAd *> * _Nullable)nativeAdDataArray;
+- (void)nativeAdsManager:(BUNativeAdsManager * _Nonnull)adsManager didFailWithError:(NSError * _Nullable)error;
+@end
+
+
+@interface BIDMADPangleNativeAd (SWIFT_EXTENSION(BidmadSDK)) <BIDMADNativeAdCommonInterface>
+- (void)loadNativeAd;
+- (void)showNativeAd;
+- (void)hideNativeAd;
+@end
+
+@class BUVideoAdView;
+
+@interface BIDMADPangleNativeAd (SWIFT_EXTENSION(BidmadSDK)) <BUVideoAdViewDelegate>
+- (void)videoAdView:(BUVideoAdView * _Nonnull)videoAdView didLoadFailWithError:(NSError * _Nullable)error;
+- (void)videoAdView:(BUVideoAdView * _Nonnull)videoAdView stateDidChanged:(BUPlayerPlayState)playerState;
+- (void)playerDidPlayFinish:(BUVideoAdView * _Nonnull)videoAdView;
+- (void)videoAdViewDidClick:(BUVideoAdView * _Nonnull)videoAdView;
+- (void)videoAdViewFinishViewDidClick:(BUVideoAdView * _Nonnull)videoAdView;
+- (void)videoAdViewDidCloseOtherController:(BUVideoAdView * _Nonnull)videoAdView interactionType:(BUInteractionType)interactionType;
+@end
+
+@class UIView;
+@class BUDislikeWords;
+
+@interface BIDMADPangleNativeAd (SWIFT_EXTENSION(BidmadSDK)) <BUNativeAdDelegate>
+- (void)nativeAdDidLoad:(BUNativeAd * _Nonnull)nativeAd;
+- (void)nativeAd:(BUNativeAd * _Nonnull)nativeAd didFailWithError:(NSError * _Nullable)error;
+- (void)nativeAdDidBecomeVisible:(BUNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdDidCloseOtherController:(BUNativeAd * _Nonnull)nativeAd interactionType:(BUInteractionType)interactionType;
+- (void)nativeAdDidClick:(BUNativeAd * _Nonnull)nativeAd withView:(UIView * _Nullable)view;
+- (void)nativeAd:(BUNativeAd * _Nullable)nativeAd dislikeWithReason:(NSArray<BUDislikeWords *> * _Nullable)filterWords;
+@end
+
+
+@class CompassReceivedData;
 
 SWIFT_CLASS("_TtC9BidmadSDK13BidmadNetwork")
 @interface BidmadNetwork : NSObject
 @property (nonatomic, copy) NSString * _Nullable realZoneID;
 @property (nonatomic, strong) NSNumber * _Nullable isLabelService;
+@property (nonatomic, strong) CompassReceivedData * _Nullable adData;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable adsDict;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable ecpmRevInfo;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable areaInfo;
@@ -292,12 +438,42 @@ SWIFT_CLASS("_TtC9BidmadSDK13BidmadNetwork")
 
 
 
-SWIFT_PROTOCOL("_TtP9BidmadSDK26CompassDataRequestDelegate_")
-@protocol CompassDataRequestDelegate
-- (void)DataRequestSuccess:(NSDictionary<NSString *, id> * _Nonnull)selectedAd;
-- (void)DataRequestFail:(NSString * _Nonnull)errorReason;
+SWIFT_CLASS("_TtC9BidmadSDK10ChangeInfo")
+@interface ChangeInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+SWIFT_CLASS("_TtC9BidmadSDK19CompassReceivedData")
+@interface CompassReceivedData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC9BidmadSDK8DateInfo")
+@interface DateInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC9BidmadSDK11ECPMRevInfo")
+@interface ECPMRevInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC9BidmadSDK12LabelService")
+@interface LabelService : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSCoder;
 
 SWIFT_CLASS("_TtC9BidmadSDK18MediationTableView")
 @interface MediationTableView : UIView
@@ -320,6 +496,12 @@ SWIFT_CLASS("_TtC9BidmadSDK18MediationTableView")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+SWIFT_CLASS("_TtC9BidmadSDK10ReceivedAd")
+@interface ReceivedAd : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

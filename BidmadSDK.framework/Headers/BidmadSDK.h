@@ -33,7 +33,7 @@ FOUNDATION_EXPORT const unsigned char BidmadSDKVersionString[];
 #import "BIDMADSetting.h"
 #import "BIDMADTapjoy.h"
 #import "BIDMADUtil.h"
-#import "KeychainItemWrapper.h"
+#import "BidmadKeychainItemWrapper.h"
 #import "BIDMADAdmob.h"
 #import "BIDMADAdmobAppOpenAd.h"
 #import "BIDMADPangleBanner.h"

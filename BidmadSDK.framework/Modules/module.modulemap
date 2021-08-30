@@ -21,7 +21,7 @@ framework module BidmadSDK {
   header "BIDMADSetting.h"
   header "BIDMADTapjoy.h"
   header "BIDMADUtil.h"
-  header "KeychainItemWrapper.h"
+  header "BidmadKeychainItemWrapper.h"
   header "BIDMADAdmob.h"
   header "BIDMADAdmobAppOpenAd.h"
   header "BIDMADPangleBanner.h"
@@ -51,7 +51,7 @@ framework module BidmadSDK {
   header "UnrealGDPRforGoogle.h"
   header "UnrealInterstitial.h"
   header "UnrealReward.h"
-
+  header "BIDMADNativeAdView.h"
 }
 
 module BidmadSDK.Swift {
