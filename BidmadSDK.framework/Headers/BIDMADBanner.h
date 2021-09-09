@@ -16,6 +16,10 @@
 #import "BIDMADAdmanager.h"
 #import "BIDMADPangleBanner.h"
 
+#if __has_include(<BidmadSDKAuthorizedAdNetworkAdapter/BidmadSDKAuthorizedAdNetworkAdapter.h>) || __has_include("BidmadSDKAuthorizedAdNetworkAdapter.h")
+#import <BidmadSDKAuthorizedAdNetworkAdapter/BidmadSDKAuthorizedAdNetworkAdapter.h>
+#endif
+
 #if __has_include(<AdFitSDK/AdFitSDK.h>) || __has_include("AdFitSDK.h")
 #import "BIDMADAdFit.h"
 #import <AdFitSDK/AdFitSDK.h>
@@ -27,11 +31,11 @@
 
 @optional
 
-- (void)onBannerAllFail:(BIDMADBanner *)core;
+- (void)onBannerAllFail;
 - (void)onBannerError:(NSString *)error failType:(NSString *)failType;
-- (void)onBannerClosed:(BIDMADBanner *)core current:(NSDictionary*) currentDic;
-- (void)onBannerLoad:(BIDMADBanner *)core current:(NSDictionary*) currentDic;
-- (void)onBannerClick:(BIDMADBanner*) core current:(NSDictionary*) currentDic;
+- (void)onBannerClosed;
+- (void)onBannerLoad;
+- (void)onBannerClick;
 
 @end
 

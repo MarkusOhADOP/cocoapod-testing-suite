@@ -14,6 +14,10 @@
 #import "BIDMADAdmob.h"
 #import "BIDMADAtomInterstitial.h"
 
+#if __has_include(<BidmadSDKAuthorizedAdNetworkAdapter/BidmadSDKAuthorizedAdNetworkAdapter.h>) || __has_include("BidmadSDKAuthorizedAdNetworkAdapter.h")
+#import <BidmadSDKAuthorizedAdNetworkAdapter/BidmadSDKAuthorizedAdNetworkAdapter.h>
+#endif
+
 @protocol BIDMADInterstitialDelegate <NSObject>
 
 @optional
@@ -37,11 +41,11 @@
 @protocol BIDMADInterstitialInnerDelegate <NSObject>
 @required
 
-- (void)onInterstitialLoad:(BIDMADInterstitial *)core       current:(NSDictionary*) currentDic;
+- (void)onInterstitialLoad;
 - (void)onInterstitialError:(NSString *)error failType:(NSString *)failType;
-- (void)onInterstitialShow:(BIDMADInterstitial *)core       current:(NSDictionary*) currentDic;
-- (void)onInterstitialClick:(BIDMADInterstitial *)core      current:(NSDictionary*) currentDic;
-- (void)onInterstitialClose:(BIDMADInterstitial *)core      current:(NSDictionary*) currentDic;
+- (void)onInterstitialShow;
+- (void)onInterstitialClick;
+- (void)onInterstitialClose;
 
 @end
 

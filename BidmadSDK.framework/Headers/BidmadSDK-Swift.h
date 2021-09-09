@@ -237,24 +237,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class GADVideoController;
+@class GADAdLoader;
 
-@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADVideoControllerDelegate>
-- (void)videoControllerDidPlayVideo:(GADVideoController * _Nonnull)videoController;
-- (void)videoControllerDidEndVideoPlayback:(GADVideoController * _Nonnull)videoController;
+@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+- (void)adLoaderDidFinishLoading:(GADAdLoader * _Nonnull)adLoader;
 @end
 
-@class GADAdLoader;
 @class GADNativeAd;
 
 @interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADNativeAdLoaderDelegate>
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
 @end
 
+@class GADVideoController;
 
-@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADAdLoaderDelegate>
-- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
-- (void)adLoaderDidFinishLoading:(GADAdLoader * _Nonnull)adLoader;
+@interface BIDMADAdmobNativeAd (SWIFT_EXTENSION(BidmadSDK)) <GADVideoControllerDelegate>
+- (void)videoControllerDidPlayVideo:(GADVideoController * _Nonnull)videoController;
+- (void)videoControllerDidEndVideoPlayback:(GADVideoController * _Nonnull)videoController;
 @end
 
 
@@ -264,6 +264,7 @@ SWIFT_PROTOCOL("_TtP9BidmadSDK29BIDMADNativeAdCommonInterface_")
 - (void)loadNativeAd;
 - (void)showNativeAd;
 - (void)hideNativeAd;
+- (void)remove;
 @end
 
 
@@ -271,6 +272,7 @@ SWIFT_PROTOCOL("_TtP9BidmadSDK29BIDMADNativeAdCommonInterface_")
 - (void)loadNativeAd;
 - (void)showNativeAd;
 - (void)hideNativeAd;
+- (void)remove;
 @end
 
 
@@ -287,13 +289,16 @@ SWIFT_PROTOCOL("_TtP9BidmadSDK29BIDMADNativeAdCommonInterface_")
 
 SWIFT_CLASS("_TtC9BidmadSDK14BIDMADNativeAd")
 @interface BIDMADNativeAd : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull AD_TYPE;)
++ (NSString * _Nonnull)AD_TYPE SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TEST_NATIVEAD_ZONEID;)
 + (NSString * _Nonnull)TEST_NATIVEAD_ZONEID SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull zoneID;
 @property (nonatomic, readonly, strong) UIViewController * _Nonnull rootViewController;
 @property (nonatomic, weak) id <BIDMADNativeAdDelegate> _Nullable delegate;
-@property (nonatomic, strong) BIDMADNativeAdView * _Nullable userCreatedNativeAd;
+@property (nonatomic, strong) BIDMADNativeAdView * _Nullable userCreatedNativeAdView;
 @property (nonatomic, copy) NSDictionary<NSString *, UIImage *> * _Nullable starRatingImage;
+@property (nonatomic) NSInteger refreshInterval;
 - (nonnull instancetype)initWith:(NSString * _Nonnull)zoneID on:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -303,13 +308,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 SWIFT_PROTOCOL("_TtP9BidmadSDK26CompassDataRequestDelegate_")
 @protocol CompassDataRequestDelegate
-- (void)DataRequestSuccess:(NSDictionary<NSString *, id> * _Nonnull)selectedAd;
+- (void)DataRequestSuccess;
 - (void)DataRequestFail:(NSString * _Nonnull)errorReason;
 @end
 
 
 @interface BIDMADNativeAd (SWIFT_EXTENSION(BidmadSDK)) <CompassDataRequestDelegate>
-- (void)DataRequestSuccess:(NSDictionary<NSString *, id> * _Nonnull)selectedAd;
+- (void)DataRequestSuccess;
 - (void)DataRequestFail:(NSString * _Nonnull)errorReason;
 @end
 
@@ -388,6 +393,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)loadNativeAd;
 - (void)showNativeAd;
 - (void)hideNativeAd;
+- (void)remove;
 @end
 
 @class BUVideoAdView;
@@ -414,20 +420,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+
+SWIFT_PROTOCOL("_TtP9BidmadSDK22BidmadAdapterEssential_")
+@protocol BidmadAdapterEssential
+- (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID pubID:(NSString * _Nullable)pubID rootVC:(UIViewController * _Nonnull)rootVC parentView:(UIView * _Nullable)parentView;
+- (void)load;
+- (void)setExtra:(NSDictionary<NSString *, id> * _Nonnull)extra;
+- (void)setBidmadController:(id _Nonnull)bidmadController;
+- (void)show;
+- (void)hide;
+- (void)remove;
+@end
+
 @class CompassReceivedData;
 
 SWIFT_CLASS("_TtC9BidmadSDK13BidmadNetwork")
 @interface BidmadNetwork : NSObject
 @property (nonatomic, copy) NSString * _Nullable realZoneID;
-@property (nonatomic, strong) NSNumber * _Nullable isLabelService;
 @property (nonatomic, strong) CompassReceivedData * _Nullable adData;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable adsDict;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable ecpmRevInfo;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable areaInfo;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable changeInfo;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable date;
-@property (nonatomic, strong) NSNumber * _Nullable isLabelServiceAdmin;
-@property (nonatomic, copy) NSString * _Nullable mediationType;
 - (nonnull instancetype)initWithDelegate:(id <CompassDataRequestDelegate> _Nonnull)delegateArg OBJC_DESIGNATED_INITIALIZER;
 - (NSDictionary<NSString *, id> * _Nullable)objcCompatible SWIFT_WARN_UNUSED_RESULT;
 - (void)requestForZoneID:(NSString * _Nonnull)zoneID;
@@ -436,6 +446,12 @@ SWIFT_CLASS("_TtC9BidmadSDK13BidmadNetwork")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+SWIFT_CLASS("_TtC9BidmadSDK13BidmadUtility")
+@interface BidmadUtility : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC9BidmadSDK10ChangeInfo")

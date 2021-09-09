@@ -1,0 +1,4 @@
+framework module BidmadAdapterFC {
+  header "BidmadAdapterFC-Swift.h"
+  requires objc
+}

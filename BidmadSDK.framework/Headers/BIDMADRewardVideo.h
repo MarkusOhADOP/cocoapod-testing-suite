@@ -17,17 +17,22 @@
 #import "BIDMADAppLoving.h"
 #import "BIDMADInterstitial.h"
 
+#if __has_include(<BidmadSDKAuthorizedAdNetworkAdapter/BidmadSDKAuthorizedAdNetworkAdapter.h>) || __has_include("BidmadSDKAuthorizedAdNetworkAdapter.h")
+#import <BidmadSDKAuthorizedAdNetworkAdapter/BidmadSDKAuthorizedAdNetworkAdapter.h>
+#endif
+
 @protocol BIDMADRewardVideoDelegate;
 
 @protocol BIDMADRewardVideoInnerDelegate <NSObject>
 @required
 
-- (void)onVideoLoad:(BIDMADRewardVideo *)core       current:(NSDictionary*) currentDic;
+- (void)onVideoLoad;
 - (void)onVideoError:(NSString *)error failType:(NSString *)failType;
-- (void)onVideoShow:(BIDMADRewardVideo *)core       current:(NSDictionary*) currentDic;
-- (void)onVideoClick:(BIDMADRewardVideo *)core      current:(NSDictionary*) currentDic;
-- (void)onVideoSuccess:(BIDMADRewardVideo *)core    current:(NSDictionary*) currentDic;
-- (void)onVideoSkipped:(BIDMADRewardVideo *) core   current:(NSDictionary*) currentDic;
+- (void)onVideoShow;
+- (void)onVideoClick;
+- (void)onVideoSuccess;
+- (void)onVideoSkipped;
+- (void)onVideoClose;
 
 @end
 
