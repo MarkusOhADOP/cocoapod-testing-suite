@@ -1,4 +1,11 @@
 framework module BidmadAdapterFC {
-  header "BidmadAdapterFC-Swift.h"
-  requires objc
+  umbrella header "BidmadAdapterFC.h"
+
+  export *
+  module * { export * }
+}
+
+module BidmadAdapterFC.Swift {
+    header "BidmadAdapterFC-Swift.h"
+    requires objc
 }

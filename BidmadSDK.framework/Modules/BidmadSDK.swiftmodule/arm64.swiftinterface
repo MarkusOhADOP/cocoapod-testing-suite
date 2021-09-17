@@ -1,47 +1,12 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidmadSDK
-import BUAdSDK
 @_exported import BidmadSDK
 import FacebookAdapter
 import Foundation
 import GoogleMobileAds
 import Swift
 import UIKit
-@objc open class BIDMADPangleNativeAd : ObjectiveC.NSObject {
-  @objc public static var TEST_PLACEMENTID_PANGLE_NATIVEAD: Swift.String
-  @objc public static var TEST_APPID_PANGLE_NATIVEAD: Swift.String
-  @objc public static var ASYNC_DEALLOCATED_WARNING: Swift.String
-  @objc required public init(with appid: Swift.String, placementId: Swift.String?, nativeAdMediationManager: BidmadSDK.BIDMADNativeAd, rootViewController: UIKit.UIViewController, nativeAdView: BidmadSDK.BIDMADNativeAdView, isDebug: Swift.Bool)
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension BIDMADPangleNativeAd : BidmadSDK.BIDMADNativeAdCommonInterface {
-  @objc dynamic public func loadNativeAd()
-  @objc dynamic public func showNativeAd()
-  @objc dynamic public func hideNativeAd()
-  @objc dynamic public func remove()
-}
-extension BIDMADPangleNativeAd : BUAdSDK.BUNativeAdsManagerDelegate {
-  @objc dynamic public func nativeAdsManagerSuccess(toLoad adsManager: BUAdSDK.BUNativeAdsManager, nativeAds nativeAdDataArray: [BUAdSDK.BUNativeAd]?)
-  @objc dynamic public func nativeAdsManager(_ adsManager: BUAdSDK.BUNativeAdsManager, didFailWithError error: Swift.Error?)
-}
-extension BIDMADPangleNativeAd : BUAdSDK.BUNativeAdDelegate {
-  @objc dynamic public func nativeAdDidLoad(_ nativeAd: BUAdSDK.BUNativeAd)
-  @objc dynamic public func nativeAd(_ nativeAd: BUAdSDK.BUNativeAd, didFailWithError error: Swift.Error?)
-  @objc dynamic public func nativeAdDidBecomeVisible(_ nativeAd: BUAdSDK.BUNativeAd)
-  @objc dynamic public func nativeAdDidCloseOtherController(_ nativeAd: BUAdSDK.BUNativeAd, interactionType: BUAdSDK.BUInteractionType)
-  @objc dynamic public func nativeAdDidClick(_ nativeAd: BUAdSDK.BUNativeAd, with view: UIKit.UIView?)
-  @objc dynamic public func nativeAd(_ nativeAd: BUAdSDK.BUNativeAd?, dislikeWithReason filterWords: [BUAdSDK.BUDislikeWords]?)
-}
-extension BIDMADPangleNativeAd : BUAdSDK.BUVideoAdViewDelegate {
-  @objc dynamic public func videoAdView(_ videoAdView: BUAdSDK.BUVideoAdView, didLoadFailWithError error: Swift.Error?)
-  @objc dynamic public func videoAdView(_ videoAdView: BUAdSDK.BUVideoAdView, stateDidChanged playerState: BUAdSDK.BUPlayerPlayState)
-  @objc dynamic public func playerDidPlayFinish(_ videoAdView: BUAdSDK.BUVideoAdView)
-  @objc dynamic public func videoAdViewDidClick(_ videoAdView: BUAdSDK.BUVideoAdView)
-  @objc dynamic public func videoAdViewFinishViewDidClick(_ videoAdView: BUAdSDK.BUVideoAdView)
-  @objc dynamic public func videoAdViewDidCloseOtherController(_ videoAdView: BUAdSDK.BUVideoAdView, interactionType: BUAdSDK.BUInteractionType)
-}
 @objc public protocol BidmadAdapterEssential {
   @objc init(appID: Swift.String, pubID: Swift.String?, rootVC: UIKit.UIViewController, parentView: UIKit.UIView?)
   @objc func load()
@@ -131,8 +96,8 @@ extension MediationTableView : UIKit.UITableViewDataSource {
   public var appid: Swift.String!
   public var bidmadNativeAd: BidmadSDK.BIDMADNativeAd?
   @objc public var isAdMob: Swift.Bool
-  @objc public var nativeAdView: BidmadSDK.BIDMADNativeAdView!
-  @objc required public init(with appid: Swift.String, placementId: Swift.String?, nativeAdMediationManager: BidmadSDK.BIDMADNativeAd, rootViewController: UIKit.UIViewController, nativeAdView: BidmadSDK.BIDMADNativeAdView, isDebug: Swift.Bool)
+  @objc public var nativeAdView: BidmadSDK.BIDMADNativeAdView?
+  @objc required public init(with appid: Swift.String, placementId: Swift.String?, nativeAdMediationManager: Swift.AnyObject, rootViewController: UIKit.UIViewController, nativeAdView: Swift.AnyObject, isDebug: Swift.Bool)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -167,7 +132,7 @@ extension BIDMADAdmobNativeAd : GoogleMobileAds.GADVideoControllerDelegate {
   @objc deinit
 }
 @objc public protocol BIDMADNativeAdCommonInterface {
-  @objc init(with appid: Swift.String, placementId: Swift.String?, nativeAdMediationManager: BidmadSDK.BIDMADNativeAd, rootViewController: UIKit.UIViewController, nativeAdView: BidmadSDK.BIDMADNativeAdView, isDebug: Swift.Bool)
+  @objc init(with appid: Swift.String, placementId: Swift.String?, nativeAdMediationManager: Swift.AnyObject, rootViewController: UIKit.UIViewController, nativeAdView: Swift.AnyObject, isDebug: Swift.Bool)
   @objc func loadNativeAd()
   @objc func showNativeAd()
   @objc func hideNativeAd()
@@ -189,7 +154,7 @@ extension BIDMADAdmobNativeAd : GoogleMobileAds.GADVideoControllerDelegate {
   @objc func onLoad()
   @objc func onShow()
   @objc func onClick()
-  @objc func onFail(_ error: Swift.Error)
+  @objc func onFail(_ errorString: Swift.String)
 }
 public struct BIDMADNativeAdError {
 }
@@ -201,7 +166,6 @@ public struct BIDMADNativeAdError {
   @objc weak public var delegate: BidmadSDK.BIDMADNativeAdDelegate?
   @objc public var userCreatedNativeAdView: BidmadSDK.BIDMADNativeAdView?
   @objc public var starRatingImage: [Swift.String : UIKit.UIImage]?
-  @objc public var refreshInterval: Swift.Int
   @objc required public init(with zoneID: Swift.String, on rootViewController: UIKit.UIViewController)
   @objc deinit
   @objc override dynamic public init()
@@ -220,6 +184,6 @@ extension BIDMADNativeAd : BidmadSDK.BidmadAdCommon {
 extension BIDMADNativeAd : BidmadSDK.BIDMADNativeAdInnerDelegate {
   @objc dynamic public func onLoad()
   @objc dynamic public func onShow()
-  @objc dynamic public func onFail(_ error: Swift.Error)
+  @objc dynamic public func onFail(_ errorString: Swift.String)
   @objc dynamic public func onClick()
 }

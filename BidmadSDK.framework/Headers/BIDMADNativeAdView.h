@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <GoogleMobileAds/GADNativeAd.h>
-#import <BUAdSDK/BUNativeAdRelatedView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -27,8 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setup;
 - (void)setupForGoogleAd;
-- (BUNativeAdRelatedView *) getterForNativeAdRelatedView;
-- (void)setterForNativeAdRelatedView: (BUNativeAdRelatedView *) receivedNativeAdRelatedViewForPangle;
 
 @end
 

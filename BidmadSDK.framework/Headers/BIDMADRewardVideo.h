@@ -13,12 +13,14 @@
 #import "BIDMADAtomReward.h"
 #import "BIDMADAdmob.h"
 #import "BIDMADAdmanager.h"
-#import "BIDMADUnityAdsReward.h"
-#import "BIDMADAppLoving.h"
 #import "BIDMADInterstitial.h"
 
-#if __has_include(<BidmadSDKAuthorizedAdNetworkAdapter/BidmadSDKAuthorizedAdNetworkAdapter.h>) || __has_include("BidmadSDKAuthorizedAdNetworkAdapter.h")
-#import <BidmadSDKAuthorizedAdNetworkAdapter/BidmadSDKAuthorizedAdNetworkAdapter.h>
+#if __has_include(<BidmadAdapterFC/BidmadAdapterFC.h>) || __has_include("BidmadAdapterFC.h")
+#import <BidmadAdapterFC/BidmadAdapterFC.h>
+#endif
+
+#if __has_include(<BidmadAdapterFNC/BidmadAdapterFNC.h>) || __has_include("BidmadAdapterFNC.h")
+#import <BidmadAdapterFNC/BidmadAdapterFNC.h>
 #endif
 
 @protocol BIDMADRewardVideoDelegate;

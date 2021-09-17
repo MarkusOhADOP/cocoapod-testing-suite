@@ -12,7 +12,6 @@
 #import "BIDMADFacebook.h"
 #import "BIDMADAtomReward.h"
 #import "BIDMADAdmanager.h"
-#import "BIDMADAppLoving.h"
 #import "BIDMADInterstitial.h"
 #import "BIDMADAdMobAppOpenAd.h"
 
