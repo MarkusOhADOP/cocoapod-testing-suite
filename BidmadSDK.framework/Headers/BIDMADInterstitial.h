@@ -14,14 +14,6 @@
 #import "BIDMADAdmob.h"
 #import "BIDMADAtomInterstitial.h"
 
-#if __has_include(<BidmadAdapterFC/BidmadAdapterFC.h>) || __has_include("BidmadAdapterFC.h")
-#import <BidmadAdapterFC/BidmadAdapterFC.h>
-#endif
-
-#if __has_include(<BidmadAdapterFNC/BidmadAdapterFNC.h>) || __has_include("BidmadAdapterFNC.h")
-#import <BidmadAdapterFNC/BidmadAdapterFNC.h>
-#endif
-
 @protocol BIDMADInterstitialDelegate <NSObject>
 
 @optional
@@ -45,11 +37,11 @@
 @protocol BIDMADInterstitialInnerDelegate <NSObject>
 @required
 
-- (void)onInterstitialLoad;
+- (void)onInterstitialLoad:(BIDMADInterstitial *)core       current:(NSDictionary*) currentDic;
 - (void)onInterstitialError:(NSString *)error failType:(NSString *)failType;
-- (void)onInterstitialShow;
-- (void)onInterstitialClick;
-- (void)onInterstitialClose;
+- (void)onInterstitialShow:(BIDMADInterstitial *)core       current:(NSDictionary*) currentDic;
+- (void)onInterstitialClick:(BIDMADInterstitial *)core      current:(NSDictionary*) currentDic;
+- (void)onInterstitialClose:(BIDMADInterstitial *)core      current:(NSDictionary*) currentDic;
 
 @end
 
@@ -65,7 +57,7 @@
 @property (strong, nonatomic) NSDictionary*             ads_dic;
 @property (nonatomic) BOOL                     isDirectLoad;
 
-@property (strong, nonatomic) NSDictionary*                      ecmp_rev_info;
+@property (strong, nonatomic) NSDictionary*                      ecpm_rev_info;
 @property (strong, nonatomic) NSDictionary*                      area_info;
 
 @property (strong, nonatomic) NSDictionary*                    change_info;
@@ -87,6 +79,26 @@
 ///inititalize
 - (id)init;
 
+/// Init Method for OBH
+- (instancetype)initWithZoneID:(NSString * _Nonnull)zoneID
+          parentViewController:(UIViewController * _Nonnull)parentVC
+                   instanceOBH:(id _Nullable)instanceOBH
+                     sessionID:(NSString * _Nonnull)sessionID
+                       adsDict:(NSDictionary * _Nullable)adsDict
+                   revInfoECPM:(NSDictionary * _Nullable)revInfoECPM
+                      areaInfo:(NSDictionary * _Nullable)areaInfo
+                    changeInfo:(NSDictionary * _Nullable)changeInfo
+                          date:(NSDictionary * _Nullable)date
+                isLabelService:(NSNumber * _Nullable)isLabelService
+           isLabelServiceAdmin:(NSNumber * _Nullable)isLabelServiceAdmin;
+
+/// This method sorts the dictionary of compass ads data from the highest floor price to the least.
+/// It returns the NSError if necessary properties are not available nor nil.
+/// If success, it lastly calls selectAds with the first ad with the highest floor price.
+- (NSError * _Nullable)sortBasedOnFloorPriceAndSelectFirstAd;
+
+- (NSError * _Nullable)withoutSortingJustSelectFirstAd;
+
 ///InterstitialView Load
 - (void)loadInterstitialView;
 
@@ -96,14 +108,13 @@
 ///InterstitialView Direct Show
 - (void)directShowInterstitialView;
 
-/// 삭제할것
 - (void)selectAds:(NSDictionary *)lv_dic;
 
 - (void)removeInterstitialADS;
 
 - (void)sendLog :(NSDictionary *) info :(NSString *) advertisementType :(NSString *) logType;
 
-- (void) sendLog :(NSDictionary *) info :(NSString *) advertisementType :(NSString *) logType :(NSString *)recvSessionId;
+- (void) sendLog :(NSDictionary *)info :(NSString *)advertisementType :(NSString *)logType :(NSString *)recvSessionId;
 
 @end
 

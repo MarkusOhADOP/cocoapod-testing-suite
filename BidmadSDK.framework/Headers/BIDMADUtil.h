@@ -91,6 +91,6 @@ typedef void (^CompletionBlock)();
 
 + (BOOL)dictionaryKeyCheck:(NSDictionary *)dictionary hasKey:(NSString *)key;
 
-+ (void)cancelPerformSelectorAndThenRun: (CompletionBlock)afterCancellation;
++ (void)cancelPerformSelectorFor:(NSObject *)selfObject AndThenRun: (CompletionBlock)afterCancellation;
 
 @end
