@@ -1,20 +1,20 @@
 Pod::Spec.new do |s|
 
   s.name         = "BidmadSDK-Dev"
-  s.version      = "3.0.4"
+  s.version      = "3.0.6"
   s.platform     = :ios, "11.0"
   s.summary      = "Integrated App Monetization Solution for Mobile Apps by all Publishers"
   s.description  = "BidmadSDK allows users to communicate with Compass by ADOP. Our mediation platform optimizes for the utmost profit."
   s.homepage     = "https://github.com/bidmad/cocoapod.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Markus" => "markus@adop.cc" }
-  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '3.0.4' }
+  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '3.0.6' }
   s.resource_bundles = {
     'bidmad_asset' => ['Assets/*']
   }
   
   s.swift_version = '5.0'
-  s.default_subspec = 'WithAdFit'
+  s.default_subspec = 'ForNative'
   
   s.static_framework = true
   s.requires_arc     = true
@@ -30,8 +30,9 @@ Pod::Spec.new do |s|
   s.dependency 'UnityAds', '3.7.2'
   s.dependency 'Ads-Global', '3.8.1.0'
 
-  s.subspec 'WithAdFit' do |withadfit|
-    withadfit.dependency 'AdFitSDK', '3.7.0'
+  s.subspec 'ForNative' do |forNative|
+    forNative.dependency 'AdFitSDK', '3.7.0'
+    forNative.dependency 'GoogleMobileAdsMediationAdColony', '4.6.0.0'
   end
   
   s.subspec 'WithoutAdFit' do |withoutadfit|
@@ -57,6 +58,7 @@ Pod::Spec.new do |s|
       'bidmad_asset' => ['Assets/*']
     }
     forflutter.dependency 'AdFitSDK', '3.7.0'
+    forflutter.dependency 'GoogleMobileAdsMediationAdColony', '4.6.0.0'
     forflutter.dependency 'Flutter'
   end
 
