@@ -37,9 +37,17 @@
 @property (strong,nonatomic) OpenBiddingRewardVideo* rewardVideo;
 
 - (id)initWithAdBanner:(NSDictionary *)dic OpenBiddingBanner:(OpenBiddingBanner *)banner;
+- (id)initWithAdBanner:(NSDictionary *)dict BidmadBanner:(BIDMADBanner *)banner;
+
 - (id)initWithInterstitial:(NSDictionary *)dic OpenBiddingInterstitial:(OpenBiddingInterstitial *)interstitial;
+- (id)initWithInterstitial:(NSDictionary *)dict BidmadInterstitial:(BIDMADInterstitial *)interstitial;
+
 - (id)initWithRewardVideo:(NSDictionary *)dic OpenBiddingReward:(OpenBiddingRewardVideo *)rewardVideo userId:(NSString *) userId;
+- (id)initWithRewardVideo:(NSDictionary *)dict BidmadReward:(BIDMADRewardVideo *)rewardVideo userID:(NSString *)userID;
+
 - (id)initWithRewardInterstitial:(NSDictionary *)dic openBiddingRewardInterstitial:(OpenBiddingRewardInterstitial *)rewardInterstitialArg;
+- (id)initWithRewardInterstitial:(NSDictionary *)dict BidmadRewardInterstitial:(BIDMADRewardInterstitial *)rewardInterstitial;
+
 - (void)loadAdmobRewardInterstitial:(UIViewController *)pvc;
 - (void)showAdmobRewardInterstitial;
 - (void)removeRewardInterstitialAds;

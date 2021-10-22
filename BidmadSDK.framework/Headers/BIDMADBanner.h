@@ -14,6 +14,7 @@
 #import "BIDMADAdmob.h"
 #import "BIDMADUnityAdsBanner.h"
 #import "BIDMADAdmanager.h"
+#import "BIDMADPangleBanner.h"
 
 #if __has_include(<AdFitSDK/AdFitSDK.h>) || __has_include("AdFitSDK.h")
 #import "BIDMADAdFit.h"
