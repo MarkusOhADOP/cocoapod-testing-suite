@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'ForGame' do |forgame|
     forgame.platform = :ios, "10.0"
-    forgame.vendored_frameworks = "BidmadSDK.framework"
+    forgame.vendored_frameworks = "BidmadAdapterFNC.framework"
     forgame.resource_bundles = {
       'bidmad_asset' => ['Assets/*']
     }
