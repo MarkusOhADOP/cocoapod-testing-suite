@@ -22,23 +22,20 @@
 
 @interface BIDMADPangleBanner : NSObject<BUNativeExpressBannerViewDelegate>
 
-@property (weak,nonatomic) id bidmadControllerForCallbacks;
-- (id)initWithAppID:(NSString *)appID pubID:(NSString *)pubID rootVC:(UIViewController *)rootVC parentView:(UIView *)parentView;
+@property (weak,nonatomic) id __nullable bidmadControllerForCallbacks;
+- (id __nonnull)initWithAppID:(NSString * _Nonnull)appID
+                                pubID:(NSString * _Nullable)pubID
+                               rootVC:(UIViewController * _Nonnull)rootVC
+                           parentView:(UIView * _Nullable)parentView
+                              isChild:(NSNumber * _Nullable)isChild
+                        isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent
+                        isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent;
 - (void)load;
-- (void)setExtra:(NSDictionary<NSString *,id> *)extra;
-- (void)setBidmadController:(id)bidmadController;
+- (void)setIsDebug:(BOOL)isDebug;
+- (void)setBannerSize:(NSString * _Nonnull)sizeString;
+- (void)setBidmadController:(id __nonnull)bidmadController;
 - (void)show;
 - (void)hide;
 - (void)remove;
-
-#pragma mark Pangle Delegate Methods
-- (void)nativeExpressBannerAdViewDidLoad:(BUNativeExpressBannerView *)bannerAdView;
-- (void)nativeExpressBannerAdView:(BUNativeExpressBannerView *)bannerAdView didLoadFailWithError:(NSError *)error;
-- (void)nativeExpressBannerAdViewRenderSuccess:(BUNativeExpressBannerView *)bannerAdView;
-- (void)nativeExpressBannerAdViewRenderFail:(BUNativeExpressBannerView *)bannerAdView error:(NSError *)error;
-- (void)nativeExpressBannerAdViewWillBecomVisible:(BUNativeExpressBannerView *)bannerAdView;
-- (void)nativeExpressBannerAdViewDidClick:(BUNativeExpressBannerView *)bannerAdView;
-- (void)nativeExpressBannerAdView:(BUNativeExpressBannerView *)bannerAdView dislikeWithReason:(NSArray<BUDislikeWords *> *)filterwords;
-- (void)nativeExpressBannerAdViewDidCloseOtherController:(BUNativeExpressBannerView *)bannerAdView interactionType:(BUInteractionType)interactionType;
 
 @end

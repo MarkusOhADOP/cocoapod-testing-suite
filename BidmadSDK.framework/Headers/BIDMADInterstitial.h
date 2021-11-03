@@ -9,10 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "BIDMADUtil.h"
 #import "BIDMADSetting.h"
-#import "BIDMADFacebook.h"
 #import "BIDMADAdmanager.h"
 #import "BIDMADAdmob.h"
 #import "BIDMADAtomInterstitial.h"
+
+#if __has_include(<BidmadAdapterFC/BidmadAdapterFC.h>) || __has_include("BidmadAdapterFC.h")
+#import <BidmadAdapterFC/BidmadAdapterFC.h>
+#endif
+
+#if __has_include(<BidmadAdapterFNC/BidmadAdapterFNC.h>) || __has_include("BidmadAdapterFNC.h")
+#import <BidmadAdapterFNC/BidmadAdapterFNC.h>
+#endif
 
 @protocol BIDMADInterstitialDelegate <NSObject>
 
@@ -37,11 +44,11 @@
 @protocol BIDMADInterstitialInnerDelegate <NSObject>
 @required
 
-- (void)onInterstitialLoad:(BIDMADInterstitial *)core       current:(NSDictionary*) currentDic;
+- (void)onInterstitialLoad;
 - (void)onInterstitialError:(NSString *)error failType:(NSString *)failType;
-- (void)onInterstitialShow:(BIDMADInterstitial *)core       current:(NSDictionary*) currentDic;
-- (void)onInterstitialClick:(BIDMADInterstitial *)core      current:(NSDictionary*) currentDic;
-- (void)onInterstitialClose:(BIDMADInterstitial *)core      current:(NSDictionary*) currentDic;
+- (void)onInterstitialShow;
+- (void)onInterstitialClick;
+- (void)onInterstitialClose;
 
 @end
 
@@ -114,7 +121,7 @@
 
 - (void)sendLog :(NSDictionary *) info :(NSString *) advertisementType :(NSString *) logType;
 
-- (void) sendLog :(NSDictionary *)info :(NSString *)advertisementType :(NSString *)logType :(NSString *)recvSessionId;
+- (void) sendLog :(NSDictionary *) info :(NSString *) advertisementType :(NSString *) logType :(NSString *)recvSessionId;
 
 @end
 

@@ -9,18 +9,18 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Markus" => "markus@adop.cc" }
   s.platform     = :ios, "11.0"
-  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '3.0.1' }
+  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '3.0.7' }
   
   s.static_framework = true
   s.requires_arc     = true
 
   s.vendored_frameworks = "BidmadAdapterFC.framework"
 
-  s.dependency 'GoogleMobileAdsMediationAppLovin', '10.3.4.0'
-  s.dependency 'GoogleMobileAdsMediationAdColony', '4.7.0.0'
-  s.dependency 'GoogleMobileAdsMediationUnity', '3.7.2.0'
-  s.dependency 'UnityAds', '3.7.2'
-  s.dependency 'AdColony', '4.7.0'
-  s.dependency 'AppLovinSDK', '10.3.4'
+  s.dependency 'GoogleMobileAdsMediationAppLovin', '10.3.6.0'
+  s.dependency 'GoogleMobileAdsMediationAdColony', '4.7.2.0'
+  s.dependency 'GoogleMobileAdsMediationUnity', '3.7.5.0'
+  s.dependency 'AppLovinSDK', '10.3.6'
+  s.dependency 'AdColony', '4.7.2'
+  s.dependency 'UnityAds', '3.7.5'
 
 end
