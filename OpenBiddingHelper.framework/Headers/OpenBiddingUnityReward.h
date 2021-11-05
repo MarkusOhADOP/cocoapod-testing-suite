@@ -17,11 +17,12 @@ static NSMutableDictionary* BidmadOpenBiddingRewardDic;
 
 @interface OpenBiddingUnityReward : NSObject <BIDMADOpenBiddingRewardVideoDelegate>{
     NSString* mZoneId;
+    UIViewController* mParentVC;
     id<BIDMADOpenBiddingRewardVideoDelegate> delegate;
     @public OpenBiddingRewardVideo* bidmadReward;
 }
 
-- (id)initWithZoneId:(NSString *)zoneId;
+- (id)initWithZoneId:(NSString *)zoneId parentVC:(UIViewController *)parentVC;
 + (id)getInstance:(NSString *)zoneId;
 - (void)setZoneID:(NSString *)zoneId;
 - (void)setDelegate:(id) param;
