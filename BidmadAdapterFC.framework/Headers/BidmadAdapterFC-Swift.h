@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import AdColony;
 @import AppLovinSDK;
+@import Foundation;
 @import ObjectiveC;
 @import UnityAds;
 #endif
@@ -282,6 +283,32 @@ SWIFT_CLASS("_TtC15BidmadAdapterFC20BidmadAppLovinBanner")
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID pubID:(NSString * _Nullable)pubID rootVC:(UIViewController * _Nonnull)rootVC parentView:(UIView * _Nullable)parentView isChild:(NSNumber * _Nullable)isChild isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class ALAdService;
+@class ALAd;
+
+@interface BidmadAppLovinBanner (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdLoadDelegate>
+- (void)adService:(ALAdService * _Nonnull)adService didLoadAd:(ALAd * _Nonnull)ad;
+- (void)adService:(ALAdService * _Nonnull)adService didFailToLoadAdWithError:(int32_t)code;
+@end
+
+
+@interface BidmadAppLovinBanner (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdDisplayDelegate>
+- (void)ad:(ALAd * _Nonnull)ad wasDisplayedIn:(UIView * _Nonnull)view;
+- (void)ad:(ALAd * _Nonnull)ad wasHiddenIn:(UIView * _Nonnull)view;
+- (void)ad:(ALAd * _Nonnull)ad wasClickedIn:(UIView * _Nonnull)view;
+@end
+
+@class ALAdView;
+
+@interface BidmadAppLovinBanner (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdViewEventDelegate>
+- (void)ad:(ALAd * _Nonnull)ad didPresentFullscreenForAdView:(ALAdView * _Nonnull)adView;
+- (void)ad:(ALAd * _Nonnull)ad willDismissFullscreenForAdView:(ALAdView * _Nonnull)adView;
+- (void)ad:(ALAd * _Nonnull)ad didDismissFullscreenForAdView:(ALAdView * _Nonnull)adView;
+- (void)ad:(ALAd * _Nonnull)ad willLeaveApplicationForAdView:(ALAdView * _Nonnull)adView;
+- (void)ad:(ALAd * _Nonnull)ad didReturnToApplicationForAdView:(ALAdView * _Nonnull)adView;
+- (void)ad:(ALAd * _Nonnull)ad didFailToDisplayInAdView:(ALAdView * _Nonnull)adView withError:(ALAdViewDisplayErrorCode)code;
+@end
+
 
 @interface BidmadAppLovinBanner (SWIFT_EXTENSION(BidmadAdapterFC))
 - (void)load;
@@ -292,24 +319,29 @@ SWIFT_CLASS("_TtC15BidmadAdapterFC20BidmadAppLovinBanner")
 - (void)remove;
 @end
 
-@class MAAd;
-@class MAError;
-
-@interface BidmadAppLovinBanner (SWIFT_EXTENSION(BidmadAdapterFC)) <MAAdViewAdDelegate>
-- (void)didExpandAd:(MAAd * _Nonnull)ad;
-- (void)didCollapseAd:(MAAd * _Nonnull)ad;
-- (void)didLoadAd:(MAAd * _Nonnull)ad;
-- (void)didFailToLoadAdForAdUnitIdentifier:(NSString * _Nonnull)adUnitIdentifier withError:(MAError * _Nonnull)error;
-- (void)didDisplayAd:(MAAd * _Nonnull)ad;
-- (void)didHideAd:(MAAd * _Nonnull)ad;
-- (void)didClickAd:(MAAd * _Nonnull)ad;
-- (void)didFailToDisplayAd:(MAAd * _Nonnull)ad withError:(MAError * _Nonnull)error;
-@end
-
 
 SWIFT_CLASS("_TtC15BidmadAdapterFC26BidmadAppLovinInterstitial")
 @interface BidmadAppLovinInterstitial : BidmadAdapterFCAdEssential
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID pubID:(NSString * _Nullable)pubID rootVC:(UIViewController * _Nonnull)rootVC parentView:(UIView * _Nullable)parentView isChild:(NSNumber * _Nullable)isChild isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface BidmadAppLovinInterstitial (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdLoadDelegate>
+- (void)adService:(ALAdService * _Nonnull)adService didLoadAd:(ALAd * _Nonnull)ad;
+- (void)adService:(ALAdService * _Nonnull)adService didFailToLoadAdWithError:(int32_t)code;
+@end
+
+
+@interface BidmadAppLovinInterstitial (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdVideoPlaybackDelegate>
+- (void)videoPlaybackBeganInAd:(ALAd * _Nonnull)ad;
+- (void)videoPlaybackEndedInAd:(ALAd * _Nonnull)ad atPlaybackPercent:(NSNumber * _Nonnull)percentPlayed fullyWatched:(BOOL)wasFullyWatched;
+@end
+
+
+@interface BidmadAppLovinInterstitial (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdDisplayDelegate>
+- (void)ad:(ALAd * _Nonnull)ad wasDisplayedIn:(UIView * _Nonnull)view;
+- (void)ad:(ALAd * _Nonnull)ad wasHiddenIn:(UIView * _Nonnull)view;
+- (void)ad:(ALAd * _Nonnull)ad wasClickedIn:(UIView * _Nonnull)view;
 @end
 
 
@@ -321,21 +353,37 @@ SWIFT_CLASS("_TtC15BidmadAdapterFC26BidmadAppLovinInterstitial")
 @end
 
 
-@interface BidmadAppLovinInterstitial (SWIFT_EXTENSION(BidmadAdapterFC)) <MAAdDelegate>
-- (void)didLoadAd:(MAAd * _Nonnull)ad;
-- (void)didFailToLoadAdForAdUnitIdentifier:(NSString * _Nonnull)adUnitIdentifier withError:(MAError * _Nonnull)error;
-- (void)didDisplayAd:(MAAd * _Nonnull)ad;
-- (void)didHideAd:(MAAd * _Nonnull)ad;
-- (void)didClickAd:(MAAd * _Nonnull)ad;
-- (void)didFailToDisplayAd:(MAAd * _Nonnull)ad withError:(MAError * _Nonnull)error;
-@end
-
-
 SWIFT_CLASS("_TtC15BidmadAdapterFC20BidmadAppLovinReward")
 @interface BidmadAppLovinReward : BidmadAdapterFCAdEssential
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID pubID:(NSString * _Nullable)pubID rootVC:(UIViewController * _Nonnull)rootVC parentView:(UIView * _Nullable)parentView isChild:(NSNumber * _Nullable)isChild isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@interface BidmadAppLovinReward (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdVideoPlaybackDelegate>
+- (void)videoPlaybackBeganInAd:(ALAd * _Nonnull)ad;
+- (void)videoPlaybackEndedInAd:(ALAd * _Nonnull)ad atPlaybackPercent:(NSNumber * _Nonnull)percentPlayed fullyWatched:(BOOL)wasFullyWatched;
+@end
+
+
+@interface BidmadAppLovinReward (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdLoadDelegate>
+- (void)adService:(ALAdService * _Nonnull)adService didLoadAd:(ALAd * _Nonnull)ad;
+- (void)adService:(ALAdService * _Nonnull)adService didFailToLoadAdWithError:(int32_t)code;
+@end
+
+
+@interface BidmadAppLovinReward (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdDisplayDelegate>
+- (void)ad:(ALAd * _Nonnull)ad wasDisplayedIn:(UIView * _Nonnull)view;
+- (void)ad:(ALAd * _Nonnull)ad wasHiddenIn:(UIView * _Nonnull)view;
+- (void)ad:(ALAd * _Nonnull)ad wasClickedIn:(UIView * _Nonnull)view;
+@end
+
+
+@interface BidmadAppLovinReward (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdRewardDelegate>
+- (void)rewardValidationRequestForAd:(ALAd * _Nonnull)ad didSucceedWithResponse:(NSDictionary * _Nonnull)response;
+- (void)rewardValidationRequestForAd:(ALAd * _Nonnull)ad didExceedQuotaWithResponse:(NSDictionary * _Nonnull)response;
+- (void)rewardValidationRequestForAd:(ALAd * _Nonnull)ad wasRejectedWithResponse:(NSDictionary * _Nonnull)response;
+- (void)rewardValidationRequestForAd:(ALAd * _Nonnull)ad didFailWithError:(NSInteger)responseCode;
+@end
 
 
 @interface BidmadAppLovinReward (SWIFT_EXTENSION(BidmadAdapterFC))
@@ -344,20 +392,6 @@ SWIFT_CLASS("_TtC15BidmadAdapterFC20BidmadAppLovinReward")
 - (void)show;
 - (void)remove;
 - (void)setIsRewardedAd:(BOOL)isRewardedAd;
-@end
-
-@class MAReward;
-
-@interface BidmadAppLovinReward (SWIFT_EXTENSION(BidmadAdapterFC)) <MARewardedAdDelegate>
-- (void)didStartRewardedVideoForAd:(MAAd * _Nonnull)ad;
-- (void)didCompleteRewardedVideoForAd:(MAAd * _Nonnull)ad;
-- (void)didRewardUserForAd:(MAAd * _Nonnull)ad withReward:(MAReward * _Nonnull)reward;
-- (void)didLoadAd:(MAAd * _Nonnull)ad;
-- (void)didFailToLoadAdForAdUnitIdentifier:(NSString * _Nonnull)adUnitIdentifier withError:(MAError * _Nonnull)error;
-- (void)didDisplayAd:(MAAd * _Nonnull)ad;
-- (void)didHideAd:(MAAd * _Nonnull)ad;
-- (void)didClickAd:(MAAd * _Nonnull)ad;
-- (void)didFailToDisplayAd:(MAAd * _Nonnull)ad withError:(MAError * _Nonnull)error;
 @end
 
 

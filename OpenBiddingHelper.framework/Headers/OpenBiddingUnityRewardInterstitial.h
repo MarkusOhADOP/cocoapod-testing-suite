@@ -14,7 +14,7 @@
 
 + (id)sharedInstance;
 
-- (void)openBiddingNewInstanceRewardInterstitial:(NSString *)zoneId withDelegate:(id<OpenBiddingRewardInterstitialDelegate>)delegate;
+- (void)openBiddingNewInstanceRewardInterstitial:(NSString *)zoneId withDelegate:(id<OpenBiddingRewardInterstitialDelegate>)delegate parentVC:(UIViewController *)parentVC;
 - (void)openBiddingLoadRewardInterstitial:(NSString *)zoneId;
 - (void)openBiddingShowRewardInterstitial:(NSString *)zoneId;
 - (bool)openBiddingIsLoadedRewardInterstitial:(NSString *)zoneId;

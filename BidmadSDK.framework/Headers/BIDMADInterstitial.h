@@ -97,7 +97,8 @@
                     changeInfo:(NSDictionary * _Nullable)changeInfo
                           date:(NSDictionary * _Nullable)date
                 isLabelService:(NSNumber * _Nullable)isLabelService
-           isLabelServiceAdmin:(NSNumber * _Nullable)isLabelServiceAdmin;
+           isLabelServiceAdmin:(NSNumber * _Nullable)isLabelServiceAdmin
+                    realZoneID:(NSString * _Nonnull)realZoneID;
 
 /// This method sorts the dictionary of compass ads data from the highest floor price to the least.
 /// It returns the NSError if necessary properties are not available nor nil.

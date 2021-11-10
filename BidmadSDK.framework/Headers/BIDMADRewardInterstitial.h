@@ -37,7 +37,8 @@
                               date:(NSDictionary * _Nullable)date
                     isLabelService:(NSNumber * _Nullable)isLabelService
                isLabelServiceAdmin:(NSNumber * _Nullable)isLabelServiceAdmin
-                          mediType:(NSString * _Nullable)mediationType;
+                          mediType:(NSString * _Nullable)mediationType
+                        realZoneID:(NSString * _Nonnull)realZoneID;
 - (NSError * _Nullable)sortBasedOnFloorPriceAndSelectFirstAd;
 - (NSError * _Nullable)withoutSortingJustSelectFirstAd;
 

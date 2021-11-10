@@ -88,7 +88,8 @@
                     changeInfo:(NSDictionary * _Nullable)changeInfo
                           date:(NSDictionary * _Nullable)date
                 isLabelService:(NSNumber * _Nullable)isLabelService
-           isLabelServiceAdmin:(NSNumber * _Nullable)isLabelServiceAdmin;
+           isLabelServiceAdmin:(NSNumber * _Nullable)isLabelServiceAdmin
+                    realZoneID:(NSString * _Nonnull)realZoneID;
 /// REQUEST ADS
 - (void)requestBannerView;
 /// DELETE ADS

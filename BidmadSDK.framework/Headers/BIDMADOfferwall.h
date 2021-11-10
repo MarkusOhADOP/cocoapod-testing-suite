@@ -20,7 +20,7 @@
 
 @property (nonatomic, strong) UIViewController* parentViewController;
 @property (strong, nonatomic) NSDictionary* ads_dic;
-@property (strong, nonatomic) NSDictionary* ecmp_rev_info;
+@property (strong, nonatomic) NSDictionary* ecpm_rev_info;
 @property (strong, nonatomic) NSDictionary* area_info;
 @property (strong, nonatomic) NSDictionary* change_info;
 @property (strong, nonatomic) NSDictionary* date;
