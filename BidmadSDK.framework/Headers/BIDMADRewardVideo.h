@@ -74,6 +74,7 @@
 
 @property (nonatomic) NSString *                 realZoneId;
 
+@property (nonatomic, strong) NSString * _Nullable CUID;
 
 @property (nonatomic) BOOL isInterstitialBackfill;
 @property (nonatomic, strong) BIDMADInterstitial* interstitial;

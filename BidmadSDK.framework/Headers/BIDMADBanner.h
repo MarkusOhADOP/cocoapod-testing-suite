@@ -67,6 +67,8 @@
 
 @property (nonatomic, strong) NSString* currentAdNetwork;
 
+@property (nonatomic, strong) NSString * _Nullable CUID;
+
 /// Banner Size Parameter is no longer supported, Please use initWithParentViewController:(UIViewController *):(CGPoint)
 - (id)initWithParentViewController:(UIViewController *)parentVC adsPosition:(CGPoint)point bannerSize:(bannerSizeType)bannerTypeParam __deprecated;
 /// Banner Size Parameter is no longer supported, Please use initWithParentViewController:(UIViewController *):(UIView *)

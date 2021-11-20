@@ -83,6 +83,8 @@
 
 @property (nonatomic) BOOL                       isLoaded;
 
+@property (nonatomic, strong) NSString * _Nullable CUID;
+
 ///inititalize
 - (id)init;
 
@@ -120,9 +122,7 @@
 
 - (void)removeInterstitialADS;
 
-- (void)sendLog :(NSDictionary *) info :(NSString *) advertisementType :(NSString *) logType;
-
-- (void) sendLog :(NSDictionary *) info :(NSString *) advertisementType :(NSString *) logType :(NSString *)recvSessionId;
+- (void)sendLog:(NSDictionary *)info :(NSString *)advertisementType :(NSString *)logType :(NSString *)recvSessionId :(NSString * _Nullable)cuid;
 
 @end
 

@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)SDKVersion;
 + (NSURLSessionDataTask *)openBiddingDataFetcherWithZoneId: (NSString *)zoneId completionBlock:(void (^)(NSDictionary * _Nullable, NSError * _Nullable, NSDictionary * _Nullable, NSString * _Nullable, NSString * _Nullable, NSNumber * _Nullable, NSNumber * _Nullable, NSString * _Nullable))completionBlock;
-+ (void) sendLogOBH :(NSDictionary *)info :(NSString *)advertisementType :(NSString *)logType :(NSString*)sessionId :(NSString*)realZoneId;
 
 @end
 

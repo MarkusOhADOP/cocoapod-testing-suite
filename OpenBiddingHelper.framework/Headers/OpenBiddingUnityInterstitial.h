@@ -29,6 +29,8 @@ static NSMutableDictionary* BidmadOpenBiddingInterstitialDic;
 - (void)load;
 - (void)show;
 - (bool)isLoaded;
+- (void)setAutoReload:(bool)isAutoReload;
+- (void)setCUID:(NSString *)cuid;
 
 @end
 

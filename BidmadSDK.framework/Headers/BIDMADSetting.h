@@ -95,6 +95,7 @@ extern NSString* _Nonnull const BIDMAD_CCPA_CONSENT;
 - (void)setAdvertiserTrackingEnabled:(BOOL)enable;
 - (BOOL)getAdvertiserTrackingEnabled;
 - (void)reqAdTrackingAuthorizationWithCompletionHandler:(CompleteHandler)completeHandler;
+- (void)initializeSdk;
 
 /// If your app is directed to kids under the age of 13, please set YES or true.
 - (void)setIsChildDirectedAds: (BOOL)isChildDirectedAdsNeeded;
@@ -149,6 +150,8 @@ extern NSString* _Nonnull const BIDMAD_CCPA_CONSENT;
 @property (nonatomic)  bool unityState;
 
 @property (nonatomic) bool isIronInit;
+
+@property (nonatomic, strong) NSNumber* isGADMobileAdsInitilized;
 
 @property (nonatomic)  bool isBannerArpmVisible;
 

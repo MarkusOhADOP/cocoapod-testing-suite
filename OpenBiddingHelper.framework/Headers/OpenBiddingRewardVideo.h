@@ -57,6 +57,8 @@
 
 @property (nonatomic) NSString *                 realZoneId;
 
+@property (nonatomic, strong) NSString * _Nullable CUID;
+
 ///inititalize
 - (id)init;
 
@@ -65,8 +67,6 @@
 - (void)showRewardVideo;
 
 - (void)selectAds:(NSDictionary *)lv_dic;
-
-- (void)sendLog :(NSDictionary *) info :(NSString *) advertisementType :(NSString *) logType;
 
 @end
 

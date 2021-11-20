@@ -25,7 +25,7 @@ static NSMutableDictionary* BidmadOpenBiddingBannerDic;
 - (id)initWithZoneId:(NSString *)zoneId parentVC:(UIViewController *)parentVC adsPosition:(CGPoint)point bannerSize:(bannerSizeType)bannerTypeParam __deprecated;
 - (id)initWithZoneId:(NSString *)zoneId parentVC:(UIViewController *)parentVC adsPosition:(CGPoint)point;
 - (id)initWithZoneId:(NSString *)zoneId parentVC:(UIViewController *)parentVC adYPoint:(int)yPoint;
-+ (id)getIntance:(NSString *)zoneId;
++ (id)getInstance:(NSString *)zoneId;
 - (void)setZoneID:(NSString *)zoneId;
 - (void)setDelegate:(id) param;
 - (void)load;
@@ -33,6 +33,7 @@ static NSMutableDictionary* BidmadOpenBiddingBannerDic;
 - (void)setRefreshInterval:(int)sec;
 - (void)hideView;
 - (void)showView;
+- (void)setCUID:(NSString *)cuid;
 
 @end
 

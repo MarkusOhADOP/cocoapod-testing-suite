@@ -20,6 +20,7 @@
     @property (nonatomic, strong) UIViewController *parentViewController;
     @property (nonatomic) NSString *zoneID;
     @property (nonatomic) BOOL isLoaded;
+    @property (nonatomic, strong) NSString * _Nullable CUID;
 
     - (void) requestRewardInterstitial;
     - (void) showRewardInterstitialView;

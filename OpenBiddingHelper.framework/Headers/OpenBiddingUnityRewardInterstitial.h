@@ -18,5 +18,7 @@
 - (void)openBiddingLoadRewardInterstitial:(NSString *)zoneId;
 - (void)openBiddingShowRewardInterstitial:(NSString *)zoneId;
 - (bool)openBiddingIsLoadedRewardInterstitial:(NSString *)zoneId;
+- (void)setAutoReload:(bool)isAutoReload;
+- (void)setCUID:(NSString *)cuid;
 
 @end

@@ -12,15 +12,16 @@
 
 @interface OpenBiddingCocos2dxInterstitial : NSObject <BIDMADOpenBiddingInterstitialDelegate>{
     NSString* mZoneId;
+    UIViewController *rootVC;
     id<BIDMADOpenBiddingInterstitialDelegate> delegate;
     @public OpenBiddingInterstitial* bidmadInterstitial;
 }
 
-- (id)initWithZoneId:(NSString *)zoneId;
-- (void)setZoneID:(NSString *)zoneId;
+- (id)initWithZoneId:(NSString *)zoneId viewController:(UIViewController *)rootVC;
 - (void)setDelegate:(id) param;
 - (void)load;
 - (void)show;
 - (bool)isLoaded;
+- (void)setAutoReoad:(bool)isAutoReload;
 
 @end

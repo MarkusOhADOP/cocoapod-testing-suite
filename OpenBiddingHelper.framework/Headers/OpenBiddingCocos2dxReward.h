@@ -12,16 +12,18 @@
 
 @interface OpenBiddingCocos2dxReward : NSObject <BIDMADOpenBiddingRewardVideoDelegate>{
     NSString* mZoneId;
+    UIViewController *rootVC;
     id<BIDMADOpenBiddingRewardVideoDelegate> delegate;
     @public OpenBiddingRewardVideo* bidmadReward;
 }
 
-- (id)initWithZoneId:(NSString *)zoneId;
+- (id)initWithZoneId:(NSString *)zoneId viewController:(UIViewController *)rootVC;
 - (void)setZoneID:(NSString *)zoneId;
 - (void)setDelegate:(id) param;
 - (void)load;
 - (void)show;
 - (bool)isLoaded;
+- (void)setAutoReoad:(bool)isAutoReload;
 
 @end
 
