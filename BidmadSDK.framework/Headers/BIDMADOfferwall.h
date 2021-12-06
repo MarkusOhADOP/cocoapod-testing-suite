@@ -12,10 +12,11 @@
 
 @protocol BIDMADOfferwallDelegate;
 @protocol BIDMADOfferwallInnerDelegate;
+@protocol BIDMADOfferwallCurrencyDelegate;
 
 @interface BIDMADOfferwall : NSObject
 
-@property (nonatomic, strong) id<BIDMADOfferwallDelegate> delegate;
+@property (nonatomic, strong) id<BIDMADOfferwallDelegate, BIDMADOfferwallCurrencyDelegate> delegate;
 @property (nonatomic, strong) id<BIDMADOfferwallInnerDelegate> innerDelegate;
 
 @property (nonatomic, strong) UIViewController* parentViewController;
@@ -65,6 +66,11 @@
 - (void)BIDMADOfferwallFailedAd:(BIDMADOfferwall *)core;
 - (void)BIDMADOfferwallCloseAd:(BIDMADOfferwall *)core;
 
+@end
+
+@protocol BIDMADOfferwallCurrencyDelegate <NSObject>
+
+@optional
 - (void)BIDMADOfferwallGetCurrencyBalanceSuccess:(BIDMADOfferwall *)core currencyName:(NSString *)currencyName balance:(int)balance;
 - (void)BIDMADOfferwallGetCurrencyBalanceFail:(BIDMADOfferwall *)core error:(NSString *)error;
 - (void)BIDMADOfferwallSpendCurrencySuccess:(BIDMADOfferwall *)core currencyName:(NSString *)currencyName balance:(int)balance;

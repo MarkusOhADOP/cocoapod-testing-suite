@@ -36,6 +36,7 @@
 - (void)    selectAds:(NSDictionary *)lv_dic;
 - (void) registerForAppOpenAdForZoneID: (NSString *)zoneId;
 - (void) deregisterForAppOpenAd;
+- (void) UIApplicationDidBecomeActiveAction;
 
 @end
 
