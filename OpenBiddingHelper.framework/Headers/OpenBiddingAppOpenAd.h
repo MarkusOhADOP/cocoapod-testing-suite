@@ -21,6 +21,7 @@
 @property (strong, nonatomic) NSDictionary*                 ads_dic;
 @property (nonatomic) NSString * zoneID;
 @property (nonatomic, strong) NSString* userId;
+@property (nonatomic, strong) NSString * _Nullable CUID;
 @property (nonatomic) BOOL                       testMode;
 @property (nonatomic) BOOL                       isComplete;
 @property (nonatomic) BOOL                       isLoaded;

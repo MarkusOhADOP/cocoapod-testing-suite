@@ -33,6 +33,7 @@
 @property (nonatomic) BOOL isLabelServiceAdmin;
 @property (nonatomic) NSString* realZoneId;
 @property (nonatomic) BOOL isLoaded;
+@property (nonatomic, strong) NSString * _Nullable CUID;
 
 - (id)initWithZoneId:(NSString *)zoneId;
 - (void)loadOfferwall;

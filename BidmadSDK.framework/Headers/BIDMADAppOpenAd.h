@@ -24,6 +24,7 @@
 @property (strong, nonatomic) NSDictionary*                 ads_dic;
 @property (nonatomic) NSString * zoneID;
 @property (nonatomic, strong) NSString* userId;
+@property (nonatomic, strong) NSString * _Nullable CUID;
 @property (nonatomic) BOOL                       isLabelService;
 @property (nonatomic) BOOL                       isLabelServiceAdmin;
 @property (nonatomic) BOOL                       testMode;
@@ -47,6 +48,7 @@
 - (void)BIDMADAppOpenAdLoad:(BIDMADAppOpenAd *)core;
 - (void)BIDMADAppOpenAdClose:(BIDMADAppOpenAd *)core;
 - (void)BIDMADAppOpenAdShow:(BIDMADAppOpenAd *)core;
+- (void)BIDMADAppOpenAdClick:(BIDMADAppOpenAd *)core;
 
 @end
 
