@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "BidmadAdapterFNC"
+  s.name         = "BidmadAdapterFNC-Dev"
   s.version      = "4.1.0.0"
   s.platform     = :ios, "11.0"
   s.summary      = "BidmadAdapterFC is an ad adapter with support for Facebook Audience Network, Tapjoy, AdFit, and Pangle."

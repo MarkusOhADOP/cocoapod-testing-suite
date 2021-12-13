@@ -189,7 +189,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import BidmadSDK;
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -210,14 +209,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class NSString;
 @protocol OpenBiddingAppOpenAdDelegate;
 @class UIViewController;
+@class NSString;
 @class NSNumber;
 
 SWIFT_CLASS("_TtC17OpenBiddingHelper15BidmadAppOpenAd")
 @interface BidmadAppOpenAd : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull zoneID;
 @property (nonatomic, strong) id <OpenBiddingAppOpenAdDelegate> _Nullable delegate;
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
@@ -244,7 +242,6 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper15BidmadAppOpenAd")
 
 SWIFT_CLASS("_TtC17OpenBiddingHelper14BidmadBannerAd")
 @interface BidmadBannerAd : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull zoneID;
 @property (nonatomic, strong) id <BIDMADOpenBiddingBannerDelegate> _Nullable delegate;
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController containerView:(UIView * _Nonnull)containerView zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
@@ -293,7 +290,6 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper12BidmadCommon")
 
 SWIFT_CLASS("_TtC17OpenBiddingHelper20BidmadInterstitialAd")
 @interface BidmadInterstitialAd : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull zoneID;
 @property (nonatomic, strong) id <BIDMADOpenBiddingInterstitialDelegate> _Nullable delegate;
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
@@ -317,7 +313,6 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper20BidmadInterstitialAd")
 
 SWIFT_CLASS("_TtC17OpenBiddingHelper17BidmadOfferwallAd")
 @interface BidmadOfferwallAd : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull zoneID;
 @property (nonatomic, strong) id <BIDMADOfferwallDelegate> _Nullable delegate;
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
@@ -357,7 +352,6 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper17BidmadOfferwallAd")
 
 SWIFT_CLASS("_TtC17OpenBiddingHelper14BidmadRewardAd")
 @interface BidmadRewardAd : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull zoneID;
 @property (nonatomic, strong) id <BIDMADOpenBiddingRewardVideoDelegate> _Nullable delegate;
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
@@ -377,17 +371,13 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper14BidmadRewardAd")
 - (void)BIDMADOpenBiddingRewardVideoClick:(OpenBiddingRewardVideo * _Null_unspecified)core;
 - (void)BIDMADOpenBiddingRewardVideoClose:(OpenBiddingRewardVideo * _Null_unspecified)core;
 - (void)BIDMADOpenBiddingRewardVideoSucceed:(OpenBiddingRewardVideo * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingRewardVideoComplete:(OpenBiddingRewardVideo * _Null_unspecified)core;
 - (void)BIDMADOpenBiddingRewardVideoAllFail:(OpenBiddingRewardVideo * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingRewardVideoErrorLoadLog:(NSDictionary * _Null_unspecified)currentDic;
-- (void)BIDMADOpenBiddingRewardVideoSuccessLoadLog:(NSDictionary * _Null_unspecified)currentDic;
 @end
 
 @protocol OpenBiddingRewardInterstitialDelegate;
 
-SWIFT_CLASS("_TtC17OpenBiddingHelper25BidmadRewardIntersitialAd")
-@interface BidmadRewardIntersitialAd : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull zoneID;
+SWIFT_CLASS("_TtC17OpenBiddingHelper26BidmadRewardInterstitialAd")
+@interface BidmadRewardInterstitialAd : NSObject
 @property (nonatomic, strong) id <OpenBiddingRewardInterstitialDelegate> _Nullable delegate;
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
@@ -400,14 +390,13 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper25BidmadRewardIntersitialAd")
 
 @class OpenBiddingRewardInterstitial;
 
-@interface BidmadRewardIntersitialAd (SWIFT_EXTENSION(OpenBiddingHelper)) <OpenBiddingRewardInterstitialDelegate>
+@interface BidmadRewardInterstitialAd (SWIFT_EXTENSION(OpenBiddingHelper)) <OpenBiddingRewardInterstitialDelegate>
 - (void)OpenBiddingRewardInterstitialLoad:(OpenBiddingRewardInterstitial * _Null_unspecified)core;
 - (void)OpenBiddingRewardInterstitialShow:(OpenBiddingRewardInterstitial * _Null_unspecified)core;
 - (void)OpenBiddingRewardInterstitialClick:(OpenBiddingRewardInterstitial * _Null_unspecified)core;
 - (void)OpenBiddingRewardInterstitialClose:(OpenBiddingRewardInterstitial * _Null_unspecified)core;
 - (void)OpenBiddingRewardInterstitialSkipped:(OpenBiddingRewardInterstitial * _Null_unspecified)core;
 - (void)OpenBiddingRewardInterstitialSuccess:(OpenBiddingRewardInterstitial * _Null_unspecified)core;
-- (void)OpenBiddingRewardInterstitialComplete:(OpenBiddingRewardInterstitial * _Null_unspecified)core;
 - (void)OpenBiddingRewardInterstitialAllFail:(OpenBiddingRewardInterstitial * _Null_unspecified)core;
 @end
 
