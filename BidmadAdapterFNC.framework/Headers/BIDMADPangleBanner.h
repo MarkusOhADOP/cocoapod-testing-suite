@@ -11,10 +11,6 @@
 #import <BUAdSDK/BUAdSDK.h>
 #import <BUVAAuxiliary/BUVAAuxiliary.h>
 
-#define PANGLE_BANNER_TEST_APPID @"5185174"
-#define PANGLE_BANNER_TEST_ID_320_50 @"946272949"
-#define PANGLE_BANNER_TEST_ID_320_100 @"946272952"
-
 /**
  Pangle only supports 300x250(point) and 320x50(point).
  When the 320x100 ad requests come in, pass onBannerError with reason being "Unsupported Ad Banner Size"

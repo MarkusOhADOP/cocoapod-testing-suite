@@ -33,8 +33,6 @@ import _Concurrency
   @objc func spendCurrency(_ amount: Swift.Int, completionHandler: ((Foundation.NSError?, [Swift.String : Any]?) -> Swift.Void)?)
 }
 @objc open class BIDMADPangleNativeAd : ObjectiveC.NSObject {
-  @objc public static var TEST_PLACEMENTID_PANGLE_NATIVEAD: Swift.String
-  @objc public static var TEST_APPID_PANGLE_NATIVEAD: Swift.String
   @objc public static var ASYNC_DEALLOCATED_WARNING: Swift.String
   @objc required public init(with appid: Swift.String, placementId: Swift.String?, nativeAdMediationManager: Swift.AnyObject, rootViewController: UIKit.UIViewController, nativeAdView: Swift.AnyObject, isDebug: Swift.Bool, isChildDirectedAds: Foundation.NSNumber?)
   @objc deinit
@@ -113,4 +111,8 @@ extension BidmadAdapterFNC.BidmadAdFit {
   @objc dynamic public func adViewDidFailToReceiveAd(_ bannerAdView: Swift.AnyObject, error: Swift.Error)
   @objc dynamic public func adViewDidReceiveAd(_ bannerAdView: Swift.AnyObject)
   @objc dynamic public func adViewDidClickAd(_ bannerAdView: Swift.AnyObject)
+}
+@_inheritsConvenienceInitializers @objc public class BidmadAdapterFNCUtility : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
 }

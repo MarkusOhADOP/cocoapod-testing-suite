@@ -215,10 +215,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC16BidmadAdapterFNC20BIDMADPangleNativeAd")
 @interface BIDMADPangleNativeAd : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TEST_PLACEMENTID_PANGLE_NATIVEAD;)
-+ (NSString * _Nonnull)TEST_PLACEMENTID_PANGLE_NATIVEAD SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TEST_APPID_PANGLE_NATIVEAD;)
-+ (NSString * _Nonnull)TEST_APPID_PANGLE_NATIVEAD SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ASYNC_DEALLOCATED_WARNING;)
 + (NSString * _Nonnull)ASYNC_DEALLOCATED_WARNING SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWith:(NSString * _Nonnull)appid placementId:(NSString * _Nullable)placementId nativeAdMediationManager:(id _Nonnull)nativeAdMediationManager rootViewController:(UIViewController * _Nonnull)rootViewController nativeAdView:(id _Nonnull)nativeAdView isDebug:(BOOL)isDebug isChildDirectedAds:(NSNumber * _Nullable)isChildDirectedAds OBJC_DESIGNATED_INITIALIZER;
@@ -319,6 +315,12 @@ SWIFT_PROTOCOL("_TtP16BidmadAdapterFNC29BidmadAdapterBannerAdditional_")
 @end
 
 
+
+
+SWIFT_CLASS("_TtC16BidmadAdapterFNC23BidmadAdapterFNCUtility")
+@interface BidmadAdapterFNCUtility : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class NSError;
 

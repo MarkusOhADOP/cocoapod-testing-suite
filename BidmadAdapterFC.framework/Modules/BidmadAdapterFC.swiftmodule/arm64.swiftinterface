@@ -8,6 +8,10 @@ import Swift
 import UIKit
 import UnityAds
 import _Concurrency
+@_inheritsConvenienceInitializers @objc public class BidmadAdapterFCUtility : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc open class BidmadAdapterFCAdEssential : ObjectiveC.NSObject {
   @objc required public init(appID: Swift.String, pubID: Swift.String?, rootVC: UIKit.UIViewController, parentView: UIKit.UIView?, isChild: Foundation.NSNumber?, isGDPRConsent: Foundation.NSNumber?, isCCPAConsent: Foundation.NSNumber?)
   @objc public func setBidmadController(_ bidmadController: Swift.AnyObject)

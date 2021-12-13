@@ -11,10 +11,6 @@
 #import <BUAdSDK/BUAdSDK.h>
 #import <BUVAAuxiliary/BUVAAuxiliary.h>
 
-#define PANGLE_REWARD_TEST_ID_VERTICAL @"946273162"
-#define PANGLE_REWARD_TEST_ID_HORIZONTAL @"946273166"
-#define PANGLE_REWARD_TEST_APPID @"5185174"
-
 @interface BIDMADPangleReward : NSObject<BURewardedVideoAdDelegate>
 
 @property (weak,nonatomic) id __nullable bidmadControllerForCallbacks;

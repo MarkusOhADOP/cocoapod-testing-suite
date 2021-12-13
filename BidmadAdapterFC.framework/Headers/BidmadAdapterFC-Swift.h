@@ -278,6 +278,12 @@ SWIFT_CLASS("_TtC15BidmadAdapterFC26BidmadAdColonyInterstitial")
 
 
 
+SWIFT_CLASS("_TtC15BidmadAdapterFC22BidmadAdapterFCUtility")
+@interface BidmadAdapterFCUtility : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC15BidmadAdapterFC20BidmadAppLovinBanner")
 @interface BidmadAppLovinBanner : BidmadAdapterFCAdEssential
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID pubID:(NSString * _Nullable)pubID rootVC:(UIViewController * _Nonnull)rootVC parentView:(UIView * _Nullable)parentView isChild:(NSNumber * _Nullable)isChild isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent OBJC_DESIGNATED_INITIALIZER;
@@ -326,15 +332,15 @@ SWIFT_CLASS("_TtC15BidmadAdapterFC26BidmadAppLovinInterstitial")
 @end
 
 
-@interface BidmadAppLovinInterstitial (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdLoadDelegate>
-- (void)adService:(ALAdService * _Nonnull)adService didLoadAd:(ALAd * _Nonnull)ad;
-- (void)adService:(ALAdService * _Nonnull)adService didFailToLoadAdWithError:(int32_t)code;
-@end
-
-
 @interface BidmadAppLovinInterstitial (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdVideoPlaybackDelegate>
 - (void)videoPlaybackBeganInAd:(ALAd * _Nonnull)ad;
 - (void)videoPlaybackEndedInAd:(ALAd * _Nonnull)ad atPlaybackPercent:(NSNumber * _Nonnull)percentPlayed fullyWatched:(BOOL)wasFullyWatched;
+@end
+
+
+@interface BidmadAppLovinInterstitial (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdLoadDelegate>
+- (void)adService:(ALAdService * _Nonnull)adService didLoadAd:(ALAd * _Nonnull)ad;
+- (void)adService:(ALAdService * _Nonnull)adService didFailToLoadAdWithError:(int32_t)code;
 @end
 
 
@@ -359,15 +365,15 @@ SWIFT_CLASS("_TtC15BidmadAdapterFC20BidmadAppLovinReward")
 @end
 
 
-@interface BidmadAppLovinReward (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdVideoPlaybackDelegate>
-- (void)videoPlaybackBeganInAd:(ALAd * _Nonnull)ad;
-- (void)videoPlaybackEndedInAd:(ALAd * _Nonnull)ad atPlaybackPercent:(NSNumber * _Nonnull)percentPlayed fullyWatched:(BOOL)wasFullyWatched;
-@end
-
-
 @interface BidmadAppLovinReward (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdLoadDelegate>
 - (void)adService:(ALAdService * _Nonnull)adService didLoadAd:(ALAd * _Nonnull)ad;
 - (void)adService:(ALAdService * _Nonnull)adService didFailToLoadAdWithError:(int32_t)code;
+@end
+
+
+@interface BidmadAppLovinReward (SWIFT_EXTENSION(BidmadAdapterFC)) <ALAdVideoPlaybackDelegate>
+- (void)videoPlaybackBeganInAd:(ALAd * _Nonnull)ad;
+- (void)videoPlaybackEndedInAd:(ALAd * _Nonnull)ad atPlaybackPercent:(NSNumber * _Nonnull)percentPlayed fullyWatched:(BOOL)wasFullyWatched;
 @end
 
 

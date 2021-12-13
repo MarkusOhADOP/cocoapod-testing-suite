@@ -222,6 +222,7 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper15BidmadAppOpenAd")
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)show;
+- (void)setCUID:(NSString * _Nonnull)cuid;
 - (void)deregisterForAppOpenAd;
 - (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -248,6 +249,7 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper14BidmadBannerAd")
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController containerView:(UIView * _Nonnull)containerView zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)setRefreshInterval:(NSInteger)refreshIntervalTime;
+- (void)setCUID:(NSString * _Nonnull)cuid;
 - (void)hide;
 - (void)show;
 - (void)remove;
@@ -264,6 +266,29 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper14BidmadBannerAd")
 - (void)BIDMADOpenBiddingBannerClosed:(OpenBiddingBanner * _Null_unspecified)core;
 @end
 
+
+SWIFT_CLASS("_TtC17OpenBiddingHelper12BidmadCommon")
+@interface BidmadCommon : NSObject
++ (void)setAdvertiserTrackingEnabled:(BOOL)enable;
++ (BOOL)getAdvertiserTrackingEnabled SWIFT_WARN_UNUSED_RESULT;
++ (void)reqAdTrackingAuthorizationWith:(void (^ _Nonnull)(BidmadTrackingAuthorizationStatus))completionHandler;
+/// If your app is directed to kids under the age of 13, please set YES or true.
++ (void)setIsChildDirectedAds:(BOOL)isChildDirectedAdsNeeded;
+/// If your app should be compliant to CCPA, please set the user consent status with this method.
++ (void)setUserConsentStatusForCCPACompliance:(BOOL)isUserConsent;
++ (void)setIsDebug:(BOOL)isDebug;
++ (BOOL)isDebug SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)bidmadVersion SWIFT_WARN_UNUSED_RESULT;
++ (void)setTestDeviceId:(NSString * _Nonnull)testDeviceId;
++ (NSString * _Nonnull)testDeviceId SWIFT_WARN_UNUSED_RESULT;
+/// Setting for Child-Directed Treament for COPPA-Compliance.
++ (NSNumber * _Nullable)isChildDirectedTreament SWIFT_WARN_UNUSED_RESULT;
+/// Setting for CCPA User Consent Status. If nil, the app does not have to be compliant to CCPA.
++ (NSNumber * _Nullable)isUserConsentCCPA SWIFT_WARN_UNUSED_RESULT;
++ (void)initializeSdk;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @protocol BIDMADOpenBiddingInterstitialDelegate;
 
 SWIFT_CLASS("_TtC17OpenBiddingHelper20BidmadInterstitialAd")
@@ -273,6 +298,7 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper20BidmadInterstitialAd")
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)show;
+- (void)setCUID:(NSString * _Nonnull)cuid;
 - (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -296,6 +322,7 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper17BidmadOfferwallAd")
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)show;
+- (void)setCUID:(NSString * _Nonnull)cuid;
 - (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 /// Currency info will be provided through completion handler, with the true if success, false if failed.
 /// If success (true), currency amount (Double) is available.
@@ -335,6 +362,7 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper14BidmadRewardAd")
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)show;
+- (void)setCUID:(NSString * _Nonnull)cuid;
 - (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -364,6 +392,7 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper25BidmadRewardIntersitialAd")
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)show;
+- (void)setCUID:(NSString * _Nonnull)cuid;
 - (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
