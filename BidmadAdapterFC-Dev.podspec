@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BidmadAdapterFC-Dev"
-  s.version      = "4.1.0.2"
+  s.version      = "4.1.0.4"
   s.platform     = :ios, "11.0"
   s.summary      = "BidmadAdapterFC is an ad adapter with support for AdColony, AppLovin, and UnityAds."
   s.description  = "BidmadAdapterFC is an ad adapter with support for AdColony, AppLovin, and UnityAds. Please setup BidmadSDK (4.1.0.0 or higher) first."

@@ -231,6 +231,8 @@ SWIFT_CLASS("_TtC16BidmadAdapterFNC17ATOMRewardedVideo")
 
 
 
+
+
 @class NSNumber;
 
 SWIFT_CLASS("_TtC16BidmadAdapterFNC20BIDMADPangleNativeAd")

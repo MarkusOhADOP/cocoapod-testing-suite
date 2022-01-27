@@ -182,7 +182,7 @@
 		</data>
 		<key>Headers/BidmadAdapterFNC-Swift.h</key>
 		<data>
-		mez0+HUeYbOwr27dKes6nSPnL8k=
+		O43RX1mqdegVhSUGNJWyLzKPLso=
 		</data>
 		<key>Headers/BidmadAdapterFNC.h</key>
 		<data>
@@ -286,27 +286,27 @@
 		</data>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		i7+OydlbA55+SOKiHaXqBhiRdKY=
+		OO4bZuJDbair58fbMFbFAH0+uX0=
 		</data>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		i7+OydlbA55+SOKiHaXqBhiRdKY=
+		OO4bZuJDbair58fbMFbFAH0+uX0=
 		</data>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		lwK6BJCd8jBMYYXDOuoN0h1TtxA=
+		2lHHBz8T5ewnVHCjHhmPHLBDmso=
 		</data>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		9IL93Ir36aTlSW49kxniccqs2oQ=
+		vV8rsZsm7IpBSE1B6iHcbXQKnCY=
 		</data>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		lwK6BJCd8jBMYYXDOuoN0h1TtxA=
+		2lHHBz8T5ewnVHCjHhmPHLBDmso=
 		</data>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		9IL93Ir36aTlSW49kxniccqs2oQ=
+		vV8rsZsm7IpBSE1B6iHcbXQKnCY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -615,11 +615,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mez0+HUeYbOwr27dKes6nSPnL8k=
+			O43RX1mqdegVhSUGNJWyLzKPLso=
 			</data>
 			<key>hash2</key>
 			<data>
-			tI/NAaINhyRb+SiN7+7PZ/QwFF3tSssCol3OpHMo4pA=
+			ucStW11W979/h95AFn2Xc1hJDE1daOj56+EWRniIWR4=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdapterFNC.h</key>
@@ -890,66 +890,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i7+OydlbA55+SOKiHaXqBhiRdKY=
+			OO4bZuJDbair58fbMFbFAH0+uX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kwx1nhVKj4Q8N2GwLbCcJ/PAyW6eKYQBeYetxxZU+t4=
+			DlcFwYZZeJC8g35sMOnSf2rYnnNOwLBFWIjiTOAp64o=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i7+OydlbA55+SOKiHaXqBhiRdKY=
+			OO4bZuJDbair58fbMFbFAH0+uX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kwx1nhVKj4Q8N2GwLbCcJ/PAyW6eKYQBeYetxxZU+t4=
+			DlcFwYZZeJC8g35sMOnSf2rYnnNOwLBFWIjiTOAp64o=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lwK6BJCd8jBMYYXDOuoN0h1TtxA=
+			2lHHBz8T5ewnVHCjHhmPHLBDmso=
 			</data>
 			<key>hash2</key>
 			<data>
-			qKkr8RG88XlZx9+p9gHWE9DweKSTl5ckC15I/qb0TzU=
+			bIi3nZQ/PWGoFfHLihOCbaYN5HMXbZLR9TsEHs5j15I=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9IL93Ir36aTlSW49kxniccqs2oQ=
+			vV8rsZsm7IpBSE1B6iHcbXQKnCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			MMhGGIfF+QxL3zL2JAXZqaIMlXfgXkfqq+e91IyO04U=
+			S1gE8CdIaWyiZEkuCmKbMeNrjPkzDFt42ITxGD1cK5M=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lwK6BJCd8jBMYYXDOuoN0h1TtxA=
+			2lHHBz8T5ewnVHCjHhmPHLBDmso=
 			</data>
 			<key>hash2</key>
 			<data>
-			qKkr8RG88XlZx9+p9gHWE9DweKSTl5ckC15I/qb0TzU=
+			bIi3nZQ/PWGoFfHLihOCbaYN5HMXbZLR9TsEHs5j15I=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterFNC.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9IL93Ir36aTlSW49kxniccqs2oQ=
+			vV8rsZsm7IpBSE1B6iHcbXQKnCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			MMhGGIfF+QxL3zL2JAXZqaIMlXfgXkfqq+e91IyO04U=
+			S1gE8CdIaWyiZEkuCmKbMeNrjPkzDFt42ITxGD1cK5M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
