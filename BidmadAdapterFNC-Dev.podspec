@@ -30,12 +30,10 @@ Pod::Spec.new do |s|
   
   s.subspec 'ForGame' do |forgame|
     forgame.dependency 'GoogleMobileAdsMediationFacebook', '6.3.1.0'
-    forgame.platform = :ios, "10.0"
     forgame.vendored_frameworks = "BidmadAdapterFNC.framework"
   end
 
   s.subspec 'ForDayamonz' do |forgame|
-    forgame.platform = :ios, "10.0"
     forgame.vendored_frameworks = "BidmadAdapterFNC.framework"
   end
 
