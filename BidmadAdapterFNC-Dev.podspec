@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BidmadAdapterFNC-Dev"
-  s.version      = "4.2.1.0"
+  s.version      = "4.2.1.0-TEST1"
   s.platform     = :ios, "11.0"
   s.summary      = "BidmadAdapterFNC is an ad adapter with support for Facebook Audience Network, Tapjoy, AdFit, Pangle, Fyber, and ADOP ads"
   s.description  = "BidmadAdapterFNC is an ad adapter with support for Facebook Audience Network, Tapjoy, AdFit, Pangle, Fyber, and ADOP ads. Please setup BidmadSDK (4.1.0.0 or higher) first."
