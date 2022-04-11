@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ADOPUtility
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ADOPUtility
 @_exported import ADOPUtility
+import AdSupport
+import AppTrackingTransparency
 import Foundation
 import Swift
 import UIKit
-import _Concurrency
 public enum BidmadAppLovinFailCases : Swift.Int {
   case fetch_ad_timeout
   case no_network
@@ -22,11 +23,52 @@ public enum BidmadAppLovinFailCases : Swift.Int {
   case incentivized_user_closed_video
   case invalid_url
   case unknown
-  public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
   public var rawValue: Swift.Int {
     get
   }
+}
+public struct LoadableConditions : Swift.CustomStringConvertible {
+  public var loadableDuringInitProcess: Swift.Bool
+  public var loadableDuringLoading: Swift.Bool
+  public var loadableWhenLoaded: Swift.Bool
+  public var loadableDuringPlaying: Swift.Bool
+  public init(loadableDuringInitProcess: Swift.Bool, loadableDuringLoading: Swift.Bool, loadableWhenLoaded: Swift.Bool, loadableDuringPlaying: Swift.Bool = true)
+  public var description: Swift.String {
+    get
+  }
+}
+public enum AdStatus {
+  case isInitProcess
+  case isLoading
+  case isLoaded
+  case isPlaying
+  public static func == (a: ADOPUtility.AdStatus, b: ADOPUtility.AdStatus) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct AdClassStatus : Swift.CustomStringConvertible {
+  public var isInitProcess: [Foundation.UUID : Swift.Bool]
+  public var isLoading: [Foundation.UUID : Swift.Bool]
+  public var isLoaded: [Foundation.UUID : Swift.Bool]
+  public var isPlaying: [Foundation.UUID : Swift.Bool]
+  public init()
+  public var description: Swift.String {
+    get
+  }
+  public mutating func startAdCycle(target: Foundation.UUID)
+  public mutating func resetAdCycle(target: Foundation.UUID)
+  public mutating func endAdCycle(target: Foundation.UUID)
+  public mutating func statusSwitch(to status: ADOPUtility.AdStatus, target: Foundation.UUID)
+}
+public protocol BidmadLoadabilityChecker {
+  var adIdentifier: Foundation.UUID { get }
+  static var loadableConditions: ADOPUtility.LoadableConditions { get set }
+  static var adClassStatus: ADOPUtility.AdClassStatus { get set }
+  var loadableConditionsPassed: Swift.Bool { get set }
 }
 public enum bidmadSupportedBannerSize : Swift.String {
   case banner300x50
@@ -34,26 +76,26 @@ public enum bidmadSupportedBannerSize : Swift.String {
   case banner320x90
   case banner320x100
   case banner300x250
-  public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
     get
   }
 }
-extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func bidmadSetCenter(of viewToCenter: UIKit.UIView, withSize bannerSize: CoreGraphics.CGSize)
+extension UIView {
+  public func bidmadSetCenter(of viewToCenter: UIKit.UIView, withSize bannerSize: CoreGraphics.CGSize)
 }
 public struct ADOPScheduler {
   public init(_ dispatchQueue: Dispatch.DispatchQueue)
 }
-extension ADOPUtility.ADOPScheduler {
+extension ADOPScheduler {
   public func async(_ execute: @escaping () -> Swift.Void)
 }
-extension ADOPUtility.ADOPScheduler {
-  public static var main: ADOPUtility.ADOPScheduler
-  public static var userInitiated: ADOPUtility.ADOPScheduler
-  public static var background: ADOPUtility.ADOPScheduler
-  public static var utility: ADOPUtility.ADOPScheduler
+extension ADOPScheduler {
+  public static let main: ADOPUtility.ADOPScheduler
+  public static let userInitiated: ADOPUtility.ADOPScheduler
+  public static let background: ADOPUtility.ADOPScheduler
+  public static let utility: ADOPUtility.ADOPScheduler
 }
 @objc public protocol BidmadAdapterEssential {
   @objc var bidmadController: Swift.AnyObject? { get set }
@@ -74,12 +116,18 @@ extension ADOPUtility.ADOPScheduler {
   @objc func getCurrency(completionHandler: ((Foundation.NSError?, [Swift.String : Any]?) -> Swift.Void)?)
   @objc func spendCurrency(_ amount: Swift.Int, completionHandler: ((Foundation.NSError?, [Swift.String : Any]?) -> Swift.Void)?)
 }
+@objc @_inheritsConvenienceInitializers @objcMembers open class ADOPObjCUtility : ObjectiveC.NSObject {
+  @objc public static func shouldNetworkReq(criterion adWeight: Swift.AnyObject?) -> Swift.Bool
+  @objc public static func identifierForAdvertising() -> Swift.String?
+  @objc deinit
+  @objc override dynamic public init()
+}
 @frozen public enum ADOPEvent<E> {
   case next(E)
   case error(Swift.Error)
   case completed
 }
-extension ADOPUtility.ADOPEvent : Swift.CustomStringConvertible {
+extension ADOPEvent : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
@@ -95,10 +143,10 @@ public enum BidmadInnerCallbackCases {
   case INIT
   case INIT_FAIL
   public static func == (a: ADOPUtility.BidmadInnerCallbackCases, b: ADOPUtility.BidmadInnerCallbackCases) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum BidmadFailCase : Swift.String {
   case unsupportedbannersize
@@ -113,8 +161,8 @@ public enum BidmadFailCase : Swift.String {
   case timeout
   case noresponse
   case cannotLoadWhilePlaying
-  public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
     get
   }
@@ -132,7 +180,10 @@ public enum BidmadFailCase : Swift.String {
   @objc required public init(appID: Swift.String, pubID: Swift.String?, rootVC: UIKit.UIViewController, parentView: UIKit.UIView?, isChild: Foundation.NSNumber?, isGDPRConsent: Foundation.NSNumber?, isCCPAConsent: Foundation.NSNumber?)
   public func bidmadInnerCallback(innerCallbackCase: ADOPUtility.BidmadInnerCallbackCases, error: ADOPUtility.BidmadFailCase? = nil, message: Swift.String? = nil)
   @objc public static func ifRespondsPerform(_ callbackController: Swift.AnyObject, methodToCall: Swift.String, with object1: Any? = nil, with object2: Any? = nil)
+  public static func initialLoadabilityCheck<T>(classToCheck: T.Type) -> Swift.Bool where T : ADOPUtility.BidmadLoadabilityChecker
+  public static func reasonForLoadabilityCheckFail<T>(classToCheck: T.Type) -> Swift.String where T : ADOPUtility.BidmadLoadabilityChecker
   @objc deinit
+  @objc override dynamic public init()
 }
 public class ADOPPublishSubject<E> : ADOPUtility.ADOPObservableType, ADOPUtility.ADOPObserverType {
   public init()
@@ -161,6 +212,25 @@ public class ADOPDisposer : ADOPUtility.ADOPDisposable {
   public func setDispose(_ dispose: @escaping () -> Swift.Void)
   @objc deinit
 }
+extension ADOPObservableType {
+  public func timeout(_ dueTime: Dispatch.DispatchTime) -> ADOPUtility.ADOPObservable<Self.Element>
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class BidmadTestEnvironment : ObjectiveC.NSObject {
+  @objc public static var testMode: Swift.Bool
+  @objc public static var testOverrideJSON: Foundation.NSString?
+  @objc public static func displayText(_ text: Swift.String)
+  @objc public static func topViewController(base: UIKit.UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIKit.UIViewController?
+  @objc public static func getTestADOPRewardVideoForSuccessCase() -> Foundation.Data
+  @objc public static func getTestADOPRewardVideoForFailCase() -> Foundation.Data
+  @objc public static func getTestRewardVideoForSuccessCase() -> Foundation.Data
+  @objc public static func getTestInterstitialForSuccessCase() -> Foundation.Data
+  @objc public static func getTestInterstitialForFailCase() -> Foundation.Data
+  @objc public static func getTestBannerForSuccessCase() -> Foundation.Data
+  @objc public static func getTestBannerForFailCase() -> Foundation.Data
+  @objc public static func getTestBannerForSuccessCase_RAW() -> Foundation.Data
+  @objc deinit
+  @objc override dynamic public init()
+}
 public protocol ADOPObservableType {
   associatedtype Element
   func subscribe<Observer>(_ observer: Observer) -> ADOPUtility.ADOPDisposable where Observer : ADOPUtility.ADOPObserverType, Self.Element == Observer.Element
@@ -172,18 +242,31 @@ public class ADOPObservable<E> : ADOPUtility.ADOPObservableType {
   public func subscribe<Observer>(_ observer: Observer) -> ADOPUtility.ADOPDisposable where E == Observer.Element, Observer : ADOPUtility.ADOPObserverType
   @objc deinit
 }
-extension ADOPUtility.ADOPObservable {
+extension ADOPObservable {
   public static func create(_ subscribe: @escaping (ADOPUtility.ADOPObserver<E>) -> ADOPUtility.ADOPDisposable) -> ADOPUtility.ADOPObservable<E>
 }
-extension ADOPUtility.ADOPObservableType {
+extension ADOPObservableType {
   public func asObservable() -> ADOPUtility.ADOPObservable<Self.Element>
 }
-extension ADOPUtility.ADOPObservableType {
+extension ADOPObservableType {
   public func subscribeOn(_ scheduler: ADOPUtility.ADOPScheduler) -> ADOPUtility.ADOPObservable<Self.Element>
 }
-extension ADOPUtility.ADOPObservableType {
+extension ADOPObservableType {
   public func observeOn(_ scheduler: ADOPUtility.ADOPScheduler) -> ADOPUtility.ADOPObservable<Self.Element>
 }
-extension ADOPUtility.ADOPObservableType {
+extension ADOPObservableType {
   public func map<R>(_ transform: @escaping (Self.Element) -> R) -> ADOPUtility.ADOPObservable<R>
 }
+extension ADOPUtility.BidmadAppLovinFailCases : Swift.Equatable {}
+extension ADOPUtility.BidmadAppLovinFailCases : Swift.Hashable {}
+extension ADOPUtility.BidmadAppLovinFailCases : Swift.RawRepresentable {}
+extension ADOPUtility.AdStatus : Swift.Equatable {}
+extension ADOPUtility.AdStatus : Swift.Hashable {}
+extension ADOPUtility.bidmadSupportedBannerSize : Swift.Equatable {}
+extension ADOPUtility.bidmadSupportedBannerSize : Swift.Hashable {}
+extension ADOPUtility.bidmadSupportedBannerSize : Swift.RawRepresentable {}
+extension ADOPUtility.BidmadInnerCallbackCases : Swift.Equatable {}
+extension ADOPUtility.BidmadInnerCallbackCases : Swift.Hashable {}
+extension ADOPUtility.BidmadFailCase : Swift.Equatable {}
+extension ADOPUtility.BidmadFailCase : Swift.Hashable {}
+extension ADOPUtility.BidmadFailCase : Swift.RawRepresentable {}

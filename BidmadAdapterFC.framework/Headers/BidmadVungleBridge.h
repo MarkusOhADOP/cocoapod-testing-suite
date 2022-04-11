@@ -23,6 +23,7 @@ typedef void (^BidmadVungleShowAction)(BidmadVungleFullscreen);
 
 @interface BidmadVungleBridge : NSObject
 
+- (BOOL)isSDKInitialized;
 - (void)startWithAppId:(nonnull NSString *)appID completion:(BidmadVungleInitAction _Nonnull)action;
 - (void)loadBannerWithPlacementID:(NSString * _Nonnull)placementID withSize:(CGSize)bannerSize completion:(BidmadVungleLoadAction _Nonnull)action;
 - (void)loadInterstitialWithPlacementID:(NSString * _Nonnull)placementID completion:(BidmadVungleLoadAction _Nonnull)action;

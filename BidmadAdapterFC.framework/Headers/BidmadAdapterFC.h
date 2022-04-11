@@ -17,3 +17,5 @@ FOUNDATION_EXPORT const unsigned char BidmadAdapterFCVersionString[];
 
 #import "BidmadIronSourceBridge.h"
 #import "BidmadVungleBridge.h"
+#import <BidmadAdapterFC/BidmadAdColonyInterface.h>
+#import <BidmadAdapterFC/BidmadInMobiInterface.h>
