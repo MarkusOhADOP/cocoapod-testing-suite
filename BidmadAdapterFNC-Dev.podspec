@@ -33,16 +33,29 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'ForGame' do |forgame|
+    forgame.platform = :ios, "11.0"
     forgame.dependency 'AppLovinMediationFacebookAdapter', '6.9.0.9'
     forgame.dependency 'GoogleMobileAdsMediationFacebook', '6.9.0.0'
     forgame.dependency 'AppLovinMediationMyTargetAdapter', '5.15.1.0'
-    forgame.platform = :ios, "11.0"
     forgame.vendored_frameworks = "BidmadAdapterFNC.framework"
   end
   
   s.subspec 'Xcode12Compatibility' do |xcode12Compatibility|
     xcode12Compatibility.platform = :ios, "11.0"
+    xcode12Compatibility.dependency 'AppLovinMediationFacebookAdapter', '6.3.1.0'
+    xcode12Compatibility.dependency 'GoogleMobileAdsMediationFacebook', '6.3.1.0'
     xcode12Compatibility.vendored_frameworks = "BidmadAdapterFNC.framework"
+  end
+
+  s.subspec 'ExcludeFacebook' do |excludeFacebook|
+    excludeFacebook.platform = :ios, "11.0"
+    excludeFacebook.dependency 'AppLovinMediationMyTargetAdapter', '5.15.1.0'
+    excludeFacebook.vendored_frameworks = "BidmadAdapterFNC.framework"
+  end
+
+  s.subspec 'Xcode12CompatibilityAndExcludeFacebook' do |xcode12CompatibilityAndExcludeFacebook|
+    xcode12CompatibilityAndExcludeFacebook.platform = :ios, "11.0"
+    xcode12CompatibilityAndExcludeFacebook.vendored_frameworks = "BidmadAdapterFNC.framework"
   end
 
 end
