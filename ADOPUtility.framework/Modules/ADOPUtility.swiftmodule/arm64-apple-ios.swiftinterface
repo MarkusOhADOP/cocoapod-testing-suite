@@ -5,6 +5,7 @@
 import AdSupport
 import AppTrackingTransparency
 import Foundation
+import Network
 import Swift
 import UIKit
 public enum BidmadAppLovinFailCases : Swift.Int {
@@ -119,6 +120,13 @@ extension ADOPScheduler {
 @objc @_inheritsConvenienceInitializers @objcMembers open class ADOPObjCUtility : ObjectiveC.NSObject {
   @objc public static func shouldNetworkReq(criterion adWeight: Swift.AnyObject?) -> Swift.Bool
   @objc public static func identifierForAdvertising() -> Swift.String?
+  @objc public static func repeatAction(_ action: @escaping () -> Swift.Void, for seconds: Swift.Double, _ shouldStop: ADOPUtility.ADOPRepeatStopper? = nil) -> ADOPUtility.ADOPRepeatStopper
+  @objc public static func logger(_ stringToPrint: [Swift.String])
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class ADOPRepeatStopper : ObjectiveC.NSObject {
+  @objc public var shouldStop: Foundation.NSNumber
   @objc deinit
   @objc override dynamic public init()
 }
@@ -215,10 +223,19 @@ public class ADOPDisposer : ADOPUtility.ADOPDisposable {
 extension ADOPObservableType {
   public func timeout(_ dueTime: Dispatch.DispatchTime) -> ADOPUtility.ADOPObservable<Self.Element>
 }
+@objc public protocol BIDMADNativeAdCommonInterface {
+  @objc var isAdMob: Swift.Bool { get set }
+  @objc init(with appid: Swift.String, placementId: Swift.String?, bidmadController: Swift.AnyObject, isDebug: Swift.Bool, isChildDirectedAds: Foundation.NSNumber?, loadCallback: @escaping ((ADOPUtility.BidmadNativeAdDataInterface?) -> Swift.Void), clickCallback: @escaping ((ADOPUtility.BidmadNativeAdDataInterface?) -> Swift.Void))
+  @objc func remove()
+}
+public protocol BIDMADNativeAdCallbacks {
+  var loadCallback: ((ADOPUtility.BidmadNativeAdDataInterface?) -> Swift.Void) { get }
+  var clickCallback: ((ADOPUtility.BidmadNativeAdDataInterface) -> Swift.Void) { get }
+}
 @objc @_inheritsConvenienceInitializers @objcMembers open class BidmadTestEnvironment : ObjectiveC.NSObject {
   @objc public static var testMode: Swift.Bool
   @objc public static var testOverrideJSON: Foundation.NSString?
-  @objc public static func displayText(_ text: Swift.String)
+  @objc public static func displayText(_ text: Swift.String, bottomPosition: Swift.Bool = false)
   @objc public static func topViewController(base: UIKit.UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIKit.UIViewController?
   @objc public static func getTestADOPRewardVideoForSuccessCase() -> Foundation.Data
   @objc public static func getTestADOPRewardVideoForFailCase() -> Foundation.Data
@@ -256,6 +273,24 @@ extension ADOPObservableType {
 }
 extension ADOPObservableType {
   public func map<R>(_ transform: @escaping (Self.Element) -> R) -> ADOPUtility.ADOPObservable<R>
+  public func flatMap<R>(_ transform: @escaping (Self.Element) -> ADOPUtility.ADOPObservable<R>) -> ADOPUtility.ADOPObservable<R>
+}
+@objc public protocol BidmadNativeAdDataInterface {
+  @objc init(identifier: Swift.Int)
+  @objc var headline: Swift.String? { get set }
+  @objc var body: Swift.String? { get set }
+  @objc var callToAction: Swift.String? { get set }
+  @objc var icon: UIKit.UIImage? { get set }
+  @objc var starRating: Foundation.NSDecimalNumber? { get set }
+  @objc var store: Swift.String? { get set }
+  @objc var price: Swift.String? { get set }
+  @objc var advertiser: Swift.String? { get set }
+  @objc var nativeAdAdMob: Swift.AnyObject? { get set }
+  @objc var nativeAdPangle: Swift.AnyObject? { get set }
+  @objc var pangleMediaImageURL: Swift.String? { get set }
+  @objc var pangleMediaVideoView: UIKit.UIView? { get set }
+  @objc var description: Swift.String { get }
+  @objc func remove()
 }
 extension ADOPUtility.BidmadAppLovinFailCases : Swift.Equatable {}
 extension ADOPUtility.BidmadAppLovinFailCases : Swift.Hashable {}

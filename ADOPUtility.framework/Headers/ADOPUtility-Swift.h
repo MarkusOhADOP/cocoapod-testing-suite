@@ -207,17 +207,36 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class ADOPRepeatStopper;
 
 SWIFT_CLASS("_TtC11ADOPUtility15ADOPObjCUtility")
 @interface ADOPObjCUtility : NSObject
 + (BOOL)shouldNetworkReqWithCriterion:(id _Nullable)adWeight SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)identifierForAdvertising SWIFT_WARN_UNUSED_RESULT;
++ (ADOPRepeatStopper * _Nonnull)repeatAction:(void (^ _Nonnull)(void))action for:(double)seconds :(ADOPRepeatStopper * _Nullable)shouldStop SWIFT_WARN_UNUSED_RESULT;
++ (void)logger:(NSArray<NSString *> * _Nonnull)stringToPrint;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSNumber;
+
+SWIFT_CLASS("_TtC11ADOPUtility17ADOPRepeatStopper")
+@interface ADOPRepeatStopper : NSObject
+@property (nonatomic, strong) NSNumber * _Nonnull shouldStop;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@protocol BidmadNativeAdDataInterface;
+
+SWIFT_PROTOCOL("_TtP11ADOPUtility29BIDMADNativeAdCommonInterface_")
+@protocol BIDMADNativeAdCommonInterface
+@property (nonatomic) BOOL isAdMob;
+- (nonnull instancetype)initWith:(NSString * _Nonnull)appid placementId:(NSString * _Nullable)placementId bidmadController:(id _Nonnull)bidmadController isDebug:(BOOL)isDebug isChildDirectedAds:(NSNumber * _Nullable)isChildDirectedAds loadCallback:(void (^ _Nonnull)(id <BidmadNativeAdDataInterface> _Nullable))loadCallback clickCallback:(void (^ _Nonnull)(id <BidmadNativeAdDataInterface> _Nullable))clickCallback;
+- (void)remove;
 @end
 
 @class UIViewController;
 @class UIView;
-@class NSNumber;
 
 SWIFT_CLASS("_TtC11ADOPUtility24BidmadAdapterAdEssential")
 @interface BidmadAdapterAdEssential : NSObject
@@ -268,6 +287,28 @@ SWIFT_PROTOCOL("_TtP11ADOPUtility29BidmadAdapterRewardAdditional_")
 - (void)setIsRewardedAd:(BOOL)isRewardedAd;
 @end
 
+@class UIImage;
+@class NSDecimalNumber;
+
+SWIFT_PROTOCOL("_TtP11ADOPUtility27BidmadNativeAdDataInterface_")
+@protocol BidmadNativeAdDataInterface
+- (nonnull instancetype)initWithIdentifier:(NSInteger)identifier;
+@property (nonatomic, copy) NSString * _Nullable headline;
+@property (nonatomic, copy) NSString * _Nullable body;
+@property (nonatomic, copy) NSString * _Nullable callToAction;
+@property (nonatomic, strong) UIImage * _Nullable icon;
+@property (nonatomic, strong) NSDecimalNumber * _Nullable starRating;
+@property (nonatomic, copy) NSString * _Nullable store;
+@property (nonatomic, copy) NSString * _Nullable price;
+@property (nonatomic, copy) NSString * _Nullable advertiser;
+@property (nonatomic, strong) id _Nullable nativeAdAdMob;
+@property (nonatomic, strong) id _Nullable nativeAdPangle;
+@property (nonatomic, copy) NSString * _Nullable pangleMediaImageURL;
+@property (nonatomic, strong) UIView * _Nullable pangleMediaVideoView;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (void)remove;
+@end
+
 @class NSString;
 
 SWIFT_CLASS("_TtC11ADOPUtility21BidmadTestEnvironment")
@@ -278,7 +319,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL testMode;)
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) NSString * _Nullable testOverrideJSON;)
 + (NSString * _Nullable)testOverrideJSON SWIFT_WARN_UNUSED_RESULT;
 + (void)setTestOverrideJSON:(NSString * _Nullable)value;
-+ (void)displayText:(NSString * _Nonnull)text;
++ (void)displayText:(NSString * _Nonnull)text bottomPosition:(BOOL)bottomPosition;
 + (UIViewController * _Nullable)topViewControllerWithBase:(UIViewController * _Nullable)base SWIFT_WARN_UNUSED_RESULT;
 + (NSData * _Nonnull)getTestADOPRewardVideoForSuccessCase SWIFT_WARN_UNUSED_RESULT;
 + (NSData * _Nonnull)getTestADOPRewardVideoForFailCase SWIFT_WARN_UNUSED_RESULT;

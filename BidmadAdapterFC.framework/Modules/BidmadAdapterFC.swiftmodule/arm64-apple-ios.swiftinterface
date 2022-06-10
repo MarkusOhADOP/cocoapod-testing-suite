@@ -47,43 +47,12 @@ import UnityAds
   @objc public func sendLog(_ log: Swift.String, level: BidmadAdapterFC.BidmadISLogLevel, tag: BidmadAdapterFC.BidmadLogTag)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objcMembers open class BidmadAppLovinMaxEssential : ADOPUtility.BidmadAdapterAdEssential {
-  @objc public func remove()
-  @objc deinit
-  @objc required public init(appID: Swift.String, pubID: Swift.String?, rootVC: UIKit.UIViewController, parentView: UIKit.UIView?, isChild: Foundation.NSNumber?, isGDPRConsent: Foundation.NSNumber?, isCCPAConsent: Foundation.NSNumber?)
-}
-@_inheritsConvenienceInitializers @objcMembers open class BidmadAppLovinMaxBanner : BidmadAdapterFC.BidmadAppLovinMaxEssential, AppLovinSDK.MAAdViewAdDelegate, ADOPUtility.BidmadLoadabilityChecker {
-  @objc public var adIdentifier: Foundation.UUID
-  public static var loadableConditions: ADOPUtility.LoadableConditions
-  public static var adClassStatus: ADOPUtility.AdClassStatus
-  @objc public var loadableConditionsPassed: Swift.Bool
-  @objc public static var APPLOVIN_TEST_APPID: Swift.String
-  @objc public static var APPLOVIN_TEST_SDK_KEY: Swift.String
-  @objc public static var PREFIX: Swift.String
-  @objc required public init(appID: Swift.String, pubID: Swift.String?, rootVC: UIKit.UIViewController, parentView: UIKit.UIView?, isChild: Foundation.NSNumber?, isGDPRConsent: Foundation.NSNumber?, isCCPAConsent: Foundation.NSNumber?)
-  @objc override public func remove()
-  @objc public func load()
-  @objc public func setIsDebug(_ isDebug: Swift.Bool)
-  @objc public func setBannerSize(_ sizeString: Swift.String)
-  @objc public func show()
-  @objc public func hide()
-  @objc public func didExpand(_ ad: AppLovinSDK.MAAd)
-  @objc public func didCollapse(_ ad: AppLovinSDK.MAAd)
-  @objc public func didLoad(_ ad: AppLovinSDK.MAAd)
-  @objc public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: Swift.String, withError error: AppLovinSDK.MAError)
-  @objc public func didDisplay(_ ad: AppLovinSDK.MAAd)
-  @objc public func didHide(_ ad: AppLovinSDK.MAAd)
-  @objc public func didClick(_ ad: AppLovinSDK.MAAd)
-  @objc public func didFail(toDisplay ad: AppLovinSDK.MAAd, withError error: AppLovinSDK.MAError)
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @objcMembers open class BidmadInMobiInterstitial : BidmadAdapterFC.BidmadInMobiEssential, BidmadAdapterFC.BidmadIMInterstitialDelegate {
   @objc public static var PREFIX: Swift.String
   @objc required public init(appID: Swift.String, pubID: Swift.String?, rootVC: UIKit.UIViewController, parentView: UIKit.UIView?, isChild: Foundation.NSNumber?, isGDPRConsent: Foundation.NSNumber?, isCCPAConsent: Foundation.NSNumber?)
   @objc public func load()
   @objc public func shouldLoadAd()
   @objc public func show()
-  @objc public func remove()
   @objc public func setIsDebug(_ isDebug: Swift.Bool)
   @objc public func setIsRewardedAd(_ isRewardedAd: Swift.Bool)
   @objc public func interstitialDidFinishLoading(_ interstitial: Any)
@@ -91,6 +60,7 @@ import UnityAds
   @objc public func interstitialDidPresent(_ interstitial: Any)
   @objc public func interstitial(_ interstitial: Any, didFailToPresentWithError error: Any)
   @objc public func interstitialDidDismiss(_ interstitial: Any)
+  @objc public func remove()
   @objc public func interstitial(_ interstitial: Any, didInteractWithParams params: Any)
   @objc public func interstitial(_ interstitial: Any, rewardActionCompletedWithRewards rewards: Any)
   @objc deinit
@@ -185,27 +155,6 @@ import UnityAds
   @objc public func unityAdsShowClick(_ placementId: Swift.String)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objcMembers open class BidmadAppLovinMaxInterstitial : BidmadAdapterFC.BidmadAppLovinMaxEssential, AppLovinSDK.MAAdDelegate, ADOPUtility.BidmadLoadabilityChecker {
-  @objc public var adIdentifier: Foundation.UUID
-  public static var adClassStatus: ADOPUtility.AdClassStatus
-  @objc public static var APPLOVIN_TEST_APPID: Swift.String
-  @objc public static var APPLOVIN_TEST_SDK_KEY: Swift.String
-  @objc public static var PREFIX: Swift.String
-  public static var loadableConditions: ADOPUtility.LoadableConditions
-  @objc public var loadableConditionsPassed: Swift.Bool
-  @objc required public init(appID: Swift.String, pubID: Swift.String?, rootVC: UIKit.UIViewController, parentView: UIKit.UIView?, isChild: Foundation.NSNumber?, isGDPRConsent: Foundation.NSNumber?, isCCPAConsent: Foundation.NSNumber?)
-  @objc override public func remove()
-  @objc public func load()
-  @objc public func setIsDebug(_ isDebug: Swift.Bool)
-  @objc public func show()
-  @objc public func didLoad(_ ad: AppLovinSDK.MAAd)
-  @objc public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: Swift.String, withError error: AppLovinSDK.MAError)
-  @objc public func didDisplay(_ ad: AppLovinSDK.MAAd)
-  @objc public func didHide(_ ad: AppLovinSDK.MAAd)
-  @objc public func didClick(_ ad: AppLovinSDK.MAAd)
-  @objc public func didFail(toDisplay ad: AppLovinSDK.MAAd, withError error: AppLovinSDK.MAError)
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @objcMembers open class BidmadAdColonyInterstitial : ADOPUtility.BidmadAdapterAdEssential, BidmadAdapterFC.BidmadADCInterstitialDelegate {
   @objc required public init(appID: Swift.String, pubID: Swift.String?, rootVC: UIKit.UIViewController, parentView: UIKit.UIView?, isChild: Foundation.NSNumber?, isGDPRConsent: Foundation.NSNumber?, isCCPAConsent: Foundation.NSNumber?)
   @objc public func load()
@@ -252,29 +201,6 @@ import UnityAds
   @objc public func bannerDidFinishLoading(_ banner: Any)
   @objc public func banner(_ banner: Any, didFailToLoadWithError error: Any)
   @objc public func banner(_ banner: Any, didInteractWithParams params: Any)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objcMembers open class BidmadAppLovinMaxReward : BidmadAdapterFC.BidmadAppLovinMaxEssential, AppLovinSDK.MARewardedAdDelegate, ADOPUtility.BidmadLoadabilityChecker {
-  @objc public var adIdentifier: Foundation.UUID
-  public static var adClassStatus: ADOPUtility.AdClassStatus
-  public static var loadableConditions: ADOPUtility.LoadableConditions
-  @objc public var loadableConditionsPassed: Swift.Bool
-  @objc public static var PREFIX: Swift.String
-  @objc required public init(appID: Swift.String, pubID: Swift.String?, rootVC: UIKit.UIViewController, parentView: UIKit.UIView?, isChild: Foundation.NSNumber?, isGDPRConsent: Foundation.NSNumber?, isCCPAConsent: Foundation.NSNumber?)
-  @objc override public func remove()
-  @objc public func load()
-  @objc public func setIsDebug(_ isDebug: Swift.Bool)
-  @objc public func show()
-  @objc public func setIsRewardedAd(_ isRewardedAd: Swift.Bool)
-  @objc public func didStartRewardedVideo(for ad: AppLovinSDK.MAAd)
-  @objc public func didCompleteRewardedVideo(for ad: AppLovinSDK.MAAd)
-  @objc public func didRewardUser(for ad: AppLovinSDK.MAAd, with reward: AppLovinSDK.MAReward)
-  @objc public func didLoad(_ ad: AppLovinSDK.MAAd)
-  @objc public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: Swift.String, withError error: AppLovinSDK.MAError)
-  @objc public func didDisplay(_ ad: AppLovinSDK.MAAd)
-  @objc public func didHide(_ ad: AppLovinSDK.MAAd)
-  @objc public func didClick(_ ad: AppLovinSDK.MAAd)
-  @objc public func didFail(toDisplay ad: AppLovinSDK.MAAd, withError error: AppLovinSDK.MAError)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objcMembers open class BidmadUnityAdsBanner : ADOPUtility.BidmadAdapterAdEssential, UnityAds.UnityAdsInitializationDelegate, UnityAds.UADSBannerViewDelegate {

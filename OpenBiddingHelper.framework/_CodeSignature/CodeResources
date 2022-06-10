@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/OpenBiddingAdmob.h</key>
 		<data>
-		mh1eLWVSS+vclBsXDwsvf+YVmrY=
+		HojE5RtslbnngzUd556rEr0H2Ds=
 		</data>
 		<key>Headers/OpenBiddingAdmobAppOpenAd.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/OpenBiddingAppOpenAd.h</key>
 		<data>
-		43DQpsRyc6J7F3ysQffjROU/rK4=
+		g5nID++rYT9uQcVC8huHmU1HfBk=
 		</data>
 		<key>Headers/OpenBiddingBanner.h</key>
 		<data>
-		iGY7QfFaidjm+downIjvPQ2cAuw=
+		kFteZaKCMdRkcaJsNmS4MmTr9iQ=
 		</data>
 		<key>Headers/OpenBiddingCocos2dxBanner.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/OpenBiddingHelper-Swift.h</key>
 		<data>
-		bp4eIxyZKv8WAbxBH3QUfhiO3fQ=
+		+vF6t4tTc0l895kj7PLpz2ftBhQ=
 		</data>
 		<key>Headers/OpenBiddingHelper.h</key>
 		<data>
@@ -66,15 +66,15 @@
 		</data>
 		<key>Headers/OpenBiddingInterstitial.h</key>
 		<data>
-		zf5LwKl9ZN4aQnKdWNQemOV4Qkc=
+		tEm4v8yiIOQFlJ3pjoLZJVdAI9A=
 		</data>
 		<key>Headers/OpenBiddingRewardInterstitial.h</key>
 		<data>
-		jGqXpXC2JAP+HgV/4eBnoOgKOPs=
+		v/TvLWjdBJLzXd/DR2gtPH+Doik=
 		</data>
 		<key>Headers/OpenBiddingRewardVideo.h</key>
 		<data>
-		rlauFCkLe2ut9kdR9vvO6oKstUM=
+		05q4O4tqKmmpu3bZgLBEgHj1CDM=
 		</data>
 		<key>Headers/OpenBiddingUnityBanner.h</key>
 		<data>
@@ -106,15 +106,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mS9RIfBTl9eDYNIgLNp+TO5/QyM=
+		4r689a+eVtCb8kyfpob3UcOls9o=
 		</data>
 		<key>Modules/OpenBiddingHelper.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		/2IqdTXieLk/YiuVsYKMFqqY7b4=
+		nZHTXAbjbyqg0AKvZ65n+0VFth4=
 		</data>
 		<key>Modules/OpenBiddingHelper.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		/2IqdTXieLk/YiuVsYKMFqqY7b4=
+		nZHTXAbjbyqg0AKvZ65n+0VFth4=
 		</data>
 		<key>Modules/OpenBiddingHelper.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -122,11 +122,11 @@
 		</data>
 		<key>Modules/OpenBiddingHelper.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ToknlbRsro8GvGxBTFu2SKLbUhM=
+		2bLmvI/96S/Vyw/KNKV0h8akDzk=
 		</data>
 		<key>Modules/OpenBiddingHelper.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		uyz1m7/EKYx1zQrGEqheT+VD1H4=
+		JNY1M1VAmv/7wwaXOzbm5+0eUpk=
 		</data>
 		<key>Modules/OpenBiddingHelper.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -134,11 +134,11 @@
 		</data>
 		<key>Modules/OpenBiddingHelper.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		ToknlbRsro8GvGxBTFu2SKLbUhM=
+		2bLmvI/96S/Vyw/KNKV0h8akDzk=
 		</data>
 		<key>Modules/OpenBiddingHelper.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		uyz1m7/EKYx1zQrGEqheT+VD1H4=
+		JNY1M1VAmv/7wwaXOzbm5+0eUpk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -151,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mh1eLWVSS+vclBsXDwsvf+YVmrY=
+			HojE5RtslbnngzUd556rEr0H2Ds=
 			</data>
 			<key>hash2</key>
 			<data>
-			stoMwZiLSXWJm96+mJq9tiqaxTunK0MW050nUVFM6JM=
+			p+kdMRqD9zTeBMj8VfFHG62ZptFgoc66uhltQWJTxEw=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingAdmobAppOpenAd.h</key>
@@ -173,22 +173,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			43DQpsRyc6J7F3ysQffjROU/rK4=
+			g5nID++rYT9uQcVC8huHmU1HfBk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pELzE1JZqbHer8AqvWgOQMudnVcv1FeQve4LWhl945w=
+			KQVqVxunv64oyWSG+vxKMfrrt+iD+SQht0FFXhJ85ys=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingBanner.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iGY7QfFaidjm+downIjvPQ2cAuw=
+			kFteZaKCMdRkcaJsNmS4MmTr9iQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			2ke0ntitIav6g07c3GlMYkES/ygOEmBtwMVYLvh+s8Y=
+			/kLAFZJXH3GG5GnGEUJMWu9fIyVEz0leuN9VbCfa0pc=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingCocos2dxBanner.h</key>
@@ -294,11 +294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bp4eIxyZKv8WAbxBH3QUfhiO3fQ=
+			+vF6t4tTc0l895kj7PLpz2ftBhQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			46/bL8THqjpfjy6alz1v0Y6qdY6U8+JtpejXtNewoQg=
+			hs++dPk7LK7OWlqECOVj4xu4hzSTWhCq+fpp2B+oajw=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingHelper.h</key>
@@ -316,33 +316,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zf5LwKl9ZN4aQnKdWNQemOV4Qkc=
+			tEm4v8yiIOQFlJ3pjoLZJVdAI9A=
 			</data>
 			<key>hash2</key>
 			<data>
-			+GCsFyx2PXQpMi/WBLCH67Sqo1OTlr+5zm++n6eKhDI=
+			6go6EeDkZ9X0eoduaWPYdvCCfjp68k678jq1GsNsMbI=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingRewardInterstitial.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jGqXpXC2JAP+HgV/4eBnoOgKOPs=
+			v/TvLWjdBJLzXd/DR2gtPH+Doik=
 			</data>
 			<key>hash2</key>
 			<data>
-			dLBukLC3V2+62GIwJyjvsV2lr9O38OjHMoR3+3ytjWU=
+			Ror4UxFr98FULG0wFzGrt8MLPac2bC71jjYqARsqe3M=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingRewardVideo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rlauFCkLe2ut9kdR9vvO6oKstUM=
+			05q4O4tqKmmpu3bZgLBEgHj1CDM=
 			</data>
 			<key>hash2</key>
 			<data>
-			SBNedy2IoYSt44aR8Z9PTcXQRYxJEVApCyW3vmpCnkM=
+			cKRHqyG6W76Q6sdG1eJsDpWW4ZbdX+2PZT4wAb52cSo=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingUnityBanner.h</key>
@@ -426,22 +426,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/2IqdTXieLk/YiuVsYKMFqqY7b4=
+			nZHTXAbjbyqg0AKvZ65n+0VFth4=
 			</data>
 			<key>hash2</key>
 			<data>
-			1BPeUrR6hqfJFVEVZasAbeaQeDKG4aMjXNiGNQL+JzY=
+			EuJS/iON8kw8Pdfi+rX2dGDFePMOOGL+ReeuE24f7fs=
 			</data>
 		</dict>
 		<key>Modules/OpenBiddingHelper.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/2IqdTXieLk/YiuVsYKMFqqY7b4=
+			nZHTXAbjbyqg0AKvZ65n+0VFth4=
 			</data>
 			<key>hash2</key>
 			<data>
-			1BPeUrR6hqfJFVEVZasAbeaQeDKG4aMjXNiGNQL+JzY=
+			EuJS/iON8kw8Pdfi+rX2dGDFePMOOGL+ReeuE24f7fs=
 			</data>
 		</dict>
 		<key>Modules/OpenBiddingHelper.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -459,22 +459,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ToknlbRsro8GvGxBTFu2SKLbUhM=
+			2bLmvI/96S/Vyw/KNKV0h8akDzk=
 			</data>
 			<key>hash2</key>
 			<data>
-			aErAal8qHRYtoBhZuyZsBD2S0F7K9/eBo0UPQb36JTw=
+			vtSESVCkvMer6oIzTR6dMazgDI0FpSB8S5rC+vNzOn0=
 			</data>
 		</dict>
 		<key>Modules/OpenBiddingHelper.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uyz1m7/EKYx1zQrGEqheT+VD1H4=
+			JNY1M1VAmv/7wwaXOzbm5+0eUpk=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Fr1pCQnin3yJV0HMdbyj5YUCFj35i044SxRE0iaeLI=
+			ZAQtf5dfohPWmLVrl31zV7vLpoXqBl/ZzsD5LXDekDA=
 			</data>
 		</dict>
 		<key>Modules/OpenBiddingHelper.swiftmodule/arm64.swiftdoc</key>
@@ -492,22 +492,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ToknlbRsro8GvGxBTFu2SKLbUhM=
+			2bLmvI/96S/Vyw/KNKV0h8akDzk=
 			</data>
 			<key>hash2</key>
 			<data>
-			aErAal8qHRYtoBhZuyZsBD2S0F7K9/eBo0UPQb36JTw=
+			vtSESVCkvMer6oIzTR6dMazgDI0FpSB8S5rC+vNzOn0=
 			</data>
 		</dict>
 		<key>Modules/OpenBiddingHelper.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uyz1m7/EKYx1zQrGEqheT+VD1H4=
+			JNY1M1VAmv/7wwaXOzbm5+0eUpk=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Fr1pCQnin3yJV0HMdbyj5YUCFj35i044SxRE0iaeLI=
+			ZAQtf5dfohPWmLVrl31zV7vLpoXqBl/ZzsD5LXDekDA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

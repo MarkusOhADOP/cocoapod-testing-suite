@@ -188,6 +188,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ADOPUtility;
 @import AVFoundation;
 @import BUAdSDK;
 @import GoogleMobileAds;
@@ -231,52 +232,24 @@ SWIFT_CLASS("_TtC16BidmadAdapterFNC17ATOMRewardedVideo")
 
 
 @class NSNumber;
-
-SWIFT_CLASS("_TtC16BidmadAdapterFNC20BIDMADPangleNativeAd")
-@interface BIDMADPangleNativeAd : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ASYNC_DEALLOCATED_WARNING;)
-+ (NSString * _Nonnull)ASYNC_DEALLOCATED_WARNING SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWith:(NSString * _Nonnull)appid placementId:(NSString * _Nullable)placementId nativeAdMediationManager:(id _Nonnull)nativeAdMediationManager rootViewController:(UIViewController * _Nonnull)rootViewController nativeAdView:(id _Nonnull)nativeAdView isDebug:(BOOL)isDebug isChildDirectedAds:(NSNumber * _Nullable)isChildDirectedAds OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
+@protocol BidmadNativeAdDataInterface;
 @class BUNativeAdsManager;
 @class BUNativeAd;
+@class UIView;
 
-@interface BIDMADPangleNativeAd (SWIFT_EXTENSION(BidmadAdapterFNC)) <BUNativeAdsManagerDelegate>
+SWIFT_CLASS("_TtC16BidmadAdapterFNC20BIDMADPangleNativeAd")
+@interface BIDMADPangleNativeAd : NSObject <BIDMADNativeAdCommonInterface, BUNativeAdDelegate, BUNativeAdsManagerDelegate>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ASYNC_DEALLOCATED_WARNING;)
++ (NSString * _Nonnull)ASYNC_DEALLOCATED_WARNING SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic) BOOL isAdMob;
+- (nonnull instancetype)initWith:(NSString * _Nonnull)appid placementId:(NSString * _Nullable)placementId bidmadController:(id _Nonnull)bidmadController isDebug:(BOOL)isDebug isChildDirectedAds:(NSNumber * _Nullable)isChildDirectedAds loadCallback:(void (^ _Nonnull)(id <BidmadNativeAdDataInterface> _Nullable))loadCallback clickCallback:(void (^ _Nonnull)(id <BidmadNativeAdDataInterface> _Nullable))clickCallback OBJC_DESIGNATED_INITIALIZER;
+- (void)remove;
 - (void)nativeAdsManagerSuccessToLoad:(BUNativeAdsManager * _Nonnull)adsManager nativeAds:(NSArray<BUNativeAd *> * _Nullable)nativeAdDataArray;
 - (void)nativeAdsManager:(BUNativeAdsManager * _Nonnull)adsManager didFailWithError:(NSError * _Nullable)error;
-@end
-
-
-@interface BIDMADPangleNativeAd (SWIFT_EXTENSION(BidmadAdapterFNC))
-- (void)loadNativeAd;
-- (void)showNativeAd;
-- (void)hideNativeAd;
-@end
-
-@class BUVideoAdView;
-
-@interface BIDMADPangleNativeAd (SWIFT_EXTENSION(BidmadAdapterFNC)) <BUVideoAdViewDelegate>
-- (void)videoAdView:(BUVideoAdView * _Nonnull)videoAdView didLoadFailWithError:(NSError * _Nullable)error;
-- (void)videoAdView:(BUVideoAdView * _Nonnull)videoAdView stateDidChanged:(BUPlayerPlayState)playerState;
-- (void)playerDidPlayFinish:(BUVideoAdView * _Nonnull)videoAdView;
-- (void)videoAdViewDidClick:(BUVideoAdView * _Nonnull)videoAdView;
-- (void)videoAdViewFinishViewDidClick:(BUVideoAdView * _Nonnull)videoAdView;
-- (void)videoAdViewDidCloseOtherController:(BUVideoAdView * _Nonnull)videoAdView interactionType:(BUInteractionType)interactionType;
-@end
-
-@class UIView;
-@class BUDislikeWords;
-
-@interface BIDMADPangleNativeAd (SWIFT_EXTENSION(BidmadAdapterFNC)) <BUNativeAdDelegate>
-- (void)nativeAdDidLoad:(BUNativeAd * _Nonnull)nativeAd;
-- (void)nativeAd:(BUNativeAd * _Nonnull)nativeAd didFailWithError:(NSError * _Nullable)error;
 - (void)nativeAdDidBecomeVisible:(BUNativeAd * _Nonnull)nativeAd;
-- (void)nativeAdDidCloseOtherController:(BUNativeAd * _Nonnull)nativeAd interactionType:(BUInteractionType)interactionType;
 - (void)nativeAdDidClick:(BUNativeAd * _Nonnull)nativeAd withView:(UIView * _Nullable)view;
-- (void)nativeAd:(BUNativeAd * _Nullable)nativeAd dislikeWithReason:(NSArray<BUDislikeWords *> * _Nullable)filterWords;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

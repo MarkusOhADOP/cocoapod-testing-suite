@@ -36,19 +36,17 @@ import WebKit
   @objc public func setIsDebug(_ isDebug: Swift.Bool)
   @objc public func getCurrency(completionHandler: ((Foundation.NSError?, [Swift.String : Any]?) -> Swift.Void)?)
   @objc public func spendCurrency(_ amount: Swift.Int, completionHandler: ((Foundation.NSError?, [Swift.String : Any]?) -> Swift.Void)?)
-  @objc public func requestDidSucceed(_ placement: Tapjoy.TJPlacement!)
-  @objc public func contentIsReady(_ placement: Tapjoy.TJPlacement!)
-  @objc public func requestDidFail(_ placement: Tapjoy.TJPlacement!, error: Swift.Error!)
-  @objc public func contentDidAppear(_ placement: Tapjoy.TJPlacement!)
-  @objc public func contentDidDisappear(_ placement: Tapjoy.TJPlacement!)
-  @objc public func didClick(_ placement: Tapjoy.TJPlacement!)
-  @objc public func placement(_ placement: Tapjoy.TJPlacement!, didRequestPurchase request: Tapjoy.TJActionRequest!, productId: Swift.String!)
-  @objc public func placement(_ placement: Tapjoy.TJPlacement!, didRequestReward request: Tapjoy.TJActionRequest!, itemId: Swift.String!, quantity: Swift.Int32)
-  @objc public func placement(_ placement: Tapjoy.TJPlacement!, didRequestCurrency request: Tapjoy.TJActionRequest!, currency: Swift.String!, amount: Swift.Int32)
-  @objc public func placement(_ placement: Tapjoy.TJPlacement!, didRequestNavigation request: Tapjoy.TJActionRequest!, location: Swift.String!)
-  @objc public func videoDidStart(_ placement: Tapjoy.TJPlacement!)
-  @objc public func videoDidComplete(_ placement: Tapjoy.TJPlacement!)
-  @objc public func videoDidFail(_ placement: Tapjoy.TJPlacement!, error errorMsg: Swift.String!)
+  @objc public func requestDidSucceed(_ placement: Tapjoy.TJPlacement)
+  @objc public func contentIsReady(_ placement: Tapjoy.TJPlacement)
+  @objc public func requestDidFail(_ placement: Tapjoy.TJPlacement, error: Swift.Error?)
+  @objc public func contentDidAppear(_ placement: Tapjoy.TJPlacement)
+  @objc public func contentDidDisappear(_ placement: Tapjoy.TJPlacement)
+  @objc public func didClick(_ placement: Tapjoy.TJPlacement)
+  @objc public func placement(_ placement: Tapjoy.TJPlacement, didRequestPurchase request: Tapjoy.TJActionRequest?, productId: Swift.String?)
+  @objc public func placement(_ placement: Tapjoy.TJPlacement, didRequestReward request: Tapjoy.TJActionRequest?, itemId: Swift.String?, quantity: Swift.Int32)
+  @objc public func videoDidStart(_ placement: Tapjoy.TJPlacement)
+  @objc public func videoDidComplete(_ placement: Tapjoy.TJPlacement)
+  @objc public func videoDidFail(_ placement: Tapjoy.TJPlacement, error errorMsg: Swift.String?)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class BidmadAdapterFNCUtility : ObjectiveC.NSObject {
@@ -78,37 +76,19 @@ extension BidmadAdmobAdapterPangleReward : BUAdSDK.BURewardedVideoAdDelegate {
   @objc dynamic public func rewardedVideoAdDidPlayFinish(_ rewardedVideoAd: BUAdSDK.BURewardedVideoAd, didFailWithError error: Swift.Error?)
   @objc dynamic public func rewardedVideoAdServerRewardDidSucceed(_ rewardedVideoAd: BUAdSDK.BURewardedVideoAd, verify: Swift.Bool)
 }
-@objc open class BIDMADPangleNativeAd : ObjectiveC.NSObject {
+@objc open class BIDMADPangleNativeAd : ObjectiveC.NSObject, ADOPUtility.BIDMADNativeAdCommonInterface, ADOPUtility.BIDMADNativeAdCallbacks, BUAdSDK.BUNativeAdsManagerDelegate, BUAdSDK.BUNativeAdDelegate {
   @objc public static var ASYNC_DEALLOCATED_WARNING: Swift.String
-  @objc required public init(with appid: Swift.String, placementId: Swift.String?, nativeAdMediationManager: Swift.AnyObject, rootViewController: UIKit.UIViewController, nativeAdView: Swift.AnyObject, isDebug: Swift.Bool, isChildDirectedAds: Foundation.NSNumber?)
+  @objc public var isAdMob: Swift.Bool
+  final public let loadCallback: ((ADOPUtility.BidmadNativeAdDataInterface?) -> Swift.Void)
+  final public let clickCallback: ((ADOPUtility.BidmadNativeAdDataInterface) -> Swift.Void)
+  @objc required public init(with appid: Swift.String, placementId: Swift.String?, bidmadController: Swift.AnyObject, isDebug: Swift.Bool, isChildDirectedAds: Foundation.NSNumber?, loadCallback: @escaping ((ADOPUtility.BidmadNativeAdDataInterface?) -> Swift.Void), clickCallback: @escaping ((ADOPUtility.BidmadNativeAdDataInterface?) -> Swift.Void))
+  @objc public func remove()
+  @objc public func nativeAdsManagerSuccess(toLoad adsManager: BUAdSDK.BUNativeAdsManager, nativeAds nativeAdDataArray: [BUAdSDK.BUNativeAd]?)
+  @objc public func nativeAdsManager(_ adsManager: BUAdSDK.BUNativeAdsManager, didFailWithError error: Swift.Error?)
+  @objc public func nativeAdDidBecomeVisible(_ nativeAd: BUAdSDK.BUNativeAd)
+  @objc public func nativeAdDidClick(_ nativeAd: BUAdSDK.BUNativeAd, with view: UIKit.UIView?)
   @objc deinit
   @objc override dynamic public init()
-}
-extension BIDMADPangleNativeAd {
-  @objc dynamic public func loadNativeAd()
-  @objc dynamic public func showNativeAd()
-  @objc dynamic public func hideNativeAd()
-  public func remove()
-}
-extension BIDMADPangleNativeAd : BUAdSDK.BUNativeAdsManagerDelegate {
-  @objc dynamic public func nativeAdsManagerSuccess(toLoad adsManager: BUAdSDK.BUNativeAdsManager, nativeAds nativeAdDataArray: [BUAdSDK.BUNativeAd]?)
-  @objc dynamic public func nativeAdsManager(_ adsManager: BUAdSDK.BUNativeAdsManager, didFailWithError error: Swift.Error?)
-}
-extension BIDMADPangleNativeAd : BUAdSDK.BUNativeAdDelegate {
-  @objc dynamic public func nativeAdDidLoad(_ nativeAd: BUAdSDK.BUNativeAd)
-  @objc dynamic public func nativeAd(_ nativeAd: BUAdSDK.BUNativeAd, didFailWithError error: Swift.Error?)
-  @objc dynamic public func nativeAdDidBecomeVisible(_ nativeAd: BUAdSDK.BUNativeAd)
-  @objc dynamic public func nativeAdDidCloseOtherController(_ nativeAd: BUAdSDK.BUNativeAd, interactionType: BUAdSDK.BUInteractionType)
-  @objc dynamic public func nativeAdDidClick(_ nativeAd: BUAdSDK.BUNativeAd, with view: UIKit.UIView?)
-  @objc dynamic public func nativeAd(_ nativeAd: BUAdSDK.BUNativeAd?, dislikeWithReason filterWords: [BUAdSDK.BUDislikeWords]?)
-}
-extension BIDMADPangleNativeAd : BUAdSDK.BUVideoAdViewDelegate {
-  @objc dynamic public func videoAdView(_ videoAdView: BUAdSDK.BUVideoAdView, didLoadFailWithError error: Swift.Error?)
-  @objc dynamic public func videoAdView(_ videoAdView: BUAdSDK.BUVideoAdView, stateDidChanged playerState: BUAdSDK.BUPlayerPlayState)
-  @objc dynamic public func playerDidPlayFinish(_ videoAdView: BUAdSDK.BUVideoAdView)
-  @objc dynamic public func videoAdViewDidClick(_ videoAdView: BUAdSDK.BUVideoAdView)
-  @objc dynamic public func videoAdViewFinishViewDidClick(_ videoAdView: BUAdSDK.BUVideoAdView)
-  @objc dynamic public func videoAdViewDidCloseOtherController(_ videoAdView: BUAdSDK.BUVideoAdView, interactionType: BUAdSDK.BUInteractionType)
 }
 @_inheritsConvenienceInitializers @objcMembers open class BidmadFyberInterstitial : ADOPUtility.BidmadAdapterAdEssential, ADOPUtility.BidmadAdapterEssential, ADOPUtility.BidmadAdapterRewardAdditional, IASDKCore.IAVideoContentDelegate, IASDKCore.IAMRAIDContentDelegate, IASDKCore.IAUnitDelegate {
   @objc required public init(appID: Swift.String, pubID: Swift.String?, rootVC: UIKit.UIViewController, parentView: UIKit.UIView?, isChild: Foundation.NSNumber?, isGDPRConsent: Foundation.NSNumber?, isCCPAConsent: Foundation.NSNumber?)

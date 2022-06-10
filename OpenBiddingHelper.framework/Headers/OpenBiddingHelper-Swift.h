@@ -215,6 +215,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC17OpenBiddingHelper15BidmadAppOpenAd")
 @interface BidmadAppOpenAd : NSObject
 @property (nonatomic, strong) id <OpenBiddingAppOpenAdDelegate> _Nullable delegate;
+@property (nonatomic) BOOL isAutoReload;
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)show;
@@ -228,11 +229,11 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper15BidmadAppOpenAd")
 @class OpenBiddingAppOpenAd;
 
 @interface BidmadAppOpenAd (SWIFT_EXTENSION(OpenBiddingHelper)) <OpenBiddingAppOpenAdDelegate>
-- (void)OpenBiddingAppOpenAdLoad:(OpenBiddingAppOpenAd * _Null_unspecified)core;
-- (void)OpenBiddingAppOpenAdShow:(OpenBiddingAppOpenAd * _Null_unspecified)core;
-- (void)OpenBiddingAppOpenAdClick:(OpenBiddingAppOpenAd * _Null_unspecified)core;
-- (void)OpenBiddingAppOpenAdClose:(OpenBiddingAppOpenAd * _Null_unspecified)core;
-- (void)OpenBiddingAppOpenAdAllFail:(OpenBiddingAppOpenAd * _Null_unspecified)core code:(NSString * _Null_unspecified)error;
+- (void)OpenBiddingAppOpenAdLoad:(OpenBiddingAppOpenAd * _Nonnull)core;
+- (void)OpenBiddingAppOpenAdShow:(OpenBiddingAppOpenAd * _Nonnull)core;
+- (void)OpenBiddingAppOpenAdClick:(OpenBiddingAppOpenAd * _Nonnull)core;
+- (void)OpenBiddingAppOpenAdClose:(OpenBiddingAppOpenAd * _Nonnull)core;
+- (void)OpenBiddingAppOpenAdAllFail:(OpenBiddingAppOpenAd * _Nonnull)core;
 @end
 
 @protocol BIDMADOpenBiddingBannerDelegate;
@@ -307,6 +308,22 @@ SWIFT_CLASS("_TtC17OpenBiddingHelper20BidmadInterstitialAd")
 - (void)BIDMADOpenBiddingInterstitialAllFail:(OpenBiddingInterstitial * _Null_unspecified)core;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class BIDMADNativeAd;
+@class BIDMADNativeAdView;
+@class NSError;
+
+SWIFT_CLASS("_TtC17OpenBiddingHelper20BidmadNativeAdLoader")
+@interface BidmadNativeAdLoader : NSObject <BIDMADNativeAdDelegate>
+@property (nonatomic, weak) id <BIDMADNativeAdDelegate> _Nullable delegate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)loadFor:(NSString * _Nonnull)zoneID;
++ (void)setupFor:(BIDMADNativeAd * _Nonnull)nativeAd viewController:(UIViewController * _Nonnull)viewController adView:(BIDMADNativeAdView * _Nonnull)adView;
++ (void)cleanUpFor:(BIDMADNativeAd * _Nonnull)nativeAd adView:(BIDMADNativeAdView * _Nonnull)adView;
+- (void)bidmadNativeAdWithLoadedAd:(BIDMADNativeAd * _Nonnull)loadedAd;
+- (void)bidmadNativeAdWithClickedAd:(BIDMADNativeAd * _Nonnull)clickedAd;
+- (void)bidmadNativeAdAllFail:(NSError * _Nonnull)error;
 @end
 
 @protocol BIDMADOfferwallDelegate;

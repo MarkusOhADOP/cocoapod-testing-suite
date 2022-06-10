@@ -9,6 +9,7 @@ import Swift
 import UIKit
 @objc open class BidmadAppOpenAd : ObjectiveC.NSObject {
   @objc public var delegate: OpenBiddingHelper.OpenBiddingAppOpenAdDelegate?
+  @objc public var isAutoReload: Swift.Bool
   @objc required public init(with parentViewController: UIKit.UIViewController, zoneID: Swift.String)
   @objc public func load()
   @objc public func show()
@@ -19,11 +20,11 @@ import UIKit
   @objc override dynamic public init()
 }
 extension BidmadAppOpenAd : OpenBiddingHelper.OpenBiddingAppOpenAdDelegate {
-  @objc dynamic public func openBiddingAppOpenAdLoad(_ core: OpenBiddingHelper.OpenBiddingAppOpenAd!)
-  @objc dynamic public func openBiddingAppOpenAdShow(_ core: OpenBiddingHelper.OpenBiddingAppOpenAd!)
-  @objc dynamic public func openBiddingAppOpenAdClick(_ core: OpenBiddingHelper.OpenBiddingAppOpenAd!)
-  @objc dynamic public func openBiddingAppOpenAdClose(_ core: OpenBiddingHelper.OpenBiddingAppOpenAd!)
-  @objc dynamic public func openBiddingAppOpenAdAllFail(_ core: OpenBiddingHelper.OpenBiddingAppOpenAd!, code error: Swift.String!)
+  @objc dynamic public func openBiddingAppOpenAdLoad(_ core: OpenBiddingHelper.OpenBiddingAppOpenAd)
+  @objc dynamic public func openBiddingAppOpenAdShow(_ core: OpenBiddingHelper.OpenBiddingAppOpenAd)
+  @objc dynamic public func openBiddingAppOpenAdClick(_ core: OpenBiddingHelper.OpenBiddingAppOpenAd)
+  @objc dynamic public func openBiddingAppOpenAdClose(_ core: OpenBiddingHelper.OpenBiddingAppOpenAd)
+  @objc dynamic public func openBiddingAppOpenAdAllFail(_ core: OpenBiddingHelper.OpenBiddingAppOpenAd)
 }
 @objc open class BidmadBannerAd : ObjectiveC.NSObject {
   @objc public var delegate: OpenBiddingHelper.BIDMADOpenBiddingBannerDelegate?
@@ -42,6 +43,17 @@ extension BidmadBannerAd : OpenBiddingHelper.BIDMADOpenBiddingBannerDelegate {
   @objc dynamic public func bidmadOpenBiddingBannerClick(_ core: OpenBiddingHelper.OpenBiddingBanner!)
   @objc dynamic public func bidmadOpenBiddingBannerAllFail(_ core: OpenBiddingHelper.OpenBiddingBanner!)
   @objc dynamic public func bidmadOpenBiddingBannerClosed(_ core: OpenBiddingHelper.OpenBiddingBanner!)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class BidmadNativeAdLoader : ObjectiveC.NSObject, BidmadSDK.BIDMADNativeAdDelegate {
+  @objc weak public var delegate: BidmadSDK.BIDMADNativeAdDelegate?
+  @objc override required dynamic public init()
+  @objc public func load(for zoneID: Swift.String)
+  @objc public static func setup(for nativeAd: BidmadSDK.BIDMADNativeAd, viewController: UIKit.UIViewController, adView: BidmadSDK.BIDMADNativeAdView)
+  @objc public static func cleanUp(for nativeAd: BidmadSDK.BIDMADNativeAd, adView: BidmadSDK.BIDMADNativeAdView)
+  @objc public func bidmadNativeAd(loadedAd: BidmadSDK.BIDMADNativeAd)
+  @objc public func bidmadNativeAd(clickedAd: BidmadSDK.BIDMADNativeAd)
+  @objc public func bidmadNativeAdAllFail(_ error: Foundation.NSError)
+  @objc deinit
 }
 @objc @objcMembers open class BidmadRewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingRewardVideoDelegate {
   @objc public var delegate: OpenBiddingHelper.BIDMADOpenBiddingRewardVideoDelegate?
