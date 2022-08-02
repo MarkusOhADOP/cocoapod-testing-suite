@@ -6,19 +6,31 @@
 //  Copyright © 2020 ADOP Co., Ltd. All rights reserved.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <Foundation/Foundation.h>
-#import <BidmadSDK/BIDMADSetting.h>
-#import <BidmadSDK/BIDMADRewardVideo.h>
+#import "OpenBiddingRewardVideo.h"
 
-static NSMutableDictionary* BidmadUnrealRewardDic;
+static NSMutableDictionary* OBUnrealRewardDic;
 
-@interface OpenBiddingUnrealReward : NSObject <BIDMADRewardVideoDelegate>{
+@protocol BidmadRewardUECallback <NSObject>
+
+- (void)bidmadRewardUESkipped:(NSString * _Nullable)mZoneId uuid:(NSString * _Nullable)uuid;
+- (void)bidmadRewardUESucceed:(NSString * _Nullable)mZoneId uuid:(NSString * _Nullable)uuid;
+- (void)bidmadRewardUELoad:(NSString * _Nullable)mZoneId uuid:(NSString * _Nullable)uuid;
+- (void)bidmadRewardUEAllFail:(NSString * _Nullable)mZoneId uuid:(NSString * _Nullable)uuid;
+- (void)bidmadRewardUEShow:(NSString * _Nullable)mZoneId uuid:(NSString * _Nullable)uuid;
+- (void)bidmadRewardUEClose:(NSString * _Nullable)mZoneId uuid:(NSString * _Nullable)uuid;
+
+@end
+
+@interface OpenBiddingUnrealReward : NSObject <BIDMADOpenBiddingRewardVideoDelegate>{
     NSString* mZoneId;
-    id<BIDMADRewardVideoDelegate> delegate;
-    @public BIDMADRewardVideo* bidmadReward;
+    id<BidmadRewardUECallback> delegate;
+    @public OpenBiddingRewardVideo* bidmadReward;
 }
-- (id)initWithZoneId:(NSString *)zoneId;
-+ (id)getInstance:(NSString *)zoneId;
+- (id)initWithZoneId:(NSString *)zoneId uuid:(NSString *)uuid;
++ (id)getInstance:(NSString *)uuid;
 - (void)setZoneID:(NSString *)zoneId;
 - (void)setDelegate:(id) param;
 - (void)load;

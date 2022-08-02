@@ -4,8 +4,3 @@ framework module ADOPUtility {
   export *
   module * { export * }
 }
-
-module ADOPUtility.Swift {
-    header "ADOPUtility-Swift.h"
-    requires objc
-}

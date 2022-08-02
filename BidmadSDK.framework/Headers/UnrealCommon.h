@@ -6,6 +6,8 @@
 //  Copyright © 2021 ADOP Co., Ltd. All rights reserved.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #ifndef UnrealCommon_h
 #define UnrealCommon_h
 

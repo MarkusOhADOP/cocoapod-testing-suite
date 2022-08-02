@@ -5,6 +5,8 @@
 //  Created by Seungsub Oh on 2022/02/16.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 

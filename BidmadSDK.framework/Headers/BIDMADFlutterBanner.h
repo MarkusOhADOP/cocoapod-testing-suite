@@ -4,6 +4,8 @@
 //
 //  Created by ADOP_Mac on 2021/03/25.
 //
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <UIKit/UIKit.h>
 #import "BIDMADSetting.h"
 #import "BIDMADBanner.h"

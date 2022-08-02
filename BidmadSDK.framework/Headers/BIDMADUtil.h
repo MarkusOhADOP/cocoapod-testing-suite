@@ -5,6 +5,8 @@
 //  Created by 김선정 on 2015. 7. 20..
 //  Copyright (c) 2015년 ADOP Co., Ltd. All rights reserved.
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>

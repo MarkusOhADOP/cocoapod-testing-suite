@@ -6,6 +6,8 @@
 //  Copyright © 2020 ADOP Co., Ltd. All rights reserved.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <Foundation/Foundation.h>
 #import "BIDMADSetting.h"
 #import "BIDMADInterstitial.h"

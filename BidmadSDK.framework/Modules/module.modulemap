@@ -4,8 +4,3 @@ framework module BidmadSDK {
   export *
   module * { export * }
 }
-
-module BidmadSDK.Swift {
-    header "BidmadSDK-Swift.h"
-    requires objc
-}

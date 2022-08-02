@@ -6,20 +6,30 @@
 //  Copyright © 2020 ADOP Co., Ltd. All rights reserved.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <Foundation/Foundation.h>
-#import <BidmadSDK/BIDMADSetting.h>
-#import <BidmadSDK/BIDMADInterstitial.h>
+#import "OpenBiddingInterstitial.h"
 
-static NSMutableDictionary* BidmadUnrealInterstitialDic;
+static NSMutableDictionary* OBUnrealInterstitialDic;
 
-@interface OpenBiddingUnrealInterstitial : NSObject <BIDMADInterstitialDelegate>{
+@protocol BidmadInterstitialUECallback <NSObject>
+
+- (void)bidmadInterstitialUELoad:(NSString * _Nullable)mZoneId uuid:(NSString * _Nullable)uuid;
+- (void)bidmadInterstitialUEAllFail:(NSString * _Nullable)mZoneId uuid:(NSString * _Nullable)uuid;
+- (void)bidmadInterstitialUEShow:(NSString * _Nullable)mZoneId uuid:(NSString * _Nullable)uuid;
+- (void)bidmadInterstitialUEClose:(NSString * _Nullable)mZoneId uuid:(NSString * _Nullable)uuid;
+
+@end
+
+@interface OpenBiddingUnrealInterstitial : NSObject <BIDMADOpenBiddingInterstitialDelegate>{
     NSString* mZoneId;
-    id<BIDMADInterstitialDelegate> delegate;
-    @public BIDMADInterstitial* bidmadInterstitial;
+    id<BidmadInterstitialUECallback> delegate;
+    @public OpenBiddingInterstitial* bidmadInterstitial;
 }
 
-- (id)initWithZoneId:(NSString *)zoneId;
-+ (id)getInstance:(NSString *)zoneId;
+- (id)initWithZoneId:(NSString *)zoneId uuid:(NSString *)uuid;
++ (id)getInstance:(NSString *)uuid;
 - (void)setZoneID:(NSString *)zoneId;
 - (void)setDelegate:(id) param;
 - (void)load;

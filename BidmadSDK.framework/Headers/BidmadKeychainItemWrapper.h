@@ -1,3 +1,5 @@
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 /*
      File: KeychainItemWrapper.h
  Abstract:

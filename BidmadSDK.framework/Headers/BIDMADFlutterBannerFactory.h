@@ -1,3 +1,5 @@
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import "BIDMADFlutterCommon.h"
 
 #if __has_include(<Flutter/Flutter.h>) || __has_include("Flutter.h")

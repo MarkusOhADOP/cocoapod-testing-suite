@@ -6,6 +6,8 @@
 //  Copyright (c) 2015년 ADOP Co., Ltd. All rights reserved.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 @class OpenBiddingInterstitial;
 
 #import <Foundation/Foundation.h>

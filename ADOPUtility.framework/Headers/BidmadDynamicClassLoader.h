@@ -53,8 +53,8 @@ NS_ASSUME_NONNULL_BEGIN
                   arg6:(id _Nonnull)arg6;
 
 + (id _Nullable)createNativeAdFrom:(NSString * _Nonnull)className
-                            adcode:(NSString *)adcode
-                             pubid:(NSString *)pubid
+                            appID:(NSString *)adcode
+                             pubID:(NSString *)pubid
                   bidmadController:(id)bidmadController
                            isDebug:(BOOL)isDebug
                 isChildDirectedAds:(NSNumber * _Nullable)isChildDirectedAds

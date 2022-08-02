@@ -6,6 +6,8 @@
 //  Copyright © 2021 ADOP Co., Ltd. All rights reserved.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #ifndef OpenBiddingUnityBanner_h
 #define OpenBiddingUnityBanner_h
 

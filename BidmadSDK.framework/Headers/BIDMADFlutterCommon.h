@@ -5,6 +5,8 @@
 //  Created by ADOP_Mac on 2021/03/25.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <Foundation/Foundation.h>
 
 #if __has_include(<Flutter/Flutter.h>) || __has_include("Flutter.h")

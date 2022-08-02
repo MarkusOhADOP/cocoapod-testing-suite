@@ -6,6 +6,8 @@
 //  Copyright © 2021 ADOP Co., Ltd. All rights reserved.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <Foundation/Foundation.h>
 #import <UserMessagingPlatform/UserMessagingPlatform.h>
 
@@ -52,5 +54,9 @@ typedef NS_ENUM(NSUInteger, BIDMAD_UMPConsentStatus) {
 -(void)requestConsentInfoUpdate;
 -(void)loadForm;
 -(void)showForm;
++ (BOOL)shouldGDPRFalseBeSetWithStatus:(NSInteger)bidmadGDPRStatus;
++ (NSArray<NSError *> * _Nullable)bulkSetAdapterConsentFrom:(NSArray <NSString *> * _Nonnull)classNames consent:(BOOL)consentStatus;
++ (NSError * _Nullable)setAdapterConsentFrom:(NSString * _Nonnull)className consent:(BOOL)consentStatus;
++ (NSNumber * _Nullable)getGDPRSettingFromAdNetwork:(NSString * _Nonnull)adNetwork className:(NSString * _Nonnull)className;
 
 @end

@@ -8,6 +8,8 @@
 
 //@import GoogleMobileAds;
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <Foundation/Foundation.h>
 #import <ADOPUtility/BidmadSendLogDelegate.h>
 
@@ -171,7 +173,7 @@ extern NSString* _Nonnull const BIDMAD_CCPA_CONSENT;
 @property (nonatomic, strong) NSString* testDeviceId;
 
 /// Setting for Child-Directed Treament for COPPA-Compliance.
-@property (nonatomic, strong) NSNumber* __nullable isChildDirectedTreament;
+@property (nonatomic, strong) NSNumber* __nullable isChildDirectedTreatment;
 
 /// Setting for CCPA User Consent Status. If nil, the app does not have to be compliant to CCPA.
 @property (nonatomic, strong) NSNumber* __nullable isUserConsentCCPA;

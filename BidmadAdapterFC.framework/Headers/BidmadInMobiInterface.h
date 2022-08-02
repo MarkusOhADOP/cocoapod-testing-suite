@@ -5,6 +5,8 @@
 //  Created by Seungsub Oh on 2022/03/14.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -43,7 +45,7 @@ typedef NS_ENUM(NSInteger, BidmadIMSDKLogLevel) {
 -(void)shouldAutoRefresh:(BOOL)refresh;
 
 -(void)removeFromSuperview;
-@property (nonatomic) BOOL isHidden;
+@property(nonatomic,getter=isHidden) BOOL hidden;
 
 @end
 

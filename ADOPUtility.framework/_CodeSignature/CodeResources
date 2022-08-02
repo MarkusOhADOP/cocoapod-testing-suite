@@ -4,206 +4,266 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/ADOPUtility-Swift.h</key>
+		<key>Headers/ADOPObjCUtility.h</key>
 		<data>
-		2b64ZMwOaH7WWWIsmE1DgJ+iIRQ=
+		j4AGBJn+fpeSc+DcW7Azo3W6cCA=
 		</data>
 		<key>Headers/ADOPUtility.h</key>
 		<data>
-		m7OE/TcTPsZFPZ1FTP/DKnjq3Qo=
+		uiv0uYiKHpWUe3zxeAWTgi9Cj8U=
+		</data>
+		<key>Headers/BIDMADNativeAdCommonInterface.h</key>
+		<data>
+		AIVkGjakj6AKMa4aYLwJtBFzwRI=
+		</data>
+		<key>Headers/BidmadAdapterAdEssential.h</key>
+		<data>
+		TTnMBOoVq+08ObREEzHjdX1kTgI=
+		</data>
+		<key>Headers/BidmadAdapterBannerAdditional.h</key>
+		<data>
+		FuJqTWE3EfBc/Y4/pPSp4m7MhoM=
+		</data>
+		<key>Headers/BidmadAdapterEssential.h</key>
+		<data>
+		7izIMShZjQafdeLf63l3eKTS7oA=
+		</data>
+		<key>Headers/BidmadAdapterOfferwallAdditional.h</key>
+		<data>
+		8ZeiZT170lkqrLlxkqglkErvfMw=
+		</data>
+		<key>Headers/BidmadAdapterRewardAdditional.h</key>
+		<data>
+		p+CecB0Vta0SRyr4N1UWcM3G2A8=
+		</data>
+		<key>Headers/BidmadConsentProtocol.h</key>
+		<data>
+		0LJ6XIazZZj9jwednKQ34G4iZLk=
 		</data>
 		<key>Headers/BidmadDynamicClassLoader.h</key>
 		<data>
-		E02xJ/2C6pasLCpxefW0i1Qz/Zs=
+		RCzNXW7Zjn1P3kVe+yZ9PdE1WAw=
+		</data>
+		<key>Headers/BidmadFailCase.h</key>
+		<data>
+		OFpiBrXT26WJ8UynLWp1QmMgbQ0=
+		</data>
+		<key>Headers/BidmadInnerCallback.h</key>
+		<data>
+		/xm+zUoVNpLTuL+pMfsTzeJ6jqs=
+		</data>
+		<key>Headers/BidmadLoadabilityManager.h</key>
+		<data>
+		fL5gC083nKVZAT+2eB3FfDMqDy8=
+		</data>
+		<key>Headers/BidmadNativeAdDataInterface.h</key>
+		<data>
+		Czzv2CRpQQJaf5dL9E71nxCSFGY=
 		</data>
 		<key>Headers/BidmadSendLogDelegate.h</key>
 		<data>
-		hNC4T7x/ChF9RSdjxysER7pGw4s=
+		3MOkUyP7VhqpzT5S2paiKTPpyxs=
+		</data>
+		<key>Headers/NSArray+HigherOrderFunctionsForADOP.h</key>
+		<data>
+		4ehIZir85mtezj6ehkaPJ0OQdR8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DgtZQfuJIAuSzKIoexgH5SnWg58=
-		</data>
-		<key>Modules/ADOPUtility.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<data>
-		pkQMu+i5Qi2bP4dC2xFijw8QxvQ=
-		</data>
-		<key>Modules/ADOPUtility.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		pkQMu+i5Qi2bP4dC2xFijw8QxvQ=
-		</data>
-		<key>Modules/ADOPUtility.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<data>
-		GT54kImamqBgZkmTFWO7fUHM3Rg=
-		</data>
-		<key>Modules/ADOPUtility.swiftmodule/arm64-apple-ios.swiftinterface</key>
-		<data>
-		6+ae6l4CZ5WrWsKUTxC1qm+XlqU=
-		</data>
-		<key>Modules/ADOPUtility.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		W0MfSTgavj7Je6EjxwkY/LjQ7w0=
-		</data>
-		<key>Modules/ADOPUtility.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		GT54kImamqBgZkmTFWO7fUHM3Rg=
-		</data>
-		<key>Modules/ADOPUtility.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		6+ae6l4CZ5WrWsKUTxC1qm+XlqU=
-		</data>
-		<key>Modules/ADOPUtility.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		W0MfSTgavj7Je6EjxwkY/LjQ7w0=
+		J3uJRYo4B5/pdVOZYgRvfZheRBA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		A6xTE9DLvfvuYZnfLrohOcSoMzA=
+		mI5UtMoJFKpBy+TGSPcwCqv+S4s=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/ADOPUtility-Swift.h</key>
+		<key>Headers/ADOPObjCUtility.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2b64ZMwOaH7WWWIsmE1DgJ+iIRQ=
+			j4AGBJn+fpeSc+DcW7Azo3W6cCA=
 			</data>
 			<key>hash2</key>
 			<data>
-			4dYVAE+9OxPFyW9QZubcIRejA8tGoTg1q8/au+YPR6Q=
+			DV21v8qp6H26XU8h9CAKt+DA4Szdw1obmWDTPS9y2z4=
 			</data>
 		</dict>
 		<key>Headers/ADOPUtility.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m7OE/TcTPsZFPZ1FTP/DKnjq3Qo=
+			uiv0uYiKHpWUe3zxeAWTgi9Cj8U=
 			</data>
 			<key>hash2</key>
 			<data>
-			kTz4MDIxqilKkuuAk9DLI7URdIwjoorRu4Wqw2ARXGQ=
+			D44XPCd+3zgVAyH2p5RYIF3YTiTGYYhJCINKKxzGV7k=
+			</data>
+		</dict>
+		<key>Headers/BIDMADNativeAdCommonInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AIVkGjakj6AKMa4aYLwJtBFzwRI=
+			</data>
+			<key>hash2</key>
+			<data>
+			7at5GTUkry0uN/m1/d6eK5wKGfiV5V5kj0Nt0ZIhmaU=
+			</data>
+		</dict>
+		<key>Headers/BidmadAdapterAdEssential.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TTnMBOoVq+08ObREEzHjdX1kTgI=
+			</data>
+			<key>hash2</key>
+			<data>
+			y8ciUOHlgNWpfvqzehnXLbK1uUUhHRCtKWVDQhdh2qU=
+			</data>
+		</dict>
+		<key>Headers/BidmadAdapterBannerAdditional.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FuJqTWE3EfBc/Y4/pPSp4m7MhoM=
+			</data>
+			<key>hash2</key>
+			<data>
+			Gso/iojlbTKUX/HTKpMKAcKRU5DliKjnpbn55j8nYZk=
+			</data>
+		</dict>
+		<key>Headers/BidmadAdapterEssential.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7izIMShZjQafdeLf63l3eKTS7oA=
+			</data>
+			<key>hash2</key>
+			<data>
+			lxGegB0orK/JGUku/XcxFSgXNWcp2xGXYJmlGzrXpHA=
+			</data>
+		</dict>
+		<key>Headers/BidmadAdapterOfferwallAdditional.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ZeiZT170lkqrLlxkqglkErvfMw=
+			</data>
+			<key>hash2</key>
+			<data>
+			sCziLOC9O9jE6+zyu3MJzgXKn6p0v3+azhFtWr1NXe0=
+			</data>
+		</dict>
+		<key>Headers/BidmadAdapterRewardAdditional.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p+CecB0Vta0SRyr4N1UWcM3G2A8=
+			</data>
+			<key>hash2</key>
+			<data>
+			aIRXUgLHhMVruKlq7hbM658E8QYfbOC0o5j1Ynz0STs=
+			</data>
+		</dict>
+		<key>Headers/BidmadConsentProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0LJ6XIazZZj9jwednKQ34G4iZLk=
+			</data>
+			<key>hash2</key>
+			<data>
+			jh9zTQvIztOXi2f/v3ReFC81Fu0OYL1IFShszewbLks=
 			</data>
 		</dict>
 		<key>Headers/BidmadDynamicClassLoader.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E02xJ/2C6pasLCpxefW0i1Qz/Zs=
+			RCzNXW7Zjn1P3kVe+yZ9PdE1WAw=
 			</data>
 			<key>hash2</key>
 			<data>
-			92PWcfP97BnQkH+hzgk+v9bA9IWpL5ur+2IyuLX12nw=
+			QCDlYsr5mEBKGM6gxdhT61PvTqxmhGZnN6Obxz/ptjY=
+			</data>
+		</dict>
+		<key>Headers/BidmadFailCase.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OFpiBrXT26WJ8UynLWp1QmMgbQ0=
+			</data>
+			<key>hash2</key>
+			<data>
+			bTzSrgFidevscbiKRIDGfru0v1usIohm0KyDh2f+Mxk=
+			</data>
+		</dict>
+		<key>Headers/BidmadInnerCallback.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/xm+zUoVNpLTuL+pMfsTzeJ6jqs=
+			</data>
+			<key>hash2</key>
+			<data>
+			+8zBQXf5Z/GuMELRoxhu15vkUnhtDTanJ8IOelLPB9U=
+			</data>
+		</dict>
+		<key>Headers/BidmadLoadabilityManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fL5gC083nKVZAT+2eB3FfDMqDy8=
+			</data>
+			<key>hash2</key>
+			<data>
+			L+0BNu83sYaiBgXxtz9gnTz/iHr8t0meLOPCzZNBeEc=
+			</data>
+		</dict>
+		<key>Headers/BidmadNativeAdDataInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Czzv2CRpQQJaf5dL9E71nxCSFGY=
+			</data>
+			<key>hash2</key>
+			<data>
+			A8hX8LioXhLIlRYjS0NZ++yGNtdJKmeNVTs6YBFQHY0=
 			</data>
 		</dict>
 		<key>Headers/BidmadSendLogDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hNC4T7x/ChF9RSdjxysER7pGw4s=
+			3MOkUyP7VhqpzT5S2paiKTPpyxs=
 			</data>
 			<key>hash2</key>
 			<data>
-			2KRMIagR1xW/dNM+rZeSDlHvHKmb/2nogAJpPzeWq1E=
+			8aDOgDOoFQpxqy10gvZs97/qGm4nFWkAz9Aumje8ZZM=
 			</data>
 		</dict>
-		<key>Modules/ADOPUtility.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Headers/NSArray+HigherOrderFunctionsForADOP.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pkQMu+i5Qi2bP4dC2xFijw8QxvQ=
+			4ehIZir85mtezj6ehkaPJ0OQdR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ERUGzYGz3wqgLr6Nit5Hv9SN/6Y2re1aeT+CjJcr5YU=
-			</data>
-		</dict>
-		<key>Modules/ADOPUtility.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pkQMu+i5Qi2bP4dC2xFijw8QxvQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			ERUGzYGz3wqgLr6Nit5Hv9SN/6Y2re1aeT+CjJcr5YU=
-			</data>
-		</dict>
-		<key>Modules/ADOPUtility.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GT54kImamqBgZkmTFWO7fUHM3Rg=
-			</data>
-			<key>hash2</key>
-			<data>
-			xa1I8n+FwVVRuwveUb0p7RIS2FhLiM9V4Y3HCZ0lzxU=
-			</data>
-		</dict>
-		<key>Modules/ADOPUtility.swiftmodule/arm64-apple-ios.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6+ae6l4CZ5WrWsKUTxC1qm+XlqU=
-			</data>
-			<key>hash2</key>
-			<data>
-			8Fz5ox12NwaiaKD2UMGe+F91D1aI+dBRHcHpbDs4HvI=
-			</data>
-		</dict>
-		<key>Modules/ADOPUtility.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W0MfSTgavj7Je6EjxwkY/LjQ7w0=
-			</data>
-			<key>hash2</key>
-			<data>
-			znKR4Yv0+M7FPrG7XdR8nKDglFTEIAaiNyZyEDD5piM=
-			</data>
-		</dict>
-		<key>Modules/ADOPUtility.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GT54kImamqBgZkmTFWO7fUHM3Rg=
-			</data>
-			<key>hash2</key>
-			<data>
-			xa1I8n+FwVVRuwveUb0p7RIS2FhLiM9V4Y3HCZ0lzxU=
-			</data>
-		</dict>
-		<key>Modules/ADOPUtility.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6+ae6l4CZ5WrWsKUTxC1qm+XlqU=
-			</data>
-			<key>hash2</key>
-			<data>
-			8Fz5ox12NwaiaKD2UMGe+F91D1aI+dBRHcHpbDs4HvI=
-			</data>
-		</dict>
-		<key>Modules/ADOPUtility.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W0MfSTgavj7Je6EjxwkY/LjQ7w0=
-			</data>
-			<key>hash2</key>
-			<data>
-			znKR4Yv0+M7FPrG7XdR8nKDglFTEIAaiNyZyEDD5piM=
+			fvqnD3O7Has6uVxFSrt6hug9fm2nQ1QbmlW+f98Ke2Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A6xTE9DLvfvuYZnfLrohOcSoMzA=
+			mI5UtMoJFKpBy+TGSPcwCqv+S4s=
 			</data>
 			<key>hash2</key>
 			<data>
-			+Q31Uw1tuSIKgmFk7fVQf4Q9eD2I6umRIFCf8IGxbqY=
+			kEIX+6hxvn1dr/UW0O1rHnOIQePak91QtUtGnP/knCw=
 			</data>
 		</dict>
 	</dict>

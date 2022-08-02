@@ -6,10 +6,10 @@
 //  Copyright © 2021 ADOP Co., Ltd. All rights reserved.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <Foundation/Foundation.h>
-#import <BUFoundation/BUFoundation.h>
 #import <BUAdSDK/BUAdSDK.h>
-#import <BUVAAuxiliary/BUVAAuxiliary.h>
 
 @interface BIDMADPangleInterstitial : NSObject<BUFullscreenVideoAdDelegate>
 

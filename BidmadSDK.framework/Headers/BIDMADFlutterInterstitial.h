@@ -5,6 +5,8 @@
 //  Created by ADOP_Mac on 2021/03/26.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <Foundation/Foundation.h>
 #import "BIDMADInterstitial.h"
 #import "BIDMADSetting.h"

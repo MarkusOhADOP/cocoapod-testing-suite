@@ -5,6 +5,8 @@
 //  Created by Seungsub Oh on 2022/03/07.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN

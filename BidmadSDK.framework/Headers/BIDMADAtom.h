@@ -6,6 +6,8 @@
 //  Copyright © 2018년 ADOP Co., Ltd. All rights reserved.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 #import "BIDMADBanner.h"

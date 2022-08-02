@@ -1,0 +1,6 @@
+framework module AdopPrebidSdk {
+    header "AdopPrebidSdk.h"
+
+    header "AdopPrebid.h"
+    header "AdopPrebidBanner.h"
+}

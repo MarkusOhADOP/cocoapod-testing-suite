@@ -5,6 +5,8 @@
 //  Created by ADOP_Mac on 2021/04/06.
 //
 
+#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
+
 #import <Foundation/Foundation.h>
 #import <UserMessagingPlatform/UserMessagingPlatform.h>
 #import "BIDMADGDPRforGoogle.h"

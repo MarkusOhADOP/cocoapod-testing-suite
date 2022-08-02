@@ -4,8 +4,3 @@ framework module OpenBiddingHelper {
   export *
   module * { export * }
 }
-
-module OpenBiddingHelper.Swift {
-    header "OpenBiddingHelper-Swift.h"
-    requires objc
-}
