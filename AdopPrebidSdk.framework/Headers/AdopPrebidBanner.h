@@ -30,7 +30,7 @@
 - (id)initWithParentViewController:(UIViewController *)parentVC rootView:(UIView *)view;
 - (id)initWithParentViewController:(UIViewController *)parentVC adsPosition:(CGPoint)point;
 
-- (void)setBannerSize:(CGSize)bannerSize;
+- (void)setBannerSize:(CGSize)size;
 - (void)requestBanner;
 - (void)removeBanner;
 - (void)hideView;

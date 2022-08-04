@@ -3,4 +3,11 @@ framework module AdopPrebidSdk {
 
     header "AdopPrebid.h"
     header "AdopPrebidBanner.h"
+    header "AdopPrebidInterstitial.h"
+    header "AdopPrebidReward.h"
+}
+
+module AdopPrebidSdk.Swift {
+    header "AdopPrebidSdk-Swift.h"
+    requires objc
 }
