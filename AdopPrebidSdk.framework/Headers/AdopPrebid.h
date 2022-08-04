@@ -11,5 +11,6 @@
 @interface AdopPrebid : NSObject
 
 + (void)initAdopPrebid;
++ (void)setDebugMode:(BOOL)isDebug;
 
 @end
