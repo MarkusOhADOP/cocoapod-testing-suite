@@ -39,6 +39,7 @@
 #define APPLOVIN_MAX            @"31534d43-944a-11ec-8e02-021baddf8c08"
 #define INMOBI                  @"f32a2be4-476b-4ddb-85dc-27e98e81e111"
 #define VUNGLE                  @"1e1947d2-eff2-11e9-9e1d-02c31b446301"
+#define PREBID                  @"f797ee95-1172-11ed-a117-026864a21938"
 
 #define COMPASS_SERVING         @"https://compass.adop.cc/serving/ms.php"
 #define COMPASS_SERVING_TEST    @"https://compasstest.adop.cc/serving/ms.php"

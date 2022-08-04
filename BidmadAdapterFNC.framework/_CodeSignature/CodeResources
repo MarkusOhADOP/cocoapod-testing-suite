@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/BidmadAdapterFNC.h</key>
 		<data>
-		/3quwDu+Chq/l4ToGdpADDyHFco=
+		abEM6qMmmuOOl9AQ6O5EPcKsBuQ=
 		</data>
 		<key>Headers/BidmadAdapterFNCConsentManager.h</key>
 		<data>
@@ -75,6 +75,10 @@
 		<key>Headers/BidmadFyberInterstitial.h</key>
 		<data>
 		4P0Z2JB7yKggvvd19YGesTNxmDc=
+		</data>
+		<key>Headers/BidmadPrebidBanner.h</key>
+		<data>
+		GslLk8Gos2y9DSfuBze+EDAmiLE=
 		</data>
 		<key>Headers/BidmadTapjoy.h</key>
 		<data>
@@ -182,7 +186,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WxlhYhIhHW+w2acZ3ZfKqnR7uy8=
+		CRolaZo3iTCMlrGNDAuyDIULF9M=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -496,11 +500,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/3quwDu+Chq/l4ToGdpADDyHFco=
+			abEM6qMmmuOOl9AQ6O5EPcKsBuQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hmei+yS6afcawuyXtlGkV8VAnbPaDRg5CjWbnyVw/jM=
+			dLbgniC4sc6kcbVbaKPONM7NPNlFDyXi2GRXTVEj5lg=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdapterFNCConsentManager.h</key>
@@ -567,6 +571,17 @@
 			<key>hash2</key>
 			<data>
 			DzbyV3eVbzmwDGSWGwNu8HATezRC6bCxQz6mWWWLz6c=
+			</data>
+		</dict>
+		<key>Headers/BidmadPrebidBanner.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GslLk8Gos2y9DSfuBze+EDAmiLE=
+			</data>
+			<key>hash2</key>
+			<data>
+			8u4rjqfnbQZLD2rcOYn9dS9NLKqVdFaQnSi2TiCkN3o=
 			</data>
 		</dict>
 		<key>Headers/BidmadTapjoy.h</key>
