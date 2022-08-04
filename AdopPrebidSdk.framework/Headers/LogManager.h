@@ -7,10 +7,11 @@
 
 @import Foundation;
 @import UIKit;
-//@import PrebidMobile;
-//#import "AdopPrebid.h"
+@import PrebidMobile;
 
 @interface LogManager : NSObject
-+ (void)sendLog:(NSDictionary *)data type:(NSString *)type configId:(NSString *)configId;
++ (void)sendLog:(NSString *)type configId:(NSString *)configId bannerAdUnit:(BannerView *)banner;
++ (void)sendLog:(NSString *)type configId:(NSString *)configId interstitialAdUnit:(InterstitialRenderingAdUnit *)interstitial;
++ (void)sendLog:(NSString *)type configId:(NSString *)configId rewardAdUnit:(RewardedVideoAdUnit *)reward;
 
 @end

@@ -214,20 +214,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class BaseInterstitialAdUnit;
-@class BidResponse;
+@class NSDictionary;
 @class BannerView;
-@class NSString;
-@class RewardedAdUnit;
-@class Bid;
 
 SWIFT_CLASS("_TtC13AdopPrebidSdk7LogUtil")
 @interface LogUtil : NSObject
-+ (BidResponse * _Nullable)fetchBidResponseFromFullscreenAd:(BaseInterstitialAdUnit * _Nonnull)fullscreenAd SWIFT_WARN_UNUSED_RESULT;
-+ (BidResponse * _Nullable)fetchBidResponseFromBannerAd:(BannerView * _Nonnull)bannerAd SWIFT_WARN_UNUSED_RESULT;
-+ (void)sendLogWithBanner:(BannerView * _Nonnull)banner type:(NSString * _Nonnull)type configId:(NSString * _Nonnull)configId;
-+ (void)sendLogWithReward:(RewardedAdUnit * _Nonnull)reward type:(NSString * _Nonnull)type configId:(NSString * _Nonnull)configId;
-+ (void)sendLogWithData:(Bid * _Nullable)data type:(NSString * _Nonnull)type configId:(NSString * _Nonnull)configId;
-- (void)test;
++ (NSDictionary * _Nullable)fetchBidResponseFromFullscreenAd:(BaseInterstitialAdUnit * _Nonnull)fullscreenAd SWIFT_WARN_UNUSED_RESULT;
++ (NSDictionary * _Nullable)fetchBidResponseFromBannerAd:(BannerView * _Nonnull)bannerAd SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -9,6 +9,7 @@
 @import UIKit;
 @import PrebidMobile;
 #import "AdopPrebid.h"
+#import "LogManager.h"
 
 @protocol AdopPrebidBannerDelegate <NSObject>
 
