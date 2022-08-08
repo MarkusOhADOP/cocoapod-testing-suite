@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/AdopPrebidSdk-Swift.h</key>
 		<data>
-		dULG/e1xCt1Wb0LZLwuNqzV+N9s=
+		i//zV6JzdWOv2RDcD+ZjFGxQJq0=
 		</data>
 		<key>Headers/AdopPrebidSdk.h</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>Headers/LogManager.h</key>
 		<data>
-		Z0gXUt3TyX7Fy/5aKpdoEngvjLw=
+		JTi3xfrvuKJHlQG5eAIxFapR2Rs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sR3jan7v4pbsBlycRJYruY0SG0M=
+		e4l+NPz1urWcnmFmbV2Q48PIQEk=
 		</data>
 		<key>Modules/AdopPrebidSdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		srklYF+GVPPCalZV9csSvheg1qw=
+		y2dCj/wOzTdze42hRevrC3F3AZY=
 		</data>
 		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		f/rZl9HpZQKN2WD4IJ6CQ4C0UdU=
+		Ns5rvqevEmDbSU4Y9sjjM+3Lf/4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dULG/e1xCt1Wb0LZLwuNqzV+N9s=
+			i//zV6JzdWOv2RDcD+ZjFGxQJq0=
 			</data>
 			<key>hash2</key>
 			<data>
-			/nCsC02hrcJ19U8O0nMdB9SKzb09JYmtbCgi54cxnSQ=
+			Z4c3DKzUcOAp2h26g1ut54Y7aHrFyUgVOPWhCtPSm5o=
 			</data>
 		</dict>
 		<key>Headers/AdopPrebidSdk.h</key>
@@ -125,22 +125,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z0gXUt3TyX7Fy/5aKpdoEngvjLw=
+			JTi3xfrvuKJHlQG5eAIxFapR2Rs=
 			</data>
 			<key>hash2</key>
 			<data>
-			cAe4BZbYl9RzjvkZsfqCggyXhnL0rV4uXUTL6j1hLjQ=
+			AgEzlnOVQvFY31HIvUes9SuzqE5G8tDIjBVXToI9i1M=
 			</data>
 		</dict>
 		<key>Modules/AdopPrebidSdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			srklYF+GVPPCalZV9csSvheg1qw=
+			y2dCj/wOzTdze42hRevrC3F3AZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			SqBnaM0Q8f/IGRrVMQ8SibELaN25ssgnJFyOiCFicdc=
+			gPuAQb7lsb2S8+v99W+k1iIzkVxIwn+i/IJsKSMuiFk=
 			</data>
 		</dict>
 		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -158,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f/rZl9HpZQKN2WD4IJ6CQ4C0UdU=
+			Ns5rvqevEmDbSU4Y9sjjM+3Lf/4=
 			</data>
 			<key>hash2</key>
 			<data>
-			WYQnpgMx2xgOVS5d4Bt7amr3sQKJ+yV80jooRZ6C4lA=
+			JaoSv4vc0EbzV8oLCtrvWRCVH1bO+wpdTQuD/GatZYE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

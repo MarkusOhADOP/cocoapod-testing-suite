@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AdopPrebidSdk-Dev"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.platform     = :ios, "11.0"
   s.summary      = "A Framework for ADOP PreBid Support."
   s.description  = "AdopPreBidSdk supports Banner / Interstitial / Reward for BidmadSDK Mediation."
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Markus" => "markus@adop.cc" }
   s.platform     = :ios, "11.0"
-  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '4.4.0.0-TESTING5' }
+  s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => '4.4.0.0-TESTING6' }
   
   s.static_framework = true
   s.requires_arc     = true

@@ -1,0 +1,6 @@
+framework module BidmadSDK {
+  umbrella header "BidmadSDK.h"
+
+  export *
+  module * { export * }
+}

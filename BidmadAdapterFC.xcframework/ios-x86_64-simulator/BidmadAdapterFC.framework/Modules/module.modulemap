@@ -1,0 +1,6 @@
+framework module BidmadAdapterFC {
+  umbrella header "BidmadAdapterFC.h"
+
+  export *
+  module * { export * }
+}

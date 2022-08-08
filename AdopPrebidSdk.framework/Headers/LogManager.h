@@ -12,6 +12,6 @@
 @interface LogManager : NSObject
 + (void)sendLog:(NSString *)type configId:(NSString *)configId bannerAdUnit:(BannerView *)banner;
 + (void)sendLog:(NSString *)type configId:(NSString *)configId interstitialAdUnit:(InterstitialRenderingAdUnit *)interstitial;
-+ (void)sendLog:(NSString *)type configId:(NSString *)configId rewardAdUnit:(RewardedVideoAdUnit *)reward;
++ (void)sendLog:(NSString *)type configId:(NSString *)configId rewardAdUnit:(RewardedAdUnit *)reward;
 
 @end

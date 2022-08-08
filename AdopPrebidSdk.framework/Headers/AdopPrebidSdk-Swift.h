@@ -221,6 +221,7 @@ SWIFT_CLASS("_TtC13AdopPrebidSdk7LogUtil")
 @interface LogUtil : NSObject
 + (NSDictionary * _Nullable)fetchBidResponseFromFullscreenAd:(BaseInterstitialAdUnit * _Nonnull)fullscreenAd SWIFT_WARN_UNUSED_RESULT;
 + (NSDictionary * _Nullable)fetchBidResponseFromBannerAd:(BannerView * _Nonnull)bannerAd SWIFT_WARN_UNUSED_RESULT;
++ (NSDictionary * _Nullable)fetchBidResponseWith:(id _Nonnull)genericObject SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
