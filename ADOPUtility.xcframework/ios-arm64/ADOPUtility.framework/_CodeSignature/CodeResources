@@ -4,17 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/ADOPLog.h</key>
+		<data>
+		mpSobK7YR3SBfDONFS5WqgHN9sw=
+		</data>
 		<key>Headers/ADOPObjCUtility.h</key>
 		<data>
 		j4AGBJn+fpeSc+DcW7Azo3W6cCA=
 		</data>
 		<key>Headers/ADOPUtility.h</key>
 		<data>
-		uiv0uYiKHpWUe3zxeAWTgi9Cj8U=
+		stkxLcOXoEMTzy0X9ffJjZCosL4=
 		</data>
 		<key>Headers/BIDMADNativeAdCommonInterface.h</key>
 		<data>
-		AIVkGjakj6AKMa4aYLwJtBFzwRI=
+		oqgFcFWQfPUrsOOYz9TUr4NWHDg=
 		</data>
 		<key>Headers/BidmadAdapterAdEssential.h</key>
 		<data>
@@ -70,7 +74,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		J3uJRYo4B5/pdVOZYgRvfZheRBA=
+		uQdoDI8Kjpuf/LYPakAv6aspn5E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,6 +83,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/ADOPLog.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mpSobK7YR3SBfDONFS5WqgHN9sw=
+			</data>
+			<key>hash2</key>
+			<data>
+			MqGhJQBhNqlkVfStK9rGJ2c4SNLBSR77M3vWLXxci+o=
+			</data>
+		</dict>
 		<key>Headers/ADOPObjCUtility.h</key>
 		<dict>
 			<key>hash</key>
@@ -94,22 +109,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uiv0uYiKHpWUe3zxeAWTgi9Cj8U=
+			stkxLcOXoEMTzy0X9ffJjZCosL4=
 			</data>
 			<key>hash2</key>
 			<data>
-			D44XPCd+3zgVAyH2p5RYIF3YTiTGYYhJCINKKxzGV7k=
+			BEa+2yvRlblzXhsEObOBNlV3j+F5XJGphxCHshF1sDM=
 			</data>
 		</dict>
 		<key>Headers/BIDMADNativeAdCommonInterface.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AIVkGjakj6AKMa4aYLwJtBFzwRI=
+			oqgFcFWQfPUrsOOYz9TUr4NWHDg=
 			</data>
 			<key>hash2</key>
 			<data>
-			7at5GTUkry0uN/m1/d6eK5wKGfiV5V5kj0Nt0ZIhmaU=
+			VXVeAtPQNM0hqL84ldSbh8iI5Wfy7qJg9OYppd8dkmo=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdapterAdEssential.h</key>

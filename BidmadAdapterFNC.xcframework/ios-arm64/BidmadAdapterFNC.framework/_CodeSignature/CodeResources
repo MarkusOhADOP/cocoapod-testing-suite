@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/BIDMADPangleNativeAd.h</key>
 		<data>
-		39DKk23WsjqbnDQNshgjoh10OVM=
+		/WPnZQw+Ab0anhfhwBrA02j431U=
 		</data>
 		<key>Headers/BIDMADPangleReward.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/BidmadAdapterFNC.h</key>
 		<data>
-		abEM6qMmmuOOl9AQ6O5EPcKsBuQ=
+		/3quwDu+Chq/l4ToGdpADDyHFco=
 		</data>
 		<key>Headers/BidmadAdapterFNCConsentManager.h</key>
 		<data>
@@ -76,10 +76,6 @@
 		<data>
 		4P0Z2JB7yKggvvd19YGesTNxmDc=
 		</data>
-		<key>Headers/BidmadPrebidBanner.h</key>
-		<data>
-		GslLk8Gos2y9DSfuBze+EDAmiLE=
-		</data>
 		<key>Headers/BidmadTapjoy.h</key>
 		<data>
 		80Yoh1eJHK/uz4P05Bitsf+KFvw=
@@ -90,7 +86,7 @@
 		</data>
 		<key>Headers/BidmadTapjoyInterstitialLoadabilityManager.h</key>
 		<data>
-		PPsTNZnPZD883ew3dMjoLUUE8yo=
+		UZNi8XReoTWzI+kFBtP6MniEXLo=
 		</data>
 		<key>IASDKResources.bundle/Assets.car</key>
 		<data>
@@ -186,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WxlhYhIhHW+w2acZ3ZfKqnR7uy8=
+		tr8KgbBGI+pDQDWk60civxSKqQ8=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -467,11 +463,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			39DKk23WsjqbnDQNshgjoh10OVM=
+			/WPnZQw+Ab0anhfhwBrA02j431U=
 			</data>
 			<key>hash2</key>
 			<data>
-			o1AfPmpmHVi+4CEevxuQwDE28MAQJg5oTA6U6qzyNRk=
+			2nPljP9YfxLhK0ioDbfu/W2qaPH3Ukod0rzAszqX/2o=
 			</data>
 		</dict>
 		<key>Headers/BIDMADPangleReward.h</key>
@@ -500,11 +496,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			abEM6qMmmuOOl9AQ6O5EPcKsBuQ=
+			/3quwDu+Chq/l4ToGdpADDyHFco=
 			</data>
 			<key>hash2</key>
 			<data>
-			dLbgniC4sc6kcbVbaKPONM7NPNlFDyXi2GRXTVEj5lg=
+			Hmei+yS6afcawuyXtlGkV8VAnbPaDRg5CjWbnyVw/jM=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdapterFNCConsentManager.h</key>
@@ -573,17 +569,6 @@
 			DzbyV3eVbzmwDGSWGwNu8HATezRC6bCxQz6mWWWLz6c=
 			</data>
 		</dict>
-		<key>Headers/BidmadPrebidBanner.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GslLk8Gos2y9DSfuBze+EDAmiLE=
-			</data>
-			<key>hash2</key>
-			<data>
-			8u4rjqfnbQZLD2rcOYn9dS9NLKqVdFaQnSi2TiCkN3o=
-			</data>
-		</dict>
 		<key>Headers/BidmadTapjoy.h</key>
 		<dict>
 			<key>hash</key>
@@ -610,11 +595,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PPsTNZnPZD883ew3dMjoLUUE8yo=
+			UZNi8XReoTWzI+kFBtP6MniEXLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			zZ1Z7F/YOrx/g6zJomkFcB/yQXED/qTcFsqqI78lz04=
+			kbhcWLpKyoAhptTiQss0H70YptH2fApVW587+DvOHFQ=
 			</data>
 		</dict>
 		<key>IASDKResources.bundle/Assets.car</key>

@@ -6,7 +6,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FBLPromises/FBLPromises.h>
 #import "BIDMADNativeAd.h"
 #import "BIDMADNativeAdView.h"
 #import "BidmadAdData.h"

@@ -14,10 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) BOOL isAdMob;
 
-+ (FBLPromise<id<BidmadNativeAdDataInterface>> *_Nonnull)requestFor:(NSString * _Nonnull)appid
-                                                              pubID:(NSString * _Nullable)pubID
-                                                            isDebug:(BOOL)isDebug
-                                                 isChildDirectedAds:(NSNumber * _Nullable)isChild;
++ (id _Nonnull)requestFor:(NSString * _Nonnull)appid
+                    pubID:(NSString * _Nullable)pubID
+                  isDebug:(BOOL)isDebug
+       isChildDirectedAds:(NSNumber * _Nullable)isChild;
 
 @end
 

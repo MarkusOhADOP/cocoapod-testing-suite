@@ -6,11 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <FBLPromises/FBLPromises.h>
 #import "BidmadAdData.h"
 
 @interface BidmadNetwork : NSObject
 
-+ (FBLPromise<BidmadAdData *> * _Nonnull)requestForZoneID:(NSString * _Nonnull)zoneID;
++ (id _Nonnull)requestForZoneID:(NSString * _Nonnull)zoneID;
 
 @end

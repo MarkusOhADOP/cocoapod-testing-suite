@@ -8,7 +8,7 @@
 #pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 
 #import <Foundation/Foundation.h>
-#import "BidmadLoadabilityManager.h"
+#import <ADOPUtility/BidmadLoadabilityManager.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

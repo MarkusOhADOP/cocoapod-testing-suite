@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/BIDMADNativeAdLoader.h</key>
 		<data>
-		xfPiLY9lfyCjLYPN4gYUrLRUWgE=
+		C+p3FRJxageu07FnptVYfG+MYnQ=
 		</data>
 		<key>Headers/BIDMADNativeAdView.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/BIDMADSetting.h</key>
 		<data>
-		tq9ZwJOLTXKWvO6Dxzz+fLrBidU=
+		QfiKi3q4oNanydYlgKlZdiHNPQ8=
 		</data>
 		<key>Headers/BIDMADUtil.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Headers/BidmadAdmobNativeAd.h</key>
 		<data>
-		8h03lorxikppPwl5U3F0SocmYG4=
+		/bv2vuZO36a0LSsBh8wtYAhXqYE=
 		</data>
 		<key>Headers/BidmadKeychainItemWrapper.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/BidmadNetwork.h</key>
 		<data>
-		LvvMpIpBJRR4G3ZYbZDET07Oubw=
+		ju+V2yyaJGdeyNb9276yq/N7LXI=
 		</data>
 		<key>Headers/BidmadParentUIView.h</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wm5KTW6ci/P5PvruR4BQt+3q/K0=
+		4VXj9ONCxV+FfGi1S1aZVFvYYIw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -428,11 +428,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xfPiLY9lfyCjLYPN4gYUrLRUWgE=
+			C+p3FRJxageu07FnptVYfG+MYnQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			N4KOOk8P2TPbaDRT0Rb55rO7qfl20A0/jrugpIn1ofs=
+			KeMWv+9jiMMwS55+x6EXfyrGEVwEVognAs2q+8GZprk=
 			</data>
 		</dict>
 		<key>Headers/BIDMADNativeAdView.h</key>
@@ -483,11 +483,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tq9ZwJOLTXKWvO6Dxzz+fLrBidU=
+			QfiKi3q4oNanydYlgKlZdiHNPQ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			vlY7VYAwg42P2IJ2AoaBbi2PqW6vdRBLlRL6Q3UHmtw=
+			fgEU5oYJTPYlYP1dJSnfIbCY7b3GuwLha/mAHFJFP4o=
 			</data>
 		</dict>
 		<key>Headers/BIDMADUtil.h</key>
@@ -516,11 +516,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8h03lorxikppPwl5U3F0SocmYG4=
+			/bv2vuZO36a0LSsBh8wtYAhXqYE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ldr5VN6q2ed07OWhcrxXmtNnr6xFB/oyMChjq9zXGug=
+			5A3QPwbzYHx08kdQEF/QWe0H2Qw4s8gEOR5sgUxocA0=
 			</data>
 		</dict>
 		<key>Headers/BidmadKeychainItemWrapper.h</key>
@@ -538,11 +538,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LvvMpIpBJRR4G3ZYbZDET07Oubw=
+			ju+V2yyaJGdeyNb9276yq/N7LXI=
 			</data>
 			<key>hash2</key>
 			<data>
-			WMXjwYKqGElrymGhlwDmch/mGXlCggzgLZbstSLa9Wk=
+			+3ZFzDlt0MCzbO8eG3uL7v6oRqL7+HKhDPTSvhZVFzQ=
 			</data>
 		</dict>
 		<key>Headers/BidmadParentUIView.h</key>

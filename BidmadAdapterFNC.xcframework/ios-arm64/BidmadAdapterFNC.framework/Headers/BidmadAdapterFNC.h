@@ -34,4 +34,3 @@ FOUNDATION_EXPORT const unsigned char BidmadAdapterFNCVersionString[];
 #import "BidmadAdmobAdapterPangleReward.h"
 #import "BidmadAdapterFNCConsentManager.h"
 #import "BIDMADPangleNativeAd.h"
-#import "BidmadPrebidBanner.h"
