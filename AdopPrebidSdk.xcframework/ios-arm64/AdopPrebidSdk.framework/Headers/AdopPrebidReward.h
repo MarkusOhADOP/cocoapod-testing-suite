@@ -27,7 +27,6 @@
 
 @property (nonatomic, strong) id<AdopPrebidRewardDelegate> _Nullable delegate;
 @property (nonatomic) NSString * _Nonnull configId;
-@property (nonatomic) NSString * _Nullable storedAuctionResponse;
 
 - (id _Nullable)initWithParentViewController:(UIViewController * _Nonnull)parentVC;
 

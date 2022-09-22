@@ -1,0 +1,239 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdopPrebidSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "AdopPrebidSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogUtil",
+        "printedName": "LogUtil",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchBidResponse",
+            "printedName": "fetchBidResponse(fromFullscreenAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSDictionary?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BaseInterstitialAdUnit",
+                "printedName": "PrebidMobile.BaseInterstitialAdUnit",
+                "usr": "c:@M@PrebidMobile@objc(cs)BaseInterstitialAdUnit"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdopPrebidSdk@objc(cs)LogUtil(cm)fetchBidResponseFromFullscreenAd:",
+            "mangledName": "$s13AdopPrebidSdk7LogUtilC16fetchBidResponse16fromFullscreenAdSo12NSDictionaryCSg0B6Mobile016BaseInterstitialK4UnitC_tFZ",
+            "moduleName": "AdopPrebidSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchBidResponse",
+            "printedName": "fetchBidResponse(fromBannerAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSDictionary?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "PrebidMobile.BannerView",
+                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdopPrebidSdk@objc(cs)LogUtil(cm)fetchBidResponseFromBannerAd:",
+            "mangledName": "$s13AdopPrebidSdk7LogUtilC16fetchBidResponse12fromBannerAdSo12NSDictionaryCSg0B6Mobile0J4ViewC_tFZ",
+            "moduleName": "AdopPrebidSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchBidResponse",
+            "printedName": "fetchBidResponse(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSDictionary?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdopPrebidSdk@objc(cs)LogUtil(cm)fetchBidResponseWith:",
+            "mangledName": "$s13AdopPrebidSdk7LogUtilC16fetchBidResponse4withSo12NSDictionaryCSgyXl_tFZ",
+            "moduleName": "AdopPrebidSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogUtil",
+                "printedName": "AdopPrebidSdk.LogUtil",
+                "usr": "c:@M@AdopPrebidSdk@objc(cs)LogUtil"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AdopPrebidSdk@objc(cs)LogUtil(im)init",
+            "mangledName": "$s13AdopPrebidSdk7LogUtilCACycfc",
+            "moduleName": "AdopPrebidSdk",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AdopPrebidSdk@objc(cs)LogUtil",
+        "mangledName": "$s13AdopPrebidSdk7LogUtilC",
+        "moduleName": "AdopPrebidSdk",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

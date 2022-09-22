@@ -14,15 +14,15 @@
 		</data>
 		<key>Headers/AdopPrebidInterstitial.h</key>
 		<data>
-		HqbfCFzOtXrpwUpqXtHKnMgpbcU=
+		5AktkFTz/uDph34Fuo3Z6+YSt4Q=
 		</data>
 		<key>Headers/AdopPrebidReward.h</key>
 		<data>
-		OnjRPy+RHnJUmN8YdkAqId31yd4=
+		nKwF1HVK9vJRtKVoBx/GWlRpbOs=
 		</data>
 		<key>Headers/AdopPrebidSdk-Swift.h</key>
 		<data>
-		i//zV6JzdWOv2RDcD+ZjFGxQJq0=
+		1lrguD0+FSYbUgZ6uLgtEzNhXAo=
 		</data>
 		<key>Headers/AdopPrebidSdk.h</key>
 		<data>
@@ -34,23 +34,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		e4l+NPz1urWcnmFmbV2Q48PIQEk=
+		nH0J3cr3tUmq0jD56gJ4IW7iDY0=
+		</data>
+		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		oKN4DpXMNUC209Dzgy63KdCBZBE=
+		</data>
+		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		ttdsbYz2Hl058GxU3j/kVaA9Z1I=
 		</data>
 		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		hZIaf9dWDAUVlFXwdgW210Nwjk4=
+		hXfHjhxGGWV7QmFlJ3sE1lq8U04=
 		</data>
 		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Gg+SiAvoJPLOO0RBoNVkxUQnx1o=
+		ttdsbYz2Hl058GxU3j/kVaA9Z1I=
 		</data>
 		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		M/auSY2ov/lDX/S/8yVj6HOrlzY=
+		jec4MqgvoPsBnTNPgf05efeVwQk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		MPoInclxbsoweVQFNKtsGZ8di0Y=
+		ibkEMZ7vM0OimYpgn9TG1uOW6QI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,33 +89,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HqbfCFzOtXrpwUpqXtHKnMgpbcU=
+			5AktkFTz/uDph34Fuo3Z6+YSt4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			o9q+/SMjJ2mJIPUGJbBjDDowpljEBkAvA+HK5Z7MWGA=
+			TIfgG8e96ynhZ54cBHoXpxkkBt1iFNmNdRTrF5Kq5Cc=
 			</data>
 		</dict>
 		<key>Headers/AdopPrebidReward.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OnjRPy+RHnJUmN8YdkAqId31yd4=
+			nKwF1HVK9vJRtKVoBx/GWlRpbOs=
 			</data>
 			<key>hash2</key>
 			<data>
-			gTFjfrG/CPzFDeZkZNDx2LSSaKQzlWcYCa4EJZcqTK8=
+			UQgNTS5geriCkjbz5hHcrKQ23cSGMyISS5xvLGcWuMs=
 			</data>
 		</dict>
 		<key>Headers/AdopPrebidSdk-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i//zV6JzdWOv2RDcD+ZjFGxQJq0=
+			1lrguD0+FSYbUgZ6uLgtEzNhXAo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z4c3DKzUcOAp2h26g1ut54Y7aHrFyUgVOPWhCtPSm5o=
+			ur38bKyWt0S//pIuKYZNL97fDnE8vcDsXuNPTnXQMUM=
 			</data>
 		</dict>
 		<key>Headers/AdopPrebidSdk.h</key>
@@ -132,48 +140,70 @@
 			AgEzlnOVQvFY31HIvUes9SuzqE5G8tDIjBVXToI9i1M=
 			</data>
 		</dict>
+		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oKN4DpXMNUC209Dzgy63KdCBZBE=
+			</data>
+			<key>hash2</key>
+			<data>
+			iMcodbNKOMolbdykEmAJBamlLMnw7fdjzheDxqRS8TY=
+			</data>
+		</dict>
+		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ttdsbYz2Hl058GxU3j/kVaA9Z1I=
+			</data>
+			<key>hash2</key>
+			<data>
+			IsZLjP2ptgOcjcKvH4ey1Ud+LvXxr644jdfnzJjWb3Y=
+			</data>
+		</dict>
 		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hZIaf9dWDAUVlFXwdgW210Nwjk4=
+			hXfHjhxGGWV7QmFlJ3sE1lq8U04=
 			</data>
 			<key>hash2</key>
 			<data>
-			5rujTwRW8XOGexhjoPRhOOrK1uo9O8NAa4F/55EjuZE=
+			+toVJH7pHfB/Td5Rv1QAFBhHOBfp/dJI0OdMJ7J9I34=
 			</data>
 		</dict>
 		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Gg+SiAvoJPLOO0RBoNVkxUQnx1o=
+			ttdsbYz2Hl058GxU3j/kVaA9Z1I=
 			</data>
 			<key>hash2</key>
 			<data>
-			1/AgDTmOGeCiaoDXTAuLi64zK93YrgY4VEIMGIFxNi0=
+			IsZLjP2ptgOcjcKvH4ey1Ud+LvXxr644jdfnzJjWb3Y=
 			</data>
 		</dict>
 		<key>Modules/AdopPrebidSdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M/auSY2ov/lDX/S/8yVj6HOrlzY=
+			jec4MqgvoPsBnTNPgf05efeVwQk=
 			</data>
 			<key>hash2</key>
 			<data>
-			egLvqoWnyrhA2ieYbIAhO4WSZZB3Y7IWpFPzViOXe4Y=
+			iPkVpW80UTzNApEumhtZrhQIo+kzeNJWK8lFKKZSV4Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MPoInclxbsoweVQFNKtsGZ8di0Y=
+			ibkEMZ7vM0OimYpgn9TG1uOW6QI=
 			</data>
 			<key>hash2</key>
 			<data>
-			VTV2PvkQn/Z+ml3McMHOV/gD2ghcrbPomIiLedv1fzU=
+			PAYX4O3WAxsHytXkL8Yf8EnLpmGg8B4lrYz0Tfe0zW4=
 			</data>
 		</dict>
 	</dict>
