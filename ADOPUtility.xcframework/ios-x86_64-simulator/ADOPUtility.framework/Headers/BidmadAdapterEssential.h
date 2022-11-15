@@ -20,7 +20,7 @@
                         isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent
                         isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent;
 - (void)load;
-- (void)show;
+- (void)showOnViewController:(UIViewController *)viewController;
 - (void)remove;
 - (void)setIsDebug:(BOOL)isDebug;
 

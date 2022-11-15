@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ADOPUtility.h</key>
 		<data>
-		stkxLcOXoEMTzy0X9ffJjZCosL4=
+		nmNqwr0a2zVxVQDkUyvF2O75DTE=
 		</data>
 		<key>Headers/BIDMADNativeAdCommonInterface.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/BidmadAdapterEssential.h</key>
 		<data>
-		7izIMShZjQafdeLf63l3eKTS7oA=
+		KrEUczfyzQ1Uwlbp0XtLcPXVUNA=
 		</data>
 		<key>Headers/BidmadAdapterOfferwallAdditional.h</key>
 		<data>
@@ -56,6 +56,10 @@
 		<data>
 		/xm+zUoVNpLTuL+pMfsTzeJ6jqs=
 		</data>
+		<key>Headers/BidmadLoadStatus.h</key>
+		<data>
+		PPSYN/7nu6dtSr/JH3aSj73Mx7E=
+		</data>
 		<key>Headers/BidmadLoadabilityManager.h</key>
 		<data>
 		fL5gC083nKVZAT+2eB3FfDMqDy8=
@@ -74,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bsxduOyOQfdPjcpr/RyM/0MesxM=
+		EZ1t0HTdB0HQ0tDJiIf2sctJYSg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,11 +113,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			stkxLcOXoEMTzy0X9ffJjZCosL4=
+			nmNqwr0a2zVxVQDkUyvF2O75DTE=
 			</data>
 			<key>hash2</key>
 			<data>
-			BEa+2yvRlblzXhsEObOBNlV3j+F5XJGphxCHshF1sDM=
+			Mskoi5Yk/wU8pz3e1rGtdZIr0BX62cPb+RE9MURS+N4=
 			</data>
 		</dict>
 		<key>Headers/BIDMADNativeAdCommonInterface.h</key>
@@ -153,11 +157,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7izIMShZjQafdeLf63l3eKTS7oA=
+			KrEUczfyzQ1Uwlbp0XtLcPXVUNA=
 			</data>
 			<key>hash2</key>
 			<data>
-			lxGegB0orK/JGUku/XcxFSgXNWcp2xGXYJmlGzrXpHA=
+			WlkxD/rIYCK1m1MaoEwo73yxLbN9cjJtiErNiZtcU4E=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdapterOfferwallAdditional.h</key>
@@ -224,6 +228,17 @@
 			<key>hash2</key>
 			<data>
 			+8zBQXf5Z/GuMELRoxhu15vkUnhtDTanJ8IOelLPB9U=
+			</data>
+		</dict>
+		<key>Headers/BidmadLoadStatus.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PPSYN/7nu6dtSr/JH3aSj73Mx7E=
+			</data>
+			<key>hash2</key>
+			<data>
+			ckIYsunwPs2AW0qfSI2Ol+TguqxX0NyhDN/qML4uAB4=
 			</data>
 		</dict>
 		<key>Headers/BidmadLoadabilityManager.h</key>

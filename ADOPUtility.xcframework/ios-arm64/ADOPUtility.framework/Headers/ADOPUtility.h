@@ -31,3 +31,4 @@ FOUNDATION_EXPORT const unsigned char ADOPUtilityVersionString[];
 #import "BIDMADNativeAdCommonInterface.h"
 #import "BidmadDynamicClassLoader.h"
 #import "ADOPLog.h"
+#import "BidmadLoadStatus.h"

@@ -35,7 +35,6 @@
 @property (nonatomic, strong) id<OpenBiddingRewardInterstitialDelegate> delegate;
 @property (nonatomic, strong) NSDictionary*                             ads_dic;
 @property (nonatomic, strong) UIViewController*                         parentViewController;
-@property (nonatomic, strong) NSString*                                 userId;
 @property (nonatomic, strong) NSString*                                 sessionId;
 @property (nonatomic)         NSString*                                 zoneID;
 @property (nonatomic)         BOOL                                      isLoaded;

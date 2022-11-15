@@ -31,24 +31,14 @@
 /// SHOW INTERSTITIAL VIEW
 - (void)BIDMADOpenBiddingInterstitialShow:(OpenBiddingInterstitial *)core;
 
-@end
-
-@protocol BIDMADOpenBiddingInterstitialInnerDelegate <NSObject>
-@required
-
-- (void)onInterstitialLoad:(OpenBiddingInterstitial *)core       current:(NSDictionary*) currentDic;
-- (void)onInterstitialError:(OpenBiddingInterstitial *)core code:(NSString *)error failType:(NSString*)failType current:(NSDictionary*)currentDic passbackStr:(NSString*) passBackStr passback:(NSDictionary*) passbackDic;
-- (void)onInterstitialShow:(OpenBiddingInterstitial *)core       current:(NSDictionary*) currentDic;
-- (void)onInterstitialClick:(OpenBiddingInterstitial *)core      current:(NSDictionary*) currentDic;
-- (void)onInterstitialClose:(OpenBiddingInterstitial *)core      current:(NSDictionary*) currentDic;
+/// USER CLICKED THE INTERSTITIAL AD
+- (void)BIDMADOpenBiddingInterstitialClick:(OpenBiddingInterstitial *)core;
 
 @end
 
-
-@interface OpenBiddingInterstitial : NSObject <BIDMADOpenBiddingInterstitialInnerDelegate, BIDMADInterstitialDelegate>
+@interface OpenBiddingInterstitial : NSObject
 
 @property (nonatomic, strong) id<BIDMADOpenBiddingInterstitialDelegate>      delegate;
-@property (nonatomic, strong) id<BIDMADOpenBiddingInterstitialInnerDelegate> innerDelegate;
 @property (nonatomic, strong) UIViewController*                              parentViewController;
 @property (strong, nonatomic) NSDictionary*                                  ads_dic;
 @property (strong, nonatomic) NSDictionary*                                  ecmp_rev_info;
@@ -56,11 +46,14 @@
 @property (strong, nonatomic) NSDictionary*                                  change_info;
 @property (strong, nonatomic) NSDictionary*                                  date;
 @property (nonatomic)         NSString*                                      zoneID;
-@property (nonatomic)         bool                                           justLoading;
 @property (nonatomic)         NSString*                                      realZoneId;
-@property (nonatomic)         BOOL                                           isLoaded;
+@property (readonly)         BOOL                                           isLoaded;
 @property (nonatomic, strong) NSString* _Nullable                            CUID;
 @property (nonatomic, strong) NSString* _Nullable                            currentAdNetwork;
+@property (nonatomic) BidmadLoadStatus loadStatus;
+@property (nonatomic, strong) NSDictionary * _Nullable currentAdData;
+
+- (nonnull instancetype)initWith:(UIViewController * _Nullable)parentViewController zoneID:(NSString * _Nonnull)zoneID;
 
 ///inititalize
 - (id)init;
@@ -75,6 +68,17 @@
 - (void)selectAds:(NSDictionary *)lv_dic;
 
 - (void)removeInterstitialADS;
+
+// MARK: INNER-DELEGATE
+
+- (void)onInterstitialClick;
+- (void)onInterstitialError:(NSString * _Nonnull)error failType:(NSString * _Nonnull)failType;
+- (void)onInterstitialError:(NSString * _Nonnull)error
+                   failType:(NSString * _Nonnull)failType
+              failLogEnable:(BOOL)failLogEnable;
+- (void)onInterstitialLoad;
+- (void)onInterstitialShow;
+- (void)onInterstitialClose;
 
 @end
 

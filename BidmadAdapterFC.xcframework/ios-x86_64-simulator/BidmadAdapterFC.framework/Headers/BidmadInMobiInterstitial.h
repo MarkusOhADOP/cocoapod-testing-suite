@@ -10,10 +10,11 @@
 #import <UIKit/UIKit.h>
 #import <ADOPUtility/BidmadAdapterAdEssential.h>
 #import "BidmadInMobiInterface.h"
+#import <ADOPUtility/BidmadAdapterEssential.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadInMobiInterstitial : BidmadAdapterAdEssential <BidmadIMInterstitialDelegate>
+@interface BidmadInMobiInterstitial : BidmadAdapterAdEssential <BidmadIMInterstitialDelegate, BidmadAdapterEssential>
 
 @property (nonatomic, strong) NSNumber * _Nonnull isInMobiInitialized;
 

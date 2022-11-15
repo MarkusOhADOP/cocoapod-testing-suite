@@ -9,10 +9,11 @@
 
 #import <UIKit/UIKit.h>
 #import <ADOPUtility/BidmadAdapterAdEssential.h>
+#import <ADOPUtility/BidmadAdapterEssential.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadVungleInterstitial : BidmadAdapterAdEssential
+@interface BidmadVungleInterstitial : BidmadAdapterAdEssential <BidmadAdapterEssential>
 
 @property (nonatomic, strong) NSUUID * _Nonnull adIdentifier;
 @property (nonatomic, strong) NSDictionary<NSString *, NSNumber *> * _Nonnull loadableConditions;

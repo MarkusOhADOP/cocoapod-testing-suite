@@ -11,7 +11,6 @@
 #import <Foundation/Foundation.h>
 #import "BIDMADUtil.h"
 #import "BIDMADSetting.h"
-#import "BIDMADAtomReward.h"
 #import "BIDMADAdmanager.h"
 #import "BIDMADInterstitial.h"
 #import "BIDMADAdmobAppOpenAd.h"
@@ -25,7 +24,6 @@
 @property (nonatomic, strong) id<BIDMADAppOpenAdDelegate> _Nullable delegate;
 @property (strong, nonatomic) NSDictionary*               _Nullable ads_dic;
 @property (nonatomic)         NSString*                   _Nullable zoneID;
-@property (nonatomic, strong) NSString* 	              _Nullable userId;
 @property (nonatomic, strong) NSString*                   _Nullable CUID;
 @property (nonatomic) BOOL                          isLabelService;
 @property (nonatomic) BOOL                          isLabelServiceAdmin;
@@ -90,7 +88,6 @@
 @property (nonatomic, strong) id<OpenBiddingAppOpenAdDelegateProtocol> _Nullable delegate;
 @property (strong, nonatomic) NSDictionary*                    _Nullable ads_dic;
 @property (nonatomic)         NSString*                        _Nullable zoneID;
-@property (nonatomic, strong) NSString*                        _Nullable userId;
 @property (nonatomic, strong) NSString*                        _Nullable CUID;
 @property (nonatomic)         BOOL                                       testMode;
 @property (nonatomic)         BOOL                                       isComplete;

@@ -10,10 +10,11 @@
 #import <UIKit/UIKit.h>
 #import <ADOPUtility/BidmadAdapterAdEssential.h>
 #import "BidmadAdColonyInterface.h"
+#import <ADOPUtility/BidmadAdapterEssential.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadAdColonyInterstitial : BidmadAdapterAdEssential <BidmadADCInterstitialDelegate>
+@interface BidmadAdColonyInterstitial : BidmadAdapterAdEssential <BidmadADCInterstitialDelegate, BidmadAdapterEssential>
 
 @property (nonatomic, strong) NSNumber * _Nonnull isAdColonyInitialized;
 @property (nonatomic) BOOL isRewardedAd;

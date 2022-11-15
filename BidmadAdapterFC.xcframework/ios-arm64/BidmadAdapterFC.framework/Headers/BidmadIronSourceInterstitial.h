@@ -11,10 +11,11 @@
 #import "BidmadIronSourceInterstitial.h"
 #import <ADOPUtility/BidmadAdapterAdEssential.h>
 #import "BidmadIronSourceBridge.h"
+#import <ADOPUtility/BidmadAdapterEssential.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadIronSourceInterstitial : BidmadAdapterAdEssential <BidmadBridgeISInterstitialDelegate, BidmadISLogDelegate>
+@interface BidmadIronSourceInterstitial : BidmadAdapterAdEssential <BidmadBridgeISInterstitialDelegate, BidmadISLogDelegate, BidmadAdapterEssential>
 
 @property (nonatomic, strong) NSUUID * _Nonnull adIdentifier;
 @property (nonatomic, strong) NSDictionary<NSString *, NSNumber *> * _Nonnull loadableConditions;

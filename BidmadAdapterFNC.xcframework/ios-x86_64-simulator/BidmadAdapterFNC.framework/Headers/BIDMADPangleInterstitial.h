@@ -10,8 +10,9 @@
 
 #import <Foundation/Foundation.h>
 #import <BUAdSDK/BUAdSDK.h>
+#import <ADOPUtility/BidmadAdapterEssential.h>
 
-@interface BIDMADPangleInterstitial : NSObject<BUFullscreenVideoAdDelegate>
+@interface BIDMADPangleInterstitial : NSObject<BUFullscreenVideoAdDelegate, BidmadAdapterEssential>
 
 @property (weak,nonatomic) id __nullable bidmadControllerForCallbacks;
 

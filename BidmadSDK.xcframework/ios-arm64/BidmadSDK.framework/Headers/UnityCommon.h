@@ -35,6 +35,8 @@
 - (BOOL)getAdvertiserTrackingEnabled;
 - (void)reqAdTrackingAuthorization;
 - (void)setGoogleTestId:(NSString*)testDeviceId;
+- (NSString *)userID;
+- (void)setUserID:(NSString *)userID;
 
 @end
 

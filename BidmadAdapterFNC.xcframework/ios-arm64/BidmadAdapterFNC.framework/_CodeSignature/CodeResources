@@ -6,7 +6,7 @@
 	<dict>
 		<key>APMInsightCore.bundle/APMInsightInfo.plist</key>
 		<data>
-		jWXrQ2u3jdczzc4fqCC/xAbeC5I=
+		W1ihCYQAJyvcBa5F93a2fogPg4g=
 		</data>
 		<key>APMInsightCrash.bundle/APMInsightSDKAddressRange.plist</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/BIDMADPangleInterstitial.h</key>
 		<data>
-		D8aVijF3rTnq8hAr/sIzHO3H3wc=
+		VuwVfR+h2c5fxzCALIWyGn0BcZY=
 		</data>
 		<key>Headers/BIDMADPangleNativeAd.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/BIDMADPangleReward.h</key>
 		<data>
-		n/BUJmOHTbckq9sK3AiOScKgaZE=
+		bXztbDv3tp2m0t9gwtgN004V7mg=
 		</data>
 		<key>Headers/BidmadAdFit.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/BidmadAdapterFNC.h</key>
 		<data>
-		/3quwDu+Chq/l4ToGdpADDyHFco=
+		RtLZ1jkGU/XMGuhb+8TivBKXvNE=
 		</data>
 		<key>Headers/BidmadAdapterFNCConsentManager.h</key>
 		<data>
@@ -68,6 +68,10 @@
 		<data>
 		yBT9+J2h2DrHg9XPcW7hvR5TSpI=
 		</data>
+		<key>Headers/BidmadConvenienceNativeAdForPangle.h</key>
+		<data>
+		HSsN2keIAYNGFfy3ReWnZ/Ux+zA=
+		</data>
 		<key>Headers/BidmadFyberBanner.h</key>
 		<data>
 		48ovcPRc1q9Gj04utmCvWx0dr/E=
@@ -76,13 +80,37 @@
 		<data>
 		4P0Z2JB7yKggvvd19YGesTNxmDc=
 		</data>
+		<key>Headers/BidmadPrebidBanner.h</key>
+		<data>
+		8YiyvFg5DjPSfTRrzlfVAHv01cE=
+		</data>
+		<key>Headers/BidmadPrebidInterstitial.h</key>
+		<data>
+		HebF6Zwf1dwLeyq7vhbqDfCIL9g=
+		</data>
+		<key>Headers/BidmadPrebidReward.h</key>
+		<data>
+		ue/7vvhxfkBRaMfoNvga3Z//+50=
+		</data>
+		<key>Headers/BidmadPubmaticBanner.h</key>
+		<data>
+		+fdwF3vTttHbPyI1mJKEd+ZCIrs=
+		</data>
+		<key>Headers/BidmadPubmaticInterstitial.h</key>
+		<data>
+		QkdhVRInls5hoX78bGVm5jjMwBM=
+		</data>
+		<key>Headers/BidmadPubmaticReward.h</key>
+		<data>
+		qEVMrER9e0mfj8HfejrU5vrG/u8=
+		</data>
 		<key>Headers/BidmadTapjoy.h</key>
 		<data>
 		80Yoh1eJHK/uz4P05Bitsf+KFvw=
 		</data>
 		<key>Headers/BidmadTapjoyInterstitial.h</key>
 		<data>
-		RCbzZulIFRlvym9WJCifd+up1hE=
+		T6LqQTrWyuZB+Bq5bOrMabNFzg8=
 		</data>
 		<key>Headers/BidmadTapjoyInterstitialLoadabilityManager.h</key>
 		<data>
@@ -106,7 +134,7 @@
 		</data>
 		<key>IASDKResources.bundle/Info.plist</key>
 		<data>
-		qpH96roK2xmdLiiCWnDUCFrHXdE=
+		fZrDw0Jna2kYXrmrtNesVqdfVxY=
 		</data>
 		<key>IASDKResources.bundle/browserBack.png</key>
 		<data>
@@ -182,7 +210,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tr8KgbBGI+pDQDWk60civxSKqQ8=
+		+hkINeu9TU+zASAx+pmEv8HmGvw=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -194,24 +222,24 @@
 		</data>
 		<key>PAGAdSDK.bundle/Assets.car</key>
 		<data>
-		GC8Ws6Bx7dRk9QthC4ZOh/v6Vvk=
+		nhUmaLXWKOLSm0uqJgWKYvg5osA=
 		</data>
 		<key>PAGAdSDK.bundle/Info.plist</key>
 		<data>
-		sJilup1Je3DFLNHCtJoPNXaa98c=
+		iLIqsOG4r9cP6qEl/kyNAe5FTcs=
 		</data>
 		<key>PAGAdSDK.bundle/ar.lproj/BULanguage.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GNULuM2d7J2sCW//QjLZWEbVwdo=
+			aeEIYVy0dKvCV2RAKkC4/F3wtMY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>PAGAdSDK.bundle/bu_dynamic_default.json</key>
 		<data>
-		MYcNUJ9PKCPTODjmXQ4h9KDz8mQ=
+		/ocZG2DmqrE204DQFp1KJWnBj68=
 		</data>
 		<key>PAGAdSDK.bundle/bu_logo@2x.data</key>
 		<data>
@@ -229,7 +257,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xu8pfzrf4t0GUo4ZaJbmOeo2Isg=
+			VppCZOK2Tjhevkdnk+DVLE+WsJk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -238,7 +266,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KkAM5BztK5NH0ALxQ0kYooBVQfQ=
+			s8LAySqFm5iOTqZNW8fZL2zW/Qc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -247,7 +275,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kr82Kr2Z9Po6axsLI3jyq3ZnHSQ=
+			ncHS/Cmd/eYfTSkUi7mcV5gaMNM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -256,7 +284,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c1DQvTJ7M/DK29HUsJr74M9zzuM=
+			OsSNYtFWQ9RcxgMnPg5/Hu6hBFQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -265,7 +293,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IuTLcxObD0kNYlWUSJAHx/OofoA=
+			DZqMnXrhmdw2k0Qildj8a9QKzeU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -274,7 +302,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hDSvmxAc6EbWddVlvZyNxicrQfo=
+			9J1nR9fa3yQy5cajPI7jJlNz08M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -283,7 +311,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+DSbSWHaax1FvE3y/jwEef9kQb0=
+			v6FWNDAU+a2B1z1dZd/WIJyqFT8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -292,7 +320,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qxEpD88EdP3jCqmkUQPRxbnZDso=
+			vpbcACnxmw3L/Hp3WNrxrdPrE7s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -301,16 +329,20 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JJVEwIiZN6xkVN4bhVevDm315RQ=
+			expSjOA2ev4XTKc6mElrYYxa7CE=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>PAGAdSDK.bundle/omsdk-v1.js</key>
+		<data>
+		wh6XC7qHRjX+Gr7DjO8H3R5QegY=
+		</data>
 		<key>PAGAdSDK.bundle/pt.lproj/BULanguage.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RRpZE6BMEB3creInEL5zVWfSKds=
+			RsavGZ4P4DPaQROyTk7YOZAVztc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -319,7 +351,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ERqSYV45XuJLHbpYM0joduYvGH0=
+			CLPiVZgZl+WMy6Y2BSfjjv09PaE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -332,20 +364,29 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CjvLQomtHAcSTD6nOiKe8mrGsps=
+			v1iDLqLfjt09ZnDBaNoHlQxMMr0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PAGAdSDK.bundle/tr.lproj/BULanguage.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cL5GFWgeAngQvlXgLcO2+n9efuo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>PAGAdSDK.bundle/version.txt</key>
 		<data>
-		EuKbghTlGxgEAkigG2Ua+Osphgw=
+		oQ4czpZ/aXFsob7FlRpgYqz8LAo=
 		</data>
 		<key>PAGAdSDK.bundle/vi.lproj/BULanguage.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MrjJr0RoG6Iman1tJAhuRGCbvA0=
+			Yx8xuvOG5tkc5A/ch+9tfj00NlY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -368,6 +409,26 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>POBResources.bundle/close.tiff</key>
+		<data>
+		PrIYaW8xqI1DT80Bov7Lgv00WK0=
+		</data>
+		<key>POBResources.bundle/mute.tiff</key>
+		<data>
+		2VYJIi2gXEpQDT4C6d6Z9lmtPm8=
+		</data>
+		<key>POBResources.bundle/omsdk-v1.js</key>
+		<data>
+		HLTF5+1HU2hoYquUpf0GG8R+ndA=
+		</data>
+		<key>POBResources.bundle/pmmraid.js</key>
+		<data>
+		MGFoLmH8A7/0UmZC7zvXUwXAXT4=
+		</data>
+		<key>POBResources.bundle/unmute.tiff</key>
+		<data>
+		8tm/TMgPijrWUWUKxlFuGmAS4RE=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -375,11 +436,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jWXrQ2u3jdczzc4fqCC/xAbeC5I=
+			W1ihCYQAJyvcBa5F93a2fogPg4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			mn/VkvV97q20IvHyN1hrvhU4tZoMCHzrqgkO+zUXJMg=
+			X5nnyPY7ZKp2laeeMlv4sn6bbvqn7TeHDoDLvb1h3BI=
 			</data>
 		</dict>
 		<key>APMInsightCrash.bundle/APMInsightSDKAddressRange.plist</key>
@@ -452,11 +513,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D8aVijF3rTnq8hAr/sIzHO3H3wc=
+			VuwVfR+h2c5fxzCALIWyGn0BcZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			/NVqCTJGQa21ZS0qzQAaKDtWVOlUmed+g/rzmRq9/E4=
+			94vEpQtL8HwpK6TIFh+HkHDgEMhyc9LumFXsGJKYthc=
 			</data>
 		</dict>
 		<key>Headers/BIDMADPangleNativeAd.h</key>
@@ -474,11 +535,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n/BUJmOHTbckq9sK3AiOScKgaZE=
+			bXztbDv3tp2m0t9gwtgN004V7mg=
 			</data>
 			<key>hash2</key>
 			<data>
-			1DlBNYdbUez4yGedY58GXbcfubo7EJAuJIpnlyeabdw=
+			qTus+tfIFhnExZHKR66jgYcFptgSc+81UqkBHtSUV5U=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdFit.h</key>
@@ -496,11 +557,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/3quwDu+Chq/l4ToGdpADDyHFco=
+			RtLZ1jkGU/XMGuhb+8TivBKXvNE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hmei+yS6afcawuyXtlGkV8VAnbPaDRg5CjWbnyVw/jM=
+			0kTR3yjCM+uDdkFomGKQk6RfD1Bbh5R0RFUP5eM9+Hg=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdapterFNCConsentManager.h</key>
@@ -547,6 +608,17 @@
 			nS5WcbIEvpxGc1VT/JTSgZ6k2eY5kfblj6S80nRbEOw=
 			</data>
 		</dict>
+		<key>Headers/BidmadConvenienceNativeAdForPangle.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HSsN2keIAYNGFfy3ReWnZ/Ux+zA=
+			</data>
+			<key>hash2</key>
+			<data>
+			OMgRracMJkwrUgSqr2WcqOw9ToriIFt4VM9Aa1kuNMk=
+			</data>
+		</dict>
 		<key>Headers/BidmadFyberBanner.h</key>
 		<dict>
 			<key>hash</key>
@@ -569,6 +641,72 @@
 			DzbyV3eVbzmwDGSWGwNu8HATezRC6bCxQz6mWWWLz6c=
 			</data>
 		</dict>
+		<key>Headers/BidmadPrebidBanner.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8YiyvFg5DjPSfTRrzlfVAHv01cE=
+			</data>
+			<key>hash2</key>
+			<data>
+			i84Ib4PwtdxsLvalBil3hFk+SjBCivCmYm7n+P7cIvQ=
+			</data>
+		</dict>
+		<key>Headers/BidmadPrebidInterstitial.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HebF6Zwf1dwLeyq7vhbqDfCIL9g=
+			</data>
+			<key>hash2</key>
+			<data>
+			5hLf58VB2kS4pxvuTWBw0nuaMvcsv4HJomBJFL4PiEU=
+			</data>
+		</dict>
+		<key>Headers/BidmadPrebidReward.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ue/7vvhxfkBRaMfoNvga3Z//+50=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ai0G+HvW7tvKTPQaYoriMGFNgTSqkfj78r3xB9oKzBw=
+			</data>
+		</dict>
+		<key>Headers/BidmadPubmaticBanner.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+fdwF3vTttHbPyI1mJKEd+ZCIrs=
+			</data>
+			<key>hash2</key>
+			<data>
+			3O9Tc33yh49l6rgQvL9TIe7WgFdkDIqcl4hz7yNwwYw=
+			</data>
+		</dict>
+		<key>Headers/BidmadPubmaticInterstitial.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QkdhVRInls5hoX78bGVm5jjMwBM=
+			</data>
+			<key>hash2</key>
+			<data>
+			mtb7j4AykAyLAxzKOZ/TsY/TrYjrNGPBfg+BBb2+i4c=
+			</data>
+		</dict>
+		<key>Headers/BidmadPubmaticReward.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qEVMrER9e0mfj8HfejrU5vrG/u8=
+			</data>
+			<key>hash2</key>
+			<data>
+			tofp0O+ySNAlVDsMnvlww5HrSwkuUdVstOtWljFx8Q4=
+			</data>
+		</dict>
 		<key>Headers/BidmadTapjoy.h</key>
 		<dict>
 			<key>hash</key>
@@ -584,11 +722,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RCbzZulIFRlvym9WJCifd+up1hE=
+			T6LqQTrWyuZB+Bq5bOrMabNFzg8=
 			</data>
 			<key>hash2</key>
 			<data>
-			OsjZeg5XCNGWdvkpnMFTd1vyiP6xoq4eA7ICI9SUKyU=
+			8jPO80EeBI3EHc11Zm8bONCPfkUpxnG431RkoAsH9RU=
 			</data>
 		</dict>
 		<key>Headers/BidmadTapjoyInterstitialLoadabilityManager.h</key>
@@ -650,11 +788,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qpH96roK2xmdLiiCWnDUCFrHXdE=
+			fZrDw0Jna2kYXrmrtNesVqdfVxY=
 			</data>
 			<key>hash2</key>
 			<data>
-			/G41kjs62zbkGgXtC4tjAMIkLvucCVeKQNgQFC5pn+o=
+			HdqB5el5nsrsV6dOIPZiQFuc/aeyASOs41AP64famm0=
 			</data>
 		</dict>
 		<key>IASDKResources.bundle/browserBack.png</key>
@@ -881,33 +1019,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GC8Ws6Bx7dRk9QthC4ZOh/v6Vvk=
+			nhUmaLXWKOLSm0uqJgWKYvg5osA=
 			</data>
 			<key>hash2</key>
 			<data>
-			SnO552hLWx2YdMDohZICU+WOoOZdngTb4ZPofOo7R9c=
+			zXLzV8MoN0LrlQ+m49pNRi5W4wgUUvQ/Gev/kp4E3F0=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sJilup1Je3DFLNHCtJoPNXaa98c=
+			iLIqsOG4r9cP6qEl/kyNAe5FTcs=
 			</data>
 			<key>hash2</key>
 			<data>
-			AhqjDXXWxHywuHPcmax2AjdyV/a7U78z9/tezRJ7SiA=
+			y41K2bWS6gKLaSjAB/7nWFb28oiL+Xc/ZdvuVmWwF7s=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/ar.lproj/BULanguage.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GNULuM2d7J2sCW//QjLZWEbVwdo=
+			aeEIYVy0dKvCV2RAKkC4/F3wtMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			EsOvhYUI6eQhWNVHv53ILEZEN8NidwCiM3hXwU/vC8w=
+			ajXUsM1OGxAbiHS6nZcKOX14jp/WDO4vv9sKQE2YMpQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -916,11 +1054,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MYcNUJ9PKCPTODjmXQ4h9KDz8mQ=
+			/ocZG2DmqrE204DQFp1KJWnBj68=
 			</data>
 			<key>hash2</key>
 			<data>
-			5gCppphvFZfUtIqw7nBJdnwMBGJKsHSH7IEyylj8BcY=
+			IcJ3g/bMqJpeQd8TrMptbbrd8QCqCaFX2ixgYNDHE0E=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/bu_logo@2x.data</key>
@@ -960,11 +1098,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xu8pfzrf4t0GUo4ZaJbmOeo2Isg=
+			VppCZOK2Tjhevkdnk+DVLE+WsJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			U3qkgTYVhS16zuinWPQn7A/5oCUqIZbRE6ODwQA1DOg=
+			ulQXhJgOx3tAGLY9AhJwiSBL71tfo3IAaSI6Qs+tUpk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -973,11 +1111,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KkAM5BztK5NH0ALxQ0kYooBVQfQ=
+			s8LAySqFm5iOTqZNW8fZL2zW/Qc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nzz+FmvKPhB8yl8qW+hbiBGzmzQ5V+PtVXxBU5Iurt4=
+			AxIuFjJ5Mvi/A3kJBokclcOvOaxIZ8nPx+LZI9iPM10=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -986,11 +1124,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kr82Kr2Z9Po6axsLI3jyq3ZnHSQ=
+			ncHS/Cmd/eYfTSkUi7mcV5gaMNM=
 			</data>
 			<key>hash2</key>
 			<data>
-			VOM9uC4GTLRA+Tv/T+BWf/bTJszMqA/lPNEENAozDbE=
+			Sk7KEBt7OH8RqUb9jftp7jvDqyn7riQiS4sHYkmRo14=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -999,11 +1137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c1DQvTJ7M/DK29HUsJr74M9zzuM=
+			OsSNYtFWQ9RcxgMnPg5/Hu6hBFQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rpYFE96Gpv712rHAF7/QNbxBZAY9wdkkxe5r6BnxCLk=
+			1AGKDdj5nB6+vPjyjWVzn0JrNHrtJs4LX0yrTVVrQuI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1012,11 +1150,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IuTLcxObD0kNYlWUSJAHx/OofoA=
+			DZqMnXrhmdw2k0Qildj8a9QKzeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			MXQB4znzfN84Y8hgyDk6L14EIpmTgDEtIZm2ovN/XdA=
+			3OL4/97MJ0jeCIOkCH4wurkXuNHOuPnprvVg9C54Jzo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1025,11 +1163,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hDSvmxAc6EbWddVlvZyNxicrQfo=
+			9J1nR9fa3yQy5cajPI7jJlNz08M=
 			</data>
 			<key>hash2</key>
 			<data>
-			YTey5wrqu9WrpoqA7JiOx1kSGPs/aRzvfrbX973uE7A=
+			mb0XbB7cBXoTCM33grzdr/wQLX0BNFQl4SJesLaB58M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1038,11 +1176,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+DSbSWHaax1FvE3y/jwEef9kQb0=
+			v6FWNDAU+a2B1z1dZd/WIJyqFT8=
 			</data>
 			<key>hash2</key>
 			<data>
-			sc6joRk79pxIlDs2096IGUuIG8AcVNhWTOFQ8Su1vmc=
+			FL5Rop+BMu0bfg4SlqYf/ownvve0MhpxJYr+EjA+Ung=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1051,11 +1189,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qxEpD88EdP3jCqmkUQPRxbnZDso=
+			vpbcACnxmw3L/Hp3WNrxrdPrE7s=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rp7MbldY80sDrDjqk7tBuDVikjvA846roBZ282VRgT4=
+			JIsI9cATCYJvLjFaerzpQqZn6lONkXPbfDsHiR8Yxa4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1064,24 +1202,35 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JJVEwIiZN6xkVN4bhVevDm315RQ=
+			expSjOA2ev4XTKc6mElrYYxa7CE=
 			</data>
 			<key>hash2</key>
 			<data>
-			pdZfm0+eu6A56GiYerScLe/+cVISLuGW3ppPbnPxz3U=
+			oU3Js+9KLELkftijj22Ga9KX3QOuBLdjo/kBsZWS1yY=
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>PAGAdSDK.bundle/omsdk-v1.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wh6XC7qHRjX+Gr7DjO8H3R5QegY=
+			</data>
+			<key>hash2</key>
+			<data>
+			ajgmBpu4Daz5aH8DaB6UtzgLB7puYm7pPDSSwwqspnY=
+			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/pt.lproj/BULanguage.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RRpZE6BMEB3creInEL5zVWfSKds=
+			RsavGZ4P4DPaQROyTk7YOZAVztc=
 			</data>
 			<key>hash2</key>
 			<data>
-			5vNAVsrvvabJS5qbzClRGkqM1kXtLtnuulJYKbXkilU=
+			2ZLpig24EpDzkexezz2rmOpB5ByAG1lZXwl9ETNQQ7c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1090,11 +1239,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ERqSYV45XuJLHbpYM0joduYvGH0=
+			CLPiVZgZl+WMy6Y2BSfjjv09PaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			fRMYQKt7iQg4y6oBN/qG1Qh6LxrIXDbVK5TJUbJzoTY=
+			rPX0FHjaWPJ7SZeLLLf7VvuueMgxeaF+B3xVCfGrWqM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1114,11 +1263,24 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CjvLQomtHAcSTD6nOiKe8mrGsps=
+			v1iDLqLfjt09ZnDBaNoHlQxMMr0=
 			</data>
 			<key>hash2</key>
 			<data>
-			qCX1N/+u0ArRro6e+J3OyK1yWVcMJ+3oaGdbiI4zRWI=
+			L4+A2JXDukr3da6FuYzuFcFYEcbUtMfCkknsQP85sr0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PAGAdSDK.bundle/tr.lproj/BULanguage.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cL5GFWgeAngQvlXgLcO2+n9efuo=
+			</data>
+			<key>hash2</key>
+			<data>
+			LmaBjp+tlfaz7peddGLtY5P9vx6a7X5VbfLxdDgLe6s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1127,22 +1289,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EuKbghTlGxgEAkigG2Ua+Osphgw=
+			oQ4czpZ/aXFsob7FlRpgYqz8LAo=
 			</data>
 			<key>hash2</key>
 			<data>
-			6XqbEtE18hb9xsZfDM1K5uRXc3WDe6NRSD8ECtEUWDI=
+			LWTCd7zi8C3scijcrZYxgqJdgr7tCnvK9GKDYj18wco=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/vi.lproj/BULanguage.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MrjJr0RoG6Iman1tJAhuRGCbvA0=
+			Yx8xuvOG5tkc5A/ch+9tfj00NlY=
 			</data>
 			<key>hash2</key>
 			<data>
-			OBRbtrJoB4A+mak9sFHT8l4GVGHnxbNOdYvClxzocEo=
+			ShuQOBksnOY+O1aPRAYbwgMAvZnyNl9MBYgxISaMQ6I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1172,6 +1334,61 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>POBResources.bundle/close.tiff</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PrIYaW8xqI1DT80Bov7Lgv00WK0=
+			</data>
+			<key>hash2</key>
+			<data>
+			lLi4B+ZzIR5MDzVk1Rf6IMGR/H6dyQ2ZXl2bjB7XNWA=
+			</data>
+		</dict>
+		<key>POBResources.bundle/mute.tiff</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2VYJIi2gXEpQDT4C6d6Z9lmtPm8=
+			</data>
+			<key>hash2</key>
+			<data>
+			CJKAYNRPGpsNY/nf1GUfQq9S+hudH8L9IN3jCwD1oXI=
+			</data>
+		</dict>
+		<key>POBResources.bundle/omsdk-v1.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HLTF5+1HU2hoYquUpf0GG8R+ndA=
+			</data>
+			<key>hash2</key>
+			<data>
+			En6uGQJYYOILrfT3vX3mLczuXMX2T0ywCOAksbzBdO4=
+			</data>
+		</dict>
+		<key>POBResources.bundle/pmmraid.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MGFoLmH8A7/0UmZC7zvXUwXAXT4=
+			</data>
+			<key>hash2</key>
+			<data>
+			fIFu7tRqDdgir1JY3oVXuAY3vqD4GAgAmf1llYkW/D4=
+			</data>
+		</dict>
+		<key>POBResources.bundle/unmute.tiff</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8tm/TMgPijrWUWUKxlFuGmAS4RE=
+			</data>
+			<key>hash2</key>
+			<data>
+			4fXEOvZbzSR311Q9cxj3x/9s0Mk0vYzu6x13tBWOCWw=
+			</data>
 		</dict>
 	</dict>
 	<key>rules</key>

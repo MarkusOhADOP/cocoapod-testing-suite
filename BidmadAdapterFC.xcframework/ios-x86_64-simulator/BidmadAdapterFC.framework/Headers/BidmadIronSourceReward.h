@@ -10,10 +10,11 @@
 #import <UIKit/UIKit.h>
 #import <ADOPUtility/BidmadAdapterAdEssential.h>
 #import "BidmadIronSourceBridge.h"
+#import <ADOPUtility/BidmadAdapterEssential.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadIronSourceReward : BidmadAdapterAdEssential <BidmadBridgeISRewardedVideoDelegate, BidmadISLogDelegate>
+@interface BidmadIronSourceReward : BidmadAdapterAdEssential <BidmadBridgeISRewardedVideoDelegate, BidmadISLogDelegate, BidmadAdapterEssential>
 @property (nonatomic, strong) NSUUID * _Nonnull adIdentifier;
 @property (nonatomic, strong) NSDictionary<NSString *, NSNumber *> * _Nonnull loadableConditions;
 @property (nonatomic) BOOL loadableConditionsPassed;

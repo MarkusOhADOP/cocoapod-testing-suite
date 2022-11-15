@@ -13,7 +13,7 @@
 @import Flutter;
 #endif
 
-@interface OpenBiddingFlutterInterstitial : NSObject<BIDMADInterstitialDelegate>
+@interface OpenBiddingFlutterInterstitial : NSObject <BIDMADOpenBiddingInterstitialDelegate>
 
 @property (strong, nonatomic) id flutterChannel;
 //- (id)initInterstitial:(NSObject<FlutterPluginRegistrar>*)registrar channelName:(NSString*)chanNm;

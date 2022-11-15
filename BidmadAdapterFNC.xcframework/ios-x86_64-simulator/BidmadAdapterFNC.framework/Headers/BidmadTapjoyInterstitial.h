@@ -10,10 +10,11 @@
 #import <UIKit/UIKit.h>
 #import <ADOPUtility/BidmadAdapterAdEssential.h>
 #import <Tapjoy/Tapjoy.h>
+#import <ADOPUtility/BidmadAdapterEssential.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadTapjoyInterstitial : BidmadAdapterAdEssential <TJPlacementDelegate, TJPlacementVideoDelegate>
+@interface BidmadTapjoyInterstitial : BidmadAdapterAdEssential <TJPlacementDelegate, TJPlacementVideoDelegate, BidmadAdapterEssential>
 
 @property (nonatomic, strong) NSUUID * _Nonnull adIdentifier;
 @property (nonatomic, strong) NSDictionary<NSString *, NSNumber *> * _Nonnull loadableConditions;

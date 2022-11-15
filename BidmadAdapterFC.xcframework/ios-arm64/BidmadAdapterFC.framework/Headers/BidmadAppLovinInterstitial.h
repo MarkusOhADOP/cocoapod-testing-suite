@@ -10,10 +10,11 @@
 #import <UIKit/UIKit.h>
 #import <AppLovinSDK/AppLovinSDK.h>
 #import <ADOPUtility/BidmadAdapterAdEssential.h>
+#import <ADOPUtility/BidmadAdapterEssential.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadAppLovinInterstitial : BidmadAdapterAdEssential <ALAdDisplayDelegate, ALAdLoadDelegate, ALAdVideoPlaybackDelegate>
+@interface BidmadAppLovinInterstitial : BidmadAdapterAdEssential <ALAdDisplayDelegate, ALAdLoadDelegate, ALAdVideoPlaybackDelegate, BidmadAdapterEssential>
 @property (nonatomic, strong) NSUUID * _Nonnull adIdentifier;
 @property (nonatomic, strong) NSDictionary<NSString *, NSNumber *> * _Nonnull loadableConditions;
 @property (nonatomic, strong) NSNumber * _Nonnull isAppLovinInitialized;

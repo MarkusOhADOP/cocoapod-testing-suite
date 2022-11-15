@@ -11,10 +11,11 @@
 #import <ADOPUtility/BidmadAdapterAdEssential.h>
 #import <ADOPUtility/BidmadLoadabilityManager.h>
 #import <AppLovinSDK/AppLovinSDK.h>
+#import <ADOPUtility/BidmadAdapterEssential.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadAppLovinReward : BidmadAdapterAdEssential <ALAdDisplayDelegate, ALAdLoadDelegate, ALAdRewardDelegate, ALAdVideoPlaybackDelegate>
+@interface BidmadAppLovinReward : BidmadAdapterAdEssential <ALAdDisplayDelegate, ALAdLoadDelegate, ALAdRewardDelegate, ALAdVideoPlaybackDelegate, BidmadAdapterEssential>
 
 @property (nonatomic, strong) NSNumber * _Nonnull isAppLovinInitialized; //BOOLEAN
 @property (nonatomic, strong) NSUUID * _Nonnull adIdentifier;

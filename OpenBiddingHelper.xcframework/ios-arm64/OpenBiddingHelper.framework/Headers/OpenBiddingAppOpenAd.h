@@ -21,11 +21,9 @@
 @property (nonatomic, strong) id<OpenBiddingAppOpenAdDelegate> _Nullable delegate;
 @property (strong, nonatomic) NSDictionary*                    _Nullable ads_dic;
 @property (nonatomic)         NSString*                        _Nullable zoneID;
-@property (nonatomic, strong) NSString*                        _Nullable userId;
 @property (nonatomic, strong) NSString*                        _Nullable CUID;
 @property (nonatomic, strong) BIDMADAppOpenAd*                 _Nullable bidmadAppOpenAd;
 @property (nonatomic)         BOOL                                       testMode;
-@property (nonatomic)         BOOL                                       isComplete;
 @property (nonatomic)         BOOL                                       isLoaded;
 @property (nonatomic)         BOOL                                       isBidmadLoaded;
 @property (nonatomic)         BOOL                                       isDisplayingAd;

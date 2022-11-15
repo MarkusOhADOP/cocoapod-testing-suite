@@ -13,7 +13,7 @@
 @import Flutter;
 #endif
 
-@interface OpenBiddingFlutterRewardVideo : NSObject<BIDMADRewardVideoDelegate>
+@interface OpenBiddingFlutterRewardVideo : NSObject
 
 @property (strong, nonatomic) id flutterChannel;
 - (id)initRewardVideo:(id)registrar channelName:(NSString*)chanNm;

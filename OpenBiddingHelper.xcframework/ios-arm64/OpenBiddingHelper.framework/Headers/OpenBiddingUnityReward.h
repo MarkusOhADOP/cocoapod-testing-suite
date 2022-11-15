@@ -13,26 +13,16 @@
 
 #import <Foundation/Foundation.h>
 #import "OpenBiddingRewardVideo.h"
-#import <BidmadSDK/BIDMADSetting.h>
 
-static NSMutableDictionary* BidmadOpenBiddingRewardDic;
+@interface OpenBiddingUnityReward : NSObject
 
-@interface OpenBiddingUnityReward : NSObject <BIDMADOpenBiddingRewardVideoDelegate>{
-    NSString* mZoneId;
-    UIViewController* mParentVC;
-    id<BIDMADOpenBiddingRewardVideoDelegate> delegate;
-    @public OpenBiddingRewardVideo* bidmadReward;
-}
-
-- (id)initWithZoneId:(NSString *)zoneId parentVC:(UIViewController *)parentVC;
-+ (id)getInstance:(NSString *)zoneId;
-- (void)setZoneID:(NSString *)zoneId;
-- (void)setDelegate:(id) param;
-- (void)load;
-- (void)show;
-- (bool)isLoaded;
-- (void)setAutoReload:(bool)isAutoReload;
-- (void)setCUID:(NSString *)cuid;
++ (void)initialSetupForZoneID:(NSString *)zoneID;
++ (void)loadWithZoneID:(NSString *)zoneID;
++ (void)showWithZoneID:(NSString *)zoneID viewController:(UIViewController *)viewController;
++ (BOOL)isLoadedWithZoneID:(NSString *)zoneID;
++ (void)setDelegate:(id)instance;
++ (void)setCUID:(NSString *)cuid forZoneID:(NSString *)zoneID;
++ (void)setAutoReload:(BOOL)isAutoReload;
 
 @end
 

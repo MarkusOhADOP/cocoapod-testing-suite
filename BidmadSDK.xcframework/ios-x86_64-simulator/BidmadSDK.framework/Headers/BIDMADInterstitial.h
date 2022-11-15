@@ -15,48 +15,9 @@
 #import "BIDMADAdmob.h"
 #import "BIDMADAtomInterstitial.h"
 
-@protocol BIDMADInterstitialDelegate <NSObject>
-
-@optional
-
-- (void)BIDMADInterstitialAllFail:(BIDMADInterstitial *)core;
-
-/// PREPARED INTERSTITIAL VIEW
-- (void)BIDMADInterstitialLoad:(BIDMADInterstitial *)core;
-
-/// ERROR
-- (void)BIDMADInterstitialError:(BIDMADInterstitial *)core code:(NSString *)error;
-
-/// CLOSE INTERSTITIAL VIEW
-- (void)BIDMADInterstitialClose:(BIDMADInterstitial *)core;
-
-/// SHOW INTERSTITIAL VIEW
-- (void)BIDMADInterstitialShow:(BIDMADInterstitial *)core;
-
-@end
-
-@protocol BIDMADInterstitialInnerDelegate <NSObject>
-@required
-
-- (void)onInterstitialLoad;
-- (void)onInterstitialError:(NSString *)error failType:(NSString *)failType;
-- (void)onInterstitialShow;
-- (void)onInterstitialClick;
-- (void)onInterstitialClose;
-
-@end
-
-
-@interface BIDMADInterstitial : NSObject <BIDMADInterstitialInnerDelegate>
-
-@property (nonatomic, strong) id<BIDMADInterstitialDelegate> delegate;
-
-@property (nonatomic, strong) id<BIDMADInterstitialInnerDelegate> innerDelegate;
-
-@property (nonatomic, strong) UIViewController* parentViewController;
+@interface BIDMADInterstitial : NSObject
 
 @property (strong, nonatomic) NSDictionary*             ads_dic;
-@property (nonatomic) BOOL                     isDirectLoad;
 
 @property (strong, nonatomic) NSDictionary*                      ecpm_rev_info;
 @property (strong, nonatomic) NSDictionary*                      area_info;
@@ -66,16 +27,12 @@
 
 @property (nonatomic) NSString * zoneID;
 
-@property (nonatomic) bool justLoading;
-
 @property (nonatomic) int mediationNumber;
 
 @property (nonatomic) BOOL                       isLabelService;
 @property (nonatomic) BOOL                       isLabelServiceAdmin;
 
 @property (nonatomic) NSString *                 realZoneId;
-
-@property (nonatomic) BOOL                       isLoaded;
 
 @property (nonatomic, strong) NSString * _Nullable CUID;
 
@@ -119,6 +76,12 @@
 - (void)removeInterstitialADS;
 
 - (void)sendLog:(NSDictionary *)info :(NSString *)advertisementType :(NSString *)logType :(NSString *)recvSessionId :(NSString * _Nullable)cuid;
+
+- (void)onInterstitialClick;
+- (void)onInterstitialError:(NSString *)error failType:(NSString *)failType;
+- (void)onInterstitialLoad;
+- (void)onInterstitialShow;
+- (void)onInterstitialClose;
 
 @end
 

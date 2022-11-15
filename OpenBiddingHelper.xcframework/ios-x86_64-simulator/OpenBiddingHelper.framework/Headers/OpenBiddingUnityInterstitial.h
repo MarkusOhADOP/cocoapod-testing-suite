@@ -12,27 +12,17 @@
 #define OpenBiddingUnityInterstitial_h
 
 #import <Foundation/Foundation.h>
-#import <BidmadSDK/BIDMADSetting.h>
 #import "OpenBiddingInterstitial.h"
 
-static NSMutableDictionary* BidmadOpenBiddingInterstitialDic;
+@interface OpenBiddingUnityInterstitial : NSObject
 
-@interface OpenBiddingUnityInterstitial : NSObject <BIDMADOpenBiddingInterstitialDelegate>{
-    NSString* mZoneId;
-    id<BIDMADOpenBiddingInterstitialDelegate> delegate;
-    @public OpenBiddingInterstitial* bidmadInterstitial;
-    UIViewController* mParentVC;
-}
-
-- (id)initWithZoneId:(NSString *)zoneId parentVC:(UIViewController *)parentVC;
-+ (id)getInstance:(NSString *)zoneId;
-- (void)setZoneID:(NSString *)zoneId;
-- (void)setDelegate:(id) param;
-- (void)load;
-- (void)show;
-- (bool)isLoaded;
-- (void)setAutoReload:(bool)isAutoReload;
-- (void)setCUID:(NSString *)cuid;
++ (void)initialSetupForZoneID:(NSString *)zoneID;
++ (void)loadWithZoneID:(NSString *)zoneID;
++ (void)showWithZoneID:(NSString *)zoneID viewController:(UIViewController *)viewController;
++ (BOOL)isLoadedWithZoneID:(NSString *)zoneID;
++ (void)setDelegate:(id)instance;
++ (void)setCUID:(NSString *)cuid forZoneID:(NSString *)zoneID;
++ (void)setAutoReload:(BOOL)isAutoReload;
 
 @end
 

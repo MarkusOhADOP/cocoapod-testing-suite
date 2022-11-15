@@ -10,8 +10,9 @@
 
 #import <Foundation/Foundation.h>
 #import <BUAdSDK/BUAdSDK.h>
+#import <ADOPUtility/BidmadAdapterEssential.h>
 
-@interface BIDMADPangleReward : NSObject<BURewardedVideoAdDelegate>
+@interface BIDMADPangleReward : NSObject<BURewardedVideoAdDelegate, BidmadAdapterEssential>
 
 @property (weak,nonatomic) id __nullable bidmadControllerForCallbacks;
 

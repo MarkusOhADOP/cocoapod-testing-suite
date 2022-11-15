@@ -41,6 +41,7 @@ typedef struct BidmadAdColonyAdSize BidmadAdColonyAdSize;
 - (id _Nonnull)setPrivacyConsentString:(NSString *)consentString forType:(NSString *)type;
 - (BOOL)getPrivacyFrameworkRequiredForType:(NSString *)type;
 - (NSString *)getPrivacyConsentStringForType:(NSString *)type;
+@property (nonatomic, nullable, strong) NSString *userID;
 @end
 
 @protocol BidmadADCInterstitial <NSObject>
@@ -72,6 +73,8 @@ typedef struct BidmadAdColonyAdSize BidmadAdColonyAdSize;
 + (void)requestAdViewInZone:(NSString *)zoneID withSize:(BidmadAdColonyAdSize)size viewController:(UIViewController *)viewController andDelegate:(id<BidmadADCAdViewDelegate>)delegate;
 + (void)requestAdViewInZone:(NSString *)zoneID withSize:(BidmadAdColonyAdSize)size andOptions:(nullable id)options viewController:(UIViewController *)viewController andDelegate:(id<BidmadADCAdViewDelegate>)delegate;
 + (void)requestInterstitialInZone:(NSString *)zoneID options:(nullable id)options andDelegate:(id<BidmadADCInterstitialDelegate> _Nonnull)delegate;
++ (void)setAppOptions:(id<BidmadADCAppOptions>)options;
++ (nullable id<BidmadADCAppOptions>)getAppOptions;
 @end
 
 @interface BidmadAdColonyInterface : NSObject

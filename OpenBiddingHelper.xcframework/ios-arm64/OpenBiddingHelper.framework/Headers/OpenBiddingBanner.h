@@ -9,7 +9,6 @@
 #pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 
 #import <UIKit/UIKit.h>
-#import <BidmadSDK/BIDMADUtil.h>
 #import "OpenBiddingAdmob.h"
 #import <BidmadSDK/BidmadSDK.h>
 

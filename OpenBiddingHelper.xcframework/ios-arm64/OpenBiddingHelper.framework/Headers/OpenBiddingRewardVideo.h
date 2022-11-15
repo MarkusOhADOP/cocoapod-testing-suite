@@ -16,38 +16,29 @@
 #import "OpenBiddingAdmob.h"
 #import "OpenBiddingInterstitial.h"
 #import <BidmadSDK/BIDMADRewardVideo.h>
+#import <ADOPUtility/BidmadLoadStatus.h>
 
 @protocol BIDMADOpenBiddingRewardVideoDelegate;
 
-@interface OpenBiddingRewardVideo : NSObject <BIDMADRewardVideoDelegate>
+@interface OpenBiddingRewardVideo : NSObject
 
-@property (nonatomic, strong) id<BIDMADOpenBiddingRewardVideoDelegate> delegate;
-
+@property (nonatomic, strong) id<BIDMADOpenBiddingRewardVideoDelegate> _Nullable delegate;
 @property (nonatomic, strong) UIViewController*             parentViewController;
-
 @property (strong, nonatomic) NSDictionary*                 ads_dic;
-
 @property (strong, nonatomic) NSDictionary*                      ecmp_rev_info;
 @property (strong, nonatomic) NSDictionary*                      area_info;
-
 @property (strong, nonatomic) NSDictionary*                    change_info;
 @property (strong, nonatomic) NSDictionary*                    date;
-
 @property (nonatomic) NSString * zoneID;
-
-@property (nonatomic) bool justLoading;
-
-@property (nonatomic, strong) NSString* userId;
-
 @property (nonatomic) BOOL                       testMode;
-@property (nonatomic) BOOL                       isComplete;
-@property (nonatomic) BOOL                       isLoaded;
-
 @property (nonatomic) NSString *                 realZoneId;
-
 @property (nonatomic, strong) NSString * _Nullable CUID;
-
 @property (nonatomic, strong) NSString * _Nullable currentAdNetwork;
+@property (readonly) BOOL isLoaded;
+@property (nonatomic) BidmadLoadStatus loadStatus;
+@property (nonatomic, strong) NSDictionary * _Nullable currentAdData;
+
+- (nonnull instancetype)initWith:(UIViewController * _Nullable)parentViewController zoneID:(NSString * _Nonnull)zoneID;
 
 ///inititalize
 - (id)init;
@@ -58,16 +49,19 @@
 
 - (void)selectAds:(NSDictionary *)lv_dic;
 
-- (void)onVideoClose;
-
 // MARK: INNER DELEGATE
 
-- (void)onVideoLoad:(OpenBiddingRewardVideo *)core       current:(NSDictionary*) currentDic;
-- (void)onVideoError:(OpenBiddingRewardVideo *)core code:(NSString *)error failType:(NSString*) failType current:(NSDictionary*)currentDic passbackStr:(NSString*) passBackStr passback:(NSDictionary*) passbackDic;
-- (void)onVideoShow:(OpenBiddingRewardVideo *)core       current:(NSDictionary*) currentDic;
-- (void)onVideoClick:(OpenBiddingRewardVideo *)core      current:(NSDictionary*) currentDic;
-- (void)onVideoSuccess:(OpenBiddingRewardVideo *)core    current:(NSDictionary*) currentDic;
-- (void)onVideoSkipped:(OpenBiddingRewardVideo *) core   current:(NSDictionary*) currentDic;
+- (void)onVideoClick;
+/// Convenience Function for onVideoError:failType:failLogEnable:
+- (void)onVideoError:(NSString *)error failType:(NSString *)failType;
+- (void)onVideoError:(NSString * _Nonnull)error
+            failType:(NSString * _Nonnull)failType
+       failLogEnable:(BOOL)failLogEnable;
+- (void)onVideoLoad;
+- (void)onVideoShow;
+- (void)onVideoSkipped;
+- (void)onVideoSuccess;
+- (void)onVideoClose;
 
 @end
 

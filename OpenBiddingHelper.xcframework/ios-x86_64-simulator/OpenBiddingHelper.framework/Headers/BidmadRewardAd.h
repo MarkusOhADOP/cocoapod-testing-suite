@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BidmadRewardAd : NSObject <BidmadAdStandardFullScreenAd, BIDMADOpenBiddingRewardVideoDelegate>
 @property (nonatomic, strong) id <BIDMADOpenBiddingRewardVideoDelegate> _Nullable delegate;
 @property (nonatomic) BOOL isAutoReload;
+@property (nonatomic, strong) NSString * _Nullable userID;
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
 - (void)show;

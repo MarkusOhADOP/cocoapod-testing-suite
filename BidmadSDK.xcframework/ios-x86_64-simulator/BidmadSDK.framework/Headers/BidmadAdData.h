@@ -44,6 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (BidmadAd * _Nonnull)empty;
 
 - (instancetype _Nonnull)initWithAdcode:(NSString * _Nonnull)adcode pubid:(NSString * _Nonnull)pubid passback:(NSString * _Nonnull)passback adtype:(NSString * _Nonnull)adtype advidx:(NSString * _Nonnull)advidx areaidx:(NSString * _Nonnull)areaidx order:(NSString *_Nonnull)order width:(int)width height:(int)height adweight:(float)adweight advPrice:(float)advPrice;
+- (NSDictionary * _Nonnull)toDictionary;
 
 @end
 
