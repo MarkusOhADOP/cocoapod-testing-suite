@@ -14,9 +14,9 @@
 
 @interface BIDMADAtomInterstitial : UIViewController<WKNavigationDelegate>
 - (id)initWithAdDic:(NSDictionary *)dic;
-- (void)loadInterstitialAds:(UIViewController *)pvc;
+- (void)loadInterstitialAds;
 - (void)removeInterstitialAds;
-- (void)showInterstitialAds;
+- (void)showInterstitialAdsOnViewController:(UIViewController *)viewController;
 @property (strong,nonatomic) BIDMADInterstitial* interstitial;
 @property (nonatomic) UIInterfaceOrientation startingInterfaceOrientation;
 @end

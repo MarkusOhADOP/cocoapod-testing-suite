@@ -15,21 +15,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BidmadBannerAd : NSObject <BidmadAdStandardBanner, BIDMADOpenBiddingBannerDelegate>
 
-@property (nonatomic, strong) id <BIDMADOpenBiddingBannerDelegate> _Nullable delegate;
+@property (nonatomic, weak) id <BIDMADOpenBiddingBannerDelegate> _Nullable delegate;
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController containerView:(UIView * _Nonnull)containerView zoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
 - (void)setRefreshInterval:(NSInteger)refreshIntervalTime;
-- (void)setCUID:(NSString * _Nonnull)cuid;
 - (void)hide;
 - (void)show;
 - (void)remove;
 
 #pragma mark BIDMADOpenBiddingBannerDelegate Methods
 
-- (void)BIDMADOpenBiddingBannerLoad:(OpenBiddingBanner * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingBannerClick:(OpenBiddingBanner * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingBannerAllFail:(OpenBiddingBanner * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingBannerClosed:(OpenBiddingBanner * _Null_unspecified)core;
+- (void)onLoadAd:(OpenBiddingBanner * _Nonnull)bidmadAd;
+- (void)onClickAd:(OpenBiddingBanner * _Nonnull)bidmadAd;
+- (void)onLoadFailAd:(OpenBiddingBanner * _Nonnull)bidmadAd error:(NSError * _Nullable)error;
+- (void)onCloseAd:(OpenBiddingBanner * _Nonnull)bidmadAd;
 
 @end
 

@@ -9,6 +9,6 @@ framework module AdopPrebidSdk {
 }
 
 module AdopPrebidSdk.Swift {
-  header "AdopPrebidSdk-Swift.h"
-  requires objc
+    header "AdopPrebidSdk-Swift.h"
+    requires objc
 }

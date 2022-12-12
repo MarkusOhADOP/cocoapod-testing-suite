@@ -12,6 +12,7 @@
 
 #import <Foundation/Foundation.h>
 #import <ADOPUtility/BidmadSendLogDelegate.h>
+#import <ADOPUtility/BidmadSettingInterface.h>
 
 #define GOOGLE_ADMANAGER        @"41350b05-4415-44b2-8e17-b5fe52d1bd6e"
 #define GOOGLE_ADMOB            @"ce56da00-1a18-11e9-9ed2-02c31b446301"
@@ -42,7 +43,7 @@
 #define PREBID                  @"f797ee95-1172-11ed-a117-026864a21938"
 #define PUBMATIC                @"ec4a2c71-58c8-11ed-a117-026864a21938"
 
-#define COMPASS_SERVING         @"https://compass.adop.cc/serving/ms.php"
+#define COMPASS_SERVING         @"https://bidmad.adop.cc/serving/ms3.php"
 #define COMPASS_SERVING_TEST    @"https://compasstest.adop.cc/serving/ms.php"
 
 #define BIDMAD_ARPM_URL @"https://compassmgr.adop.cc/auth/changeMediationByBidmad/"
@@ -98,13 +99,14 @@ typedef void (^CompleteHandler)(BidmadTrackingAuthorizationStatus status);
 extern NSString* _Nonnull const BIDMAD_GDPR_CONSENT;
 extern NSString* _Nonnull const BIDMAD_CCPA_CONSENT;
 
-@interface BIDMADSetting : NSObject
+@interface BIDMADSetting : NSObject <BidmadSettingInterface>
 
 + (BIDMADSetting *)sharedInstance;
 - (void)setAdvertiserTrackingEnabled:(BOOL)enable;
 - (BOOL)getAdvertiserTrackingEnabled;
 - (void)reqAdTrackingAuthorizationWithCompletionHandler:(CompleteHandler)completeHandler;
 - (void)initializeSdk;
+- (void)initializeSdkWithKey:(NSString *)appKey;
 
 /// If your app is directed to kids under the age of 13, please set YES or true.
 - (void)setIsChildDirectedAds: (BOOL)isChildDirectedAdsNeeded;
@@ -178,7 +180,12 @@ extern NSString* _Nonnull const BIDMAD_CCPA_CONSENT;
 
 @property (nonatomic, strong) id<BidmadSendLogDelegate> __nullable bidmadLogDelegate;
 
-/// Setting this property results in enabling a server-side callbacks from rewarded ads from various ad networks.
-@property (nonatomic, strong) NSString * __nullable userID;
+/// Setting this property allows CUID to be sent to ADOP.
+@property (nonatomic, strong) NSString * __nullable cuid;
+
+/// Setting this property to @YES enables a server-side callbacks from rewarded ads from various ad networks
+@property (nonatomic) NSNumber * _Nonnull useServerSideCallback;
+
+@property (readonly) BOOL isInitialized;
 
 @end

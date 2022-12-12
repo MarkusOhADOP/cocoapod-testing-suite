@@ -10,20 +10,23 @@
 #import <UIKit/UIKit.h>
 #import <UnityAds/UnityAds.h>
 #import <ADOPUtility/BidmadAdapterAdEssential.h>
+#import <ADOPUtility/BidmadAdapterEssential.h>
+#import <ADOPUtility/BidmadAdapterBannerAdditional.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadUnityAdsBanner : BidmadAdapterAdEssential <UADSBannerViewDelegate, UnityAdsInitializationDelegate>
+@interface BidmadUnityAdsBanner : BidmadAdapterAdEssential <UADSBannerViewDelegate, UnityAdsInitializationDelegate, BidmadAdapterEssential, BidmadAdapterBannerAdditional>
 
 @property (nonatomic, strong) NSNumber * _Nonnull isUnityAdsInitialized;
 
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID
                                 pubID:(NSString * _Nullable)pubID
-                               rootVC:(UIViewController * _Nonnull)rootVC
+                               rootVC:(UIViewController * _Nullable)rootVC
                            parentView:(UIView * _Nullable)parentView
                               isChild:(NSNumber * _Nullable)isChild
                         isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent
-                        isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent;
+                        isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent
+                     bidmadController:(id _Nonnull)bidmadController;
 - (void)initializationComplete;
 - (void)initializationFailed:(UnityAdsInitializationError)error withMessage:(NSString * _Nonnull)message;
 - (void)load;

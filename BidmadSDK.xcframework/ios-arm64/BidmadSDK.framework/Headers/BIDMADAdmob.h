@@ -13,53 +13,34 @@
 #import "BIDMADBanner.h"
 #import "BIDMADInterstitial.h"
 #import "BIDMADRewardVideo.h"
-#import "BIDMADRewardInterstitial.h"
-
+#import <GoogleMobileAds/GoogleMobileAds.h>
 #import "BIDMADSetting.h"
 #import "BIDMADUtil.h"
-#import "BIDMADLabelView.h"
-//#import "UIButton+circle.h"
-#if __has_include("GoogleMobileAds/GoogleMobileAds.h")
-#import "GoogleMobileAds/GoogleMobileAds.h"
-#define GOOGLESDK_EXIST
-#endif
-
-#define REWARD_INTERSTITIAL_TEST_AD @"ca-app-pub-3940256099942544/6978759866"
 
 @class BIDMADBanner;
 @class BIDMADInterstitial;
 @class BIDMADRewardVideo;
 @class BIDMADAppOpenAd;
-@class BIDMADRewardInterstitial;
 
-#ifdef GOOGLESDK_EXIST
 @interface BIDMADAdmob : NSObject<GADBannerViewDelegate, GADFullScreenContentDelegate>
 
-#else
-@interface BIDMADAdmob : NSObject
-#endif
+NS_ASSUME_NONNULL_BEGIN
 
 @property (weak,nonatomic) BIDMADBanner* banner;
 @property (weak,nonatomic) BIDMADInterstitial* interstitial;
 @property (weak,nonatomic) BIDMADRewardVideo* rewardVideo;
 
 - (id)initWithAdBanner:(NSDictionary *)dic bidmadbanner:(BIDMADBanner *)banner isChildDirectedAds:(NSNumber* __nullable)isChild;
-- (id)initWithInterstitial:(NSDictionary *)dic bidmadInterstitial:(BIDMADInterstitial *)interstitial isChildDirectedAds:(NSNumber* __nullable)isChild;
 - (id)initWithRewardVideo:(NSDictionary *)dic bidmadReward:(BIDMADRewardVideo *)rewardVideo isChildDirectedAds:(NSNumber* __nullable)isChild;
-- (id)initWithRewardInterstitial:(NSDictionary *)dic bidmadInterstitial:(BIDMADRewardInterstitial *)rewardInterstitialArg isChildDirectedAds:(NSNumber* __nullable)isChild;
-
-- (void)showAdmobBanner:(UIViewController *)pvc bannerContainer:(UIView*)bannerContainer;
-- (void)showAdmobInterstitial:(UIViewController *)pvc;
-- (void)showAdmobRewardVideo: (UIViewController *)pvc;
-- (void)loadAdmobRewardInterstitial:(UIViewController *)pvc;
-- (void)showAdmobRewardInterstitial;
-
-- (void)removeBannerAds;
+- (id)initWithInterstitial:(NSDictionary *)dic bidmadInterstitial:(BIDMADInterstitial *)interstitial isChildDirectedAds:(NSNumber* __nullable)isChild;
+- (void)showAdmobBanner:(UIViewController *)pvc bannerContainer:(UIView *)bannerContainer;
+- (void)loadAdmobInterstitial;
+- (void)showAdmobInterstitial:(UIViewController *)parentViewController;
+- (void)removeAll;
 - (void)removeInterstitialAds;
-- (void)gogoInterstitial;
-- (void)gogoRewardVideo;
-
-- (void)setTestDevice:(NSString *) deviceId;
-//- (void)setGDPRData;
+- (void)loadAdmobRewardVideo;
+- (void)showAdmobRewardVideo:(UIViewController *)parentViewController;
 
 @end
+
+NS_ASSUME_NONNULL_END

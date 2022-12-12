@@ -10,7 +10,7 @@
 @import PrebidMobile;
 #import "AdopPrebid.h"
 
-@protocol AdopPrebidRewardDelegate
+@protocol AdopPrebidRewardDelegate <NSObject>
 
 @optional
 - (void)onRewardLoad;
@@ -18,20 +18,18 @@
 - (void)onRewardClick;
 - (void)onRewardClose;
 - (void)onRewardComplete;
-- (void)onRewardSkip;
 - (void)onRewardFail:(NSError * _Nonnull)error;
 
 @end
 
 @interface AdopPrebidReward : NSObject<RewardedAdUnitDelegate>
 
-@property (nonatomic, strong) id<AdopPrebidRewardDelegate> _Nullable delegate;
+@property (nonatomic, weak) id<AdopPrebidRewardDelegate> _Nullable delegate;
 @property (nonatomic) NSString * _Nonnull configId;
 
-- (id _Nullable)initWithParentViewController:(UIViewController * _Nonnull)parentVC;
-
+- (id _Nonnull)initWithConfigId:(NSString * _Nonnull)configId;
 - (void)requestAd;
 - (BOOL)isLoaded;
-- (void)showAd;
+- (void)showAdOnViewController:(UIViewController * _Nonnull)viewController;
 
 @end

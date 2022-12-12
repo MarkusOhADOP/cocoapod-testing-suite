@@ -71,7 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface ATOMRewardedVideo : NSObject <ATOMRewardedVideoUIDelegate, ATOMPlaybackDelegate>
+@interface ATOMRewardedVideo : BidmadAdapterAdEssential <ATOMRewardedVideoUIDelegate, ATOMPlaybackDelegate, BidmadAdapterEssential, BidmadAdapterRewardAdditional>
 
 /// preferredLanguage : the first choice user's languages
 @property (nonatomic, strong) NSString * _Nonnull preferredLanguage;
@@ -85,17 +85,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// remainingTimeMessage : used by ATOMRewardedVideoVC  ex) <Seconds> seconds remaining / <초> 초 남았습니다
 @property (nonatomic, strong) NSString * _Nonnull remainingTimeMessage;
 
-/// parentViewController : a view controller that will contain the ATOMRewardedVideoVC
-@property (nonatomic, strong) UIViewController * _Nonnull parentViewController;
-
 /// adData : used for sending ad data to ATOMRewardedVideoVC class
 @property (nonatomic, strong) ATOMRewardedVideoData * _Nonnull adData;
 
 /// logData : used only for sending logs for ATOM ads
 @property (nonatomic, strong) ATOMRewardedVideoLogData * _Nonnull logData;
-
-/// bidmad : an instance sent from BidmadSDK (BIDMADRewardVideo class), used for callbacks
-@property (nonatomic, strong) id _Nonnull bidmad;
 
 /// atomRewardURLs : This property has urls that contain the video and image to download
 @property (nonatomic, strong) ATOMURLAssociatedFileTypes * _Nonnull atomRewardURLs;
@@ -115,11 +109,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// isAnimating : (Landscape Only) the ad presents a banner on the bottom that can be animated up and down. If isAnimating is true, there is currently an animation already being drawn.
 @property (nonatomic) BOOL isAnimating;
 
-- (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentVC
-                          adData:(NSDictionary<NSString *, id> * _Nonnull)adData
-                          bidmad:(id _Nonnull)bidmad;
-- (void)loadAd;
-- (void)showAd;
+/// savedTopViewController : this property is used for checking the size and orientation of the device
+@property (nonatomic, strong) UIViewController * _Nullable savedTopViewController;
+
+- (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID
+                                pubID:(NSString * _Nullable)pubID
+                               rootVC:(UIViewController * _Nullable)rootVC
+                           parentView:(UIView * _Nullable)parentView
+                              isChild:(NSNumber * _Nullable)isChild
+                        isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent
+                        isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent
+                     bidmadController:(id _Nonnull)bidmadController;
+
 @end
 
 NS_ASSUME_NONNULL_END

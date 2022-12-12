@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ADOPUtility-Dev"
-  s.version      = "4.6.0.0"
+  s.version      = "5.0.0.0"
   s.platform     = :ios, "11.0"
   s.summary      = "ADOP Utility is a utility collection framework for ADOP Libraries."
   s.description  = "ADOP Uitlity is a utility collection framework for ADOP Libraries, including BidmadSDK, BidmadAdapters, and OpenBiddingHelper"

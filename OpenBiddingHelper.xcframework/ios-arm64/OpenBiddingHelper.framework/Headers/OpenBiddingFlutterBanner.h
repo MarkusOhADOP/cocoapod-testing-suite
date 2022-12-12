@@ -11,9 +11,9 @@
 #if __has_include(<Flutter/Flutter.h>) || __has_include("Flutter.h")
 @import Flutter;
 
-@interface OpenBiddingFlutterBanner : NSObject<BIDMADBannerDelegate, FlutterPlatformView>
+@interface OpenBiddingFlutterBanner : NSObject<FlutterPlatformView>
 #else
-@interface OpenBiddingFlutterBanner : NSObject<BIDMADBannerDelegate>
+@interface OpenBiddingFlutterBanner : NSObject
 #endif
 
 @property (strong, nonatomic) id flutterChannel;

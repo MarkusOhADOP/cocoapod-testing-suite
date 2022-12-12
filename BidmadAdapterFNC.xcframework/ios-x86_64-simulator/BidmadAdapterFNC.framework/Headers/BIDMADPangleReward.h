@@ -10,24 +10,24 @@
 
 #import <Foundation/Foundation.h>
 #import <BUAdSDK/BUAdSDK.h>
+#import <ADOPUtility/BidmadAdapterAdEssential.h>
 #import <ADOPUtility/BidmadAdapterEssential.h>
+#import <ADOPUtility/BidmadAdapterRewardAdditional.h>
 
-@interface BIDMADPangleReward : NSObject<BURewardedVideoAdDelegate, BidmadAdapterEssential>
-
-@property (weak,nonatomic) id __nullable bidmadControllerForCallbacks;
+@interface BIDMADPangleReward : BidmadAdapterAdEssential<BURewardedVideoAdDelegate, BidmadAdapterEssential, BidmadAdapterRewardAdditional>
 
 - (id __nonnull)initWithAppID:(NSString * _Nonnull)appID
-                                pubID:(NSString * _Nullable)pubID
-                               rootVC:(UIViewController * _Nonnull)rootVC
-                           parentView:(UIView * _Nullable)parentView
-                              isChild:(NSNumber * _Nullable)isChild
-                        isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent
-                        isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent;
+                        pubID:(NSString * _Nullable)pubID
+                       rootVC:(UIViewController * _Nullable)rootVC
+                   parentView:(UIView * _Nullable)parentView
+                      isChild:(NSNumber * _Nullable)isChild
+                isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent
+                isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent
+             bidmadController:(id _Nonnull)bidmadController;
 - (void)load;
 - (void)setIsRewardedAd:(BOOL)isRewardedAd;
 - (void)setIsDebug:(BOOL)isDebug;
-- (void)setBidmadController:(id __nonnull)bidmadController;
-- (void)show;
+- (void)showOnViewController:(UIViewController * _Nonnull)viewController;
 - (void)hide;
 - (void)remove;
 

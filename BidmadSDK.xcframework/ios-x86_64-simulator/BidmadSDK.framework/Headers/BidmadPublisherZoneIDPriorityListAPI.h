@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Return a tuple (array) of arrays, each represeting the interstitial ads that should be loaded
  * @return Promise of Array of InterstitialAds and RewardAds
  */
-+ (id)getPriorityAdAreasWithAppKey:(NSString *)appKey;
++ (void)getPriorityAdAreasWithAppKey:(NSString *)appKey handler:(void (^)(NSError *error, NSArray *interstitialAds, NSArray *rewardAds))handler;
 
 @end
 

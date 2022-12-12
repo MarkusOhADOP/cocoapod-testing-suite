@@ -23,10 +23,9 @@
 
 @interface AdopPrebidBanner : UIViewController<BannerViewDelegate>
 
-@property (strong, nonatomic) id<AdopPrebidBannerDelegate> delegate;
+@property (nonatomic, weak) id<AdopPrebidBannerDelegate> _Nullable delegate;
 @property (nonatomic) int refreshInterval;
 @property (nonatomic) NSString *configId;
-@property (nonatomic) NSString *storedAuctionResponse;
 
 - (id)initWithParentViewController:(UIViewController *)parentVC rootView:(UIView *)view;
 - (id)initWithParentViewController:(UIViewController *)parentVC adsPosition:(CGPoint)point;

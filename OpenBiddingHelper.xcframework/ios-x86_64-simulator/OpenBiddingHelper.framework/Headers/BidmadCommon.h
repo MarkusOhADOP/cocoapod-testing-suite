@@ -31,8 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// Setting for CCPA User Consent Status. If nil, the app does not have to be compliant to CCPA.
 + (NSNumber * _Nullable)isUserConsentCCPA;
 + (void)initializeSdk;
-+ (void)setUserID:(NSString *)userID;
-+ (NSString *)userID;
++ (void)initializeSdkWithAppKey:(NSString * _Nonnull)appKey;
++ (void)setCuid:(NSString *)cuid;
++ (NSString *)cuid;
++ (void)setUseServerSideCallback:(BOOL)useServerSideCallback;
++ (BOOL)useServerSideCallback;
 
 @end
 

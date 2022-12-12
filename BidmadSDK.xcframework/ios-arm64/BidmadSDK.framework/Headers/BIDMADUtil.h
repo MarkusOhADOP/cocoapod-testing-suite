@@ -19,84 +19,44 @@
 #define MB (1024*1024)
 #define GB (MB*1024)
 
-typedef void (^CompletionBlock)();
-
 @interface BIDMADUtil : NSObject
 
-+ (NSString *)identifierForAdvertising;
++ (NSURLSessionDataTask * _Nonnull)dataTaskFromHost:(NSString * _Nonnull)host path:(NSString * _Nonnull)path queryItems:(NSArray<NSURLQueryItem *> * _Nonnull)queryItems handler:(void (^_Nonnull)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))handler;
 
-/// IMAGE RESIZING
-+ (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
++ (BOOL) isEmpty:(NSString * _Nonnull)str;
 
-/// GET DEVICE IP ADDRESS
-+ (NSString *)getIPAddress;
++ (NSString * _Nonnull)identifierForAdvertising;
 
-/// KEYWORD RETURN ARRAY
-+ (NSArray *) keywordReturnArr:(NSString *)keywords;
++ (id _Nonnull) nullCheck:(id _Nullable)checkData;
 
-+ (UIImage *) getImageFromURL:(NSString *)fileURL;
++ (BOOL)isNull:(NSString* _Nullable)str;
 
-+ (NSString*) deviceName;
++ (NSArray * _Nonnull) keywordReturnArr:(NSString * _Nonnull)keywords;
 
-+ (NSString *) getNetworkName:(NSString *)networkKey;
++ (NSString * _Nonnull) getNetworkName:(NSString * _Nonnull)networkKey;
 
-+ (id) nullCheck:(id)checkData;
++ (NSString* _Nonnull) deviceName;
 
-+ (BOOL)isNull:(NSString*)str;
++ (NSString * _Nonnull)getBundle:(NSString * _Nullable)file type:(NSString * _Nullable)type;
 
-+ (void)setTimer;
-
-+ (float)callTime;
-
-+ (NSString*) getDeviceName;
-+ (void)bidmadAlert:(NSString *)title message:(NSString *)message action:(NSString *)action;
-+ (NSString *)getBundle:(NSString *)file type:(NSString *)type;
-
-+ (NSString *)memoryFormatter:(long long)diskSpace;
-
-+ (NSString *)totalDiskSpace;
-
-+ (NSString *)freeDiskSpace;
-
-+ (NSDictionary*) DataCounter;
-
-+ (NSString *)GetCurrentWifiHotSpotName;
-
-+ (UIColor *)colorFromHexString:(NSString *)hexString;
-
-+ (BOOL) isEmpty:(NSString *)str;
-
-
-+ (NSInteger) iOSMajorSystemVersion;
-
-+ (UIWindow*) fetchKeyWindow;
++ (UIWindow* _Nullable)fetchKeyWindow;
 
 + (BOOL) isIphoneX;
 
 + (BOOL) isOverIOS11;
 
-+ (NSString *) getCurrentRegionInfo;
++ (NSString * _Nonnull)getCurrentRegionInfo;
 
-+ (UIViewController*) topMostController;
++ (UIViewController* _Nullable)topMostController;
 
-+ (NSData*)bidmadResourceDataFetcherWithAssetName: (NSString*)assetName extension: (NSString*)extension;
++ (NSData* _Nullable)bidmadResourceDataFetcherWithAssetName: (NSString* _Nonnull)assetName extension: (NSString* _Nonnull)extension;
 
-+ (NSURL*)bidmadResourceURLFetcherWithAssetName: (NSString*)assetName extension: (NSString*)extension;
++ (NSURL* _Nullable)bidmadResourceURLFetcherWithAssetName: (NSString* _Nonnull)assetName extension: (NSString* _Nonnull)extension;
 
-+ (NSBundle *)bundleLocationCheck;
++ (NSBundle * _Nullable)bundleLocationCheck;
 
-+ (void)compassDataFetcherWithZoneId: (NSString *)zoneId completionBlock:(void (^)(NSDictionary *, NSError *))completionBlock;
++ (void) sendLog :(NSDictionary *)info :(NSString *)advertisementType :(NSString *)logType :(NSString*)sessionId :(NSString*)realZoneId;
 
-+ (void) sendLog :(NSDictionary *)info :(NSString *)advertisementType :(NSString *)logType :(NSString*)sessionId :(NSString*)realZoneId :(NSString * _Nullable)cuid;
-
-+ (void)sendLogWithInfoDict:(NSDictionary * _Nonnull)info
-                     adType:(NSString * _Nonnull)advertisementType
-                    logType:(NSString * _Nonnull)logType
-                       ssid:(NSString * _Nonnull)sessionId
-                       cuid:(NSString * _Nullable)cuid;
-
-+ (BOOL)dictionaryKeyCheck:(NSDictionary *)dictionary hasKey:(NSString *)key;
-
-+ (void)cancelPerformSelectorFor:(NSObject *)selfObject AndThenRun: (CompletionBlock)afterCancellation;
++ (void)cancelPerformSelectorFor:(NSObject * _Nonnull)selfObject AndThenRun:(void (^_Nullable)(void))afterCancellation;
 
 @end

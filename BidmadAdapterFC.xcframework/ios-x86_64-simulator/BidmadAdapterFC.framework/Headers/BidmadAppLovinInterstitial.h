@@ -15,21 +15,20 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BidmadAppLovinInterstitial : BidmadAdapterAdEssential <ALAdDisplayDelegate, ALAdLoadDelegate, ALAdVideoPlaybackDelegate, BidmadAdapterEssential>
-@property (nonatomic, strong) NSUUID * _Nonnull adIdentifier;
-@property (nonatomic, strong) NSDictionary<NSString *, NSNumber *> * _Nonnull loadableConditions;
+@property (nonatomic, strong) NSString * _Nullable initializerFailCase;
 @property (nonatomic, strong) NSNumber * _Nonnull isAppLovinInitialized;
-@property (nonatomic) BOOL loadableConditionsPassed;
 
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID
                                 pubID:(NSString * _Nullable)pubID
-                               rootVC:(UIViewController * _Nonnull)rootVC
+                               rootVC:(UIViewController * _Nullable)rootVC
                            parentView:(UIView * _Nullable)parentView
                               isChild:(NSNumber * _Nullable)isChild
                         isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent
-                        isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent;
+                        isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent
+                     bidmadController:(id _Nonnull)bidmadController;
 - (void)load;
 - (void)setIsDebug:(BOOL)isDebug;
-- (void)show;
+- (void)showOnViewController:(UIViewController *)viewController;
 - (void)remove;
 - (void)adService:(ALAdService * _Nonnull)adService didLoadAd:(ALAd * _Nonnull)ad;
 - (void)adService:(ALAdService * _Nonnull)adService didFailToLoadAdWithError:(int32_t)code;

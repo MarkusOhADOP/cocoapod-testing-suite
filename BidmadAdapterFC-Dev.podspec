@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BidmadAdapterFC-Dev"
-  s.version      = "4.6.0.1"
+  s.version      = "5.0.0.0"
   s.platform     = :ios, "11.0"
   s.summary      = "BidmadAdapterFC is an ad adapter with support for AdColony, AppLovin, and UnityAds."
   s.description  = "BidmadAdapterFC is an ad adapter with support for AdColony, AppLovin, and UnityAds. Please setup BidmadSDK (4.1.0.0 or higher) first."
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.dependency 'UnityAds', '4.4.1'
   s.dependency 'IronSourceSDK','7.2.5.1'
   s.dependency 'VungleSDK-iOS', '6.12.0'
-  s.dependency 'ADOPUtility', '>=4.6.0.0', '<4.7.0.0'
+  s.dependency 'ADOPUtility-Dev', '>=5.0.0.0', '<5.1.0.0'
   s.dependency 'GoogleMobileAdsMediationAdColony', '4.9.0.0'
   s.dependency 'GoogleMobileAdsMediationInMobi', '10.1.0.0'
   s.dependency 'AdColony', '4.9.0'

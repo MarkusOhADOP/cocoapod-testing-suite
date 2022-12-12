@@ -1,41 +1,33 @@
 //
-//  BIDMADNativeAd.h
+//  BIDMADNativeAdLoader.h
 //  BidmadSDK
 //
 //  Created by Seungsub Oh on 2022/07/26.
 //
 
-#import <GoogleMobileAds/GoogleMobileAds.h>
 #import <UIKit/UIKit.h>
-#import <ADOPUtility/BidmadNativeAdDataInterface.h>
+#import "BIDMADNativeAdViewData.h"
+#import "BIDMADNativeAdView.h"
 
-@interface BIDMADNativeAd : NSObject <BidmadNativeAdDataInterface>
+@protocol BIDMADNativeAdDelegate;
+@interface BIDMADNativeAd : NSObject
+@property (nonatomic, weak) id<BIDMADNativeAdDelegate> _Nullable delegate;
+@property (nonatomic, strong) BIDMADNativeAdViewData * _Nullable adData;
+@property (nonatomic) NSString * _Nullable zoneID;
+@property (nonatomic) BIDMADNativeAdView * _Nullable attachView;
+- (nonnull instancetype)init;
+- (void)requestAd;
+- (void)setAdView:(UIViewController * _Nonnull)viewController adView:(BIDMADNativeAdView * _Nonnull)adView;
+- (void)removeAdView:(BIDMADNativeAdView * _Nonnull)adView;
+- (Boolean)isLoaded;
+- (void)adLoaded:(NSDictionary * _Nonnull)lv_dic adData:(BIDMADNativeAdViewData * _Nullable)adData;
+- (void)adLoadFail:(NSDictionary * _Nullable)lv_dic error:(NSError * _Nonnull)error;
+- (void)adClick:(NSDictionary * _Nullable)lv_dic;
+@end
 
-#pragma mark COMMON
-
-@property (nonatomic) NSInteger id;
-@property (nonatomic, copy) NSString * _Nullable headline;
-@property (nonatomic, copy) NSString * _Nullable body;
-@property (nonatomic, copy) NSString * _Nullable callToAction;
-@property (nonatomic, strong) UIImage * _Nullable icon;
-@property (nonatomic, strong) NSDecimalNumber * _Nullable starRating;
-@property (nonatomic, copy) NSString * _Nullable store;
-@property (nonatomic, copy) NSString * _Nullable price;
-@property (nonatomic, copy) NSString * _Nullable advertiser;
-@property (nonatomic, strong) id _Nullable nativeAdAdMob;
-@property (nonatomic, strong) id _Nullable nativeAdPangle;
-
-#pragma mark FOR GOOGLE
-
-@property (nonatomic, strong) GADMediaContent * _Nullable mediaContent;
-
-#pragma mark FOR PANGLE
-
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-
-- (nonnull instancetype)initWithIdentifier:(NSInteger)identifier;
-- (void)remove;
-- (NSString *_Nonnull)description;
-- (void)setClickCallback:(void (^ _Nonnull)(BIDMADNativeAd * _Nonnull))clickHandler;
-
+@protocol BIDMADNativeAdDelegate <NSObject>
+@optional
+- (void)bidmadNativeAdWithLoadedAd:(BIDMADNativeAd * _Nonnull)loadedAd;
+- (void)bidmadNativeAdFail:(BIDMADNativeAd * _Nonnull)loadedAd error:(NSError * _Nonnull)error;
+- (void)bidmadNativeAdClick:(BIDMADNativeAd * _Nonnull)loadedAd;
 @end

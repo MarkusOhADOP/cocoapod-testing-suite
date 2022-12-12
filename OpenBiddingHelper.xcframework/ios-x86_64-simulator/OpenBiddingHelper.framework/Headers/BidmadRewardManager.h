@@ -14,7 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)pushAd:(OpenBiddingRewardVideo * _Nonnull)ad;
 + (void)pushAds:(NSArray<OpenBiddingRewardVideo *> * _Nonnull)ads;
-+ (OpenBiddingRewardVideo * _Nullable)getAdForZoneID:(NSString * _Nonnull)zoneID;
++ (OpenBiddingRewardVideo * _Nonnull)getAdForZoneID:(NSString * _Nonnull)zoneID;
++ (OpenBiddingRewardVideo * _Nullable)takeOutAdForZoneID:(NSString * _Nonnull)zoneID;
 + (NSArray<OpenBiddingRewardVideo *> * _Nonnull)getAllAds;
 
 @end

@@ -26,8 +26,7 @@ typedef NS_ENUM(NSInteger, BidmadTestEnvData) {
 @interface OpenBiddingUtility : NSObject
 
 + (NSString *)SDKVersion;
-+ (NSURLSessionDataTask *)openBiddingDataFetcherWithZoneId: (NSString *)zoneId completionBlock:(void (^)(NSDictionary * _Nullable, NSError * _Nullable, NSDictionary * _Nullable, NSString * _Nullable, NSString * _Nullable, NSNumber * _Nullable, NSNumber * _Nullable, NSString * _Nullable))completionBlock;
-+ (void)openBiddingDataFetcherForTesting:(BidmadTestEnvData)testDataCase completionBlock:(void (^)(NSDictionary * _Nullable, NSError * _Nullable, NSDictionary * _Nullable, NSString * _Nullable, NSString * _Nullable, NSNumber * _Nullable, NSNumber * _Nullable, NSString * _Nullable))completionBlock;
++ (NSURLSessionDataTask *)openBiddingDataFetcherWithZoneId: (NSString *)zoneId completionBlock:(void (^)(NSDictionary * _Nullable, NSError * _Nullable, NSDictionary * _Nullable, NSString * _Nullable, NSString * _Nullable, NSNumber * _Nullable, NSNumber * _Nullable, NSString * _Nullable))completionBlock __deprecated;
 
 @end
 

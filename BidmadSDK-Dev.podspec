@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BidmadSDK-Dev"
-  s.version      = "4.6.0.1"
+  s.version      = "5.0.0.0"
   s.platform     = :ios, "11.0"
   s.summary      = "Integrated App Monetization Solution for Mobile Apps by all Publishers"
   s.description  = "BidmadSDK allows users to communicate with Compass by ADOP. Our mediation platform optimizes for the utmost profit."
@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
   s.vendored_frameworks = "BidmadSDK.xcframework"
 
-  s.dependency 'Google-Mobile-Ads-SDK', '9.12.0'
-  s.dependency 'ADOPUtility', '>=4.6.0.0', '<4.7.0.0'
+  s.dependency 'Google-Mobile-Ads-SDK', '9.14.0'
+  s.dependency 'ADOPUtility-Dev', '>=5.0.0.0', '<5.1.0.0'
   
   s.subspec 'ForNative' do |forNative|
   end

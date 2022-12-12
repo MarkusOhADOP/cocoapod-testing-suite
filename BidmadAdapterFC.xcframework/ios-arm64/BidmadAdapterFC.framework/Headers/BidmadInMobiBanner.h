@@ -10,20 +10,23 @@
 #import <Foundation/Foundation.h>
 #import <ADOPUtility/BidmadAdapterAdEssential.h>
 #import "BidmadInMobiInterface.h"
+#import <ADOPUtility/BidmadAdapterEssential.h>
+#import <ADOPUtility/BidmadAdapterBannerAdditional.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadInMobiBanner : BidmadAdapterAdEssential <BidmadIMBannerDelegate>
+@interface BidmadInMobiBanner : BidmadAdapterAdEssential <BidmadIMBannerDelegate, BidmadAdapterEssential, BidmadAdapterBannerAdditional>
 
 @property (nonatomic, strong) NSNumber * _Nonnull isInMobiInitialized;
 
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID
                                 pubID:(NSString * _Nullable)pubID
-                               rootVC:(UIViewController * _Nonnull)rootVC
+                               rootVC:(UIViewController * _Nullable)rootVC
                            parentView:(UIView * _Nullable)parentView
                               isChild:(NSNumber * _Nullable)isChild
                         isGDPRConsent:(NSNumber * _Nullable)isGDPRConsent
-                        isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent;
+                        isCCPAConsent:(NSNumber * _Nullable)isCCPAConsent
+                     bidmadController:(id _Nonnull)bidmadController;
 - (void)load;
 - (void)setBannerSize:(NSString * _Nonnull)sizeString;
 - (void)show;

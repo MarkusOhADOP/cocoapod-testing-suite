@@ -10,7 +10,7 @@
 @import PrebidMobile;
 #import "AdopPrebid.h"
 
-@protocol AdopPrebidInterstitialDelegate
+@protocol AdopPrebidInterstitialDelegate <NSObject>
 
 @optional
 - (void)onInterstitialLoad;
@@ -22,13 +22,12 @@
 
 @interface AdopPrebidInterstitial : NSObject<InterstitialAdUnitDelegate>
 
-@property (nonatomic, strong) id<AdopPrebidInterstitialDelegate> _Nullable delegate;
+@property (nonatomic, weak) id<AdopPrebidInterstitialDelegate> _Nullable delegate;
 @property (nonatomic) NSString * _Nonnull configId;
 
-- (id _Nonnull)initWithParentViewController:(UIViewController * _Nonnull)parentVC;
-
+- (id _Nonnull)initWithConfigId:(NSString * _Nonnull)configId;
 - (void)requestAd;
 - (BOOL)isLoaded;
-- (void)showAd;
+- (void)showAdOnViewController:(UIViewController * _Nonnull)viewController;
 
 @end

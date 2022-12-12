@@ -14,23 +14,20 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BidmadRewardAd : NSObject <BidmadAdStandardFullScreenAd, BIDMADOpenBiddingRewardVideoDelegate>
-@property (nonatomic, strong) id <BIDMADOpenBiddingRewardVideoDelegate> _Nullable delegate;
+@property (nonatomic, weak) id <BIDMADOpenBiddingRewardVideoDelegate> _Nullable delegate;
 @property (nonatomic) BOOL isAutoReload;
 @property (nonatomic, strong) NSString * _Nullable userID;
-- (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID;
+- (nonnull instancetype)initWithZoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
-- (void)show;
-- (void)setCUID:(NSString * _Nonnull)cuid;
+- (void)showOnViewController:(UIViewController *)viewController;
 - (BOOL)isLoaded;
-- (void)BIDMADOpenBiddingRewardSkipped:(OpenBiddingRewardVideo * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingRewardVideoLoad:(OpenBiddingRewardVideo * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingRewardVideoShow:(OpenBiddingRewardVideo * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingRewardVideoClick:(OpenBiddingRewardVideo * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingRewardVideoClose:(OpenBiddingRewardVideo * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingRewardVideoSucceed:(OpenBiddingRewardVideo * _Null_unspecified)core;
-- (void)BIDMADOpenBiddingRewardVideoAllFail:(OpenBiddingRewardVideo * _Null_unspecified)core;
-- (void)bidmadOpenBiddingRewardVideoErrorLoadLog:(NSDictionary * _Null_unspecified)currentDic;
-- (void)bidmadOpenBiddingRewardVideoSuccessLoadLog:(NSDictionary * _Null_unspecified)currentDic;
+- (void)onSkipAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
+- (void)onLoadAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
+- (void)onShowAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
+- (void)onClickAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
+- (void)onCloseAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
+- (void)onCompleteAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
+- (void)onLoadFailAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd error:(NSError * _Nullable)error;
 @end
 
 NS_ASSUME_NONNULL_END

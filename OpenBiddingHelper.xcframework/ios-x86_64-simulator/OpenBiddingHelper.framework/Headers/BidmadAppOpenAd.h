@@ -20,17 +20,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
 - (void)show;
-- (void)setCUID:(NSString * _Nonnull)cuid;
 - (void)deregisterForAppOpenAd;
 - (BOOL)isLoaded;
 
 #pragma mark OpenBiddingAppOpenAdDelegate Methods
 
-- (void)OpenBiddingAppOpenAdLoad:(OpenBiddingAppOpenAd * _Nonnull)core;
-- (void)OpenBiddingAppOpenAdShow:(OpenBiddingAppOpenAd * _Nonnull)core;
-- (void)OpenBiddingAppOpenAdClick:(OpenBiddingAppOpenAd * _Nonnull)core;
-- (void)OpenBiddingAppOpenAdClose:(OpenBiddingAppOpenAd * _Nonnull)core;
-- (void)OpenBiddingAppOpenAdAllFail:(OpenBiddingAppOpenAd * _Nonnull)core;
+- (void)onLoadAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
+- (void)onShowAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
+- (void)onClickAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
+- (void)onCloseAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
+- (void)onLoadFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd error:(NSError * _Nullable)error;
 
 @end
 
