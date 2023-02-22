@@ -15,12 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OpenBiddingFlutterCommon : NSObject
 
-//- (void)initChannel: (NSObject<FlutterPluginRegistrar>*)registrar;
 - (void)initChannel: (id)registrar;
 
-//@property (strong, nonatomic) FlutterMethodChannel* flutterChannel;
 @property (strong, nonatomic) id flutterChannel;
-
 @property (strong, nonatomic) NSString * channelName;
 
 @end

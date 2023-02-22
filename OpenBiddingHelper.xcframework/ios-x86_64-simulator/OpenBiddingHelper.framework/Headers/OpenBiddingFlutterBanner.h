@@ -17,7 +17,6 @@
 #endif
 
 @property (strong, nonatomic) id flutterChannel;
-//- (id)initBanner:(NSObject<FlutterPluginRegistrar>*)registrar channelName:(NSString*)chanNm frame:(CGRect)frame;
 - (id)initBanner:(id)registrar channelName:(NSString*)chanNm frame:(CGRect)frame;
 - (UIView*)view;
 

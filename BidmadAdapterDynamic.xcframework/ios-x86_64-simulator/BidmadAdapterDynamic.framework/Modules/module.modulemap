@@ -1,0 +1,6 @@
+framework module BidmadAdapterDynamic {
+  umbrella header "BidmadAdapterDynamic.h"
+
+  export *
+  module * { export * }
+}

@@ -54,7 +54,7 @@
 @protocol BIDMADOpenBiddingRewardVideoDelegate <NSObject>
 @optional
 
-- (void)onLoadFailAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd error:(NSError * _Nullable)error;
+- (void)onLoadFailAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
 - (void)onLoadAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
 - (void)onCloseAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
 - (void)onShowAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;

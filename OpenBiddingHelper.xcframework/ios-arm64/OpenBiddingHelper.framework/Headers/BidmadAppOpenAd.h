@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadAppOpenAd : NSObject <BidmadAdStandardFullScreenAd, OpenBiddingAppOpenAdDelegate>
+@interface BidmadAppOpenAd : NSObject <OpenBiddingAppOpenAdDelegate>
 
 @property (nonatomic, strong) id <OpenBiddingAppOpenAdDelegate> _Nullable delegate;
 @property (nonatomic) BOOL isAutoReload;
@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onShowAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
 - (void)onClickAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
 - (void)onCloseAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
-- (void)onLoadFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd error:(NSError * _Nullable)error;
+- (void)onLoadFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
 
 @end
 

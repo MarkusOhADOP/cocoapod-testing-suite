@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <GoogleMobileAds/GADNativeAd.h>
+#import <ADOPUtility/ADOPUtility.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BIDMAD_NATIVEAD_PANGLE_IMAGE_VIEW 314159003
 #define BIDMAD_NATIVEAD_PANGLE_MEDIA_VIEW 314159004
 
-@interface BIDMADNativeAdView : GADNativeAdView
+@interface BIDMADNativeAdView : UIView
 
 @property(nonatomic, weak, nullable) IBOutlet UIImageView* iconViewCustom;
 @property(nonatomic, weak, nullable) IBOutlet UILabel* headlineViewCustom;
@@ -27,13 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, weak, nullable) IBOutlet UILabel* storeViewCustom;
 @property(nonatomic, weak, nullable) IBOutlet UIButton* callToActionViewCustom;
 
-@property (nonatomic, strong) GADMediaView * _Nullable mediaViewForGoogle;
-@property (nonatomic, strong) UIImageView * _Nullable mediaViewForPangle;
-@property (nonatomic, strong) UIView * _Nullable innerMediaViewForPangle;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, __kindof UIView *> *mediaViews;
 
 @property (nonatomic, strong) id _Nullable nativeRelatedViewForPangle;
 
-- (void)setup;
+- (void)setupForAdNetwork:(BidmadNativeAdSupportedAdNetwork)supportedAdNetwork;
 
 @end
 

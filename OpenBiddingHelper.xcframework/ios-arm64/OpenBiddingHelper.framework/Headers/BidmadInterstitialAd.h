@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onLoadAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
 - (void)onShowAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
 - (void)onCloseAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
-- (void)onLoadFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd error:(NSError * _Nullable)error;
+- (void)onLoadFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
 @end
 
 NS_ASSUME_NONNULL_END

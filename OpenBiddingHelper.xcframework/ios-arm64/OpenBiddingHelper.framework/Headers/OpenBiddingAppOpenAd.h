@@ -47,7 +47,7 @@
 @protocol OpenBiddingAppOpenAdDelegate <NSObject>
 @optional
 
-- (void)onLoadFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd error:(NSError * _Nullable)error;
+- (void)onLoadFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
 - (void)onLoadAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
 - (void)onCloseAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
 - (void)onShowAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;

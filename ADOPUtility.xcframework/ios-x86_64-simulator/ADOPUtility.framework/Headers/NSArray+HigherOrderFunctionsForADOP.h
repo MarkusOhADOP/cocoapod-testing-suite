@@ -19,4 +19,6 @@
 
 -(BOOL)containsForADOP:(BOOL(^)(T obj))block;
 
+- (NSArray *)flatMapForADOP:(id (^)(id obj))block;
+
 @end

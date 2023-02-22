@@ -15,25 +15,30 @@
 #import "BIDMADAdmob.h"
 #import "BIDMADAdmanager.h"
 
-@interface BIDMADBanner : UIView
-@property (strong, nonatomic) NSDictionary* ads_dic;
-@property (nonatomic) bannerSizeType bannerType;
-@property (nonatomic) int mediationNumber;
-@property (nonatomic) NSString* realZoneId;
-@property (nonatomic) NSString* zoneID;
-@property (nonatomic, assign) int refreshInterval;
-@property (nonatomic, strong) NSString* houseBannerImgPath;
-@property (nonatomic, strong) NSString* currentAdNetwork;
+typedef NS_ENUM(NSUInteger, BIDMADBannerViewCase) {
+    BIDMADBannerViewCaseXYCoordinateGiven = 0,
+    BIDMADBannerViewCaseContainerViewGiven = 1,
+    BIDMADBannerViewCaseOnlyYCoordinateGiven = 2,
+    BIDMADBannerViewCaseAdPositionAnchorGiven = 3,
+};
 
-- (instancetype)initWithZoneID:(NSString * _Nonnull)zoneID
-          parentViewController:(UIViewController * _Nullable)parentVC
-                    parentView:(UIView * _Nullable)parentView
-                   instanceOBH:(id _Nullable)instanceOBH
-                     sessionID:(NSString * _Nonnull)sessionID
-                     xPosition:(NSNumber * _Nullable)xPosition
-                     yPosition:(NSNumber * _Nullable)yPosition
-                       adsDict:(NSDictionary * _Nullable)adsDict
-                    realZoneID:(NSString * _Nonnull)realZoneID;
+typedef NS_ENUM(NSUInteger, BIDMADAdPosition) {
+    BIDMADAdPositionCenter = 0,
+    BIDMADAdPositionTop = 1,
+    BIDMADAdPositionBottom = 2,
+    BIDMADAdPositionLeft = 3,
+    BIDMADAdPositionRight = 4,
+    BIDMADAdPositionTopLeft = 5,
+    BIDMADAdPositionTopRight = 6,
+    BIDMADAdPositionBottomLeft = 7,
+    BIDMADAdPositionBottomRight = 8,
+    BIDMADAdPositionNone = 9,
+};
+
+@interface BIDMADBanner : NSObject
+@property (nonatomic) int mediationNumber;
+
+- (instancetype _Nonnull)initWithInstanceOBH:(id _Nullable)instanceOBH;
 - (void)removeAds;
 /// This method sorts the dictionary of compass ads data from the least floor price to the highest.
 /// It returns the NSError if necessary properties are not available nor nil.
@@ -46,7 +51,6 @@
 - (void)onBannerError:(NSError * _Nonnull)error
              failType:(NSString * _Nonnull)failType
         failLogEnable:(BOOL)failLogEnable;
-- (void)onBannerClosed;
 - (void)onBannerLoad;
 - (void)onBannerClick;
 

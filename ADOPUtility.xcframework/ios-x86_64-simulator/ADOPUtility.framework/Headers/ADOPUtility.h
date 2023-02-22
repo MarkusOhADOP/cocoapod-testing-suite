@@ -32,3 +32,5 @@ FOUNDATION_EXPORT const unsigned char ADOPUtilityVersionString[];
 #import "BidmadAdapterFullscreenAdditional.h"
 #import "BidmadSettingInterface.h"
 #import "BidmadMacro.h"
+#import "BidmadNativeAdSupportedAdNetwork.h"
+#import "BidmadNativeAdViewContainerProtocol.h"

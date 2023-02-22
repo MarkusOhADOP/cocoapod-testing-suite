@@ -12,7 +12,6 @@
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController containerView:(UIView * _Nonnull)containerView zoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
 - (void)setRefreshInterval:(NSInteger)refreshIntervalTime;
-- (void)setCUID:(NSString * _Nonnull)cuid;
 - (void)hide;
 - (void)show;
 - (void)remove;

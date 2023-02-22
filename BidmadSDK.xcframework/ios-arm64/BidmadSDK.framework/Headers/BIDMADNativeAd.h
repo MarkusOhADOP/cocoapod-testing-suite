@@ -14,7 +14,7 @@
 @property (nonatomic, weak) id<BIDMADNativeAdDelegate> _Nullable delegate;
 @property (nonatomic, strong) BIDMADNativeAdViewData * _Nullable adData;
 @property (nonatomic) NSString * _Nullable zoneID;
-@property (nonatomic) BIDMADNativeAdView * _Nullable attachView;
+@property (nonatomic) BOOL isAdComplete;
 - (nonnull instancetype)init;
 - (void)requestAd;
 - (void)setAdView:(UIViewController * _Nonnull)viewController adView:(BIDMADNativeAdView * _Nonnull)adView;
@@ -26,8 +26,9 @@
 @end
 
 @protocol BIDMADNativeAdDelegate <NSObject>
-@optional
-- (void)bidmadNativeAdWithLoadedAd:(BIDMADNativeAd * _Nonnull)loadedAd;
-- (void)bidmadNativeAdFail:(BIDMADNativeAd * _Nonnull)loadedAd error:(NSError * _Nonnull)error;
-- (void)bidmadNativeAdClick:(BIDMADNativeAd * _Nonnull)loadedAd;
+@required
+- (void)onLoadAd:(BIDMADNativeAd * _Nonnull)bidmadAd;
+- (void)onLoadFailAd:(BIDMADNativeAd * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
+- (void)onClickAd:(BIDMADNativeAd * _Nonnull)bidmadAd;
+- (void)onVideoEnded:(BIDMADNativeAd * _Nonnull)bidmadAd;
 @end
