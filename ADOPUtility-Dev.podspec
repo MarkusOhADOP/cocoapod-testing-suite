@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "11.0"
   s.source       = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => 'UTIL.5.8.0' }
   
-  s.static_framework = true
+  s.static_framework = false
   s.requires_arc     = true
   s.vendored_frameworks = "ADOPUtility.xcframework"
 
