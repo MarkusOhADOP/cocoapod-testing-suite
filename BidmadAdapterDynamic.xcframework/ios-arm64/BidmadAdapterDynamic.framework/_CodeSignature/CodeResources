@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/BidmadMobonBridge.h</key>
 		<data>
-		fQrcF5TtSOJpZh01kf10r0WyDqc=
+		3HlaxPA4O7g4Jks6Th/khgOpmYs=
 		</data>
 		<key>Headers/BidmadMobonInterstitial.h</key>
 		<data>
@@ -30,15 +30,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WpcbM6By3pitrTUAwcXlQe8d3sg=
+		d1IAC9MXs2xaPwKoFMafo/kAPVw=
 		</data>
 		<key>MobonSDKBundle.bundle/Assets.car</key>
 		<data>
-		Rh5V7TdIIYe0yqdfWY+jyZfjCQo=
+		qG51PAoM5l35Vll2vrvALylQHKU=
 		</data>
 		<key>MobonSDKBundle.bundle/Info.plist</key>
 		<data>
-		Im92A68tpN7aijWTEuQJcuD+r/8=
+		Ii5rfuLlAoHRftU5U/dXNEmb1SI=
+		</data>
+		<key>MobonSDKBundle.bundle/_CodeSignature/CodeDirectory</key>
+		<data>
+		6gSZ1yKSmSM4GBfVjLQlpieW374=
+		</data>
+		<key>MobonSDKBundle.bundle/_CodeSignature/CodeRequirements</key>
+		<data>
+		gHUGYqrLW3qCQjKhsCyhur/lYx0=
+		</data>
+		<key>MobonSDKBundle.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		RL7TLPMPIB8OUdDvVPZHqXAKvJo=
+		</data>
+		<key>MobonSDKBundle.bundle/_CodeSignature/CodeResources</key>
+		<data>
+		3vI9AYP9zlNHPZvVDyohTDlTUmk=
+		</data>
+		<key>MobonSDKBundle.bundle/_CodeSignature/CodeSignature</key>
+		<data>
+		/Aq2KpDCvb9gWy1RNe/g/1c7y/Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BvHRUcgFs5CUwpqFzhzwjTDeVBQYPqIKWiM6R9kDy3o=
+			ESD+W9Ab14LOXBsKj/lgR2uGF2DrIlsGABjKNXnVUh4=
 			</data>
 		</dict>
 		<key>Headers/BidmadMobonInterstitial.h</key>
@@ -93,14 +113,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ktDPMG63Olfd9llvnQ6JGF4FKVseQAws2w3WG34u/0=
+			YVuJqlwLUsthk7EUAnvpI8huXBvti5yxlOv05xteX9E=
 			</data>
 		</dict>
 		<key>MobonSDKBundle.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JHN/0R94cFubSmxGhdRU8eZ+iifUvGWE0a1n4wEjCtM=
+			mglSDYqpLX6HxEQTDuWxrAVXs9aSAmsLkURkVDwqFbY=
+			</data>
+		</dict>
+		<key>MobonSDKBundle.bundle/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zfc8UwWUEzIdg1iI6+HyeRVPqhd3CNYVOdscDkDorqU=
+			</data>
+		</dict>
+		<key>MobonSDKBundle.bundle/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A11Br0A5Q7cpY+zZXOmyzJmS1NUcUX+7OB6dskaC7+Q=
+			</data>
+		</dict>
+		<key>MobonSDKBundle.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			la0dn8affOavZmFHF0OUeuD4SEMplDfxYKAT8PK6um0=
+			</data>
+		</dict>
+		<key>MobonSDKBundle.bundle/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yfi6xfJQbfwDu+sxNeay9DwAP6DydwzDgakZa5EXytw=
+			</data>
+		</dict>
+		<key>MobonSDKBundle.bundle/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cn7zHQa+oakhPxadwrwRB8CkLMify3DgbjATvmnDrt8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

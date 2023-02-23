@@ -20,7 +20,7 @@
 
 @protocol BidmadMobonBannerBridgeDelegate <NSObject>
 - (void)adViewDidReceiveAd:(UIView<BidmadMobonBannerBridge> * _Nonnull)bannerAdView;
-- (void)adViewFailedAd:(UIView<BidmadMobonBannerBridge> * _Nonnull)bannerAdView :(NSString * _Nonnull)error;
+- (void)adViewFailedAd:(UIView<BidmadMobonBannerBridge> * _Nullable)bannerAdView :(NSString * _Nonnull)error;
 - (void)adViewClicked:(UIView<BidmadMobonBannerBridge> * _Nonnull)bannerAdView;
 @end
 
@@ -44,7 +44,7 @@
 @protocol BidmadMobonInterstitialBridgeDelegate <NSObject>
 - (void)interstitialAdNotLoaded:(UIViewController<BidmadMobonInterstitialBridge> * _Nonnull)interstitialAdView;
 - (void)interstitialDidReceiveAd:(UIViewController<BidmadMobonInterstitialBridge> * _Nonnull)interstitialAdView;
-- (void)interstitialFailedAd:(UIViewController<BidmadMobonInterstitialBridge> * _Nonnull)interstitialAdView :(NSString * _Nonnull)error;
+- (void)interstitialFailedAd:(UIViewController<BidmadMobonInterstitialBridge> * _Nullable)interstitialAdView :(NSString * _Nonnull)error;
 - (void)interstitialClicked:(UIViewController<BidmadMobonInterstitialBridge> * _Nonnull)interstitialAdView;
 - (void)interstitialClose:(UIViewController<BidmadMobonInterstitialBridge> * _Nonnull)interstitialAdView;
 @end
