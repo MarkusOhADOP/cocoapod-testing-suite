@@ -20,3 +20,5 @@ FOUNDATION_EXPORT const unsigned char BidmadAdapterFCVersionString[];
 #import "BidmadMobonBridge.h"
 #import "BidmadMobonBanner.h"
 #import "BidmadMobonInterstitial.h"
+#import "BidmadDynamicUtility.h"
+#import "BidmadPromises.h"

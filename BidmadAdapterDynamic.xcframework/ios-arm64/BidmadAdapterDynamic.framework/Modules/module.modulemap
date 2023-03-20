@@ -4,3 +4,8 @@ framework module BidmadAdapterDynamic {
   export *
   module * { export * }
 }
+
+module BidmadAdapterDynamic.Swift {
+    header "BidmadAdapterDynamic-Swift.h"
+    requires objc
+}

@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/BIDMADNativeAdCommonInterface.h</key>
 		<data>
-		oqgFcFWQfPUrsOOYz9TUr4NWHDg=
+		GAepZwk9c2t7NOAa239ZFtamc0c=
 		</data>
 		<key>Headers/BidmadAdError.h</key>
 		<data>
-		15qrVC7df3Zf0mZSOp6oas2zchc=
+		RaVompc2BbeFR9jPSR+ORtZU6Ds=
 		</data>
 		<key>Headers/BidmadAdapterAdEssential.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/BidmadNativeAdDataInterface.h</key>
 		<data>
-		Czzv2CRpQQJaf5dL9E71nxCSFGY=
+		mMbpnYe52VJlHDTX/lgsCgP+qME=
 		</data>
 		<key>Headers/BidmadNativeAdSupportedAdNetwork.h</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>Headers/BidmadSendLogDelegate.h</key>
 		<data>
-		3MOkUyP7VhqpzT5S2paiKTPpyxs=
+		4OHzGJQqFu+D1xhx+sU+Oxm3CNk=
 		</data>
 		<key>Headers/BidmadSettingInterface.h</key>
 		<data>
-		xqTJIl736XmaWwn/BGLrK+qCElY=
+		0IbX1DE7iSUD4v/vPI94CwiHfhs=
 		</data>
 		<key>Headers/NSArray+HigherOrderFunctionsForADOP.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AUHgCLCXaBaQZhb0ucsg5IUJv3c=
+		y7XL+sBl+Q6nRx2LAtFREaIXRNc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -124,14 +124,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VXVeAtPQNM0hqL84ldSbh8iI5Wfy7qJg9OYppd8dkmo=
+			vEBdTrghfGbB4lWYRCMrle8aGx1gLQcH1hLuE8qitq4=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdError.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BvIE9Uv6qGOdjAFyEsOG0nEwve8FFYCmreM/eN6bOko=
+			CZNKm2Dv2OMyPWQPoPY0iP+4pjGQ9mqZ7sjKKgQtqiI=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdapterAdEssential.h</key>
@@ -208,7 +208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A8hX8LioXhLIlRYjS0NZ++yGNtdJKmeNVTs6YBFQHY0=
+			T3TjYNomKU8BeEWu8KU/0cp/4Zm/HOiAo7bz1H96KtI=
 			</data>
 		</dict>
 		<key>Headers/BidmadNativeAdSupportedAdNetwork.h</key>
@@ -229,14 +229,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8aDOgDOoFQpxqy10gvZs97/qGm4nFWkAz9Aumje8ZZM=
+			VKP98fOQYMla+edZNqoYUfmgAfLUR/76pIT8wE7hwv4=
 			</data>
 		</dict>
 		<key>Headers/BidmadSettingInterface.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3L/E9oPJ1nZZlQyPCQ002T0H+P2HOB+faaE0dIYd0MU=
+			nbNPHuSjchHXdihmUdg5en5aJUiIngSSDTmh1fBjcsg=
 			</data>
 		</dict>
 		<key>Headers/NSArray+HigherOrderFunctionsForADOP.h</key>

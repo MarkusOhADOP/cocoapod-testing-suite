@@ -275,7 +275,7 @@
 		</data>
 		<key>Headers/BidmadUnrealEngineUtility.h</key>
 		<data>
-		p/xA7kS8f14/Khvw5ZWDw6lSVuE=
+		vxADginrGC76VCS4o5lUR5QhFt8=
 		</data>
 		<key>Headers/OpenBiddingAdmob.h</key>
 		<data>
@@ -335,11 +335,11 @@
 		</data>
 		<key>Headers/OpenBiddingUnrealInterstitial.h</key>
 		<data>
-		QrKbcj7SmAO/QbEwtU4EBshStcw=
+		xbyoeY8KDNO1ZT/cIe6DjIs54Z4=
 		</data>
 		<key>Headers/OpenBiddingUnrealReward.h</key>
 		<data>
-		diwwlXGjTLc3q3OKkokxLcBICVI=
+		IxUeVHC5gmdpsQeLXmtfEJCsvM0=
 		</data>
 		<key>Headers/OpenBiddingUtility.h</key>
 		<data>
@@ -439,7 +439,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PxA+co5MKNg/IKriF0fUUKqDGiY=
+		cQv17LHjB6zCFN9iCTpJrzNkyeg=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -1299,11 +1299,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p/xA7kS8f14/Khvw5ZWDw6lSVuE=
+			vxADginrGC76VCS4o5lUR5QhFt8=
 			</data>
 			<key>hash2</key>
 			<data>
-			0j9hmSie31D2ZADkvtFHghaTHW5yjf/maDx5BzpJW+Y=
+			mRYxDKl/67F9yDGcUJQQy00WlE4LU8JTWDpl85vdfz8=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingAdmob.h</key>
@@ -1464,22 +1464,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QrKbcj7SmAO/QbEwtU4EBshStcw=
+			xbyoeY8KDNO1ZT/cIe6DjIs54Z4=
 			</data>
 			<key>hash2</key>
 			<data>
-			CaE1tsm06XIJ6XwC/ViTIrrIksJDOKFrs0sWglu+qkQ=
+			JldZ8YrLYhQ50w6xyBFRkmdQWnF5p8TJcZHcZrFThz0=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingUnrealReward.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			diwwlXGjTLc3q3OKkokxLcBICVI=
+			IxUeVHC5gmdpsQeLXmtfEJCsvM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			nnVEB3xLVR8fkcc9/GXtnMju4WcRuY+xNP4/2vY8nfA=
+			cQUGsta68uk7sBuY9t5herUSEBPGYyaTuSE6nEmfBxs=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingUtility.h</key>

@@ -24,6 +24,7 @@
 @property (nonatomic, copy) NSString * _Nullable advertiser;
 @property (nonatomic, strong) id _Nullable nativeAdAdMob;
 @property (nonatomic, strong) id _Nullable nativeAdPangle;
+@property (nonatomic, strong) id _Nullable nativeAdTeads;
 
 #pragma mark FOR GOOGLE
 

@@ -8,7 +8,6 @@
 #import "BidmadNativeAdDataInterface.h"
 
 @protocol BIDMADNativeAdCommonInterface
-@property (nonatomic) BOOL isAdMob;
 + (id _Nonnull)requestFor:(NSString * _Nonnull)appid
                     pubID:(NSString * _Nullable)pubID
                   isDebug:(BOOL)isDebug

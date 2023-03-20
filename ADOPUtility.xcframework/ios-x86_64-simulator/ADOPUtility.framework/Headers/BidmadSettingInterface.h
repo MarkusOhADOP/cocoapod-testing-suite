@@ -10,7 +10,7 @@
 @protocol BidmadSettingInterface <NSObject>
 
 @required
-+ (id<BidmadSettingInterface>)sharedInstance;
++ (id<BidmadSettingInterface> _Nonnull)sharedInstance;
 - (void)setAdvertiserTrackingEnabled:(BOOL)enable;
 - (BOOL)getAdvertiserTrackingEnabled;
 - (void)initializeSdk;
@@ -42,7 +42,7 @@
 @property (nonatomic, strong) NSString* testDeviceId;
 @property (nonatomic, strong) NSNumber* __nullable isChildDirectedTreatment;
 @property (nonatomic, strong) NSNumber* __nullable isUserConsentCCPA;
-@property (nonatomic, strong) id<BidmadSendLogDelegate> __nullable bidmadLogDelegate;
+@property (nonatomic, weak) id<BidmadSendLogDelegate> __nullable bidmadLogDelegate;
 @property (nonatomic, strong) NSString * __nullable cuid;
 @property (nonatomic) NSNumber * _Nonnull useServerSideCallback;
 @property (readonly) BOOL isInitialized;

@@ -8,13 +8,21 @@
 		<data>
 		0un6PfwdjAdel8SfagpazWI9KAE=
 		</data>
+		<key>Headers/BidmadAdapterDynamic-Swift.h</key>
+		<data>
+		D3BDnA4UttagneqoLTpe65QHc1A=
+		</data>
 		<key>Headers/BidmadAdapterDynamic.h</key>
 		<data>
-		DZtbXzeZzm58fRLJiDTKXLmDlS4=
+		izpMyBXX6yoB8RoyvDDZcWvjFAA=
 		</data>
 		<key>Headers/BidmadAdapterFNCUtility.h</key>
 		<data>
 		VxE6R5F9T9fz5YvRCoupc1YIEAg=
+		</data>
+		<key>Headers/BidmadDynamicUtility.h</key>
+		<data>
+		poeDeKMygC/+GCkQzmvnHhlw/2A=
 		</data>
 		<key>Headers/BidmadMobonBanner.h</key>
 		<data>
@@ -28,9 +36,13 @@
 		<data>
 		TtetRKzmbZbjWa3vx78DUjUt7LQ=
 		</data>
+		<key>Headers/BidmadPromises.h</key>
+		<data>
+		kZ0wM5eXUImiPkiK2ieMgBWfZOc=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		r/EKh6zTpayGeWdAn2ccg7JsUFE=
+		CAixkzGXSOLgZ1xEPvqhBOdsmUk=
 		</data>
 		<key>MobonSDKBundle.bundle/Assets.car</key>
 		<data>
@@ -60,9 +72,37 @@
 		<data>
 		/Aq2KpDCvb9gWy1RNe/g/1c7y/Y=
 		</data>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		wkIGPNANb1YV9VE1hI02GH8atyI=
+		</data>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		teiMyvkYz0xAyv5rpSjB7/4xEdA=
+		</data>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		IPfrjI5ovBpd0cXV7EoaR5xWNKI=
+		</data>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftdoc</key>
+		<data>
+		wkIGPNANb1YV9VE1hI02GH8atyI=
+		</data>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftinterface</key>
+		<data>
+		teiMyvkYz0xAyv5rpSjB7/4xEdA=
+		</data>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftmodule</key>
+		<data>
+		IPfrjI5ovBpd0cXV7EoaR5xWNKI=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		AsUNZY8So7n2jDH8dD3hMXzuL5k=
+		ThLkWmRBGzoI0crg/fsL6C2x9BA=
+		</data>
+		<key>closeIcon.png</key>
+		<data>
+		XlipDF4H26Y1KqCS+Wkvkj+ZTd4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -74,11 +114,18 @@
 			JRzri0TDr39Wnh/96UtDaGPC706p3zG+1a355MWOTog=
 			</data>
 		</dict>
+		<key>Headers/BidmadAdapterDynamic-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JKbebeBTFMr98DV4A+NE1zkR7RGzo6VUm+9rWjiYKOw=
+			</data>
+		</dict>
 		<key>Headers/BidmadAdapterDynamic.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yXUM+Pn0gJQokzSM06bRhzQcHX6nsqfDew53dHPcJ6I=
+			Zjm/yWAke/47ag6LU8oTtHwHQQBMHU3W5V6PHXhRQ5Q=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdapterFNCUtility.h</key>
@@ -86,6 +133,13 @@
 			<key>hash2</key>
 			<data>
 			xWryiAn+y+GNxLBb+ZuZvyE0vavn3SinJHJwtbwdgEw=
+			</data>
+		</dict>
+		<key>Headers/BidmadDynamicUtility.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A2/LtR7IISW7rPr/A3MzS2+SvBP/MTnQqq3TX4qqVVg=
 			</data>
 		</dict>
 		<key>Headers/BidmadMobonBanner.h</key>
@@ -107,6 +161,13 @@
 			<key>hash2</key>
 			<data>
 			PY9Bb1Ft1zuMgOyUwpRNndd9MuRehdQENcePEpAZtk4=
+			</data>
+		</dict>
+		<key>Headers/BidmadPromises.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			r89xkbhRT9pNkCAupdeK/ncP07L0R+5LHAkXlRRDqNk=
 			</data>
 		</dict>
 		<key>MobonSDKBundle.bundle/Assets.car</key>
@@ -158,11 +219,60 @@
 			cn7zHQa+oakhPxadwrwRB8CkLMify3DgbjATvmnDrt8=
 			</data>
 		</dict>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jQLRDDHHl9SBuWNrjdoNDNy35lFenJpJSBNFt8B3TqU=
+			</data>
+		</dict>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IyhiwcFln/Ts/sTmfTuWOB1JXW0I5j7Xm0jSh8gL1oQ=
+			</data>
+		</dict>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			29ZYW5LYwRbQ59iSiBqa95327HGtF89lLiznH3WUVNw=
+			</data>
+		</dict>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jQLRDDHHl9SBuWNrjdoNDNy35lFenJpJSBNFt8B3TqU=
+			</data>
+		</dict>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IyhiwcFln/Ts/sTmfTuWOB1JXW0I5j7Xm0jSh8gL1oQ=
+			</data>
+		</dict>
+		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			29ZYW5LYwRbQ59iSiBqa95327HGtF89lLiznH3WUVNw=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E8pPFC/VfwcPopXVgGk2omRcLpSZFb0c3lFYY3zilcw=
+			WDjTeGOmMRrH/xFEkwMb/enclI7WFXq3At8PDwFqyFw=
+			</data>
+		</dict>
+		<key>closeIcon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oS0qxTQ8iHl8oh2cIt0FLTi/7Mi6y81s+i1SGMvPSHU=
 			</data>
 		</dict>
 	</dict>

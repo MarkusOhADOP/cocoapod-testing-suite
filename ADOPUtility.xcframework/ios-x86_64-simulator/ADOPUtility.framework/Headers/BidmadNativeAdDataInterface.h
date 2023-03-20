@@ -20,6 +20,7 @@
 @property (nonatomic, copy) NSString * _Nullable advertiser;
 @property (nonatomic, strong) id _Nullable nativeAdAdMob;
 @property (nonatomic, strong) id _Nullable nativeAdPangle;
+@property (nonatomic, strong) id _Nullable nativeAdTeads;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (void)remove;
 @end

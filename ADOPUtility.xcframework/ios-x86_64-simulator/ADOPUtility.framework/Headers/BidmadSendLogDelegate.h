@@ -12,6 +12,6 @@
 @protocol BidmadSendLogDelegate <NSObject>
 
 @optional
-- (void)bidmadSendLogWithType:(NSString * _Nonnull)logType sessionId:(NSString * _Nonnull)sessionId;
+- (void)bidmadSendLogWithAdNetworkName:(NSString *)adNetworkName type:(NSString * _Nonnull)logType sessionId:(NSString * _Nonnull)sessionId;
 
 @end

@@ -11,6 +11,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define BidmadUECommonVC [BidmadUnrealEngineUtility getCommonViewController]
+
 @interface BidmadUnrealEngineUtility : NSObject
 
 + (UIViewController * _Nullable)getCommonViewController;
