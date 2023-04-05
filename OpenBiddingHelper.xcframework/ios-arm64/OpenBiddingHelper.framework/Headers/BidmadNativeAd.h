@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) BOOL isLoaded;
 @property (nonatomic, strong) NSString *zoneID;
 
++ (BIDMADNativeAdView * _Nullable)findAdViewFromSuperview:(UIView *)superview;
+
 @end
 
 @protocol BidmadNativeAdDelegate <NSObject>

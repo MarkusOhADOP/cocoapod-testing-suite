@@ -238,6 +238,7 @@ SWIFT_CLASS("_TtC20BidmadAdapterDynamic23BidmadTeadsInterstitial")
 SWIFT_CLASS("_TtC20BidmadAdapterDynamic19BidmadTeadsNativeAd")
 @interface BidmadTeadsNativeAd : NSObject <BIDMADNativeAdCommonInterface>
 + (id _Nonnull)requestFor:(NSString * _Nonnull)appid pubID:(NSString * _Nullable)pubID isDebug:(BOOL)isDebug isChildDirectedAds:(NSNumber * _Nullable)isChild SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nonnull)getMediaView SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/BidmadAdapterDynamic-Swift.h</key>
 		<data>
-		D3BDnA4UttagneqoLTpe65QHc1A=
+		p2SgrSIDT+fQFacEc75T0SzhOV0=
 		</data>
 		<key>Headers/BidmadAdapterDynamic.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CAixkzGXSOLgZ1xEPvqhBOdsmUk=
+		7xl9j0/Dk3XYLGh0IIlJEIx2Eko=
 		</data>
 		<key>MobonSDKBundle.bundle/Assets.car</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		teiMyvkYz0xAyv5rpSjB7/4xEdA=
+		/t9IEWrR7lz97bUmV+8p5fAlv3Q=
 		</data>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IPfrjI5ovBpd0cXV7EoaR5xWNKI=
+		U2eKUn7x475xaZMPEyc98mkpk8Y=
 		</data>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		teiMyvkYz0xAyv5rpSjB7/4xEdA=
+		/t9IEWrR7lz97bUmV+8p5fAlv3Q=
 		</data>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		IPfrjI5ovBpd0cXV7EoaR5xWNKI=
+		U2eKUn7x475xaZMPEyc98mkpk8Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JKbebeBTFMr98DV4A+NE1zkR7RGzo6VUm+9rWjiYKOw=
+			LEJ1qD/4zNk6JUdcKclV6cewQh7bd6l5CvXHCaFjXNE=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdapterDynamic.h</key>
@@ -230,14 +230,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IyhiwcFln/Ts/sTmfTuWOB1JXW0I5j7Xm0jSh8gL1oQ=
+			UgSbUjtb0XZCMav0RzZeoMVWCBNx1dy96MgyoamzRmI=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			29ZYW5LYwRbQ59iSiBqa95327HGtF89lLiznH3WUVNw=
+			0Zr8DTqmvhtAlEHt9vDOmutskbLAlubwNeqO+Tz5XWA=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftdoc</key>
@@ -251,14 +251,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IyhiwcFln/Ts/sTmfTuWOB1JXW0I5j7Xm0jSh8gL1oQ=
+			UgSbUjtb0XZCMav0RzZeoMVWCBNx1dy96MgyoamzRmI=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			29ZYW5LYwRbQ59iSiBqa95327HGtF89lLiznH3WUVNw=
+			0Zr8DTqmvhtAlEHt9vDOmutskbLAlubwNeqO+Tz5XWA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

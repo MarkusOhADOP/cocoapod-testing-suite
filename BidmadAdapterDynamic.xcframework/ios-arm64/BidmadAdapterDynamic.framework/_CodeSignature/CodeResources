@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/BidmadAdapterDynamic-Swift.h</key>
 		<data>
-		D3BDnA4UttagneqoLTpe65QHc1A=
+		p2SgrSIDT+fQFacEc75T0SzhOV0=
 		</data>
 		<key>Headers/BidmadAdapterDynamic.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Jh8033HebkWrkokGgfEDytp6rfI=
+		lze2kaNbDulVBnqGWgkGaJ1AkAs=
 		</data>
 		<key>MobonSDKBundle.bundle/Assets.car</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Vk121SrARuZ6QoAbDBSqhoHukxI=
+		WCjTn50Fl9iW418cbzri73gEMYI=
 		</data>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tVK8IgS1ROQENoWiFT75g0W+hK8=
+		viJSDFnMBE0jcyeef4f7/J/ftDM=
 		</data>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		Vk121SrARuZ6QoAbDBSqhoHukxI=
+		WCjTn50Fl9iW418cbzri73gEMYI=
 		</data>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		tVK8IgS1ROQENoWiFT75g0W+hK8=
+		viJSDFnMBE0jcyeef4f7/J/ftDM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JKbebeBTFMr98DV4A+NE1zkR7RGzo6VUm+9rWjiYKOw=
+			LEJ1qD/4zNk6JUdcKclV6cewQh7bd6l5CvXHCaFjXNE=
 			</data>
 		</dict>
 		<key>Headers/BidmadAdapterDynamic.h</key>
@@ -230,14 +230,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lcdA1qQ7WW2pj4ZYAZmVt9UGdKFL+d6YPCb8bXaZyVM=
+			G8W35Xi6gMRO2WV+QqH2y3Xw/9AZEEP131beTfUGYeQ=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ezoR8MYm5LP4VimbEi/GvcZWV9FONArNGdhnDAARBOE=
+			dnpYSs1IZwvCWdAAyzJlYIQFSWkXJT4N8luq8n/slXo=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/arm64.swiftdoc</key>
@@ -251,14 +251,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lcdA1qQ7WW2pj4ZYAZmVt9UGdKFL+d6YPCb8bXaZyVM=
+			G8W35Xi6gMRO2WV+QqH2y3Xw/9AZEEP131beTfUGYeQ=
 			</data>
 		</dict>
 		<key>Modules/BidmadAdapterDynamic.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ezoR8MYm5LP4VimbEi/GvcZWV9FONArNGdhnDAARBOE=
+			dnpYSs1IZwvCWdAAyzJlYIQFSWkXJT4N8luq8n/slXo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -24,6 +24,7 @@ import _Concurrency
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class BidmadTeadsNativeAd : ObjectiveC.NSObject, ADOPUtility.BIDMADNativeAdCommonInterface {
   @objc public static func request(for appid: Swift.String, pubID: Swift.String?, isDebug: Swift.Bool, isChildDirectedAds isChild: Foundation.NSNumber?) -> Any
+  @objc public static func getMediaView() -> UIKit.UIView
   @objc override dynamic public init()
   @objc deinit
 }

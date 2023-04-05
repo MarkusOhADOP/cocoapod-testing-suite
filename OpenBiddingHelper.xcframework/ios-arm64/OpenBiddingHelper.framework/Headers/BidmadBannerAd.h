@@ -16,6 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BidmadBannerAd : NSObject <BidmadAdStandardBanner, BIDMADOpenBiddingBannerDelegate>
 
 @property (nonatomic, weak) id <BIDMADOpenBiddingBannerDelegate> _Nullable delegate;
+
+/**
+ * A Boolean value that determines whether ad refresh feature is enabled.
+ * If YES, ad refresh feature is enabled and will refresh the ad every refresh interval seconds.
+ * If NO, ad refresh feature is disabled and will not refresh the ad.
+ * The default value for adRefreshEnabled is YES (true for Swift)
+ */
+@property (nonatomic) BOOL adRefreshEnabled;
+
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController containerView:(UIView * _Nonnull)containerView zoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
 - (void)setRefreshInterval:(NSInteger)refreshIntervalTime;

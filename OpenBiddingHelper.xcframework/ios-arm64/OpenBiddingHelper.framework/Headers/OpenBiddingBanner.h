@@ -33,6 +33,13 @@
 @property (nonatomic) BIDMADAdPosition position;
 @property (nonatomic, strong) NSString * _Nullable sessionId;
 
+/**
+ * A Boolean value that determines whether ad refresh feature is enabled.
+ * If YES, ad refresh feature is enabled and will refresh the ad every refresh interval seconds.
+ * If NO, ad refresh feature is disabled and will not refresh the ad.
+ */
+@property (nonatomic) BOOL adRefreshEnabled;
+
 - (id _Nonnull)initWithParentViewController:(UIViewController * _Nonnull)parentVC
                                 adsPosition:(CGPoint)point;
 - (id _Nonnull)initWithParentViewController:(UIViewController * _Nonnull)parentVC
@@ -46,7 +53,6 @@
 - (void)requestBannerView;
 - (void)removeAds;
 - (void)selectAds:(NSDictionary * _Nonnull)lv_dic;
-- (void)runAds;
 - (void)setParentController:(UIViewController * _Nonnull)parentVC;
 - (void)hideView;
 - (void)showView;

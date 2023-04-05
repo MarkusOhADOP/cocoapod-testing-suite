@@ -231,7 +231,7 @@
 		</data>
 		<key>Headers/BidmadBannerAd.h</key>
 		<data>
-		mzuZwn0boi08aFBx20Ifz88gD6o=
+		c2p6sNOnOm1vknlYrIRyetpZaJE=
 		</data>
 		<key>Headers/BidmadBannerAdForGame.h</key>
 		<data>
@@ -259,7 +259,7 @@
 		</data>
 		<key>Headers/BidmadNativeAd.h</key>
 		<data>
-		VwxCUedisnr2HxFjqC65Is73Hhg=
+		k3NQSd/SM1H4d3l6EZKBkf3XAPQ=
 		</data>
 		<key>Headers/BidmadRewardAd.h</key>
 		<data>
@@ -291,7 +291,7 @@
 		</data>
 		<key>Headers/OpenBiddingBanner.h</key>
 		<data>
-		rtMfKBAMpZVTAvQ1WIGXTrhPq7M=
+		oBNAyymlKUnnhHUBeY6ygZ653yY=
 		</data>
 		<key>Headers/OpenBiddingFlutterBanner.h</key>
 		<data>
@@ -439,7 +439,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2NqdWmAPke+L/zE2dlfPF7td4vg=
+		t+WDSb3YL/k/7VUwYbpk1cbJqKw=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -1178,11 +1178,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mzuZwn0boi08aFBx20Ifz88gD6o=
+			c2p6sNOnOm1vknlYrIRyetpZaJE=
 			</data>
 			<key>hash2</key>
 			<data>
-			iExlTD+AZi4smJOMRysgB5LuH1jaY69RUgKerNEUkyw=
+			a93DPjlhzYjVq4riD3p8jOj/aSPgJ7XvLm5RnMD7gA8=
 			</data>
 		</dict>
 		<key>Headers/BidmadBannerAdForGame.h</key>
@@ -1255,11 +1255,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VwxCUedisnr2HxFjqC65Is73Hhg=
+			k3NQSd/SM1H4d3l6EZKBkf3XAPQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			0BIDn79/t5OdTYC2s5wKbs3CauKwt63iCI4QYWMmjuI=
+			wo+s5ckLxwih0GaHmhsQ9sYxtA8yBAu8yqMXoE6aaDE=
 			</data>
 		</dict>
 		<key>Headers/BidmadRewardAd.h</key>
@@ -1343,11 +1343,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rtMfKBAMpZVTAvQ1WIGXTrhPq7M=
+			oBNAyymlKUnnhHUBeY6ygZ653yY=
 			</data>
 			<key>hash2</key>
 			<data>
-			sUatcG3i7R1SvP6j/s2jyzAv7DML5Yrg9DPwlnAz62w=
+			7yEzO1xAmVBy6EnCQ/xsLWh+MlnF8uP39jI/bcoAgHc=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingFlutterBanner.h</key>

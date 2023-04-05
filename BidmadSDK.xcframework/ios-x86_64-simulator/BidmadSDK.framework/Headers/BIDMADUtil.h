@@ -57,6 +57,4 @@
 
 + (void) sendLog :(NSDictionary *)info :(NSString *)advertisementType :(NSString *)logType :(NSString*)sessionId :(NSString*)realZoneId;
 
-+ (void)cancelPerformSelectorFor:(NSObject * _Nonnull)selfObject AndThenRun:(void (^_Nullable)(void))afterCancellation;
-
 @end

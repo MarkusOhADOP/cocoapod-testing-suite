@@ -307,11 +307,11 @@
 		</data>
 		<key>Headers/BIDMADSetting.h</key>
 		<data>
-		NHvADCOOS3Nqi2sjWI+PtvEVnDM=
+		G9xeuA+EEIQHQ8G6MN4NxCwKJPE=
 		</data>
 		<key>Headers/BIDMADUtil.h</key>
 		<data>
-		pKxoEbZjMneacldlVBR0l3PfNZU=
+		+2EdoDogkZx5IQQ5rRyQofOHHZk=
 		</data>
 		<key>Headers/BidmadARPM.h</key>
 		<data>
@@ -711,7 +711,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Gy1X9QUvOGzfsZoZkSi7MSdsYac=
+		SvwRPYy1ExTUnCdmDd/loWZmTJE=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -1659,22 +1659,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NHvADCOOS3Nqi2sjWI+PtvEVnDM=
+			G9xeuA+EEIQHQ8G6MN4NxCwKJPE=
 			</data>
 			<key>hash2</key>
 			<data>
-			St8Ns44XHPbNQWHEo5S6dQK/VU5WVYIoJqFkty64q7g=
+			qUY/RVYelVmlcnqj24/gXvo9ZSuwq+0k/P0JV07MeGA=
 			</data>
 		</dict>
 		<key>Headers/BIDMADUtil.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pKxoEbZjMneacldlVBR0l3PfNZU=
+			+2EdoDogkZx5IQQ5rRyQofOHHZk=
 			</data>
 			<key>hash2</key>
 			<data>
-			qmV4L2taUD1DbutYIwPpKSgsppW72HrnpNIlXW25pkA=
+			//85pxSVapnkoIhIMBFoCwrZIqL5P942n6IcnWRT8m8=
 			</data>
 		</dict>
 		<key>Headers/BidmadARPM.h</key>
