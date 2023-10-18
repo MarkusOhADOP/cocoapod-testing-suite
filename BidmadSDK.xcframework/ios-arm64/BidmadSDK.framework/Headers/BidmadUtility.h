@@ -7,7 +7,7 @@
 
 #pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -32,6 +32,17 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray<BidmadAdInfo *> *)arraySortedWithOrder:(NSArray<BidmadAdInfo *> *)adInfoArray;
 + (NSArray<BidmadAdInfo *> *)bidmadSwiftSort:(NSArray<BidmadAdInfo *> *)adInfoArray;
 + (NSString*)deviceName;
++ (UIViewController * _Nullable)getActiveViewController;
+@property (class, nonatomic, strong, nullable) UIImage *mainAppIcon;
++ (NSString * (^)(NSString *))whiteSpaceRemoved;
+
+@end
+
+@interface NSString (BidmadUtilityNSString)
+
+- (NSString * (^)(void))whiteSpaceRemoved;
+- (NSString * (^)(NSString *, NSString *))createClassName;
+- (Class (^)(void))makeClass;
 
 @end
 

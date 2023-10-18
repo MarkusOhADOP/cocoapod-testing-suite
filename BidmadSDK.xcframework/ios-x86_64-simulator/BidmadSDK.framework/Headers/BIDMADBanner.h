@@ -11,9 +11,16 @@
 #import <UIKit/UIKit.h>
 #import "BIDMADUtil.h"
 #import "BIDMADSetting.h"
-#import "BIDMADAtom.h"
-#import "BIDMADAdmob.h"
-#import "BIDMADAdmanager.h"
+#import "BidmadAdUnit.h"
+#import "BidmadBannerAdapter.h"
+#import "OBHCommunicationDelegate.h"
+
+@protocol OBHBannerExtraDelegate <NSObject>
+
+- (UIView * _Nonnull)setBannerFrameFromAd:(BidmadAdUnit * _Nonnull)ad;
+- (void)cleanPreviousAdView;
+
+@end
 
 typedef NS_ENUM(NSUInteger, BIDMADBannerViewCase) {
     BIDMADBannerViewCaseXYCoordinateGiven = 0,
@@ -36,22 +43,10 @@ typedef NS_ENUM(NSUInteger, BIDMADAdPosition) {
 };
 
 @interface BIDMADBanner : NSObject
-@property (nonatomic) int mediationNumber;
 
-- (instancetype _Nonnull)initWithInstanceOBH:(id _Nullable)instanceOBH;
-- (void)removeAds;
-/// This method sorts the dictionary of compass ads data from the least floor price to the highest.
-/// It returns the NSError if necessary properties are not available nor nil.
-/// If success, it lastly calls selectAds with the first ad with the highest floor price.
-- (NSError * _Nullable)sortBasedOnFloorPriceAndSelectFirstAd;
-- (void)hideView;
-- (void)showView;
-- (void)onBannerError:(NSError * _Nonnull)error
-             failType:(NSString * _Nonnull)failType;
-- (void)onBannerError:(NSError * _Nonnull)error
-             failType:(NSString * _Nonnull)failType
-        failLogEnable:(BOOL)failLogEnable;
-- (void)onBannerLoad;
-- (void)onBannerClick;
+- (instancetype _Nonnull)initWithInstanceOBH:(id<OBHCommunicationDelegate, OBHBannerExtraDelegate> _Nonnull)instanceOBH;
+- (void)selectAdUnit:(BidmadAdUnit * _Nonnull)adUnit;
+
+@property (nonatomic, strong) BidmadBannerAdapter * _Nullable adapter;
 
 @end

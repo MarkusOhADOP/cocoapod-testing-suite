@@ -30,8 +30,31 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSNumber * _Nullable)isChildDirectedTreatment;
 /// Setting for CCPA User Consent Status. If nil, the app does not have to be compliant to CCPA.
 + (NSNumber * _Nullable)isUserConsentCCPA;
+
+/**
+Initializes our SDK with the app key fetched from Info.plist using the key "BidmadAppKey".
+*/
 + (void)initializeSdk;
+
+/**
+Initializes BidmadSDK with the app key fetched from Info.plist using the key "BidmadAppKey" and calls the completion handler with a BOOL parameter indicating whether the initialization succeeded or failed.
+@param completionHandler The completion handler to call once initialization is complete. This block takes a BOOL parameter indicating whether initialization succeeded (YES) or failed (NO).
+*/
++ (void)initializeSdkWithCompletionHandler:(void (^_Nullable)(BOOL))completionHandler;
+
+/**
+Initializes BidmadSDK with the provided app key.
+@param appKey The app key to use for SDK initialization.
+*/
 + (void)initializeSdkWithAppKey:(NSString * _Nonnull)appKey;
+
+/**
+Initializes BidmadSDK with the provided app key and calls the completion handler with a BOOL parameter indicating whether the initialization succeeded or failed.
+@param appKey The app key to use for SDK initialization.
+@param completionHandler The completion handler to call once initialization is complete. This block takes a BOOL parameter indicating whether initialization succeeded (YES) or failed (NO).
+*/
++ (void)initializeSdkWithAppKey:(NSString * _Nonnull)appKey completionHandler:(void (^_Nullable)(BOOL))completionHandler;
+
 + (void)setCuid:(NSString *)cuid;
 + (NSString *)cuid;
 + (void)setUseServerSideCallback:(BOOL)useServerSideCallback;

@@ -12,35 +12,21 @@
 #import <BidmadSDK/BIDMADUtil.h>
 #import <BidmadSDK/BIDMADSetting.h>
 #import <BidmadSDK/BIDMADAppOpenAd.h>
-#import "OpenBiddingAdmobAppOpenAd.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol OpenBiddingAppOpenAdDelegate;
 
 @interface OpenBiddingAppOpenAd : NSObject
 
-@property (nonatomic, strong) id<OpenBiddingAppOpenAdDelegate> _Nullable delegate;
-@property (nonatomic, strong) NSDictionary *_Nullable ads_dic;
-@property (nonatomic, strong) NSString *_Nullable zoneID;
-@property (nonatomic, strong) NSString *_Nullable CUID;
-@property (nonatomic, strong) NSDictionary * _Nullable currentAdData;
-@property (nonatomic) BidmadLoadStatus loadStatus;
+@property (nonatomic, weak) id<OpenBiddingAppOpenAdDelegate> _Nullable delegate;
 @property (readonly) BOOL isLoaded;
+@property (nonatomic, strong) NSString * _Nullable zoneID;
 
-- (nonnull instancetype)init;
-- (void)showAppOpenAd;
+- (void)showAppOpenAdOnViewController:(UIViewController *)viewController;
 - (void)requestAppOpenAd;
-- (void)selectAds:(NSDictionary * _Nullable)lv_dic;
 - (void)registerForAppOpenAdForZoneID:(NSString * _Nonnull)zoneId;
 - (void)deregisterForAppOpenAd;
-- (void)onAppOpenAdLoad;
-- (void)onAppOpenAdError:(NSError * _Nonnull)error
-                failType:(NSString * _Nonnull)failType;
-- (void)onAppOpenAdError:(NSError * _Nonnull)error
-                failType:(NSString * _Nonnull)failType
-           failLogEnable:(BOOL)failLogEnable;
-- (void)onAppOpenAdShow;
-- (void)onAppOpenAdClick;
-- (void)onAppOpenAdClose;
 
 @end
 
@@ -54,3 +40,5 @@
 - (void)onClickAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
 
 @end
+
+NS_ASSUME_NONNULL_END

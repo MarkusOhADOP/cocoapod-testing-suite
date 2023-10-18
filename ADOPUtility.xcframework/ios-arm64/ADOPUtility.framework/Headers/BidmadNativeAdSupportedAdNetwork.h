@@ -13,6 +13,8 @@ typedef NS_ENUM(NSUInteger, BidmadNativeAdSupportedAdNetwork) {
     BidmadNativeAdSupportedAdNetworkAdMob,
     BidmadNativeAdSupportedAdNetworkPangle,
     BidmadNativeAdSupportedAdNetworkTeads,
+    BidmadNativeAdSupportedAdNetworkVungle,
+    BidmadNativeAdSupportedAdNetworkCoupang,
     BidmadNativeAdSupportedAdNetworkNone,
 };
 

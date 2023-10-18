@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/ADOPObjCUtility.h</key>
 		<data>
-		j4AGBJn+fpeSc+DcW7Azo3W6cCA=
+		FTDxRRVJ+i6JElgEu9TzJUPZ1K8=
 		</data>
 		<key>Headers/ADOPUtility.h</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Headers/BidmadNativeAdDataInterface.h</key>
 		<data>
-		mMbpnYe52VJlHDTX/lgsCgP+qME=
+		/VRSlTjk47oA9sXa35h9cYNc7r8=
 		</data>
 		<key>Headers/BidmadNativeAdSupportedAdNetwork.h</key>
 		<data>
-		Cc9PVBcfZN6vZQmj27ZjnWstT7Q=
+		8CuMm54ozB/PpuIkJrzBaQHIKAA=
 		</data>
 		<key>Headers/BidmadNativeAdViewContainerProtocol.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zDB6NkSB3QfTdPVGG/QggoHPsoQ=
+		CKqGdRT9zIfIZ1xiHeCT1BpSNho=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -110,7 +110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DV21v8qp6H26XU8h9CAKt+DA4Szdw1obmWDTPS9y2z4=
+			B2VA6QPaFbN5QTR0u/UIy5Ws2w8qGZeCmwySB9THO4I=
 			</data>
 		</dict>
 		<key>Headers/ADOPUtility.h</key>
@@ -208,14 +208,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T3TjYNomKU8BeEWu8KU/0cp/4Zm/HOiAo7bz1H96KtI=
+			cWS6zEPDgBdCzbCQ97buKD5LDRs8c4PdaAnMYAjWdQY=
 			</data>
 		</dict>
 		<key>Headers/BidmadNativeAdSupportedAdNetwork.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HszXgevWnOnwsGucAaV6eWnF3cqa1B+anU0ON32NOPI=
+			9THfU2CxhWToGXjg9uMDJdavvWbW96gG80EKJaz9LGw=
 			</data>
 		</dict>
 		<key>Headers/BidmadNativeAdViewContainerProtocol.h</key>

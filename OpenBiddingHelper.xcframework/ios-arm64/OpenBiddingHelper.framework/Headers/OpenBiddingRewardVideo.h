@@ -13,7 +13,6 @@
 #import <Foundation/Foundation.h>
 #import <BidmadSDK/BIDMADUtil.h>
 #import <BidmadSDK/BIDMADSetting.h>
-#import "OpenBiddingAdmob.h"
 #import "OpenBiddingInterstitial.h"
 #import <BidmadSDK/BIDMADRewardVideo.h>
 #import <ADOPUtility/BidmadLoadStatus.h>
@@ -24,30 +23,13 @@
 
 @property (nonatomic, strong) id<BIDMADOpenBiddingRewardVideoDelegate> _Nullable delegate;
 @property (nonatomic, strong) id<BIDMADOpenBiddingRewardVideoDelegate> _Nullable preloadDelegate;
-@property (strong, nonatomic) NSDictionary *ads_dic;
-@property (nonatomic) NSString *zoneID;
-@property (nonatomic) NSString *realZoneId;
-@property (nonatomic, strong) NSString * _Nullable currentAdNetwork;
-@property (readonly) BOOL isLoaded;
 @property (nonatomic) BidmadLoadStatus loadStatus;
-@property (nonatomic, strong) NSDictionary * _Nullable currentAdData;
+@property (readonly) BOOL isLoaded;
+@property (nonatomic, strong) NSString * _Nonnull zoneID;
 
 - (nonnull instancetype)initWithZoneID:(NSString * _Nonnull)zoneID;
-- (nonnull instancetype)init;
-- (void)loadRewardVideo;
+- (void)requestRewardVideo;
 - (void)showRewardVideoOnViewController:(UIViewController * _Nonnull)viewController;
-
-- (void)onVideoClick;
-/// Convenience Function for onVideoError:failType:failLogEnable:
-- (void)onVideoError:(NSError * _Nonnull)error failType:(NSString * _Nonnull)failType;
-- (void)onVideoError:(NSError * _Nonnull)error
-            failType:(NSString * _Nonnull)failType
-       failLogEnable:(BOOL)failLogEnable;
-- (void)onVideoLoad;
-- (void)onVideoShow;
-- (void)onVideoSkipped;
-- (void)onVideoSuccess;
-- (void)onVideoClose;
 
 @end
 

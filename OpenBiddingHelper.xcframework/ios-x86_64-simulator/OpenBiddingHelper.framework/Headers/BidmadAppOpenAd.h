@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL isAutoReload;
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
-- (void)show;
+- (void)showOnViewController:(UIViewController *)viewController;
 - (void)deregisterForAppOpenAd;
 - (BOOL)isLoaded;
 

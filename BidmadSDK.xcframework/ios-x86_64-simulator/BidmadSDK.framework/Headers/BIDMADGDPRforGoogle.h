@@ -11,18 +11,14 @@
 #import <Foundation/Foundation.h>
 #import <UserMessagingPlatform/UserMessagingPlatform.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSUInteger, BIDMAD_UMPConsentStatus) {
     BIDMAD_UMPConsentStatusUnknown = 0,
     BIDMAD_UMPConsentStatusRequired = 1,
     BIDMAD_UMPConsentStatusNotRequired = 2,
     BIDMAD_UMPConsentStatusObtained = 3
 };
-
-//typedef NS_ENUM(NSUInteger, BIDMAD_UMPConsentType) {
-//    BIDMAD_UMPConsentTypeUnknown = 0,
-//    BIDMAD_UMPConsentTypePersonalized = 1,
-//    BIDMAD_UMPConsentTypeNonPersonalized = 2
-//};
 
 //UMP GDPR(Wrapper Class)관련 콜백 함수 목록
 @protocol BIDMADGDPRforGoogleProtocol <NSObject>
@@ -57,6 +53,7 @@ typedef NS_ENUM(NSUInteger, BIDMAD_UMPConsentStatus) {
 + (BOOL)shouldGDPRFalseBeSetWithStatus:(NSInteger)bidmadGDPRStatus;
 + (NSArray<NSError *> * _Nullable)bulkSetAdapterConsentFrom:(NSArray <NSString *> * _Nonnull)classNames consent:(BOOL)consentStatus;
 + (NSError * _Nullable)setAdapterConsentFrom:(NSString * _Nonnull)className consent:(BOOL)consentStatus;
-+ (NSNumber * _Nullable)getGDPRSettingFromAdNetwork:(NSString * _Nonnull)adNetwork className:(NSString * _Nonnull)className;
 
 @end
+
+NS_ASSUME_NONNULL_END

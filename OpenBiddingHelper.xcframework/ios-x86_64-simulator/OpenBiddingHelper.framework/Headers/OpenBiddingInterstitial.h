@@ -13,7 +13,9 @@
 #import <Foundation/Foundation.h>
 #import <BidmadSDK/BIDMADUtil.h>
 #import <BidmadSDK/BIDMADSetting.h>
-#import "OpenBiddingAdmob.h"
+#import <ADOPUtility/BidmadLoadStatus.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol BIDMADOpenBiddingInterstitialDelegate <NSObject>
 @optional
@@ -30,33 +32,14 @@
 
 @property (nonatomic, weak) id<BIDMADOpenBiddingInterstitialDelegate> _Nullable delegate;
 @property (nonatomic, weak) id<BIDMADOpenBiddingInterstitialDelegate> _Nullable preloadDelegate;
-@property (strong, nonatomic) NSDictionary * _Nullable ads_dic;
-@property (nonatomic) NSString * _Nullable zoneID;
-@property (nonatomic) NSString * _Nullable realZoneId;
 @property (readonly) BOOL isLoaded;
-@property (nonatomic, strong) NSString* _Nullable currentAdNetwork;
 @property (nonatomic) BidmadLoadStatus loadStatus;
-@property (nonatomic, strong) NSDictionary * _Nullable currentAdData;
+@property (nonatomic, strong) NSString *zoneID;
 
 - (nonnull instancetype)initWithZoneID:(NSString * _Nonnull)zoneID;
-- (id _Nonnull)init;
-- (void)loadInterstitialView;
+- (void)requestInterstitialView;
 - (void)showInterstitialViewOnViewController:(UIViewController * _Nonnull)viewController;
-- (void)selectAds:(NSDictionary * _Nullable)lv_dic;
-- (void)removeInterstitialADS;
-
-// MARK: INNER-DELEGATE
-- (void)onInterstitialClick;
-- (void)onInterstitialError:(NSError * _Nonnull)error failType:(NSString * _Nonnull)failType;
-- (void)onInterstitialError:(NSError * _Nonnull)error
-                   failType:(NSString * _Nonnull)failType
-              failLogEnable:(BOOL)failLogEnable;
-- (void)onInterstitialLoad;
-- (void)onInterstitialShow;
-- (void)onInterstitialClose;
 
 @end
 
-
-
-
+NS_ASSUME_NONNULL_END

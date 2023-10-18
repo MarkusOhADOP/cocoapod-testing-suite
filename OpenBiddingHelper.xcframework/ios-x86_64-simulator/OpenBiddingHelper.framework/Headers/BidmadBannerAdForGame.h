@@ -14,6 +14,7 @@
 #import <Foundation/Foundation.h>
 #import <BidmadSDK/BIDMADSetting.h>
 #import "OpenBiddingBanner.h"
+#import <BidmadSDK/BIDMADBanner.h>
 
 static NSMutableDictionary* BidmadOpenBiddingBannerDic;
 
@@ -38,6 +39,7 @@ static NSMutableDictionary* BidmadOpenBiddingBannerDic;
 + (void)setRefreshInterval:(NSInteger)interval withZoneID:(NSString *)zoneID;
 + (void)hideWithZoneID:(NSString *)zoneID;
 + (void)showWithZoneID:(NSString *)zoneID;
++ (void)updateViewPositionWithZoneID:(NSString *)zoneID;
 
 @end
 

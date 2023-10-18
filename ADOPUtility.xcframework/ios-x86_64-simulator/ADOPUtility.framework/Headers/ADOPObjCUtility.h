@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ADOPObjCUtility : NSObject
 
-+ (BOOL)shouldNetworkReqWithCriterion:(id _Nullable)adWeight;
++ (BOOL)shouldNetworkReqWithCriterion:(double)adWeight;
 
 @end
 
