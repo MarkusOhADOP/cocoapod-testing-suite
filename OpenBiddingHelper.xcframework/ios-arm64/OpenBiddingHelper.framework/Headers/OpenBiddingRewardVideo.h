@@ -40,6 +40,7 @@
 - (void)onLoadAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
 - (void)onCloseAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
 - (void)onShowAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
+- (void)onShowFailAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
 - (void)onClickAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
 - (void)onCompleteAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
 - (void)onSkipAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;

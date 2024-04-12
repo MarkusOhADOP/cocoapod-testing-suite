@@ -13,11 +13,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadAppOpenAd : NSObject <OpenBiddingAppOpenAdDelegate>
+@interface BidmadAppOpenAd : NSObject <BidmadAdStandardFullScreenAd, OpenBiddingAppOpenAdDelegate>
 
 @property (nonatomic, strong) id <OpenBiddingAppOpenAdDelegate> _Nullable delegate;
 @property (nonatomic) BOOL isAutoReload;
-- (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController zoneID:(NSString * _Nonnull)zoneID;
+- (nonnull instancetype)initWithZoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
 - (void)showOnViewController:(UIViewController *)viewController;
 - (void)deregisterForAppOpenAd;

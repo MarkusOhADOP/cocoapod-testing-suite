@@ -37,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onLoadAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
 - (void)onCloseAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
 - (void)onShowAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
+- (void)onShowFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
 - (void)onClickAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
 
 @end

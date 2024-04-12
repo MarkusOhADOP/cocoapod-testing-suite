@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UserMessagingPlatform/UserMessagingPlatform.h>
 #import <BidmadSDK/BIDMADGDPRforGoogle.h>
 
 #if __has_include(<Flutter/Flutter.h>) || __has_include("Flutter.h")
