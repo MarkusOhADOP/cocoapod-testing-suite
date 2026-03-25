@@ -1,0 +1,98 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "BidmadAdpieAdapter",
+    "printedName": "BidmadAdpieAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AdPieSDK",
+        "printedName": "AdPieSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdpieAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AdPieSDK",
+        "printedName": "AdPieSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdpieAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidmadAdpieAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdpieAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AdPieSDK",
+        "printedName": "AdPieSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdpieAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BidmadAdpieAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "BidmadAdpieAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidmadAdpieAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdpieAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AdPieSDK",
+        "printedName": "AdPieSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdpieAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadAdpieAdapter\/Sources\/BMAdPieManagerLegacySupport.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 32,
+      "value": "\"com.bidmad.adpie.manager.state\""
+    }
+  ]
+}

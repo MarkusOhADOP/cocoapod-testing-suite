@@ -1,0 +1,11 @@
+framework module BidmadFlutterBridge {
+  umbrella header "BidmadFlutterBridge.h"
+  export *
+
+  module * { export * }
+}
+
+module BidmadFlutterBridge.Swift {
+  header "BidmadFlutterBridge-Swift.h"
+  requires objc
+}

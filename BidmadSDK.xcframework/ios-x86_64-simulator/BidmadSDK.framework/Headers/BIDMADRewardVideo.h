@@ -9,12 +9,18 @@
 #pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 
 #import <UIKit/UIKit.h>
-#import "BidmadAdUnit.h"
-#import "OBHCommunicationDelegate.h"
+#import <BidmadSDK/OBHCommunicationDelegate.h>
+#import <BidmadSDK/BidmadFullscreenAdapter.h>
+
+@class BidmadAdUnit;
+@class BidmadFullscreenAdapter;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BIDMADRewardVideo : NSObject
+
+@property (nonatomic, strong) BidmadFullscreenAdapter *adapter;
+@property (nonatomic) BOOL adBlockEstimation;
 
 - (instancetype)initWithInstanceOBH:(id<OBHCommunicationDelegate>)instanceOBH;
 - (void)selectAdUnit:(BidmadAdUnit *)adUnit;

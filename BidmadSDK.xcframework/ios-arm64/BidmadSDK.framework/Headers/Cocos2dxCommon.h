@@ -12,7 +12,7 @@
 #define Cocos2dxCommon_h
 
 #import <Foundation/Foundation.h>
-#import "BIDMADSetting.h"
+#import <BidmadSDK/BIDMADSetting.h>
 
 @protocol BIDMADCocos2dxCommonDelegate <NSObject>
 

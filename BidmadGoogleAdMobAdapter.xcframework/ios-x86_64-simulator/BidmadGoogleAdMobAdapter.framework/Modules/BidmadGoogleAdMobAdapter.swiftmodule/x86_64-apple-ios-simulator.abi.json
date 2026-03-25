@@ -1,0 +1,1558 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "BidmadGoogleAdMobAdapter",
+    "printedName": "BidmadGoogleAdMobAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleAdMobAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadAdMobManager",
+        "printedName": "BidmadAdMobManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdMobManager",
+                "printedName": "BidmadGoogleAdMobAdapter.BidmadAdMobManager",
+                "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadAdMobManager"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadAdMobManager(cpy)shared",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0acD7ManagerC6sharedACvpZ",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidmadAdMobManager",
+                    "printedName": "BidmadGoogleAdMobAdapter.BidmadAdMobManager",
+                    "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadAdMobManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadAdMobManager(cm)shared",
+                "mangledName": "$s24BidmadGoogleAdMobAdapter0acD7ManagerC6sharedACvgZ",
+                "moduleName": "BidmadGoogleAdMobAdapter",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initializeSDK",
+            "printedName": "initializeSDK(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadAdMobManager(im)initializeSDKWithCompletion:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0acD7ManagerC13initializeSDK10completionyyyc_tF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadAdMobManager",
+        "mangledName": "$s24BidmadGoogleAdMobAdapter0acD7ManagerC",
+        "moduleName": "BidmadGoogleAdMobAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleAdMobAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleAdMobAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadBannerGoogleAdMobAdapter",
+        "printedName": "BidmadBannerGoogleAdMobAdapter",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(from:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BidmadSDK.BidmadBannerAdapter?, UIKit.UIView?, CoreFoundation.CGSize, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(BidmadSDK.BidmadBannerAdapter?, UIKit.UIView?, CoreFoundation.CGSize, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BidmadSDK.BidmadBannerAdapter?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BidmadBannerAdapter",
+                            "printedName": "BidmadSDK.BidmadBannerAdapter",
+                            "usr": "c:objc(cs)BidmadBannerAdapter"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIView?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGSize",
+                        "printedName": "CoreFoundation.CGSize",
+                        "usr": "c:@S@CGSize"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadBannerGoogleAdMobAdapter(im)loadAdFrom:with:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6BannerbcdE0C04loadC04from4withySo16UIViewControllerC_ySo0afE0CSg_So0J0CSgSo6CGSizeVs5Error_pSgtctF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "objc_name": "loadAdFrom:with:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidReceiveAd",
+            "printedName": "bannerViewDidReceiveAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadBannerGoogleAdMobAdapter(im)bannerViewDidReceiveAd:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6BannerbcdE0C020bannerViewDidReceiveC0yySo09GADBannerH0CF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "bannerViewDidReceiveAd:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerView",
+            "printedName": "bannerView(_:didFailToReceiveAdWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadBannerGoogleAdMobAdapter(im)bannerView:didFailToReceiveAdWithError:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6BannerbcdE0C10bannerView_016didFailToReceiveC9WithErrorySo09GADBannerH0C_s0N0_ptF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "bannerView:didFailToReceiveAdWithError:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidRecordClick",
+            "printedName": "bannerViewDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadBannerGoogleAdMobAdapter(im)bannerViewDidRecordClick:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6BannerbcdE0C24bannerViewDidRecordClickyySo09GADBannerH0CF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "bannerViewDidRecordClick:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerGoogleAdMobAdapter",
+                "printedName": "BidmadGoogleAdMobAdapter.BidmadBannerGoogleAdMobAdapter",
+                "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadBannerGoogleAdMobAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdUnit",
+                "printedName": "BidmadSDK.BidmadAdUnit",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadAdUnit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadBannerGoogleAdMobAdapter(im)initWithAdUnit:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6BannerbcdE0C6adUnitAC0A3SDK0acH0C_tcfc",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdUnit:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerGoogleAdMobAdapter",
+                "printedName": "BidmadGoogleAdMobAdapter.BidmadBannerGoogleAdMobAdapter",
+                "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadBannerGoogleAdMobAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadBannerGoogleAdMobAdapter(im)init",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6BannerbcdE0CACycfc",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadBannerGoogleAdMobAdapter",
+        "mangledName": "$s24BidmadGoogleAdMobAdapter0a6BannerbcdE0C",
+        "moduleName": "BidmadGoogleAdMobAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadBannerAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadBannerAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleAdMobAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadGoogleAdMobAdapterInfo",
+        "printedName": "BidmadGoogleAdMobAdapterInfo",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "adapterVersion",
+            "printedName": "adapterVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadGoogleAdMobAdapterInfo(cm)adapterVersion",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0abcdE4InfoC14adapterVersionSSyFZ",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "static": true,
+            "objc_name": "adapterVersion",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adNetworkSdkVersion",
+            "printedName": "adNetworkSdkVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadGoogleAdMobAdapterInfo(cm)adNetworkSdkVersion",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0abcdE4InfoC19adNetworkSdkVersionSSyFZ",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "static": true,
+            "objc_name": "adNetworkSdkVersion",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeAdNetworkSDK",
+            "printedName": "initializeAdNetworkSDK()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadGoogleAdMobAdapterInfo(cm)initializeAdNetworkSDK",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0abcdE4InfoC010initializeC10NetworkSDKyyFZ",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "static": true,
+            "objc_name": "initializeAdNetworkSDK",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadGoogleAdMobAdapterInfo",
+                "printedName": "BidmadGoogleAdMobAdapter.BidmadGoogleAdMobAdapterInfo",
+                "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadGoogleAdMobAdapterInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadGoogleAdMobAdapterInfo(im)init",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0abcdE4InfoCACycfc",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadGoogleAdMobAdapterInfo",
+        "mangledName": "$s24BidmadGoogleAdMobAdapter0abcdE4InfoC",
+        "moduleName": "BidmadGoogleAdMobAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleAdMobAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleAdMobAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadInterstitialGoogleAdMobAdapter",
+        "printedName": "BidmadInterstitialGoogleAdMobAdapter",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BidmadSDK.BidmadFullscreenAdapter?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(BidmadSDK.BidmadFullscreenAdapter?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BidmadSDK.BidmadFullscreenAdapter?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BidmadFullscreenAdapter",
+                            "printedName": "BidmadSDK.BidmadFullscreenAdapter",
+                            "usr": "c:objc(cs)BidmadFullscreenAdapter"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter(im)loadAdWith:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a12InterstitialbcdE0C04loadC0yyySo0a10FullscreenE0CSg_s5Error_pSgtcF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "objc_name": "loadAdWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter(im)showAdFrom:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a12InterstitialbcdE0C04showC04fromySo16UIViewControllerC_tF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "objc_name": "showAdFrom:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adWillPresentFullScreenContent",
+            "printedName": "adWillPresentFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter(im)adWillPresentFullScreenContent:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a12InterstitialbcdE0C30adWillPresentFullScreenContentyySo07GADFullk10PresentingC0_pF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "adWillPresentFullScreenContent:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adWillDismissFullScreenContent",
+            "printedName": "adWillDismissFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter(im)adWillDismissFullScreenContent:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a12InterstitialbcdE0C30adWillDismissFullScreenContentyySo07GADFullk10PresentingC0_pF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "adWillDismissFullScreenContent:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidRecordClick",
+            "printedName": "adDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter(im)adDidRecordClick:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a12InterstitialbcdE0C16adDidRecordClickyySo023GADFullScreenPresentingC0_pF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "adDidRecordClick:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ad",
+            "printedName": "ad(_:didFailToPresentFullScreenContentWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter(im)ad:didFailToPresentFullScreenContentWithError:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a12InterstitialbcdE0C2ad_42didFailToPresentFullScreenContentWithErrorySo07GADFullm10PresentingC0_p_s0P0_ptF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "ad:didFailToPresentFullScreenContentWithError:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInterstitialGoogleAdMobAdapter",
+                "printedName": "BidmadGoogleAdMobAdapter.BidmadInterstitialGoogleAdMobAdapter",
+                "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdUnit",
+                "printedName": "BidmadSDK.BidmadAdUnit",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadAdUnit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter(im)initWithAdUnit:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a12InterstitialbcdE0C6adUnitAC0A3SDK0acH0C_tcfc",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdUnit:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInterstitialGoogleAdMobAdapter",
+                "printedName": "BidmadGoogleAdMobAdapter.BidmadInterstitialGoogleAdMobAdapter",
+                "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter(im)init",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a12InterstitialbcdE0CACycfc",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadInterstitialGoogleAdMobAdapter",
+        "mangledName": "$s24BidmadGoogleAdMobAdapter0a12InterstitialbcdE0C",
+        "moduleName": "BidmadGoogleAdMobAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadFullscreenAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadFullscreenAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleAdMobAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleAdMobAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadRewardGoogleAdMobAdapter",
+        "printedName": "BidmadRewardGoogleAdMobAdapter",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BidmadSDK.BidmadFullscreenAdapter?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(BidmadSDK.BidmadFullscreenAdapter?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BidmadSDK.BidmadFullscreenAdapter?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BidmadFullscreenAdapter",
+                            "printedName": "BidmadSDK.BidmadFullscreenAdapter",
+                            "usr": "c:objc(cs)BidmadFullscreenAdapter"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter(im)loadAdWith:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6RewardbcdE0C04loadC0yyySo0a10FullscreenE0CSg_s5Error_pSgtcF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "objc_name": "loadAdWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter(im)showAdFrom:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6RewardbcdE0C04showC04fromySo16UIViewControllerC_tF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "objc_name": "showAdFrom:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adWillPresentFullScreenContent",
+            "printedName": "adWillPresentFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter(im)adWillPresentFullScreenContent:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6RewardbcdE0C30adWillPresentFullScreenContentyySo07GADFullk10PresentingC0_pF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "adWillPresentFullScreenContent:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidRecordClick",
+            "printedName": "adDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter(im)adDidRecordClick:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6RewardbcdE0C16adDidRecordClickyySo023GADFullScreenPresentingC0_pF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "adDidRecordClick:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidDismissFullScreenContent",
+            "printedName": "adDidDismissFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter(im)adDidDismissFullScreenContent:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6RewardbcdE0C29adDidDismissFullScreenContentyySo07GADFullk10PresentingC0_pF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "adDidDismissFullScreenContent:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ad",
+            "printedName": "ad(_:didFailToPresentFullScreenContentWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter(im)ad:didFailToPresentFullScreenContentWithError:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6RewardbcdE0C2ad_42didFailToPresentFullScreenContentWithErrorySo07GADFullm10PresentingC0_p_s0P0_ptF",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "objc_name": "ad:didFailToPresentFullScreenContentWithError:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadRewardGoogleAdMobAdapter",
+                "printedName": "BidmadGoogleAdMobAdapter.BidmadRewardGoogleAdMobAdapter",
+                "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdUnit",
+                "printedName": "BidmadSDK.BidmadAdUnit",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadAdUnit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter(im)initWithAdUnit:",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6RewardbcdE0C6adUnitAC0A3SDK0acH0C_tcfc",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdUnit:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadRewardGoogleAdMobAdapter",
+                "printedName": "BidmadGoogleAdMobAdapter.BidmadRewardGoogleAdMobAdapter",
+                "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter(im)init",
+            "mangledName": "$s24BidmadGoogleAdMobAdapter0a6RewardbcdE0CACycfc",
+            "moduleName": "BidmadGoogleAdMobAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadGoogleAdMobAdapter@objc(cs)BidmadRewardGoogleAdMobAdapter",
+        "mangledName": "$s24BidmadGoogleAdMobAdapter0a6RewardbcdE0C",
+        "moduleName": "BidmadGoogleAdMobAdapter",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadFullscreenAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadFullscreenAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadGoogleAdMobAdapter\/Sources\/BidmadAdMobManager.swift",
+      "kind": "StringLiteral",
+      "offset": 296,
+      "length": 32,
+      "value": "\"com.bidmad.admob.manager.state\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadGoogleAdMobAdapter\/Sources\/BidmadRewardGoogleAdMobAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 361,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

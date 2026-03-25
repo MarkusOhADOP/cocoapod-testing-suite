@@ -5,7 +5,7 @@
 //  Created by Seungsub Oh on 2023/01/03.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,9 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// convenience initializer
 + (instancetype)adWithZoneID:(NSString *)zoneID;
-
-/// Initialize
-- (instancetype)initWithZoneID:(NSString *)zoneID;
 
 /// attempt requesting ads from ad networks. this method results in either onLoadAd: or onLoadFailAd: method callback.
 - (void)load;

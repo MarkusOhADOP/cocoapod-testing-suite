@@ -1,0 +1,991 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "OpenBiddingHelper",
+    "printedName": "OpenBiddingHelper",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadFullscreenAdDelegate",
+        "printedName": "BidmadFullscreenAdDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "bidmadFullscreenLoad",
+            "printedName": "bidmadFullscreenLoad(ad:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAd",
+                "printedName": "OpenBiddingHelper.BidmadFullscreenAd",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate(im)bidmadFullscreenLoadWithAd:info:",
+            "mangledName": "$s17OpenBiddingHelper26BidmadFullscreenAdDelegateP06bidmadE4Load2ad4infoyAA0deF0C_0D3SDK0D4InfoCtF",
+            "moduleName": "OpenBiddingHelper",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "protocolReq": true,
+            "objc_name": "bidmadFullscreenLoadWithAd:info:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bidmadFullscreenLoadFail",
+            "printedName": "bidmadFullscreenLoadFail(ad:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAd",
+                "printedName": "OpenBiddingHelper.BidmadFullscreenAd",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate(im)bidmadFullscreenLoadFailWithAd:error:",
+            "mangledName": "$s17OpenBiddingHelper26BidmadFullscreenAdDelegateP06bidmadE8LoadFail2ad5erroryAA0deF0C_s5Error_ptF",
+            "moduleName": "OpenBiddingHelper",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "protocolReq": true,
+            "objc_name": "bidmadFullscreenLoadFailWithAd:error:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bidmadFullscreenShow",
+            "printedName": "bidmadFullscreenShow(ad:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAd",
+                "printedName": "OpenBiddingHelper.BidmadFullscreenAd",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate(im)bidmadFullscreenShowWithAd:info:",
+            "mangledName": "$s17OpenBiddingHelper26BidmadFullscreenAdDelegateP06bidmadE4Show2ad4infoyAA0deF0C_0D3SDK0D4InfoCtF",
+            "moduleName": "OpenBiddingHelper",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "protocolReq": true,
+            "objc_name": "bidmadFullscreenShowWithAd:info:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bidmadFullscreenShowFail",
+            "printedName": "bidmadFullscreenShowFail(ad:info:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAd",
+                "printedName": "OpenBiddingHelper.BidmadFullscreenAd",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BidmadSDK.BidmadInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidmadInfo",
+                    "printedName": "BidmadSDK.BidmadInfo",
+                    "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate(im)bidmadFullscreenShowFailWithAd:info:error:",
+            "mangledName": "$s17OpenBiddingHelper26BidmadFullscreenAdDelegateP06bidmadE8ShowFail2ad4info5erroryAA0deF0C_0D3SDK0D4InfoCSgs5Error_ptF",
+            "moduleName": "OpenBiddingHelper",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "protocolReq": true,
+            "objc_name": "bidmadFullscreenShowFailWithAd:info:error:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bidmadFullscreenClick",
+            "printedName": "bidmadFullscreenClick(ad:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAd",
+                "printedName": "OpenBiddingHelper.BidmadFullscreenAd",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate(im)bidmadFullscreenClickWithAd:info:",
+            "mangledName": "$s17OpenBiddingHelper26BidmadFullscreenAdDelegateP06bidmadE5Click2ad4infoyAA0deF0C_0D3SDK0D4InfoCtF",
+            "moduleName": "OpenBiddingHelper",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "protocolReq": true,
+            "objc_name": "bidmadFullscreenClickWithAd:info:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bidmadFullscreenComplete",
+            "printedName": "bidmadFullscreenComplete(ad:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAd",
+                "printedName": "OpenBiddingHelper.BidmadFullscreenAd",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate(im)bidmadFullscreenCompleteWithAd:info:",
+            "mangledName": "$s17OpenBiddingHelper26BidmadFullscreenAdDelegateP06bidmadE8Complete2ad4infoyAA0deF0C_0D3SDK0D4InfoCtF",
+            "moduleName": "OpenBiddingHelper",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "protocolReq": true,
+            "objc_name": "bidmadFullscreenCompleteWithAd:info:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bidmadFullscreenSkip",
+            "printedName": "bidmadFullscreenSkip(ad:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAd",
+                "printedName": "OpenBiddingHelper.BidmadFullscreenAd",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate(im)bidmadFullscreenSkipWithAd:info:",
+            "mangledName": "$s17OpenBiddingHelper26BidmadFullscreenAdDelegateP06bidmadE4Skip2ad4infoyAA0deF0C_0D3SDK0D4InfoCtF",
+            "moduleName": "OpenBiddingHelper",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "protocolReq": true,
+            "objc_name": "bidmadFullscreenSkipWithAd:info:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bidmadFullscreenClose",
+            "printedName": "bidmadFullscreenClose(ad:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAd",
+                "printedName": "OpenBiddingHelper.BidmadFullscreenAd",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate(im)bidmadFullscreenCloseWithAd:info:",
+            "mangledName": "$s17OpenBiddingHelper26BidmadFullscreenAdDelegateP06bidmadE5Close2ad4infoyAA0deF0C_0D3SDK0D4InfoCtF",
+            "moduleName": "OpenBiddingHelper",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenBiddingHelper.BidmadFullscreenAdDelegate>",
+            "protocolReq": true,
+            "objc_name": "bidmadFullscreenCloseWithAd:info:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate",
+        "mangledName": "$s17OpenBiddingHelper26BidmadFullscreenAdDelegateP",
+        "moduleName": "OpenBiddingHelper",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadFullscreenAd",
+        "printedName": "BidmadFullscreenAd",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "className",
+            "printedName": "className",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(cpy)className",
+            "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC9classNameSSvpZ",
+            "moduleName": "OpenBiddingHelper",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(cm)className",
+                "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC9classNameSSvgZ",
+                "moduleName": "OpenBiddingHelper",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(cm)setClassName:",
+                "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC9classNameSSvsZ",
+                "moduleName": "OpenBiddingHelper",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17OpenBiddingHelper18BidmadFullscreenAdC9classNameSSvMZ",
+                "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC9classNameSSvMZ",
+                "moduleName": "OpenBiddingHelper",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any OpenBiddingHelper.BidmadFullscreenAdDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(py)delegate",
+            "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC8delegateAA0deF8Delegate_pSgvp",
+            "moduleName": "OpenBiddingHelper",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OpenBiddingHelper.BidmadFullscreenAdDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BidmadFullscreenAdDelegate",
+                        "printedName": "any OpenBiddingHelper.BidmadFullscreenAdDelegate",
+                        "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(im)delegate",
+                "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC8delegateAA0deF8Delegate_pSgvg",
+                "moduleName": "OpenBiddingHelper",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OpenBiddingHelper.BidmadFullscreenAdDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BidmadFullscreenAdDelegate",
+                        "printedName": "any OpenBiddingHelper.BidmadFullscreenAdDelegate",
+                        "usr": "c:@M@OpenBiddingHelper@objc(pl)BidmadFullscreenAdDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(im)setDelegate:",
+                "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC8delegateAA0deF8Delegate_pSgvs",
+                "moduleName": "OpenBiddingHelper",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17OpenBiddingHelper18BidmadFullscreenAdC8delegateAA0deF8Delegate_pSgvM",
+                "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC8delegateAA0deF8Delegate_pSgvM",
+                "moduleName": "OpenBiddingHelper",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isAutoReload",
+            "printedName": "isAutoReload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(py)isAutoReload",
+            "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC12isAutoReloadSbvp",
+            "moduleName": "OpenBiddingHelper",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(im)isAutoReload",
+                "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC12isAutoReloadSbvg",
+                "moduleName": "OpenBiddingHelper",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(im)setIsAutoReload:",
+                "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC12isAutoReloadSbvs",
+                "moduleName": "OpenBiddingHelper",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17OpenBiddingHelper18BidmadFullscreenAdC12isAutoReloadSbvM",
+                "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC12isAutoReloadSbvM",
+                "moduleName": "OpenBiddingHelper",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(zoneID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAd",
+                "printedName": "OpenBiddingHelper.BidmadFullscreenAd",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(im)initWithZoneID:",
+            "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC6zoneIDACSS_tcfc",
+            "moduleName": "OpenBiddingHelper",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(im)load",
+            "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC4loadyyF",
+            "moduleName": "OpenBiddingHelper",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show(on:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(im)showOn:",
+            "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC4show2onySo16UIViewControllerC_tF",
+            "moduleName": "OpenBiddingHelper",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(py)description",
+            "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC11descriptionSSvp",
+            "moduleName": "OpenBiddingHelper",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(im)description",
+                "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC11descriptionSSvg",
+                "moduleName": "OpenBiddingHelper",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAd",
+                "printedName": "OpenBiddingHelper.BidmadFullscreenAd",
+                "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd(im)init",
+            "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdCACycfc",
+            "moduleName": "OpenBiddingHelper",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@OpenBiddingHelper@objc(cs)BidmadFullscreenAd",
+        "mangledName": "$s17OpenBiddingHelper18BidmadFullscreenAdC",
+        "moduleName": "OpenBiddingHelper",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "BidmadLoggable",
+            "printedName": "BidmadLoggable",
+            "usr": "s:9BidmadSDK0A8LoggableP",
+            "mangledName": "$s9BidmadSDK0A8LoggableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "StringLiteral",
+      "offset": 970,
+      "length": 20,
+      "value": "\"BidmadFullscreenAd\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "StringLiteral",
+      "offset": 1045,
+      "length": 47,
+      "value": "\"Techlabs.OpenBiddingHelper.BidmadFullscreenAd\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1308,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "StringLiteral",
+      "offset": 5708,
+      "length": 6,
+      "value": "\"IDLE\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "StringLiteral",
+      "offset": 5758,
+      "length": 8,
+      "value": "\"LOADED\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "StringLiteral",
+      "offset": 5811,
+      "length": 9,
+      "value": "\"LOADING\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "StringLiteral",
+      "offset": 5868,
+      "length": 9,
+      "value": "\"UNKNOWN\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "StringLiteral",
+      "offset": 5904,
+      "length": 61,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "StringLiteral",
+      "offset": 5922,
+      "length": 1,
+      "value": "\": [Status: \""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "StringLiteral",
+      "offset": 5942,
+      "length": 1,
+      "value": "\"] [ID: \""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/OpenBiddingHelper\/Sources\/BidmadFullscreenAd.swift",
+      "kind": "StringLiteral",
+      "offset": 5963,
+      "length": 1,
+      "value": "\"]\""
+    }
+  ]
+}

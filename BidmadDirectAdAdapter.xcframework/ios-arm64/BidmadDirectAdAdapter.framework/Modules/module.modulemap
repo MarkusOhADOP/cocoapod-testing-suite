@@ -1,0 +1,11 @@
+framework module BidmadDirectAdAdapter {
+  umbrella header "BidmadDirectAdAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module BidmadDirectAdAdapter.Swift {
+  header "BidmadDirectAdAdapter-Swift.h"
+  requires objc
+}

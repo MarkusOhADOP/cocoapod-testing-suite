@@ -6,7 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BidmadAdUnit.h"
+
+@class BidmadAdUnit;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)dismissedWith:(__kindof BidmadAppOpenAdapter *)ad;
 - (void)presentedWith:(__kindof BidmadAppOpenAdapter *)ad;
+- (void)failedToPresentWith:(__kindof BidmadAppOpenAdapter *)ad error:(NSError *)error;
 - (void)clickedWith:(__kindof BidmadAppOpenAdapter *)ad;
 
 @end

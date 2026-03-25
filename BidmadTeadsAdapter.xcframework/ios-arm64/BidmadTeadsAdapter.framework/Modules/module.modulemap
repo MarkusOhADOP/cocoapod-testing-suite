@@ -1,0 +1,11 @@
+framework module BidmadTeadsAdapter {
+  umbrella header "BidmadTeadsAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module BidmadTeadsAdapter.Swift {
+  header "BidmadTeadsAdapter-Swift.h"
+  requires objc
+}

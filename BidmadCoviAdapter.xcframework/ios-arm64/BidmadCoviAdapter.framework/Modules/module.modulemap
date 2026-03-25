@@ -1,0 +1,11 @@
+framework module BidmadCoviAdapter {
+  umbrella header "BidmadCoviAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module BidmadCoviAdapter.Swift {
+  header "BidmadCoviAdapter-Swift.h"
+  requires objc
+}

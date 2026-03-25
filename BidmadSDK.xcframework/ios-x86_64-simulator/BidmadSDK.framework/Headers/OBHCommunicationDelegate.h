@@ -5,7 +5,7 @@
 //  Created by 플랫폼-오승섭-맥북 on 2023/09/26.
 //
 
-#import "BidmadAdUnit.h"
+@class BidmadAdUnit;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 
 - (void)onShowAdUnit:(BidmadAdUnit *)adUnit;
+- (void)onShowFailAdUnit:(BidmadAdUnit *)adUnit error:(NSError *)error;
 - (void)onRewardedAdUnit:(BidmadAdUnit *)adUnit;
 - (void)onSkippedAdUnit:(BidmadAdUnit *)adUnit;
 - (void)onDismissedAdUnit:(BidmadAdUnit *)adUnit;

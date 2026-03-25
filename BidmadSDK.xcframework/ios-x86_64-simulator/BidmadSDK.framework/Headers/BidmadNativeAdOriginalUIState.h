@@ -11,11 +11,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BidmadNativeAdOriginalUIState : NSObject
 
+// callToAction
 @property (nonatomic, strong) NSNumber * _Nullable callToActionButtonUserInteractionEnabled;
-@property (nonatomic, strong) UIImage * _Nullable iconImage;
-@property (nonatomic, strong) NSString * _Nullable title;
-@property (nonatomic, strong) NSString * _Nullable body;
 @property (nonatomic, strong) NSString * _Nullable callToActionTitle;
+@property (nonatomic, strong) NSNumber * _Nullable callToActionHidden;
+
+// iconImage
+@property (nonatomic, strong) UIImage * _Nullable iconImage;
+@property (nonatomic, strong) NSNumber * _Nullable iconImageHidden;
+
+// title
+@property (nonatomic, strong) NSString * _Nullable title;
+@property (nonatomic, strong) NSNumber * _Nullable titleHidden;
+
+// body
+@property (nonatomic, strong) NSString * _Nullable body;
+@property (nonatomic, strong) NSNumber * _Nullable bodyHidden;
+
+// media
+@property (nonatomic, strong) NSNumber * _Nullable mediaHidden;
 
 + (BidmadNativeAdOriginalUIState * (^)(void))newState;
 

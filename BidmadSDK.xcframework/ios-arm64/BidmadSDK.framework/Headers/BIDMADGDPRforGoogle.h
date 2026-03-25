@@ -8,8 +8,7 @@
 
 #pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 
-#import <Foundation/Foundation.h>
-#import <UserMessagingPlatform/UserMessagingPlatform.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -27,20 +26,17 @@ typedef NS_ENUM(NSUInteger, BIDMAD_UMPConsentStatus) {
 -(void)onConsentInfoUpdateFailure: (NSError*)formError;
 -(void)onConsentFormLoadSuccess;
 -(void)onConsentFormLoadFailure: (NSError*)formError;
--(void)onConsentFormDismissed: (NSError*)formError;
+-(void)onConsentFormDismissed: (NSError* _Nullable)formError;
 
 @end
 
 @interface BIDMADGDPRforGoogle : NSObject
 
-@property (nonatomic, strong) UMPRequestParameters *requestParameters;
-@property (nonatomic, strong) UMPDebugSettings *debugSettings;
-@property (nonatomic) BOOL underAgeOfConsent;
 @property (nonatomic, strong) UIViewController *parentViewController;
-@property (nonatomic, strong) id<BIDMADGDPRforGoogleProtocol> consentStatusDelegate;
-@property (nonatomic) UMPDebugGeography *debugGeography;
+@property (nonatomic, weak) id<BIDMADGDPRforGoogleProtocol> consentStatusDelegate;
 
--(id)initWith:(UIViewController*)controller;
+- (instancetype)init NS_UNAVAILABLE;
+-(id)initWith:(UIViewController* _Nullable)controller;
 -(void)setListener:(id<BIDMADGDPRforGoogleProtocol>)delegate;
 -(void)setDebug:(NSString*)testDeviceId isTestEurope:(BOOL)testEurope;
 -(BOOL)isConsentFormAvailable;
@@ -50,9 +46,7 @@ typedef NS_ENUM(NSUInteger, BIDMAD_UMPConsentStatus) {
 -(void)requestConsentInfoUpdate;
 -(void)loadForm;
 -(void)showForm;
-+ (BOOL)shouldGDPRFalseBeSetWithStatus:(NSInteger)bidmadGDPRStatus;
-+ (NSArray<NSError *> * _Nullable)bulkSetAdapterConsentFrom:(NSArray <NSString *> * _Nonnull)classNames consent:(BOOL)consentStatus;
-+ (NSError * _Nullable)setAdapterConsentFrom:(NSString * _Nonnull)className consent:(BOOL)consentStatus;
++ (void)setPurposeConsentOnLocalStoarge;
 
 @end
 

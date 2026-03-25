@@ -1,0 +1,276 @@
+<html style="margin:0; padding:0; width:100vw; height:100vh; overflow:hidden;">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BidmadORTBVideoBanner</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="mainContainer">
+  <div id="adContainer" style="display:none;">
+    <div id="ic_sound_off" onclick="toggleSound(true)" style="display:none;">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Zm-80 238v-94l-72-72H200v80h114l86 86Zm-36-130Z"/></svg>
+    </div>
+    <div id="ic_sound_on" onclick="toggleSound(false)" style="display:none;">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"/></svg>
+    </div>
+  </div>
+  <video id="lastFrame" webkit-playsinline="true" playsinline="true" style="display:none;"></video>
+  <div id="dim" style="display:none;">
+  </div>
+  <div id="ic_replay" style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" onclick="replayAd()" height="72px" viewBox="0 -960 960 960" width="72px" fill="#e8eaed"><path d="M480-80q-75 0-140.5-28.5t-114-77q-48.5-48.5-77-114T120-440h80q0 117 81.5 198.5T480-160q117 0 198.5-81.5T760-440q0-117-81.5-198.5T480-720h-6l62 62-56 58-160-160 160-160 56 58-62 62h6q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-440q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-80Z"/></svg>
+  </div>
+</div>
+<script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+<script>
+  let adsManager;
+  let adDisplayContainer;
+  let adWidth;
+  let adHeight;
+  let response;
+  let adDuration;
+  var prevSoundVolume;
+
+  function initialize(adResponseBase64, width, height) {
+    try {
+      //Base64 디코딩
+      let adResponse = atob(adResponseBase64);
+
+      //광고 정보 수신
+      adWidth = width;
+      adHeight = height;
+
+      // 광고 컨테이너 생성
+      adDisplayContainer = new google.ima.AdDisplayContainer(document.getElementById('adContainer'));
+
+      // 광고 매니저를 초기화하고 광고 시작
+      initializeAdsManager(adResponse);
+    } catch(error) {
+        bridgeEvent("Fail", "IMA initialize Fail : " + error);
+    }
+  }
+
+  function initializeAdsManager(vastResponse) {
+      response = vastResponse;
+      // VAST XML 응답을 처리하기 위한 광고 로더
+      const adsLoader = new google.ima.AdsLoader(adDisplayContainer);
+      adsLoader.addEventListener(google.ima.AdsManagerLoadedEvent.Type.ADS_MANAGER_LOADED, onAdsManagerLoaded, false);
+      adsLoader.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, onAdError, false);
+
+      // VAST XML 응답을 이용해 광고 매니저 초기화
+      const adsRequest = new google.ima.AdsRequest();
+      adsRequest.adsResponse = vastResponse; // 받은 VAST 응답을 URL로 설정
+
+      // VAST XML 응답을 기반으로 AdsManager 요청
+      adsLoader.requestAds(adsRequest);
+  }
+
+  function onAdsManagerLoaded(event) {
+      try {
+        bridgeEvent("Load");
+        
+        adDisplayContainer.initialize();
+        adsManager = event.getAdsManager();
+
+        // 광고가 로드되면 광고 재생
+        adsManager.addEventListener(google.ima.AdEvent.Type.STARTED, onAdStarted);
+        adsManager.addEventListener(google.ima.AdEvent.Type.COMPLETE, onAdComplete);
+        //adsManager.addEventListener(google.ima.AdEvent.Type.CLICK, onAdClick);
+        adsManager.addEventListener(google.ima.AdEvent.Type.VIDEO_CLICKED, onAdVideoClick);
+        adsManager.addEventListener(google.ima.AdEvent.Type.RESUMED, onAdResume);
+        adsManager.addEventListener(google.ima.AdEvent.Type.PAUSED, onAdPause);
+        adsManager.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, onAdError);
+
+        adsManager.init(adWidth, adHeight, google.ima.ViewMode.NORMAL);
+        
+        //광고 시작 - iOS에서 init 직후 실행 시 동작하지 않는 이슈가 있어서 딜레이
+        setTimeout(function() {
+            toggleSound(false);
+            adsManager.start();
+        }, 100);
+        
+      } catch(error) {
+        bridgeEvent("Fail", "IMA Load Fail");
+      }
+  }
+
+  function onAdStarted() {
+      console.log('Ad Started');
+      adsManager.pause();
+
+      adDuration = adsManager.getCurrentAd().getDuration();
+      document.getElementById('adContainer').style.width = adWidth+"px";
+      document.getElementById('adContainer').style.height = adHeight+"px";
+      document.getElementById('adContainer').style.display = "";
+
+      setAdLastFrame();
+      
+      setTimeout(function() {
+        resetAdLastFrame();
+      }, 200);
+  }
+
+  function onAdComplete() {
+      console.log('Ad Completed');
+      showLastFrame();
+  }
+
+  function onAdError(error) {
+      console.log('Ad Error');
+      bridgeEvent("Fail", "IMA Error");
+  }
+
+  function onAdPause() {
+      console.log('Ad Pause: ');
+      autoSoundControll("Pause");
+      bridgeEvent("Pause");
+  }
+
+  function onAdResume() {
+      console.log('Ad Resume: ');
+      autoSoundControll("Resume");
+      bridgeEvent("Resume");
+  }
+
+  function onAdClick() {
+      console.log('Ad Click: ');
+  }
+
+  function onAdVideoClick() {
+      console.log('onAdVideoClick: ');
+      const url = adsManager.getCurrentAd().data.clickThroughUrl;
+      window.open(url, '_blank');
+      bridgeEvent("Click");
+  }
+
+  function onAdPauseRequested() {
+      console.log('onAdPauseRequested: ');
+      adsManager.pause();
+  }
+
+  function onAdResumeRequested() {
+      console.log('onAdResumeRequested: ');
+      adsManager.resume();
+  }
+
+  function toggleSound(isOn) {
+    if(isOn) {
+      adsManager.setVolume(1);
+      document.getElementById("ic_sound_on").style.display = 'block';
+      document.getElementById("ic_sound_off").style.display = 'none';
+    } else {
+      adsManager.setVolume(0);
+      document.getElementById("ic_sound_on").style.display = 'none';
+      document.getElementById("ic_sound_off").style.display = 'block';
+    }
+    
+    //저장된 이전 볼륨 초기화
+    prevSoundVolume = undefined;
+  }
+    
+    function autoSoundControll(type) {
+        //iOS에서 소리 ON 상태로 진입하는 경우 MediaControll이 활성화되며, Pasue상태로 돌입시 소리 OFF로 MediaControll을 OFF 시키기 위함
+        //UI 요소는 건들지 않음
+        switch(type) {
+            case "Pause":
+                //광고 Pause 시 소리도 무조건 OFF
+                prevSoundVolume = adsManager.getVolume();
+                adsManager.setVolume(0);
+                break;
+            case "Resume":
+                if(prevSoundVolume != undefined) { //이전 볼륨 복구
+                    adsManager.setVolume(prevSoundVolume);
+                }
+                
+                prevSoundVolume = undefined;
+                
+                break;
+        }
+    }
+
+  function setAdLastFrame() {
+    //ima에서 재생이 완료되면 video 태그를 초기화하므로 이를 유지하기 위한 더미 video 태그 lastFrame을 세팅
+    //Complete 시점에 해당 요소를 Show
+    console.log('setAdLastFrame: ');
+    const adOriVideo = document.getElementsByTagName("video")[0];
+    const lastFrame = document.getElementById("lastFrame");
+
+    if(lastFrame.readyState !== 4) {
+      lastFrame.src = adOriVideo.currentSrc;
+      lastFrame.load();
+    }
+
+    lastFrame.currentTime = adDuration;
+  }
+
+  function showLastFrame() {
+      document.getElementById("lastFrame").style.display = 'block';
+      document.getElementById("dim").style.display = 'block';
+      document.getElementById("ic_replay").style.display = 'block';
+  }
+
+  function resetAdLastFrame() {
+      document.getElementById("lastFrame").style.display = 'none';
+      document.getElementById("dim").style.display = 'none';
+      document.getElementById("ic_replay").style.display = 'none';
+  }
+
+  function replayAd() {
+    initializeAdsManager(response);
+  }
+
+  function bridgeEvent(type, message) {
+      switch(type){
+        case "Load":
+            if(getMobileOS() === AndroidOSType) {
+                Android.onLoad();
+            } else if(getMobileOS() === iOSOSType) {
+                window.webkit.messageHandlers["onLoad"].postMessage("");
+            }
+        break;
+        case "Fail":
+            console.log("error Message : " + message);
+            if(getMobileOS() === AndroidOSType) {
+                Android.onFail(message);
+            } else if(getMobileOS() === iOSOSType) {
+                window.webkit.messageHandlers["onFail"].postMessage(message);
+            }
+        break;
+        case "Click":
+          //native에서 처리
+        break;
+        case "Resume":
+            if(getMobileOS() === AndroidOSType) {
+                Android.setPlaying(true);
+            } else if(getMobileOS() === iOSOSType) {
+                window.webkit.messageHandlers["setPlaying"].postMessage("true");
+            }
+        break;
+        case "Pause":
+            if(getMobileOS() === AndroidOSType) {
+                Android.setPlaying(false);
+            } else if(getMobileOS() === iOSOSType) {
+                window.webkit.messageHandlers["setPlaying"].postMessage("false");
+            }
+        break;
+      }
+  }
+    
+  const AndroidOSType = "Android";
+  const iOSOSType = "iOS"
+  function getMobileOS() {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+        return AndroidOSType;
+    } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+        return iOSOSType;
+    }
+    
+    return undefined;
+  }
+
+</script>
+</body>
+</html>

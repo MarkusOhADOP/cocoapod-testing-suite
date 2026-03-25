@@ -1,0 +1,11 @@
+framework module BidmadUnityAdsAdapter {
+  umbrella header "BidmadUnityAdsAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module BidmadUnityAdsAdapter.Swift {
+  header "BidmadUnityAdsAdapter-Swift.h"
+  requires objc
+}

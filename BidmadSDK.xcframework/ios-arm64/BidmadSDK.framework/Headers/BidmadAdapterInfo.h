@@ -11,8 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol BidmadAdapterInfo <NSObject>
 
+@required
 + (NSString *)adapterVersion;
 + (NSString *)adNetworkSdkVersion;
+
+@optional
++ (void)initializeAdNetworkSDK;
 
 @end
 

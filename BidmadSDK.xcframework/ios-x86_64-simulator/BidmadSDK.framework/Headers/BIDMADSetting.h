@@ -11,20 +11,19 @@
 #pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 
 #import <Foundation/Foundation.h>
-#import <ADOPUtility/BidmadSendLogDelegate.h>
+#import <BidmadSDK/BidmadSendLogDelegate.h>
 
-#define COMPASS_SERVING         @"https://bidmad.adop.cc/serving/ms3.php"
 #define BIDMAD_APPINFO_URL      @"https://appinfo.adop.cc/app_collect.php"
 
 //Bidmad AppTrackingTransparency 관련 내용 정의
-typedef enum
-{
-    BidmadAuthorizationStatusNotDetermined = 0,
-    BidmadAuthorizationStatusRestricted,
-    BidmadAuthorizationStatusDenied,
-    BidmadAuthorizationStatusAuthorized,
-    BidmadAuthorizationStatusLessThaniOS14
-}BidmadTrackingAuthorizationStatus;
+typedef NS_CLOSED_ENUM(NSUInteger, BidmadTrackingAuthorizationStatus) {
+    BidmadTrackingAuthorizationStatusNotDetermined = 0,
+    BidmadTrackingAuthorizationStatusRestricted = 1,
+    BidmadTrackingAuthorizationStatusDenied = 2,
+    BidmadTrackingAuthorizationStatusAuthorized = 3,
+    BidmadTrackingAuthorizationStatusLessThaniOS14 = 4
+};
+
 typedef void (^CompleteHandler)(BidmadTrackingAuthorizationStatus status);
 //Bidmad AppTrackingTransparency 관련 내용 정의
 
@@ -39,28 +38,36 @@ extern NSString* _Nonnull const BIDMAD_CCPA_CONSENT;
 - (void)reqAdTrackingAuthorizationWithCompletionHandler:(void (^_Nonnull)(BidmadTrackingAuthorizationStatus))completeHandler;
 
 /**
-Initializes our SDK with the app key fetched from Info.plist using the key "BidmadAppKey".
+ Initializes our SDK with the app domain fetched from Info.plist using the key "BidmadAppDomain".
+ @param platform The platform (ios, flutter, unity, unreal, cocos2dx, reactnative) where the code is being executed
 */
-- (void)initializeSdk;
+- (void)initializeSdkWithPlatform:(NSString * _Nonnull)platform;
 
 /**
-Initializes BidmadSDK with the app key fetched from Info.plist using the key "BidmadAppKey" and calls the completion handler with a BOOL parameter indicating whether the initialization succeeded or failed.
-@param completionHandler The completion handler to call once initialization is complete. This block takes a BOOL parameter indicating whether initialization succeeded (YES) or failed (NO).
+ Initializes BidmadSDK with the app domain fetched from Info.plist using the key "BidmadAppDomain" and calls the completion handler with a BOOL parameter indicating whether the initialization succeeded or failed.
+ @param platform The platform (ios, flutter, unity, unreal, cocos2dx, reactnative) where the code is being executed
+ @param completionHandler The completion handler to call once initialization is complete. This block takes a BOOL parameter indicating whether initialization succeeded (YES) or failed (NO).
 */
-- (void)initializeSdkWithCompletionHandler:(void (^_Nullable)(BOOL))completionHandler;
+- (void)initializeSdkWithPlatform:(NSString * _Nonnull)platform 
+                completionHandler:(void (^_Nullable)(BOOL))completionHandler;
 
 /**
-Initializes BidmadSDK with the provided app key.
-@param appKey The app key to use for SDK initialization.
+ Initializes BidmadSDK with the provided app domain.
+ @param appDomain The app domain to use for SDK initialization.
+ @param platform The platform (ios, flutter, unity, unreal, cocos2dx, reactnative) where the code is being executed
 */
-- (void)initializeSdkWithKey:(NSString * _Nonnull)appKey;
+- (void)initializeSdkWithDomain:(NSString * _Nonnull)appDomain
+                       platform:(NSString * _Nonnull)platform;
 
 /**
-Initializes BidmadSDK with the provided app key and calls the completion handler with a BOOL parameter indicating whether the initialization succeeded or failed.
-@param appKey The app key to use for SDK initialization.
-@param completionHandler The completion handler to call once initialization is complete. This block takes a BOOL parameter indicating whether initialization succeeded (YES) or failed (NO).
+ Initializes BidmadSDK with the provided app domain and calls the completion handler with a BOOL parameter indicating whether the initialization succeeded or failed.
+ @param appDomain The app domain to use for SDK initialization.
+ @param platform The platform (ios, flutter, unity, unreal, cocos2dx, reactnative) where the code is being executed
+ @param completionHandler The completion handler to call once initialization is complete. This block takes a BOOL parameter indicating whether initialization succeeded (YES) or failed (NO).
 */
-- (void)initializeSdkWithKey:(NSString * _Nonnull)appKey completionHandler:(void (^_Nullable)(BOOL))completionHandler;
+- (void)initializeSdkWithDomain:(NSString * _Nullable)appDomain
+                       platform:(NSString * _Nullable)platform
+              completionHandler:(void (^ _Nullable)(BOOL))completionHandler;
 
 /// If your app is directed to kids under the age of 13, please set YES or true.
 - (void)setIsChildDirectedAds: (BOOL)isChildDirectedAdsNeeded;
@@ -70,12 +77,9 @@ Initializes BidmadSDK with the provided app key and calls the completion handler
 
 @property (nonatomic)bool isDebug;
 
-/// keywords. ex) sports, cars, finance, football
-@property (nonatomic, strong) NSString *keyword;
+@property (nonatomic, strong) NSString * _Nonnull version;
 
-@property (nonatomic, strong) NSString *version;
-
-@property (nonatomic, strong) NSString *testDeviceId;
+@property (nonatomic, strong) NSString * _Nullable testDeviceId;
 
 /// Setting for Child-Directed Treament for COPPA-Compliance.
 @property (nonatomic, strong) NSNumber * __nullable isChildDirectedTreatment;
@@ -93,6 +97,18 @@ Initializes BidmadSDK with the provided app key and calls the completion handler
 
 @property (readonly) BOOL isInitialized;
 
-@property (nonatomic, strong) NSDictionary *adNetworkSupport;
+@property (nonatomic, strong) NSDictionary * _Nullable adNetworkSupport;
+
+@property (nonatomic) BOOL isATTPopupAllowed;
+
+@property (nonatomic, readonly) NSString * _Nonnull customDomain;
+
+@property (nonatomic, strong) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable nasMediaInitializables;
+
+@property (nonatomic, readonly) BOOL isReachable;
+
+/// Extra data to be sent encrypted with Compass requests. Set via `setExtraData:`.
+/// Stored in memory only — cleared when the process terminates.
+@property (nonatomic, strong) NSDictionary * _Nullable extraData;
 
 @end

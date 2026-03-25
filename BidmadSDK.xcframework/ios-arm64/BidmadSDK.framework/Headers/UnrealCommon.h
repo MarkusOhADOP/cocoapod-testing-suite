@@ -12,7 +12,7 @@
 #define UnrealCommon_h
 
 #import <Foundation/Foundation.h>
-#import "BIDMADSetting.h"
+#import <BidmadSDK/BIDMADSetting.h>
 
 @protocol BIDMADUnrealCommonDelegate <NSObject>
 

@@ -1,0 +1,11 @@
+framework module BidmadVungleAdapter {
+  umbrella header "BidmadVungleAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module BidmadVungleAdapter.Swift {
+  header "BidmadVungleAdapter-Swift.h"
+  requires objc
+}

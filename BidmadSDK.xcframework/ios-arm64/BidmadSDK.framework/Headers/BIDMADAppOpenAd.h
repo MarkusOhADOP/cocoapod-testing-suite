@@ -9,13 +9,17 @@
 #pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 
 #import <Foundation/Foundation.h>
-#import "BIDMADUtil.h"
-#import "BIDMADSetting.h"
-#import "BidmadAdUnit.h"
+#import <BidmadSDK/BIDMADUtil.h>
+#import <BidmadSDK/BIDMADSetting.h>
+#import <BidmadSDK/BidmadAppOpenAdapter.h>
+
+@class BidmadAdUnit;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BIDMADAppOpenAd : NSObject
+
+@property (nonatomic, strong) BidmadAppOpenAdapter *adapter;
 
 - (instancetype _Nonnull)initWithInstanceOBH:(id _Nullable)instanceOBH;
 - (void)showAppOpenAdOnViewController:(UIViewController * _Nonnull)viewController;

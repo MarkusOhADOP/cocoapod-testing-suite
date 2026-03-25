@@ -1,0 +1,11 @@
+framework module BidmadAppLovinAdapter {
+  umbrella header "BidmadAppLovinAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module BidmadAppLovinAdapter.Swift {
+  header "BidmadAppLovinAdapter-Swift.h"
+  requires objc
+}

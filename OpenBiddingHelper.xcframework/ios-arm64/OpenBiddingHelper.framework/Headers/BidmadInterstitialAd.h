@@ -14,16 +14,28 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BidmadInterstitialAd : NSObject <BidmadAdStandardFullScreenAd, BIDMADOpenBiddingInterstitialDelegate>
+
 @property (nonatomic, weak) id <BIDMADOpenBiddingInterstitialDelegate> _Nullable delegate;
 @property (nonatomic) BOOL isAutoReload;
+
+@property(nonatomic, copy) void (^_Nullable onLoadAd)
+    (OpenBiddingInterstitial *, BidmadInfo *);
+@property(nonatomic, copy) void (^_Nullable onLoadFailAd)
+    (OpenBiddingInterstitial *, NSError *);
+@property(nonatomic, copy) void (^_Nullable onShowAd)
+    (OpenBiddingInterstitial *, BidmadInfo *);
+@property(nonatomic, copy) void (^_Nullable onShowFailAd)
+    (OpenBiddingInterstitial *, BidmadInfo *_Nullable, NSError *);
+@property(nonatomic, copy) void (^_Nullable onClickAd)
+    (OpenBiddingInterstitial *, BidmadInfo *);
+@property(nonatomic, copy) void (^_Nullable onCloseAd)
+    (OpenBiddingInterstitial *, BidmadInfo *);
+
 - (nonnull instancetype)initWithZoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
 - (void)showOnViewController:(UIViewController * _Nonnull)viewController;
 - (BOOL)isLoaded;
-- (void)onLoadAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
-- (void)onShowAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
-- (void)onCloseAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
-- (void)onLoadFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
+
 @end
 
 NS_ASSUME_NONNULL_END

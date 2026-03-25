@@ -1,0 +1,72 @@
+<html style="margin:0; padding:0; width:100vw; height:100vh; overflow:hidden;">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BidmadORTBScriptBanner</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="mainContainer">
+  <div id="adContainer"></div>
+</div>
+<script>
+  function initialize(adResponseBase64, width, height) {
+    try {
+      //Base64 디코딩
+      let adResponse = atob(adResponseBase64);
+
+      //광고 정보 수신 및 wrapping 구성
+      let wrappingHTML = "<div style='display:flex; align-item:center; justify-content:center;'>";
+      wrappingHTML += adResponse;
+      wrappingHTML += "</div>";
+
+      document.getElementById('adContainer').style.width = width+"px";
+      document.getElementById('adContainer').style.height = height+"px";
+      document.getElementById("adContainer").innerHTML += wrappingHTML;
+
+      bridgeEvent("Load");
+    } catch(error) {
+      bridgeEvent("Fail", "script Ad initialize Fail : " + error);
+    }
+  }
+
+  function bridgeEvent(type, message) {
+      switch(type){
+        case "Load":
+            if(getMobileOS() === AndroidOSType) {
+                Android.onLoad();
+            } else if(getMobileOS() === iOSOSType) {
+                window.webkit.messageHandlers["onLoad"].postMessage("");
+            }
+        break;
+        case "Fail":
+            console.log("error Message : " + message);
+            if(getMobileOS() === AndroidOSType) {
+                Android.onFail(message);
+            } else if(getMobileOS() === iOSOSType) {
+                window.webkit.messageHandlers["onFail"].postMessage(message);
+            }
+        break;
+        case "Click":
+          //native에서 처리
+        break;
+      }
+  }
+  
+  const AndroidOSType = "Android";
+  const iOSOSType = "iOS"
+  function getMobileOS() {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+    if (/android/i.test(userAgent)) {
+        return AndroidOSType;
+    } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+        return iOSOSType;
+    }
+  
+    return undefined;
+  }
+    
+</script>
+</body>
+</html>

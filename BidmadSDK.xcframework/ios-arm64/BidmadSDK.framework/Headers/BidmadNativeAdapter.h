@@ -6,11 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BIDMADNativeAdView.h"
-#import "BidmadAdUnit.h"
+#import <BidmadSDK/BIDMADNativeAdView.h>
+#import "BidmadAdapterInterfaceAccess.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class BidmadAdUnit;
 @class BidmadNativeAdapter;
 
 @protocol BidmadNativeAdapterDelegate <NSObject>
@@ -20,13 +21,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface BidmadNativeAdapter : NSObject
+@interface BidmadNativeAdapter : NSObject <BidmadAdapterInterfaceAccess>
 
 @property (nonatomic, strong) BidmadAdUnit *adUnit;
 @property (nonatomic, weak) id<BidmadNativeAdapterDelegate> delegate;
 
 - (void)loadAdWith:(void (^)(BidmadNativeAdapter * _Nullable, NSError * _Nullable))completionHandler;
-- (void)showAdTo:(BIDMADNativeAdView *)adView;
+- (CGSize)showAdTo:(BIDMADNativeAdView *)adView defaultSize:(CGSize)defaultSize;
 - (void)removeAdFrom:(BIDMADNativeAdView *)adView;
 - (instancetype)initWithAdUnit:(BidmadAdUnit *)adUnit;
 

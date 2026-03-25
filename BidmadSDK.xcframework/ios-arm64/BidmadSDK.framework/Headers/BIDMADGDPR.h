@@ -9,7 +9,7 @@
 #pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 
 #import <Foundation/Foundation.h>
-#import "BIDMADSetting.h"
+#import <BidmadSDK/BIDMADSetting.h>
 
 typedef NS_ENUM(NSInteger, GDPRConsentStatus) {
     GDPRConsentStatusYES = 1,

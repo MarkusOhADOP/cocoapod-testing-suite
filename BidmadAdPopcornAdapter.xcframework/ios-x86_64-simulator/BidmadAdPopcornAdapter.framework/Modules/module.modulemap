@@ -1,0 +1,11 @@
+framework module BidmadAdPopcornAdapter {
+  umbrella header "BidmadAdPopcornAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module BidmadAdPopcornAdapter.Swift {
+  header "BidmadAdPopcornAdapter-Swift.h"
+  requires objc
+}

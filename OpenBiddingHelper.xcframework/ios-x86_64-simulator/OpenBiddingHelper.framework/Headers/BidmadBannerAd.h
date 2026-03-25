@@ -8,14 +8,26 @@
 #pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 
 #import <UIKit/UIKit.h>
-#import "OpenBiddingBanner.h"
 #import "BidmadAdStandardBanner.h"
+#import <BidmadSDK/BidmadSDK.h>
+#import <BidmadSDK/BidmadSDK-Swift.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BidmadBannerAd : NSObject <BidmadAdStandardBanner, BIDMADOpenBiddingBannerDelegate>
+@class BidmadBannerAd;
 
-@property (nonatomic, weak) id <BIDMADOpenBiddingBannerDelegate> _Nullable delegate;
+@protocol BidmadBannerAdDelegate <NSObject>
+@optional
+- (void)onLoadFailBannerAd:(BidmadBannerAd * _Nonnull)bannerAd error:(NSError * _Nonnull)error NS_SWIFT_NAME(onLoadFail(bannerAd:error:));
+- (void)onLoadBannerAd:(BidmadBannerAd * _Nonnull)bannerAd info:(BidmadInfo *)info NS_SWIFT_NAME(onLoad(bannerAd:info:));
+- (void)onClickBannerAd:(BidmadBannerAd * _Nonnull)bannerAd info:(BidmadInfo * _Nonnull)info NS_SWIFT_NAME(onClick(bannerAd:info:));
+@end
+
+@interface BidmadBannerAd : NSObject <BidmadAdStandardBanner, BMBannerDelegate>
+
+@property (nonatomic, weak) id<BidmadBannerAdDelegate> _Nullable delegate;
+@property (nonatomic, readonly) BidmadLoadStatus loadStatus;
+@property (readonly) BOOL isLoaded;
 
 /**
  * A Boolean value that determines whether ad refresh feature is enabled.
@@ -25,18 +37,22 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic) BOOL adRefreshEnabled;
 
+@property (nonatomic, copy) void (^_Nullable onLoadAd)(BidmadBannerAd *, BidmadInfo *);
+@property (nonatomic, copy) void (^_Nullable onClickAd)(BidmadBannerAd *, BidmadInfo *);
+@property (nonatomic, copy) void (^_Nullable onLoadFailAd)(BidmadBannerAd *, NSError *);
+
+@property (nonatomic, strong) NSString * _Nullable testHost;
+@property (nonatomic, strong) NSString * _Nullable testPath;
+
+@property (nonatomic, strong, readonly) BMBanner * _Nonnull bmBanner;
+
 - (nonnull instancetype)initWith:(UIViewController * _Nonnull)parentViewController containerView:(UIView * _Nonnull)containerView zoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
 - (void)setRefreshInterval:(NSInteger)refreshIntervalTime;
+- (void)resetRefreshInterval;
 - (void)hide;
 - (void)show;
 - (void)remove;
-
-#pragma mark BIDMADOpenBiddingBannerDelegate Methods
-
-- (void)onLoadAd:(OpenBiddingBanner * _Nonnull)bidmadAd;
-- (void)onClickAd:(OpenBiddingBanner * _Nonnull)bidmadAd;
-- (void)onLoadFailAd:(OpenBiddingBanner * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
 
 @end
 

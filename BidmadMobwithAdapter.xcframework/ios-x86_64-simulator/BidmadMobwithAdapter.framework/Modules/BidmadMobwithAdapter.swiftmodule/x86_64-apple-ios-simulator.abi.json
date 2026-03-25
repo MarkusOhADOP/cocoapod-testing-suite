@@ -1,0 +1,1210 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "BidmadMobwithAdapter",
+    "printedName": "BidmadMobwithAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadBannerMobwithAdapter",
+        "printedName": "BidmadBannerMobwithAdapter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "className",
+            "printedName": "className",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20BidmadMobwithAdapter0a6BannerbC0C9classNameSSvpZ",
+            "mangledName": "$s20BidmadMobwithAdapter0a6BannerbC0C9classNameSSvpZ",
+            "moduleName": "BidmadMobwithAdapter",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BidmadMobwithAdapter0a6BannerbC0C9classNameSSvgZ",
+                "mangledName": "$s20BidmadMobwithAdapter0a6BannerbC0C9classNameSSvgZ",
+                "moduleName": "BidmadMobwithAdapter",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(BidmadSDK.BidmadBannerAdapter, UIKit.UIView, CoreFoundation.CGSize)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidmadBannerAdapter",
+                    "printedName": "BidmadSDK.BidmadBannerAdapter",
+                    "usr": "c:objc(cs)BidmadBannerAdapter"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadBannerMobwithAdapter(im)loadAdFrom:with:",
+            "mangledName": "$s20BidmadMobwithAdapter0a6BannerbC0C6loadAd4fromSo0adC0C_So6UIViewCSo6CGSizeVtSo0H10ControllerC_tYaKF",
+            "moduleName": "BidmadMobwithAdapter",
+            "overriding": true,
+            "objc_name": "loadAdFrom:with:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerMobwithAdapter",
+                "printedName": "BidmadMobwithAdapter.BidmadBannerMobwithAdapter",
+                "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadBannerMobwithAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdUnit",
+                "printedName": "BidmadSDK.BidmadAdUnit",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadAdUnit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadBannerMobwithAdapter(im)initWithAdUnit:",
+            "mangledName": "$s20BidmadMobwithAdapter0a6BannerbC0C6adUnitAC0A3SDK0a2AdF0C_tcfc",
+            "moduleName": "BidmadMobwithAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdUnit:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerMobwithAdapter",
+                "printedName": "BidmadMobwithAdapter.BidmadBannerMobwithAdapter",
+                "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadBannerMobwithAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadBannerMobwithAdapter(im)init",
+            "mangledName": "$s20BidmadMobwithAdapter0a6BannerbC0CACycfc",
+            "moduleName": "BidmadMobwithAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadBannerMobwithAdapter",
+        "mangledName": "$s20BidmadMobwithAdapter0a6BannerbC0C",
+        "moduleName": "BidmadMobwithAdapter",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadBannerAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadBannerAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidmadLoggable",
+            "printedName": "BidmadLoggable",
+            "usr": "s:9BidmadSDK0A8LoggableP",
+            "mangledName": "$s9BidmadSDK0A8LoggableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadBannerMobwithAdapterSupportChecker",
+        "printedName": "BidmadBannerMobwithAdapterSupportChecker",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isSupported",
+            "printedName": "isSupported()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadBannerMobwithAdapterSupportChecker(cm)isSupported",
+            "mangledName": "$s20BidmadMobwithAdapter0a6BannerbC14SupportCheckerC11isSupportedSbyFZ",
+            "moduleName": "BidmadMobwithAdapter",
+            "static": true,
+            "overriding": true,
+            "objc_name": "isSupported",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerMobwithAdapterSupportChecker",
+                "printedName": "BidmadMobwithAdapter.BidmadBannerMobwithAdapterSupportChecker",
+                "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadBannerMobwithAdapterSupportChecker"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadBannerMobwithAdapterSupportChecker(im)init",
+            "mangledName": "$s20BidmadMobwithAdapter0a6BannerbC14SupportCheckerCACycfc",
+            "moduleName": "BidmadMobwithAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadBannerMobwithAdapterSupportChecker",
+        "mangledName": "$s20BidmadMobwithAdapter0a6BannerbC14SupportCheckerC",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadSupportChecker",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadSupportChecker",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadInterstitialMobwithAdapter",
+        "printedName": "BidmadInterstitialMobwithAdapter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "className",
+            "printedName": "className",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20BidmadMobwithAdapter0a12InterstitialbC0C9classNameSSvpZ",
+            "mangledName": "$s20BidmadMobwithAdapter0a12InterstitialbC0C9classNameSSvpZ",
+            "moduleName": "BidmadMobwithAdapter",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BidmadMobwithAdapter0a12InterstitialbC0C9classNameSSvgZ",
+                "mangledName": "$s20BidmadMobwithAdapter0a12InterstitialbC0C9classNameSSvgZ",
+                "moduleName": "BidmadMobwithAdapter",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "loadAdWith",
+            "printedName": "loadAdWith()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAdapter",
+                "printedName": "BidmadSDK.BidmadFullscreenAdapter",
+                "usr": "c:objc(cs)BidmadFullscreenAdapter"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapter(im)loadAdWith:",
+            "mangledName": "$s20BidmadMobwithAdapter0a12InterstitialbC0C10loadAdWithSo0a10FullscreenC0CyYaKF",
+            "moduleName": "BidmadMobwithAdapter",
+            "overriding": true,
+            "objc_name": "loadAdWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapter(im)showAdFrom:",
+            "mangledName": "$s20BidmadMobwithAdapter0a12InterstitialbC0C6showAd4fromySo16UIViewControllerC_tF",
+            "moduleName": "BidmadMobwithAdapter",
+            "overriding": true,
+            "objc_name": "showAdFrom:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInterstitialMobwithAdapter",
+                "printedName": "BidmadMobwithAdapter.BidmadInterstitialMobwithAdapter",
+                "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdUnit",
+                "printedName": "BidmadSDK.BidmadAdUnit",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadAdUnit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapter(im)initWithAdUnit:",
+            "mangledName": "$s20BidmadMobwithAdapter0a12InterstitialbC0C6adUnitAC0A3SDK0a2AdF0C_tcfc",
+            "moduleName": "BidmadMobwithAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdUnit:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInterstitialMobwithAdapter",
+                "printedName": "BidmadMobwithAdapter.BidmadInterstitialMobwithAdapter",
+                "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapter(im)init",
+            "mangledName": "$s20BidmadMobwithAdapter0a12InterstitialbC0CACycfc",
+            "moduleName": "BidmadMobwithAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapter",
+        "mangledName": "$s20BidmadMobwithAdapter0a12InterstitialbC0C",
+        "moduleName": "BidmadMobwithAdapter",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadFullscreenAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadFullscreenAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "BidmadLoggable",
+            "printedName": "BidmadLoggable",
+            "usr": "s:9BidmadSDK0A8LoggableP",
+            "mangledName": "$s9BidmadSDK0A8LoggableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadInterstitialMobwithAdapterSupportChecker",
+        "printedName": "BidmadInterstitialMobwithAdapterSupportChecker",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isSupported",
+            "printedName": "isSupported()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapterSupportChecker(cm)isSupported",
+            "mangledName": "$s20BidmadMobwithAdapter0a12InterstitialbC14SupportCheckerC11isSupportedSbyFZ",
+            "moduleName": "BidmadMobwithAdapter",
+            "static": true,
+            "objc_name": "isSupported",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInterstitialMobwithAdapterSupportChecker",
+                "printedName": "BidmadMobwithAdapter.BidmadInterstitialMobwithAdapterSupportChecker",
+                "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapterSupportChecker"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapterSupportChecker(im)init",
+            "mangledName": "$s20BidmadMobwithAdapter0a12InterstitialbC14SupportCheckerCACycfc",
+            "moduleName": "BidmadMobwithAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadMobwithAdapter@objc(cs)BidmadInterstitialMobwithAdapterSupportChecker",
+        "mangledName": "$s20BidmadMobwithAdapter0a12InterstitialbC14SupportCheckerC",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidmadMobwithAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/BidmadBannerMobwithAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 319,
+      "length": 28,
+      "value": "\"BidmadBannerMobwithAdapter\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/BidmadInterstitialMobwithAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 34,
+      "value": "\"BidmadInterstitialMobwithAdapter\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/CompatAsyncImage.swift",
+      "kind": "StringLiteral",
+      "offset": 1642,
+      "length": 18,
+      "value": "\"CompatAsyncImage\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/CompatAsyncImage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1838,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAd.swift",
+      "kind": "IntegerLiteral",
+      "offset": 246,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAd.swift",
+      "kind": "IntegerLiteral",
+      "offset": 270,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 264,
+      "length": 19,
+      "value": "\"MobwithBaseAdView\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5965,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6031,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6075,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6099,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8432,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11246,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11272,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11298,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "FloatLiteral",
+      "offset": 13509,
+      "length": 4,
+      "value": "24.0"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithBaseAdView.swift",
+      "kind": "FloatLiteral",
+      "offset": 13530,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/MobwithURLControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 186,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 592,
+      "length": 7,
+      "value": "\"pCode\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 623,
+      "length": 5,
+      "value": "\"pNm\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 653,
+      "length": 6,
+      "value": "\"pImg\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 686,
+      "length": 6,
+      "value": "\"pUrl\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 716,
+      "length": 6,
+      "value": "\"desc\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 767,
+      "length": 8,
+      "value": "\"aDesc3\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 9,
+      "value": "\"pImgBkg\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 849,
+      "length": 8,
+      "value": "\"pPrice\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 888,
+      "length": 10,
+      "value": "\"custom08\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 924,
+      "length": 10,
+      "value": "\"custom09\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithAd.swift",
+      "kind": "StringLiteral",
+      "offset": 959,
+      "length": 14,
+      "value": "\"aLogoDefault\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadMobwithAdapter\/Sources\/Model\/MobwithZone.swift",
+      "kind": "StringLiteral",
+      "offset": 381,
+      "length": 8,
+      "value": "\"impUrl\""
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BidmadCoviAdapter
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import AVFoundation
+@_exported import BidmadCoviAdapter
+import BidmadSDK
+import Combine
+import Foundation
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(iOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency public struct BidmadCoviVastPlayer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(ad: BidmadSDK.VastAd, tracker: BidmadSDK.VastTracker, adView: UIKit.UIView?, viewController: UIKit.UIViewController?, videoPos: Combine.CurrentValueSubject<Swift.Double, Swift.Never>, videoDuration: Combine.CurrentValueSubject<Swift.Double, Swift.Never>, isAdComplete: Combine.CurrentValueSubject<Swift.Bool, Swift.Never>, isAdInitialized: Combine.CurrentValueSubject<Swift.Bool, Swift.Never>, click: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s17BidmadCoviAdapter0aB10VastPlayerV4bodyQrvp", 0) __
+}
+@_inheritsConvenienceInitializers @objc public class BidmadCoviAdapterResources : ObjectiveC.NSObject {
+  @objc public class var bundle: Foundation.Bundle {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension BidmadCoviAdapter.BidmadCoviVastPlayer : Swift.Sendable {}

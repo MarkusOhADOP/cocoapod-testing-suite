@@ -1,0 +1,68 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BidmadTeadsAdapter
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import BidmadSDK
+@_exported import BidmadTeadsAdapter
+import Swift
+import SwiftUI
+import TeadsSDK
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0.0, *)
+public class BidmadBannerTeadsAdapter : BidmadSDK.BidmadBannerAdapter, @unchecked Swift.Sendable, TeadsSDK.TeadsInReadAdPlacementDelegate, TeadsSDK.TeadsAdDelegate {
+  @objc override dynamic public func loadAd(from viewController: UIKit.UIViewController) async throws -> (BidmadSDK.BidmadBannerAdapter, UIKit.UIView, CoreFoundation.CGSize)
+  @objc public func didReceiveAd(ad: TeadsSDK.TeadsInReadAd, adRatio: TeadsSDK.TeadsAdRatio)
+  @objc public func didFailToReceiveAd(reason: TeadsSDK.AdFailReason)
+  @objc public func didUpdateRatio(ad: TeadsSDK.TeadsInReadAd, adRatio: TeadsSDK.TeadsAdRatio)
+  @objc public func adOpportunityTrackerView(trackerView: TeadsSDK.TeadsAdOpportunityTrackerView)
+  @objc public func willPresentModalView(ad: TeadsSDK.TeadsAd) -> UIKit.UIViewController?
+  @objc public func didRecordClick(ad: TeadsSDK.TeadsAd)
+  @objc override dynamic public func destroyed()
+  @objc required dynamic public init(adUnit: BidmadSDK.BidmadAdUnit)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class BidmadBannerTeadsAdapterSupportChecker : BidmadSDK.BidmadSupportChecker {
+  @objc override public static func isSupported() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0.0, *)
+@objcMembers public class BidmadInterstitialTeadsAdapter : BidmadSDK.BidmadFullscreenAdapter, TeadsSDK.TeadsInReadAdPlacementDelegate, TeadsSDK.TeadsAdDelegate, @unchecked Swift.Sendable, BidmadSDK.BidmadLoggable {
+  @objc public static let className: Swift.String
+  @objc override dynamic public func loadAdWith() async throws -> BidmadSDK.BidmadFullscreenAdapter
+  @objc override dynamic public func showAd(from viewController: UIKit.UIViewController)
+  @objc public func willPresentModalView(ad: TeadsSDK.TeadsAd) -> UIKit.UIViewController?
+  @objc public func didReceiveAd(ad: TeadsSDK.TeadsInReadAd, adRatio: TeadsSDK.TeadsAdRatio)
+  @objc public func didFailToReceiveAd(reason: TeadsSDK.AdFailReason)
+  @objc public func didRecordClick(ad: TeadsSDK.TeadsAd)
+  @objc public func didUpdateRatio(ad: TeadsSDK.TeadsInReadAd, adRatio: TeadsSDK.TeadsAdRatio)
+  @objc public func adOpportunityTrackerView(trackerView: TeadsSDK.TeadsAdOpportunityTrackerView)
+  @objc override dynamic public init(adUnit: BidmadSDK.BidmadAdUnit)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BidmadInterstitialTeadsAdapterSupportChecker : ObjectiveC.NSObject, BidmadSDK.BidmadInterstitialSC {
+  @objc public static func isSupported() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BidmadNativeTeadsAdapter : BidmadSDK.BidmadNativeAdapter, TeadsSDK.TeadsNativeAdPlacementDelegate, TeadsSDK.TeadsAdDelegate {
+  @objc override dynamic public func loadAd(_ completionHandler: @escaping (BidmadSDK.BidmadNativeAdapter?, (any Swift.Error)?) -> Swift.Void)
+  @objc override dynamic public func showAd(to adView: BidmadSDK.BIDMADNativeAdView, defaultSize: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+  @objc override dynamic public func removeAd(from adView: BidmadSDK.BIDMADNativeAdView)
+  @objc public func didReceiveAd(ad: TeadsSDK.TeadsNativeAd)
+  @objc public func didFailToReceiveAd(reason: TeadsSDK.AdFailReason)
+  @objc public func willPresentModalView(ad: TeadsSDK.TeadsAd) -> UIKit.UIViewController?
+  @objc public func adOpportunityTrackerView(trackerView: TeadsSDK.TeadsAdOpportunityTrackerView)
+  @objc required dynamic public init(adUnit: BidmadSDK.BidmadAdUnit)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension TeadsSDK.TeadsInReadAd : @unchecked @retroactive Swift.Sendable {
+}
+extension TeadsSDK.TeadsAdRatio : @unchecked @retroactive Swift.Sendable {
+}

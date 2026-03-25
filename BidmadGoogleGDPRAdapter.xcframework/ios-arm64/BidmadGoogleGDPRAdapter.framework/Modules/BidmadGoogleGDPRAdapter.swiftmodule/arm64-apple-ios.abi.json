@@ -1,0 +1,803 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "BidmadGoogleGDPRAdapter",
+    "printedName": "BidmadGoogleGDPRAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleGDPRAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleGDPRAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UserMessagingPlatform",
+        "printedName": "UserMessagingPlatform",
+        "declKind": "Import",
+        "moduleName": "BidmadGoogleGDPRAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadGoogleGDPRAdapter",
+        "printedName": "BidmadGoogleGDPRAdapter",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "E",
+            "printedName": "E",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "deallocated",
+                "printedName": "deallocated",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E.Type) -> BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "E",
+                        "printedName": "BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E",
+                        "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "E",
+                            "printedName": "BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E",
+                            "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO11deallocatedyA2DmF",
+                "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO11deallocatedyA2DmF",
+                "moduleName": "BidmadGoogleGDPRAdapter"
+              },
+              {
+                "kind": "Var",
+                "name": "noFormLoaded",
+                "printedName": "noFormLoaded",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E.Type) -> BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "E",
+                        "printedName": "BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E",
+                        "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "E",
+                            "printedName": "BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E",
+                            "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO12noFormLoadedyA2DmF",
+                "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO12noFormLoadedyA2DmF",
+                "moduleName": "BidmadGoogleGDPRAdapter"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "E",
+                    "printedName": "BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E",
+                    "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "E",
+                    "printedName": "BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E",
+                    "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO2eeoiySbAD_ADtFZ",
+                "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO2eeoiySbAD_ADtFZ",
+                "moduleName": "BidmadGoogleGDPRAdapter",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO9hashValueSivp",
+                "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO9hashValueSivp",
+                "moduleName": "BidmadGoogleGDPRAdapter",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO9hashValueSivg",
+                    "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO9hashValueSivg",
+                    "moduleName": "BidmadGoogleGDPRAdapter",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO4hash4intoys6HasherVz_tF",
+                "moduleName": "BidmadGoogleGDPRAdapter",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "errorCode",
+                "printedName": "errorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO9errorCodeSivp",
+                "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO9errorCodeSivp",
+                "moduleName": "BidmadGoogleGDPRAdapter",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO9errorCodeSivg",
+                    "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO9errorCodeSivg",
+                    "moduleName": "BidmadGoogleGDPRAdapter",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "errorUserInfo",
+                "printedName": "errorUserInfo",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO13errorUserInfoSDySSypGvp",
+                "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO13errorUserInfoSDySSypGvp",
+                "moduleName": "BidmadGoogleGDPRAdapter",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO13errorUserInfoSDySSypGvg",
+                    "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO13errorUserInfoSDySSypGvg",
+                    "moduleName": "BidmadGoogleGDPRAdapter",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:23BidmadGoogleGDPRAdapterAAC1EO",
+            "mangledName": "$s23BidmadGoogleGDPRAdapterAAC1EO",
+            "moduleName": "BidmadGoogleGDPRAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomNSError",
+                "printedName": "CustomNSError",
+                "usr": "s:10Foundation13CustomNSErrorP",
+                "mangledName": "$s10Foundation13CustomNSErrorP"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadGoogleGDPRAdapter",
+                "printedName": "BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter",
+                "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter(im)init",
+            "mangledName": "$s23BidmadGoogleGDPRAdapterAACABycfc",
+            "moduleName": "BidmadGoogleGDPRAdapter",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "isConsentFormAvailable",
+            "printedName": "isConsentFormAvailable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter(py)isConsentFormAvailable",
+            "mangledName": "$s23BidmadGoogleGDPRAdapterAAC22isConsentFormAvailableSbvp",
+            "moduleName": "BidmadGoogleGDPRAdapter",
+            "objc_name": "isConsentFormAvailable",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter(im)isConsentFormAvailable",
+                "mangledName": "$s23BidmadGoogleGDPRAdapterAAC22isConsentFormAvailableSbvg",
+                "moduleName": "BidmadGoogleGDPRAdapter",
+                "objc_name": "isConsentFormAvailable",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setDebug",
+            "printedName": "setDebug(testDeviceId:isTestEurope:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter(im)setDebugWithTestDeviceId:isTestEurope:",
+            "mangledName": "$s23BidmadGoogleGDPRAdapterAAC8setDebug12testDeviceId12isTestEuropeySS_SbtF",
+            "moduleName": "BidmadGoogleGDPRAdapter",
+            "objc_name": "setDebugWithTestDeviceId:isTestEurope:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestConsentInfoUpdate",
+            "printedName": "requestConsentInfoUpdate(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter(im)requestConsentInfoUpdateWithCompletionHandler:",
+            "mangledName": "$s23BidmadGoogleGDPRAdapterAAC24requestConsentInfoUpdate17completionHandleryys5Error_pSgc_tF",
+            "moduleName": "BidmadGoogleGDPRAdapter",
+            "objc_name": "requestConsentInfoUpdateWithCompletionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadForm",
+            "printedName": "loadForm(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter(im)loadFormWithCompletionHandler:",
+            "mangledName": "$s23BidmadGoogleGDPRAdapterAAC8loadForm17completionHandleryys5Error_pSgc_tF",
+            "moduleName": "BidmadGoogleGDPRAdapter",
+            "objc_name": "loadFormWithCompletionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showForm",
+            "printedName": "showForm(to:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter(im)showFormTo:completionHandler:",
+            "mangledName": "$s23BidmadGoogleGDPRAdapterAAC8showForm2to17completionHandlerySo16UIViewControllerCSg_ys5Error_pSgctF",
+            "moduleName": "BidmadGoogleGDPRAdapter",
+            "objc_name": "showFormTo:completionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "consentStatus",
+            "printedName": "consentStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BIDMAD_UMPConsentStatus",
+                "printedName": "BidmadSDK.BIDMAD_UMPConsentStatus",
+                "usr": "c:@E@BIDMAD_UMPConsentStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter(py)consentStatus",
+            "mangledName": "$s23BidmadGoogleGDPRAdapterAAC13consentStatusSo017BIDMAD_UMPConsentE0Vvp",
+            "moduleName": "BidmadGoogleGDPRAdapter",
+            "objc_name": "consentStatus",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BIDMAD_UMPConsentStatus",
+                    "printedName": "BidmadSDK.BIDMAD_UMPConsentStatus",
+                    "usr": "c:@E@BIDMAD_UMPConsentStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter(im)consentStatus",
+                "mangledName": "$s23BidmadGoogleGDPRAdapterAAC13consentStatusSo017BIDMAD_UMPConsentE0Vvg",
+                "moduleName": "BidmadGoogleGDPRAdapter",
+                "objc_name": "consentStatus",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter(im)reset",
+            "mangledName": "$s23BidmadGoogleGDPRAdapterAAC5resetyyF",
+            "moduleName": "BidmadGoogleGDPRAdapter",
+            "objc_name": "reset",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadGoogleGDPRAdapter@objc(cs)BidmadGoogleGDPRAdapter",
+        "mangledName": "$s23BidmadGoogleGDPRAdapterAAC",
+        "moduleName": "BidmadGoogleGDPRAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "BidmadGDPRAdapter",
+            "printedName": "BidmadGDPRAdapter",
+            "usr": "c:@M@BidmadSDK@objc(pl)BidmadGDPRAdapter",
+            "mangledName": "$s9BidmadSDK0A11GDPRAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

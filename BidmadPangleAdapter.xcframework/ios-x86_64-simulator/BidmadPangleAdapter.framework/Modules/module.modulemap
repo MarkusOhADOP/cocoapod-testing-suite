@@ -1,0 +1,6 @@
+framework module BidmadPangleAdapter {
+  umbrella header "BidmadPangleAdapter.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+framework module BidmadORTBAdapter {
+  umbrella header "BidmadORTBAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module BidmadORTBAdapter.Swift {
+  header "BidmadORTBAdapter-Swift.h"
+  requires objc
+}

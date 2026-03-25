@@ -1,0 +1,6 @@
+framework module BidmadFyberAdapter {
+  umbrella header "BidmadFyberAdapter.h"
+  export *
+
+  module * { export * }
+}

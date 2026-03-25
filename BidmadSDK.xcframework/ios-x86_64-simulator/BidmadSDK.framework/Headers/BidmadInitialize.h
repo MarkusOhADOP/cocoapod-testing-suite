@@ -9,12 +9,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^BidmadInitializeBlock)(NSError * _Nullable error, BOOL isARPM, BOOL isTestTool, BOOL isPreload);
+
 @interface BidmadInitialize : NSObject
 
 /**
  * Return booleans, each representing the user's access status of ARPM (BOOL), TestTool (BOOL), and Preload Status (BOOL)
  */
-+ (void)requestAppDataWithAppKey:(NSString *)sid withUID:(NSString *)uid handler:(void (^)(NSError *error, BOOL isARPM, BOOL isTestTool, BOOL isPreload))handler;
++ (void)requestAppDataWithDomain:(NSString *)appDomain
+                         withUID:(NSString *)uid
+                    withPlatform:(NSString *)platform
+                         handler:(BidmadInitializeBlock)handler;
 
 @end
 

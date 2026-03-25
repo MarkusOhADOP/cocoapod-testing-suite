@@ -1,0 +1,44 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BidmadMobwithAdapter
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import AdSupport
+@_exported import BidmadMobwithAdapter
+import BidmadSDK
+import Combine
+import Foundation
+import Swift
+import SwiftUI
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+public class BidmadBannerMobwithAdapter : BidmadSDK.BidmadBannerAdapter, @unchecked Swift.Sendable {
+  public static let className: Swift.String
+  @objc override dynamic public func loadAd(from viewController: UIKit.UIViewController) async throws -> (BidmadSDK.BidmadBannerAdapter, UIKit.UIView, CoreFoundation.CGSize)
+  @objc required dynamic public init(adUnit: BidmadSDK.BidmadAdUnit)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class BidmadBannerMobwithAdapterSupportChecker : BidmadSDK.BidmadSupportChecker {
+  @objc override public static func isSupported() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+public class BidmadInterstitialMobwithAdapter : BidmadSDK.BidmadFullscreenAdapter, BidmadSDK.BidmadLoggable, @unchecked Swift.Sendable {
+  public static let className: Swift.String
+  @objc override dynamic public func loadAdWith() async throws -> BidmadSDK.BidmadFullscreenAdapter
+  @objc override dynamic public func showAd(from viewController: UIKit.UIViewController)
+  @objc override dynamic public init(adUnit: BidmadSDK.BidmadAdUnit)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class BidmadInterstitialMobwithAdapterSupportChecker : ObjectiveC.NSObject, BidmadSDK.BidmadInterstitialSC {
+  @objc public static func isSupported() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension BidmadMobwithAdapter.BidmadBannerMobwithAdapter : BidmadSDK.BidmadLoggable {}

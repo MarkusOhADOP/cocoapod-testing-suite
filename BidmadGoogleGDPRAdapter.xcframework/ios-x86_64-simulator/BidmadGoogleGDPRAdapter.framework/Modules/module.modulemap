@@ -1,0 +1,4 @@
+framework module BidmadGoogleGDPRAdapter {
+  header "BidmadGoogleGDPRAdapter-Swift.h"
+  requires objc
+}

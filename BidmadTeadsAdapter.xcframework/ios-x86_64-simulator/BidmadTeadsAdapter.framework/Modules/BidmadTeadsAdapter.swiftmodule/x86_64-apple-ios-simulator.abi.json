@@ -1,0 +1,1963 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "BidmadTeadsAdapter",
+    "printedName": "BidmadTeadsAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "TeadsSDK",
+        "printedName": "TeadsSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadBannerTeadsAdapter",
+        "printedName": "BidmadBannerTeadsAdapter",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(BidmadSDK.BidmadBannerAdapter, UIKit.UIView, CoreFoundation.CGSize)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidmadBannerAdapter",
+                    "printedName": "BidmadSDK.BidmadBannerAdapter",
+                    "usr": "c:objc(cs)BidmadBannerAdapter"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter(im)loadAdFrom:with:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0C6loadAd4fromSo0adC0C_So6UIViewCSo6CGSizeVtSo0H10ControllerC_tYaKF",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "objc_name": "loadAdFrom:with:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveAd",
+            "printedName": "didReceiveAd(ad:adRatio:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsInReadAd",
+                "printedName": "TeadsSDK.TeadsInReadAd",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsInReadAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAdRatio",
+                "printedName": "TeadsSDK.TeadsAdRatio",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAdRatio"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter(im)didReceiveAdWithAd:adRatio:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0C12didReceiveAd2ad0H5Ratioy0B3SDK0b6InReadG0C_AG0bgI0CtF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "didReceiveAdWithAd:adRatio:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFailToReceiveAd",
+            "printedName": "didFailToReceiveAd(reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFailReason",
+                "printedName": "TeadsSDK.AdFailReason",
+                "usr": "c:@M@TeadsSDK@objc(cs)AdFailReason"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter(im)didFailToReceiveAdWithReason:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0C18didFailToReceiveAd6reasony0B3SDK0iF6ReasonC_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "didFailToReceiveAdWithReason:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didUpdateRatio",
+            "printedName": "didUpdateRatio(ad:adRatio:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsInReadAd",
+                "printedName": "TeadsSDK.TeadsInReadAd",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsInReadAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAdRatio",
+                "printedName": "TeadsSDK.TeadsAdRatio",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAdRatio"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter(im)didUpdateRatioWithAd:adRatio:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0C14didUpdateRatio2ad0hG0y0B3SDK0B8InReadAdC_AG0blG0CtF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "didUpdateRatioWithAd:adRatio:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adOpportunityTrackerView",
+            "printedName": "adOpportunityTrackerView(trackerView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAdOpportunityTrackerView",
+                "printedName": "TeadsSDK.TeadsAdOpportunityTrackerView",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAdOpportunityTrackerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter(im)adOpportunityTrackerViewWithTrackerView:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0C24adOpportunityTrackerView07trackerH0y0B3SDK0b2AdfgH0C_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "adOpportunityTrackerViewWithTrackerView:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "willPresentModalView",
+            "printedName": "willPresentModalView(ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAd",
+                "printedName": "TeadsSDK.TeadsAd",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter(im)willPresentModalViewWithAd:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0C20willPresentModalView2adSo16UIViewControllerCSg0B3SDK0B2AdC_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "willPresentModalViewWithAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didRecordClick",
+            "printedName": "didRecordClick(ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAd",
+                "printedName": "TeadsSDK.TeadsAd",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter(im)didRecordClickWithAd:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0C14didRecordClick2ady0B3SDK0B2AdC_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "didRecordClickWithAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroyed",
+            "printedName": "destroyed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter(im)destroyed",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0C9destroyedyyF",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "objc_name": "destroyed",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerTeadsAdapter",
+                "printedName": "BidmadTeadsAdapter.BidmadBannerTeadsAdapter",
+                "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdUnit",
+                "printedName": "BidmadSDK.BidmadAdUnit",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadAdUnit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter(im)initWithAdUnit:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0C6adUnitAC0A3SDK0a2AdF0C_tcfc",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdUnit:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerTeadsAdapter",
+                "printedName": "BidmadTeadsAdapter.BidmadBannerTeadsAdapter",
+                "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter(im)init",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0CACycfc",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapter",
+        "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC0C",
+        "moduleName": "BidmadTeadsAdapter",
+        "intro_iOS": "13.0.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadBannerAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadBannerAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TeadsInReadAdPlacementDelegate",
+            "printedName": "TeadsInReadAdPlacementDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsInReadAdPlacementDelegate",
+            "mangledName": "$s8TeadsSDK0A25InReadAdPlacementDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TeadsAdDelegate",
+            "printedName": "TeadsAdDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsAdDelegate",
+            "mangledName": "$s8TeadsSDK0A10AdDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TeadsAdPlacementDelegate",
+            "printedName": "TeadsAdPlacementDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsAdPlacementDelegate",
+            "mangledName": "$s8TeadsSDK0A19AdPlacementDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TeadsLogMessageDelegate",
+            "printedName": "TeadsLogMessageDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsLogMessageDelegate",
+            "mangledName": "$s8TeadsSDK0A18LogMessageDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadBannerTeadsAdapterSupportChecker",
+        "printedName": "BidmadBannerTeadsAdapterSupportChecker",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isSupported",
+            "printedName": "isSupported()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapterSupportChecker(cm)isSupported",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC14SupportCheckerC11isSupportedSbyFZ",
+            "moduleName": "BidmadTeadsAdapter",
+            "static": true,
+            "overriding": true,
+            "objc_name": "isSupported",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerTeadsAdapterSupportChecker",
+                "printedName": "BidmadTeadsAdapter.BidmadBannerTeadsAdapterSupportChecker",
+                "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapterSupportChecker"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapterSupportChecker(im)init",
+            "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC14SupportCheckerCACycfc",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadBannerTeadsAdapterSupportChecker",
+        "mangledName": "$s18BidmadTeadsAdapter0a6BannerbC14SupportCheckerC",
+        "moduleName": "BidmadTeadsAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadSupportChecker",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadSupportChecker",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "TeadsSDK",
+        "printedName": "TeadsSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadInterstitialTeadsAdapter",
+        "printedName": "BidmadInterstitialTeadsAdapter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "className",
+            "printedName": "className",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(cpy)className",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C9classNameSSvpZ",
+            "moduleName": "BidmadTeadsAdapter",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(cm)className",
+                "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C9classNameSSvgZ",
+                "moduleName": "BidmadTeadsAdapter",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "loadAdWith",
+            "printedName": "loadAdWith()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadFullscreenAdapter",
+                "printedName": "BidmadSDK.BidmadFullscreenAdapter",
+                "usr": "c:objc(cs)BidmadFullscreenAdapter"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(im)loadAdWith:",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C10loadAdWithSo0a10FullscreenC0CyYaKF",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "objc_name": "loadAdWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(im)showAdFrom:",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C6showAd4fromySo16UIViewControllerC_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "objc_name": "showAdFrom:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "willPresentModalView",
+            "printedName": "willPresentModalView(ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAd",
+                "printedName": "TeadsSDK.TeadsAd",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(im)willPresentModalViewWithAd:",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C20willPresentModalView2adSo16UIViewControllerCSg0B3SDK0B2AdC_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "willPresentModalViewWithAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveAd",
+            "printedName": "didReceiveAd(ad:adRatio:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsInReadAd",
+                "printedName": "TeadsSDK.TeadsInReadAd",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsInReadAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAdRatio",
+                "printedName": "TeadsSDK.TeadsAdRatio",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAdRatio"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(im)didReceiveAdWithAd:adRatio:",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C12didReceiveAd2ad0H5Ratioy0B3SDK0b6InReadG0C_AG0bgI0CtF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "didReceiveAdWithAd:adRatio:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFailToReceiveAd",
+            "printedName": "didFailToReceiveAd(reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFailReason",
+                "printedName": "TeadsSDK.AdFailReason",
+                "usr": "c:@M@TeadsSDK@objc(cs)AdFailReason"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(im)didFailToReceiveAdWithReason:",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C18didFailToReceiveAd6reasony0B3SDK0iF6ReasonC_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "didFailToReceiveAdWithReason:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didRecordClick",
+            "printedName": "didRecordClick(ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAd",
+                "printedName": "TeadsSDK.TeadsAd",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(im)didRecordClickWithAd:",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C14didRecordClick2ady0B3SDK0B2AdC_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "didRecordClickWithAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didUpdateRatio",
+            "printedName": "didUpdateRatio(ad:adRatio:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsInReadAd",
+                "printedName": "TeadsSDK.TeadsInReadAd",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsInReadAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAdRatio",
+                "printedName": "TeadsSDK.TeadsAdRatio",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAdRatio"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(im)didUpdateRatioWithAd:adRatio:",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C14didUpdateRatio2ad0hG0y0B3SDK0B8InReadAdC_AG0blG0CtF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "didUpdateRatioWithAd:adRatio:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adOpportunityTrackerView",
+            "printedName": "adOpportunityTrackerView(trackerView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAdOpportunityTrackerView",
+                "printedName": "TeadsSDK.TeadsAdOpportunityTrackerView",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAdOpportunityTrackerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(im)adOpportunityTrackerViewWithTrackerView:",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C24adOpportunityTrackerView07trackerH0y0B3SDK0b2AdfgH0C_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "adOpportunityTrackerViewWithTrackerView:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInterstitialTeadsAdapter",
+                "printedName": "BidmadTeadsAdapter.BidmadInterstitialTeadsAdapter",
+                "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdUnit",
+                "printedName": "BidmadSDK.BidmadAdUnit",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadAdUnit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(im)initWithAdUnit:",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C6adUnitAC0A3SDK0a2AdF0C_tcfc",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdUnit:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInterstitialTeadsAdapter",
+                "printedName": "BidmadTeadsAdapter.BidmadInterstitialTeadsAdapter",
+                "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter(im)init",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0CACycfc",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapter",
+        "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC0C",
+        "moduleName": "BidmadTeadsAdapter",
+        "intro_iOS": "13.0.0",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadFullscreenAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadFullscreenAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TeadsInReadAdPlacementDelegate",
+            "printedName": "TeadsInReadAdPlacementDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsInReadAdPlacementDelegate",
+            "mangledName": "$s8TeadsSDK0A25InReadAdPlacementDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TeadsAdDelegate",
+            "printedName": "TeadsAdDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsAdDelegate",
+            "mangledName": "$s8TeadsSDK0A10AdDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidmadLoggable",
+            "printedName": "BidmadLoggable",
+            "usr": "s:9BidmadSDK0A8LoggableP",
+            "mangledName": "$s9BidmadSDK0A8LoggableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TeadsAdPlacementDelegate",
+            "printedName": "TeadsAdPlacementDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsAdPlacementDelegate",
+            "mangledName": "$s8TeadsSDK0A19AdPlacementDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TeadsLogMessageDelegate",
+            "printedName": "TeadsLogMessageDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsLogMessageDelegate",
+            "mangledName": "$s8TeadsSDK0A18LogMessageDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadInterstitialTeadsAdapterSupportChecker",
+        "printedName": "BidmadInterstitialTeadsAdapterSupportChecker",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isSupported",
+            "printedName": "isSupported()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapterSupportChecker(cm)isSupported",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC14SupportCheckerC11isSupportedSbyFZ",
+            "moduleName": "BidmadTeadsAdapter",
+            "static": true,
+            "objc_name": "isSupported",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInterstitialTeadsAdapterSupportChecker",
+                "printedName": "BidmadTeadsAdapter.BidmadInterstitialTeadsAdapterSupportChecker",
+                "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapterSupportChecker"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapterSupportChecker(im)init",
+            "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC14SupportCheckerCACycfc",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadInterstitialTeadsAdapterSupportChecker",
+        "mangledName": "$s18BidmadTeadsAdapter0a12InterstitialbC14SupportCheckerC",
+        "moduleName": "BidmadTeadsAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "TeadsSDK",
+        "printedName": "TeadsSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadNativeTeadsAdapter",
+        "printedName": "BidmadNativeTeadsAdapter",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BidmadSDK.BidmadNativeAdapter?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(BidmadSDK.BidmadNativeAdapter?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BidmadSDK.BidmadNativeAdapter?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BidmadNativeAdapter",
+                            "printedName": "BidmadSDK.BidmadNativeAdapter",
+                            "usr": "c:objc(cs)BidmadNativeAdapter"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter(im)loadAdWith:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6NativebC0C6loadAdyyySo0adC0CSg_s5Error_pSgtcF",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "objc_name": "loadAdWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(to:defaultSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDMADNativeAdView",
+                "printedName": "BidmadSDK.BIDMADNativeAdView",
+                "usr": "c:objc(cs)BIDMADNativeAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter(im)showAdTo:defaultSize:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6NativebC0C6showAd2to11defaultSizeSo6CGSizeVSo012BIDMADNativeF4ViewC_AHtF",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "objc_name": "showAdTo:defaultSize:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAd",
+            "printedName": "removeAd(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDMADNativeAdView",
+                "printedName": "BidmadSDK.BIDMADNativeAdView",
+                "usr": "c:objc(cs)BIDMADNativeAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter(im)removeAdFrom:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6NativebC0C8removeAd4fromySo012BIDMADNativeF4ViewC_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "objc_name": "removeAdFrom:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveAd",
+            "printedName": "didReceiveAd(ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsNativeAd",
+                "printedName": "TeadsSDK.TeadsNativeAd",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter(im)didReceiveAdWithAd:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6NativebC0C12didReceiveAd2ady0B3SDK0bdG0C_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "didReceiveAdWithAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFailToReceiveAd",
+            "printedName": "didFailToReceiveAd(reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFailReason",
+                "printedName": "TeadsSDK.AdFailReason",
+                "usr": "c:@M@TeadsSDK@objc(cs)AdFailReason"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter(im)didFailToReceiveAdWithReason:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6NativebC0C18didFailToReceiveAd6reasony0B3SDK0iF6ReasonC_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "didFailToReceiveAdWithReason:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "willPresentModalView",
+            "printedName": "willPresentModalView(ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAd",
+                "printedName": "TeadsSDK.TeadsAd",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter(im)willPresentModalViewWithAd:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6NativebC0C20willPresentModalView2adSo16UIViewControllerCSg0B3SDK0B2AdC_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "willPresentModalViewWithAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adOpportunityTrackerView",
+            "printedName": "adOpportunityTrackerView(trackerView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TeadsAdOpportunityTrackerView",
+                "printedName": "TeadsSDK.TeadsAdOpportunityTrackerView",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsAdOpportunityTrackerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter(im)adOpportunityTrackerViewWithTrackerView:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6NativebC0C24adOpportunityTrackerView07trackerH0y0B3SDK0b2AdfgH0C_tF",
+            "moduleName": "BidmadTeadsAdapter",
+            "objc_name": "adOpportunityTrackerViewWithTrackerView:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadNativeTeadsAdapter",
+                "printedName": "BidmadTeadsAdapter.BidmadNativeTeadsAdapter",
+                "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdUnit",
+                "printedName": "BidmadSDK.BidmadAdUnit",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadAdUnit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter(im)initWithAdUnit:",
+            "mangledName": "$s18BidmadTeadsAdapter0a6NativebC0C6adUnitAC0A3SDK0a2AdF0C_tcfc",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdUnit:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadNativeTeadsAdapter",
+                "printedName": "BidmadTeadsAdapter.BidmadNativeTeadsAdapter",
+                "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter(im)init",
+            "mangledName": "$s18BidmadTeadsAdapter0a6NativebC0CACycfc",
+            "moduleName": "BidmadTeadsAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadTeadsAdapter@objc(cs)BidmadNativeTeadsAdapter",
+        "mangledName": "$s18BidmadTeadsAdapter0a6NativebC0C",
+        "moduleName": "BidmadTeadsAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadNativeAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadNativeAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TeadsNativeAdPlacementDelegate",
+            "printedName": "TeadsNativeAdPlacementDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsNativeAdPlacementDelegate",
+            "mangledName": "$s8TeadsSDK0A25NativeAdPlacementDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TeadsAdDelegate",
+            "printedName": "TeadsAdDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsAdDelegate",
+            "mangledName": "$s8TeadsSDK0A10AdDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TeadsAdPlacementDelegate",
+            "printedName": "TeadsAdPlacementDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsAdPlacementDelegate",
+            "mangledName": "$s8TeadsSDK0A19AdPlacementDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TeadsLogMessageDelegate",
+            "printedName": "TeadsLogMessageDelegate",
+            "usr": "c:@M@TeadsSDK@objc(pl)TeadsLogMessageDelegate",
+            "mangledName": "$s8TeadsSDK0A18LogMessageDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "TeadsSDK",
+        "printedName": "TeadsSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "TeadsSDK",
+        "printedName": "TeadsSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadTeadsAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TeadsInReadAd",
+        "printedName": "TeadsInReadAd",
+        "declKind": "Class",
+        "usr": "c:@M@TeadsSDK@objc(cs)TeadsInReadAd",
+        "mangledName": "$s8TeadsSDK0A8InReadAdC",
+        "moduleName": "TeadsSDK",
+        "declAttributes": [
+          "Final",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@TeadsSDK@objc(cs)TeadsAd",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "TeadsSDK.TeadsAd",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TeadsAdRatio",
+        "printedName": "TeadsAdRatio",
+        "declKind": "Class",
+        "usr": "c:@M@TeadsSDK@objc(cs)TeadsAdRatio",
+        "mangledName": "$s8TeadsSDK0A7AdRatioC",
+        "moduleName": "TeadsSDK",
+        "declAttributes": [
+          "Final",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadTeadsAdapter\/Sources\/BidmadInterstitialTeadsAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 319,
+      "length": 32,
+      "value": "\"BidmadInterstitialTeadsAdapter\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadTeadsAdapter\/Sources\/BidmadInterstitialTeadsAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4673,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadTeadsAdapter\/Sources\/BidmadInterstitialTeadsAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4712,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

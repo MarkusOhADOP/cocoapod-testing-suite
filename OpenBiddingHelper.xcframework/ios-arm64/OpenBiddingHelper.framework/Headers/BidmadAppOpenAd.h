@@ -17,19 +17,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) id <OpenBiddingAppOpenAdDelegate> _Nullable delegate;
 @property (nonatomic) BOOL isAutoReload;
+
+@property(nonatomic, copy) void (^_Nullable onLoadAd)
+    (OpenBiddingAppOpenAd *, BidmadInfo *);
+@property(nonatomic, copy) void (^_Nullable onLoadFailAd)
+    (OpenBiddingAppOpenAd *, NSError *);
+@property(nonatomic, copy) void (^_Nullable onShowAd)
+    (OpenBiddingAppOpenAd *, BidmadInfo *);
+@property(nonatomic, copy) void (^_Nullable onShowFailAd)
+    (OpenBiddingAppOpenAd *, BidmadInfo *_Nullable, NSError *);
+@property(nonatomic, copy) void (^_Nullable onClickAd)
+    (OpenBiddingAppOpenAd *, BidmadInfo *);
+@property(nonatomic, copy) void (^_Nullable onCloseAd)
+    (OpenBiddingAppOpenAd *, BidmadInfo *);
+
 - (nonnull instancetype)initWithZoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
 - (void)showOnViewController:(UIViewController *)viewController;
 - (void)deregisterForAppOpenAd;
 - (BOOL)isLoaded;
-
-#pragma mark OpenBiddingAppOpenAdDelegate Methods
-
-- (void)onLoadAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
-- (void)onShowAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
-- (void)onClickAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
-- (void)onCloseAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
-- (void)onLoadFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
 
 @end
 

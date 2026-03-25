@@ -1,0 +1,11 @@
+framework module BidmadTaboolaAdapter {
+  umbrella header "BidmadTaboolaAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module BidmadTaboolaAdapter.Swift {
+  header "BidmadTaboolaAdapter-Swift.h"
+  requires objc
+}

@@ -12,6 +12,8 @@
 #import <BidmadSDK/BIDMADUtil.h>
 #import <BidmadSDK/BIDMADSetting.h>
 #import <BidmadSDK/BIDMADAppOpenAd.h>
+#import <BidmadSDK/BidmadSDK.h>
+#import <BidmadSDK/BIDMADAppOpenAd.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<OpenBiddingAppOpenAdDelegate> _Nullable delegate;
 @property (readonly) BOOL isLoaded;
 @property (nonatomic, strong) NSString * _Nullable zoneID;
+@property (nonatomic, strong) BIDMADAppOpenAd *bidmadAppOpenAd;
 
 - (void)showAppOpenAdOnViewController:(UIViewController *)viewController;
 - (void)requestAppOpenAd;
@@ -34,11 +37,33 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 
 - (void)onLoadFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
-- (void)onLoadAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
-- (void)onCloseAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
-- (void)onShowAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
-- (void)onShowFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
-- (void)onClickAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd;
+
+- (void)onLoadAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd __deprecated_msg("use onLoadAd:info: instead");
+
+- (void)onLoadAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd
+            info:(BidmadInfo *)info;
+
+- (void)onCloseAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd __deprecated_msg("use onCloseAd:info:");
+
+- (void)onCloseAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd
+             info:(BidmadInfo * _Nonnull)info;
+
+- (void)onShowAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd __deprecated_msg("use onShowAd:info:");
+
+- (void)onShowAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd
+            info:(BidmadInfo * _Nonnull)info;
+
+- (void)onShowFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd
+               error:(NSError * _Nonnull)error __deprecated_msg("use onShowFailAd:error:info:");
+
+- (void)onShowFailAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd
+                info:(BidmadInfo * _Nonnull)info
+               error:(NSError * _Nonnull)error;
+
+- (void)onClickAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd __deprecated_msg("use onClickAd:info:");
+
+- (void)onClickAd:(OpenBiddingAppOpenAd * _Nonnull)bidmadAd
+             info:(BidmadInfo * _Nonnull)info;
 
 @end
 

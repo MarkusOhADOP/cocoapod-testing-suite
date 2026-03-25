@@ -10,13 +10,10 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
-#import "BIDMADSetting.h"
-#import "BIDMADBanner.h"
-#import "BIDMADInterstitial.h"
-#import "BIDMADRewardVideo.h"
+#import <BidmadSDK/BIDMADSetting.h>
+#import <BidmadSDK/BIDMADRewardVideo.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import <CoreLocation/CoreLocation.h>
-#import "BidmadAdUnit.h"
 
 @class BidmadAdUnit;
 
@@ -42,5 +39,9 @@
 
 + (void)sendLogForAdUnit:(BidmadAdUnit * _Nonnull)adUnit
                  logType:(NSString * _Nonnull)logType;
+
++ (void)sendLogForAdUnit:(BidmadAdUnit * _Nonnull)adUnit
+                 logType:(NSString * _Nonnull)logType
+       completionHandler:(void (^ _Nullable)(NSError * _Nullable error))completionHandler;
 
 @end

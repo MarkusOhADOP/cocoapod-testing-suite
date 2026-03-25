@@ -33,8 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray<BidmadAdInfo *> *)bidmadSwiftSort:(NSArray<BidmadAdInfo *> *)adInfoArray;
 + (NSString*)deviceName;
 + (UIViewController * _Nullable)getActiveViewController;
-@property (class, nonatomic, strong, nullable) UIImage *mainAppIcon;
-+ (NSString * (^)(NSString *))whiteSpaceRemoved;
+@property (class, readonly, nullable) UIImage *mainAppIcon;
++ (BOOL)checkIfInvisibleForViewController:(UIViewController *)viewController;
++ (NSTimeInterval)showFailCheckTimeWindow;
++ (BOOL)shouldNetworkReqWithCriterion:(double)adWeight;
 
 @end
 

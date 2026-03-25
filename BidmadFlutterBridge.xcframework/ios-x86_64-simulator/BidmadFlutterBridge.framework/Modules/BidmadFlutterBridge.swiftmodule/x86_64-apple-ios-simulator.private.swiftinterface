@@ -1,0 +1,102 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BidmadFlutterBridge
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+@_exported import BidmadFlutterBridge
+import BidmadSDK
+import Flutter
+import Foundation
+import OpenBiddingHelper
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @objcMembers open class OpenBiddingFlutterBannerRefined : ObjectiveC.NSObject {
+  @objc public static var shared: BidmadFlutterBridge.OpenBiddingFlutterBannerRefined?
+  @objc public static func shared(registrar: ObjectiveC.NSObject, chanNm: Swift.String) -> BidmadFlutterBridge.OpenBiddingFlutterBannerRefined
+  @objc public static var isInitialized: Swift.Bool {
+    @objc get
+  }
+  @objc final public let chanNm: Swift.String
+  public var ads: [Swift.String : BidmadSDK.BMBanner?] {
+    get
+  }
+  @objc deinit
+}
+extension BidmadFlutterBridge.OpenBiddingFlutterBannerRefined : BidmadSDK.BMBannerDelegate {
+  @objc dynamic public func onLoadAd(_ bidmadAd: BidmadSDK.BMBanner, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onLoadFailAd(_ bidmadAd: BidmadSDK.BMBanner, error: any Swift.Error)
+  @objc dynamic public func onClickAd(_ bidmadAd: BidmadSDK.BMBanner, info: BidmadSDK.BidmadInfo)
+}
+@objc @objcMembers open class OpenBiddingFlutterBannerRefinedPlatformView : ObjectiveC.NSObject, Flutter.FlutterPlatformView {
+  @objc public init(key: Swift.String)
+  @objc public func view() -> UIKit.UIView
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class OpenBiddingFlutterBannerRefinedFactory : ObjectiveC.NSObject, Flutter.FlutterPlatformViewFactory {
+  @objc public func create(withFrame frame: CoreFoundation.CGRect, viewIdentifier viewId: Swift.Int64, arguments args: Any?) -> any Flutter.FlutterPlatformView
+  @objc public func createArgsCodec() -> any Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers open class OpenBiddingFlutterCustomRendered : ObjectiveC.NSObject {
+  @objc public init(registrar: any Flutter.FlutterPluginRegistrar, channelName: Swift.String)
+  @objc deinit
+}
+extension BidmadFlutterBridge.OpenBiddingFlutterCustomRendered : OpenBiddingHelper.BidmadCustomRenderedAdDelegate {
+  @objc dynamic public func onLoad(customRenderedAd ad: OpenBiddingHelper.BidmadCustomRenderedAd, content: BidmadSDK.BidmadCustomRenderedAdContent, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onLoadFail(customRenderedAd ad: OpenBiddingHelper.BidmadCustomRenderedAd, error: any Swift.Error)
+}
+@objc @objcMembers open class OpenBiddingFlutterInterstitial : ObjectiveC.NSObject {
+  @objc public init(registrar: any Flutter.FlutterPluginRegistrar, channelName: Swift.String)
+  @objc deinit
+}
+extension BidmadFlutterBridge.OpenBiddingFlutterInterstitial : OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
+  @objc dynamic public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onShowAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onShowFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo, error: any Swift.Error)
+  @objc dynamic public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, error: any Swift.Error)
+  @objc dynamic public func onClickAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo)
+}
+@objc @objcMembers open class OpenBiddingFlutterRewardVideo : ObjectiveC.NSObject {
+  @objc public init(registrar: any Flutter.FlutterPluginRegistrar, channelName: Swift.String)
+  @objc deinit
+}
+extension BidmadFlutterBridge.OpenBiddingFlutterRewardVideo : OpenBiddingHelper.BIDMADOpenBiddingRewardVideoDelegate {
+  @objc dynamic public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, error: any Swift.Error)
+  @objc dynamic public func onShowAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onShowFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo, error: any Swift.Error)
+  @objc dynamic public func onClickAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onSkipAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onCompleteAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers open class OpenBiddingFlutterSplash : ObjectiveC.NSObject {
+  @objc public static var shared: BidmadFlutterBridge.OpenBiddingFlutterSplash?
+  @objc public static func shared(registrar: ObjectiveC.NSObject, chanNm: Swift.String) -> BidmadFlutterBridge.OpenBiddingFlutterSplash
+  @objc public static var isInitialized: Swift.Bool {
+    @objc get
+  }
+  @objc final public let chanNm: Swift.String
+  public var ads: [Swift.String : BidmadSDK.BMSplashAd?] {
+    get
+  }
+  @objc deinit
+}
+@objc @objcMembers open class OpenBiddingFlutterSplashPlatformView : ObjectiveC.NSObject, Flutter.FlutterPlatformView {
+  @objc public init(key: Swift.String)
+  @objc public func view() -> UIKit.UIView
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class OpenBiddingFlutterSplashFactory : ObjectiveC.NSObject, Flutter.FlutterPlatformViewFactory {
+  @objc public func create(withFrame frame: CoreFoundation.CGRect, viewIdentifier viewId: Swift.Int64, arguments args: Any?) -> any Flutter.FlutterPlatformView
+  @objc public func createArgsCodec() -> any Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension BidmadFlutterBridge.OpenBiddingFlutterSplash : BidmadSDK.BMSplashAdDelegate {
+  @objc dynamic public func onLoadAd(_ ad: BidmadSDK.BMSplashAd, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onLoadFailAd(_ ad: BidmadSDK.BMSplashAd, error: any Swift.Error)
+}

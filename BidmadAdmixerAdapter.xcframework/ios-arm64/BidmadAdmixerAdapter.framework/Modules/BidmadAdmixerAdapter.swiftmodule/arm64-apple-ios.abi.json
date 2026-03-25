@@ -1,0 +1,1057 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "BidmadAdmixerAdapter",
+    "printedName": "BidmadAdmixerAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdmixerAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadAdmixerAdapterInfo",
+        "printedName": "BidmadAdmixerAdapterInfo",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "adapterVersion",
+            "printedName": "adapterVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadAdmixerAdapterInfo(cm)adapterVersion",
+            "mangledName": "$s20BidmadAdmixerAdapter0abC4InfoC14adapterVersionSSyFZ",
+            "moduleName": "BidmadAdmixerAdapter",
+            "static": true,
+            "objc_name": "adapterVersion",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adNetworkSdkVersion",
+            "printedName": "adNetworkSdkVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadAdmixerAdapterInfo(cm)adNetworkSdkVersion",
+            "mangledName": "$s20BidmadAdmixerAdapter0abC4InfoC19adNetworkSdkVersionSSyFZ",
+            "moduleName": "BidmadAdmixerAdapter",
+            "static": true,
+            "objc_name": "adNetworkSdkVersion",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdmixerAdapterInfo",
+                "printedName": "BidmadAdmixerAdapter.BidmadAdmixerAdapterInfo",
+                "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadAdmixerAdapterInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadAdmixerAdapterInfo(im)init",
+            "mangledName": "$s20BidmadAdmixerAdapter0abC4InfoCACycfc",
+            "moduleName": "BidmadAdmixerAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadAdmixerAdapterInfo",
+        "mangledName": "$s20BidmadAdmixerAdapter0abC4InfoC",
+        "moduleName": "BidmadAdmixerAdapter",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AdMixerMediation",
+        "printedName": "AdMixerMediation",
+        "declKind": "Import",
+        "moduleName": "BidmadAdmixerAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdmixerAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadAdmixerCoreResult",
+        "printedName": "BidmadAdmixerCoreResult",
+        "declKind": "Struct",
+        "usr": "s:20BidmadAdmixerAdapter0aB10CoreResultV",
+        "mangledName": "$s20BidmadAdmixerAdapter0aB10CoreResultV",
+        "moduleName": "BidmadAdmixerAdapter",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdmixerAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AdMixerMediation",
+        "printedName": "AdMixerMediation",
+        "declKind": "Import",
+        "moduleName": "BidmadAdmixerAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdmixerAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadBannerAdmixerAdapter",
+        "printedName": "BidmadBannerAdmixerAdapter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20BidmadAdmixerAdapter0a6BannerbC0C2id10Foundation4UUIDVvp",
+            "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0C2id10Foundation4UUIDVvp",
+            "moduleName": "BidmadAdmixerAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BidmadAdmixerAdapter0a6BannerbC0C2id10Foundation4UUIDVvg",
+                "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0C2id10Foundation4UUIDVvg",
+                "moduleName": "BidmadAdmixerAdapter",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adView",
+            "printedName": "adView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "AdMixerMediation.AMMBannerView?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20BidmadAdmixerAdapter0a6BannerbC0C6adView16AdMixerMediation09AMMBannerF0CSgvp",
+            "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0C6adView16AdMixerMediation09AMMBannerF0CSgvp",
+            "moduleName": "BidmadAdmixerAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdMixerMediation.AMMBannerView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AMMBannerView",
+                        "printedName": "AdMixerMediation.AMMBannerView",
+                        "usr": "c:@M@AdMixerMediation@objc(cs)AMMBannerView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BidmadAdmixerAdapter0a6BannerbC0C6adView16AdMixerMediation09AMMBannerF0CSgvg",
+                "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0C6adView16AdMixerMediation09AMMBannerF0CSgvg",
+                "moduleName": "BidmadAdmixerAdapter",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdMixerMediation.AMMBannerView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AMMBannerView",
+                        "printedName": "AdMixerMediation.AMMBannerView",
+                        "usr": "c:@M@AdMixerMediation@objc(cs)AMMBannerView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BidmadAdmixerAdapter0a6BannerbC0C6adView16AdMixerMediation09AMMBannerF0CSgvs",
+                "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0C6adView16AdMixerMediation09AMMBannerF0CSgvs",
+                "moduleName": "BidmadAdmixerAdapter",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BidmadAdmixerAdapter0a6BannerbC0C6adView16AdMixerMediation09AMMBannerF0CSgvM",
+                "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0C6adView16AdMixerMediation09AMMBannerF0CSgvM",
+                "moduleName": "BidmadAdmixerAdapter",
+                "implicit": true,
+                "intro_iOS": "13.0.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(BidmadSDK.BidmadBannerAdapter, UIKit.UIView, CoreFoundation.CGSize)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidmadBannerAdapter",
+                    "printedName": "BidmadSDK.BidmadBannerAdapter",
+                    "usr": "c:objc(cs)BidmadBannerAdapter"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapter(im)loadAdFrom:with:",
+            "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0C6loadAd4fromSo0adC0C_So6UIViewCSo6CGSizeVtSo0H10ControllerC_tYaKF",
+            "moduleName": "BidmadAdmixerAdapter",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "loadAdFrom:with:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroyed",
+            "printedName": "destroyed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapter(im)destroyed",
+            "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0C9destroyedyyF",
+            "moduleName": "BidmadAdmixerAdapter",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "destroyed",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerAdmixerAdapter",
+                "printedName": "BidmadAdmixerAdapter.BidmadBannerAdmixerAdapter",
+                "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdUnit",
+                "printedName": "BidmadSDK.BidmadAdUnit",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadAdUnit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapter(im)initWithAdUnit:",
+            "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0C6adUnitAC0A3SDK0a2AdF0C_tcfc",
+            "moduleName": "BidmadAdmixerAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdUnit:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerAdmixerAdapter",
+                "printedName": "BidmadAdmixerAdapter.BidmadBannerAdmixerAdapter",
+                "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapter(im)init",
+            "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0CACycfc",
+            "moduleName": "BidmadAdmixerAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapter",
+        "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC0C",
+        "moduleName": "BidmadAdmixerAdapter",
+        "isOpen": true,
+        "intro_iOS": "13.0.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadBannerAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadBannerAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadAdmixerAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadBannerAdmixerAdapterSupportChecker",
+        "printedName": "BidmadBannerAdmixerAdapterSupportChecker",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isSupported",
+            "printedName": "isSupported()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapterSupportChecker(cm)isSupported",
+            "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC14SupportCheckerC11isSupportedSbyFZ",
+            "moduleName": "BidmadAdmixerAdapter",
+            "static": true,
+            "overriding": true,
+            "objc_name": "isSupported",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerAdmixerAdapterSupportChecker",
+                "printedName": "BidmadAdmixerAdapter.BidmadBannerAdmixerAdapterSupportChecker",
+                "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapterSupportChecker"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapterSupportChecker(im)init",
+            "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC14SupportCheckerCACycfc",
+            "moduleName": "BidmadAdmixerAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadAdmixerAdapter@objc(cs)BidmadBannerAdmixerAdapterSupportChecker",
+        "mangledName": "$s20BidmadAdmixerAdapter0a6BannerbC14SupportCheckerC",
+        "moduleName": "BidmadAdmixerAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadSupportChecker",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadSupportChecker",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AMMBannerView",
+        "printedName": "AMMBannerView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "asynchrouslyLoad",
+            "printedName": "asynchrouslyLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16AdMixerMediation13AMMBannerViewC20BidmadAdmixerAdapterE16asynchrouslyLoadyyYaKF",
+            "mangledName": "$s16AdMixerMediation13AMMBannerViewC20BidmadAdmixerAdapterE16asynchrouslyLoadyyYaKF",
+            "moduleName": "BidmadAdmixerAdapter",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSuccessBanner",
+            "printedName": "onSuccessBanner()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidmadAdmixerAdapter@AdMixerMediation@objc(cs)AMMBannerView(im)onSuccessBanner",
+            "mangledName": "$s16AdMixerMediation13AMMBannerViewC20BidmadAdmixerAdapterE15onSuccessBanneryyF",
+            "moduleName": "BidmadAdmixerAdapter",
+            "objc_name": "onSuccessBanner",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Nonisolated"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFailBanner",
+            "printedName": "onFailBanner()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidmadAdmixerAdapter@AdMixerMediation@objc(cs)AMMBannerView(im)onFailBanner",
+            "mangledName": "$s16AdMixerMediation13AMMBannerViewC20BidmadAdmixerAdapterE12onFailBanneryyF",
+            "moduleName": "BidmadAdmixerAdapter",
+            "objc_name": "onFailBanner",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Nonisolated"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanUp",
+            "printedName": "cleanUp()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16AdMixerMediation13AMMBannerViewC20BidmadAdmixerAdapterE7cleanUpyyF",
+            "mangledName": "$s16AdMixerMediation13AMMBannerViewC20BidmadAdmixerAdapterE7cleanUpyyF",
+            "moduleName": "BidmadAdmixerAdapter",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AdMixerMediation@objc(cs)AMMBannerView",
+        "mangledName": "$s16AdMixerMediation13AMMBannerViewC",
+        "moduleName": "AdMixerMediation",
+        "declAttributes": [
+          "Preconcurrency",
+          "ObjC",
+          "Custom"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "isExternal": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AMMBannerViewDelegate",
+            "printedName": "AMMBannerViewDelegate",
+            "usr": "c:@M@AdMixerMediation@objc(pl)AMMBannerViewDelegate",
+            "mangledName": "$s16AdMixerMediation21AMMBannerViewDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AMBannerAdDelegate",
+            "printedName": "AMBannerAdDelegate",
+            "usr": "c:@M@AdMixer@objc(pl)AMBannerAdDelegate",
+            "mangledName": "$s7AdMixer08AMBannerA8DelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BannerHandler",
+            "printedName": "BannerHandler",
+            "usr": "s:16AdMixerMediation13BannerHandlerP",
+            "mangledName": "$s16AdMixerMediation13BannerHandlerP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadAdmixerAdapter\/Sources\/BidmadAdmixerCore.swift",
+      "kind": "StringLiteral",
+      "offset": 222,
+      "length": 19,
+      "value": "\"BidmadAdmixerCore\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadAdmixerAdapter\/Sources\/BidmadAdmixerManager.swift",
+      "kind": "Dictionary",
+      "offset": 120,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadAdmixerAdapter\/Sources\/BidmadBannerAdmixerAdapter.swift",
+      "kind": "Dictionary",
+      "offset": 4787,
+      "length": 3,
+      "value": "[]"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BidmadGoogleGDPRAdapter
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import BidmadSDK
+import Foundation
+import Swift
+import UserMessagingPlatform
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @objcMembers public class BidmadGoogleGDPRAdapter : ObjectiveC.NSObject, BidmadSDK.BidmadGDPRAdapter {
+  public enum E : Swift.Error {
+    case deallocated, noFormLoaded
+    public static func == (a: BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E, b: BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc required override dynamic public init()
+  @objc public var isConsentFormAvailable: Swift.Bool {
+    @objc get
+  }
+  @objc public func setDebug(testDeviceId: Swift.String, isTestEurope: Swift.Bool)
+  @objc public func requestConsentInfoUpdate(completionHandler: @escaping ((any Swift.Error)?) -> Swift.Void)
+  @objc public func loadForm(completionHandler: @escaping ((any Swift.Error)?) -> Swift.Void)
+  @objc public func showForm(to viewController: UIKit.UIViewController?, completionHandler: @escaping ((any Swift.Error)?) -> Swift.Void)
+  @objc public var consentStatus: BidmadSDK.BIDMAD_UMPConsentStatus {
+    @objc get
+  }
+  @objc public func reset()
+  @objc deinit
+}
+extension BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E : Foundation.CustomNSError {
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorUserInfo: [Swift.String : Any] {
+    get
+  }
+}
+extension BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E : Swift.Equatable {}
+extension BidmadGoogleGDPRAdapter.BidmadGoogleGDPRAdapter.E : Swift.Hashable {}

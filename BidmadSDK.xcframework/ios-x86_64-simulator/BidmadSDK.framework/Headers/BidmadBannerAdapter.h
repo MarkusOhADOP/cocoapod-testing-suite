@@ -6,7 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BidmadAdUnit.h"
+#import "BidmadAdapterInterfaceAccess.h"
+
+@class BidmadAdUnit;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,7 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface BidmadBannerAdapter : NSObject
+NS_SWIFT_SENDABLE
+@interface BidmadBannerAdapter : NSObject <BidmadAdapterInterfaceAccess>
 
 @property (nonatomic, weak) id<BidmadBannerAdapterDelegate> delegate;
 @property (nonatomic, strong) BidmadAdUnit *adUnit;
@@ -26,8 +29,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)loadAdFrom:(UIViewController *)viewController
               with:(void (^)(BidmadBannerAdapter * _Nullable,
                              UIView * _Nullable,
+                             CGSize,
                              NSError * _Nullable))completionHandler;
+- (void)destroyed;
 - (instancetype)initWithAdUnit:(BidmadAdUnit *)adUnit;
+- (void)forceViewVisibility:(NSNumber *)visibilityRatio;
 
 @end
 

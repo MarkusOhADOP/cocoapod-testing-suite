@@ -9,7 +9,7 @@
 #pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 
 #import <Foundation/Foundation.h>
-#import "BIDMADGDPRforGoogle.h"
+#import <BidmadSDK/BIDMADGDPRforGoogle.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

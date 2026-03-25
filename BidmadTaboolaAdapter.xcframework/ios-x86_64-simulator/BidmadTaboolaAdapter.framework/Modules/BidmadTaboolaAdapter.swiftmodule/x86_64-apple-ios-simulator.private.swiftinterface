@@ -1,0 +1,48 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BidmadTaboolaAdapter
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import BidmadSDK
+@_exported import BidmadTaboolaAdapter
+import Combine
+import Foundation
+import Swift
+import SwiftUI
+import TaboolaSDK
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0.0, *)
+public class BidmadBannerTaboolaAdapter : BidmadSDK.BidmadBannerAdapter, TaboolaSDK.TBLClassicPageDelegate, BidmadSDK.BidmadLoggable, @unchecked Swift.Sendable {
+  public static let className: Swift.String
+  @objc override dynamic public func loadAd(from viewController: UIKit.UIViewController) async throws -> (BidmadSDK.BidmadBannerAdapter, UIKit.UIView, CoreFoundation.CGSize)
+  @objc public func classicUnit(_ classicUnit: UIKit.UIView!, didLoadOrResizePlacementName placementName: Swift.String!, height: CoreFoundation.CGFloat, placementType: TaboolaSDK.PlacementType)
+  @objc public func classicUnit(_ classicUnit: UIKit.UIView!, didClickPlacementName placementName: Swift.String!, itemId: Swift.String!, clickUrl: Swift.String!, isOrganic organic: Swift.Bool, customData: [Swift.AnyHashable : Any]!) -> Swift.Bool
+  @objc public func classicUnit(_ classicUnit: UIKit.UIView!, didFailToLoadPlacementName placementName: Swift.String!, errorMessage error: Swift.String!)
+  @objc override dynamic public func destroyed()
+  @objc required dynamic public init(adUnit: BidmadSDK.BidmadAdUnit)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class BidmadBannerTaboolaAdapterSupportChecker : BidmadSDK.BidmadSupportChecker {
+  @objc override public static func isSupported() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+public class BidmadInterstitialTaboolaAdapter : BidmadSDK.BidmadFullscreenAdapter, TaboolaSDK.TBLClassicPageDelegate, BidmadSDK.BidmadLoggable, @unchecked Swift.Sendable {
+  public static let className: Swift.String
+  @objc override dynamic public func loadAdWith() async throws -> BidmadSDK.BidmadFullscreenAdapter
+  @objc override dynamic public func showAd(from viewController: UIKit.UIViewController)
+  @objc public func classicUnit(_ classicUnit: UIKit.UIView!, didLoadOrResizePlacementName placementName: Swift.String!, height: CoreFoundation.CGFloat, placementType: TaboolaSDK.PlacementType)
+  @objc public func classicUnit(_ classicUnit: UIKit.UIView!, didClickPlacementName placementName: Swift.String!, itemId: Swift.String!, clickUrl: Swift.String!, isOrganic organic: Swift.Bool, customData: [Swift.AnyHashable : Any]!) -> Swift.Bool
+  @objc public func classicUnit(_ classicUnit: UIKit.UIView!, didFailToLoadPlacementName placementName: Swift.String!, errorMessage error: Swift.String!)
+  @objc deinit
+  @objc override dynamic public init(adUnit: BidmadSDK.BidmadAdUnit)
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers public class BidmadInterstitialTaboolaAdapterSupportChecker : ObjectiveC.NSObject, BidmadSDK.BidmadInterstitialSC {
+  @objc public static func isSupported() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}

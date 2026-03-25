@@ -1,0 +1,4 @@
+framework module BidmadAdmixerAdapter {
+  header "BidmadAdmixerAdapter-Swift.h"
+  requires objc
+}

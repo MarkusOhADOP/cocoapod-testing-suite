@@ -1,0 +1,514 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "BidmadUnityAdsAdapter",
+    "printedName": "BidmadUnityAdsAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadUnityAdsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadUnityAdsAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UnityAds",
+        "printedName": "UnityAds",
+        "declKind": "Import",
+        "moduleName": "BidmadUnityAdsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadUnityAdsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidmadUnityAdsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UnityAds",
+        "printedName": "UnityAds",
+        "declKind": "Import",
+        "moduleName": "BidmadUnityAdsAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadUnityAdsCore",
+        "printedName": "BidmadUnityAdsCore",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "E",
+            "printedName": "E",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "timeout",
+                "printedName": "timeout",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BidmadUnityAdsAdapter.BidmadUnityAdsCore.E.Type) -> BidmadUnityAdsAdapter.BidmadUnityAdsCore.E",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "E",
+                        "printedName": "BidmadUnityAdsAdapter.BidmadUnityAdsCore.E",
+                        "usr": "s:21BidmadUnityAdsAdapter0abC4CoreC1EO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BidmadUnityAdsAdapter.BidmadUnityAdsCore.E.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "E",
+                            "printedName": "BidmadUnityAdsAdapter.BidmadUnityAdsCore.E",
+                            "usr": "s:21BidmadUnityAdsAdapter0abC4CoreC1EO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:21BidmadUnityAdsAdapter0abC4CoreC1EO7timeoutyA2EmF",
+                "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC1EO7timeoutyA2EmF",
+                "moduleName": "BidmadUnityAdsAdapter"
+              },
+              {
+                "kind": "Var",
+                "name": "internalError",
+                "printedName": "internalError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BidmadUnityAdsAdapter.BidmadUnityAdsCore.E.Type) -> (Swift.String) -> BidmadUnityAdsAdapter.BidmadUnityAdsCore.E",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> BidmadUnityAdsAdapter.BidmadUnityAdsCore.E",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "E",
+                            "printedName": "BidmadUnityAdsAdapter.BidmadUnityAdsCore.E",
+                            "usr": "s:21BidmadUnityAdsAdapter0abC4CoreC1EO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BidmadUnityAdsAdapter.BidmadUnityAdsCore.E.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "E",
+                            "printedName": "BidmadUnityAdsAdapter.BidmadUnityAdsCore.E",
+                            "usr": "s:21BidmadUnityAdsAdapter0abC4CoreC1EO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:21BidmadUnityAdsAdapter0abC4CoreC1EO13internalErroryAESScAEmF",
+                "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC1EO13internalErroryAESScAEmF",
+                "moduleName": "BidmadUnityAdsAdapter"
+              },
+              {
+                "kind": "Var",
+                "name": "errorCode",
+                "printedName": "errorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:21BidmadUnityAdsAdapter0abC4CoreC1EO9errorCodeSivp",
+                "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC1EO9errorCodeSivp",
+                "moduleName": "BidmadUnityAdsAdapter",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:21BidmadUnityAdsAdapter0abC4CoreC1EO9errorCodeSivg",
+                    "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC1EO9errorCodeSivg",
+                    "moduleName": "BidmadUnityAdsAdapter",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:21BidmadUnityAdsAdapter0abC4CoreC1EO",
+            "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC1EO",
+            "moduleName": "BidmadUnityAdsAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomNSError",
+                "printedName": "CustomNSError",
+                "usr": "s:10Foundation13CustomNSErrorP",
+                "mangledName": "$s10Foundation13CustomNSErrorP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadUnityAdsCore",
+                "printedName": "BidmadUnityAdsAdapter.BidmadUnityAdsCore",
+                "usr": "c:@M@BidmadUnityAdsAdapter@objc(cs)BidmadUnityAdsCore"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidmadUnityAdsAdapter@objc(cs)BidmadUnityAdsCore(cpy)shared",
+            "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC6sharedACvpZ",
+            "moduleName": "BidmadUnityAdsAdapter",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidmadUnityAdsCore",
+                    "printedName": "BidmadUnityAdsAdapter.BidmadUnityAdsCore",
+                    "usr": "c:@M@BidmadUnityAdsAdapter@objc(cs)BidmadUnityAdsCore"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidmadUnityAdsAdapter@objc(cs)BidmadUnityAdsCore(cm)shared",
+                "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC6sharedACvgZ",
+                "moduleName": "BidmadUnityAdsAdapter",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initializeSDK",
+            "printedName": "initializeSDK(appId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadUnityAdsAdapter@objc(cs)BidmadUnityAdsCore(im)initializeSDKWithAppId:completion:",
+            "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC13initializeSDK5appId10completionySS_ys5Error_pSgctF",
+            "moduleName": "BidmadUnityAdsAdapter",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializationComplete",
+            "printedName": "initializationComplete()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadUnityAdsAdapter@objc(cs)BidmadUnityAdsCore(im)initializationComplete",
+            "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC22initializationCompleteyyF",
+            "moduleName": "BidmadUnityAdsAdapter",
+            "objc_name": "initializationComplete",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializationFailed",
+            "printedName": "initializationFailed(_:withMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnityAdsInitializationError",
+                "printedName": "UnityAds.UnityAdsInitializationError",
+                "usr": "c:@E@UnityAdsInitializationError"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadUnityAdsAdapter@objc(cs)BidmadUnityAdsCore(im)initializationFailed:withMessage:",
+            "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC20initializationFailed_11withMessageySo0bC19InitializationErrorV_SStF",
+            "moduleName": "BidmadUnityAdsAdapter",
+            "objc_name": "initializationFailed:withMessage:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadUnityAdsAdapter@objc(cs)BidmadUnityAdsCore",
+        "mangledName": "$s21BidmadUnityAdsAdapter0abC4CoreC",
+        "moduleName": "BidmadUnityAdsAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadUnityAdsAdapter\/Sources\/BidmadRewardUnityAdsAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 330,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadUnityAdsAdapter\/Sources\/BidmadRewardUnityAdsAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 574,
+      "length": 28,
+      "value": "\"Bidmad-UnityAds-RewardedAd\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadUnityAdsAdapter\/Sources\/BidmadRewardUnityAdsAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 623,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadUnityAdsAdapter\/Sources\/BidmadUnityAdsCore.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 32,
+      "value": "\"com.bidmad.admob.manager.state\""
+    }
+  ]
+}

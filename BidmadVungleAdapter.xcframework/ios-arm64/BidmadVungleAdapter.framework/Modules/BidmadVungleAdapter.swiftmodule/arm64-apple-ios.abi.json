@@ -1,0 +1,371 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "BidmadVungleAdapter",
+    "printedName": "BidmadVungleAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "VungleAdsSDK",
+        "printedName": "VungleAdsSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadVungleAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidmadBannerVungleAdapter",
+        "printedName": "BidmadBannerVungleAdapter",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(from:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BidmadSDK.BidmadBannerAdapter?, UIKit.UIView?, CoreFoundation.CGSize, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(BidmadSDK.BidmadBannerAdapter?, UIKit.UIView?, CoreFoundation.CGSize, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BidmadSDK.BidmadBannerAdapter?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BidmadBannerAdapter",
+                            "printedName": "BidmadSDK.BidmadBannerAdapter",
+                            "usr": "c:objc(cs)BidmadBannerAdapter"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIView?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGSize",
+                        "printedName": "CoreFoundation.CGSize",
+                        "usr": "c:@S@CGSize"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadVungleAdapter@objc(cs)BidmadBannerVungleAdapter(im)loadAdFrom:with:",
+            "mangledName": "$s19BidmadVungleAdapter0a6BannerbC0C6loadAd4from4withySo16UIViewControllerC_ySo0adC0CSg_So0I0CSgSo6CGSizeVs5Error_pSgtctF",
+            "moduleName": "BidmadVungleAdapter",
+            "overriding": true,
+            "objc_name": "loadAdFrom:with:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerAdDidLoad",
+            "printedName": "bannerAdDidLoad(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VungleBannerView",
+                "printedName": "VungleAdsSDK.VungleBannerView",
+                "usr": "c:@M@VungleAdsSDK@objc(cs)VungleBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadVungleAdapter@objc(cs)BidmadBannerVungleAdapter(im)bannerAdDidLoad:",
+            "mangledName": "$s19BidmadVungleAdapter0a6BannerbC0C15bannerAdDidLoadyy0B6AdsSDK0bD4ViewCF",
+            "moduleName": "BidmadVungleAdapter",
+            "objc_name": "bannerAdDidLoad:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerAdDidFail",
+            "printedName": "bannerAdDidFail(_:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VungleBannerView",
+                "printedName": "VungleAdsSDK.VungleBannerView",
+                "usr": "c:@M@VungleAdsSDK@objc(cs)VungleBannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSError",
+                "printedName": "Foundation.NSError",
+                "usr": "c:objc(cs)NSError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadVungleAdapter@objc(cs)BidmadBannerVungleAdapter(im)bannerAdDidFail:withError:",
+            "mangledName": "$s19BidmadVungleAdapter0a6BannerbC0C15bannerAdDidFail_9withErrory0B6AdsSDK0bD4ViewC_So7NSErrorCtF",
+            "moduleName": "BidmadVungleAdapter",
+            "objc_name": "bannerAdDidFail:withError:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerAdDidClick",
+            "printedName": "bannerAdDidClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VungleBannerView",
+                "printedName": "VungleAdsSDK.VungleBannerView",
+                "usr": "c:@M@VungleAdsSDK@objc(cs)VungleBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadVungleAdapter@objc(cs)BidmadBannerVungleAdapter(im)bannerAdDidClick:",
+            "mangledName": "$s19BidmadVungleAdapter0a6BannerbC0C16bannerAdDidClickyy0B6AdsSDK0bD4ViewCF",
+            "moduleName": "BidmadVungleAdapter",
+            "objc_name": "bannerAdDidClick:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerVungleAdapter",
+                "printedName": "BidmadVungleAdapter.BidmadBannerVungleAdapter",
+                "usr": "c:@M@BidmadVungleAdapter@objc(cs)BidmadBannerVungleAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadAdUnit",
+                "printedName": "BidmadSDK.BidmadAdUnit",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadAdUnit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadVungleAdapter@objc(cs)BidmadBannerVungleAdapter(im)initWithAdUnit:",
+            "mangledName": "$s19BidmadVungleAdapter0a6BannerbC0C6adUnitAC0A3SDK0a2AdF0C_tcfc",
+            "moduleName": "BidmadVungleAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdUnit:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadBannerVungleAdapter",
+                "printedName": "BidmadVungleAdapter.BidmadBannerVungleAdapter",
+                "usr": "c:@M@BidmadVungleAdapter@objc(cs)BidmadBannerVungleAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidmadVungleAdapter@objc(cs)BidmadBannerVungleAdapter(im)init",
+            "mangledName": "$s19BidmadVungleAdapter0a6BannerbC0CACycfc",
+            "moduleName": "BidmadVungleAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidmadVungleAdapter@objc(cs)BidmadBannerVungleAdapter",
+        "mangledName": "$s19BidmadVungleAdapter0a6BannerbC0C",
+        "moduleName": "BidmadVungleAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)BidmadBannerAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BidmadSDK.BidmadBannerAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "VungleBannerViewDelegate",
+            "printedName": "VungleBannerViewDelegate",
+            "usr": "c:@M@VungleAdsSDK@objc(pl)VungleBannerViewDelegate",
+            "mangledName": "$s12VungleAdsSDK0A18BannerViewDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
