@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
 
   s.name             = "BidmadCoviAdapter-Dev"
-  s.version          = "1.0.0.13.0"
+  s.version          = "1.0.0.13.1"
   s.platform         = :ios, "13.0"
   s.summary          = "Integrated App Monetization Solution for Mobile Apps by all Publishers"
   s.description      = "BidmadSDK Mediation Adapter for Covi"
   s.homepage         = "https://bidmad.net"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "Markus" => "markus@adop.cc" }
-  s.source           = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => 'BidmadCoviAdapter-Dev.1.0.0.13.0' }
+  s.source           = { :git => 'https://github.com/MarkusOhADOP/cocoapod-testing-suite.git', :tag => 'BidmadCoviAdapter-Dev.1.0.0.13.1' }
   s.static_framework = false
   s.requires_arc     = true
   s.vendored_frameworks = "BidmadCoviAdapter.xcframework"

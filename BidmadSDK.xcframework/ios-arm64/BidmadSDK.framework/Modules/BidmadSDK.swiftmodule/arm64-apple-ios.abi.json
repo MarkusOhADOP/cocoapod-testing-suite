@@ -3179,8 +3179,8 @@
           },
           {
             "kind": "Function",
-            "name": "performAttempt",
-            "printedName": "performAttempt(loadable:attemptState:completion:)",
+            "name": "attempt",
+            "printedName": "attempt(loadable:attemptState:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3239,8 +3239,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9BidmadSDK8BMBannerC14performAttempt8loadable12attemptState10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0A6AdUnitC02adP0t_AA0eH0CyAA06BMBaseoE7OutcomeOctF",
-            "mangledName": "$s9BidmadSDK8BMBannerC14performAttempt8loadable12attemptState10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0A6AdUnitC02adP0t_AA0eH0CyAA06BMBaseoE7OutcomeOctF",
+            "usr": "s:9BidmadSDK8BMBannerC7attempt8loadable0D5State10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0A6AdUnitC02adN0t_AA07AttemptF0CyAA06BMBasemP7OutcomeOctF",
+            "mangledName": "$s9BidmadSDK8BMBannerC7attempt8loadable0D5State10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0A6AdUnitC02adN0t_AA07AttemptF0CyAA06BMBasemP7OutcomeOctF",
             "moduleName": "BidmadSDK",
             "overriding": true,
             "declAttributes": [
@@ -5674,8 +5674,8 @@
           },
           {
             "kind": "Function",
-            "name": "performAttempt",
-            "printedName": "performAttempt(loadable:attemptState:completion:)",
+            "name": "attempt",
+            "printedName": "attempt(loadable:attemptState:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5734,8 +5734,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9BidmadSDK8BMBaseAdC14performAttempt8loadable12attemptState10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adP0t_AA0fI0CyAA0cdF7OutcomeOctF",
-            "mangledName": "$s9BidmadSDK8BMBaseAdC14performAttempt8loadable12attemptState10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adP0t_AA0fI0CyAA0cdF7OutcomeOctF",
+            "usr": "s:9BidmadSDK8BMBaseAdC7attempt8loadable0E5State10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adN0t_AA07AttemptG0CyAA0cdP7OutcomeOctF",
+            "mangledName": "$s9BidmadSDK8BMBaseAdC7attempt8loadable0E5State10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adN0t_AA07AttemptG0CyAA0cdP7OutcomeOctF",
             "moduleName": "BidmadSDK",
             "declAttributes": [
               "AccessControl",
@@ -6456,8 +6456,8 @@
           },
           {
             "kind": "Function",
-            "name": "runAttempts",
-            "printedName": "runAttempts(start:)",
+            "name": "execute",
+            "printedName": "execute(loadable:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6492,8 +6492,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9BidmadSDK8BMBaseAdC11runAttempts5startySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adM0t_tF",
-            "mangledName": "$s9BidmadSDK8BMBaseAdC11runAttempts5startySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adM0t_tF",
+            "usr": "s:9BidmadSDK8BMBaseAdC7execute8loadableySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adL0t_tF",
+            "mangledName": "$s9BidmadSDK8BMBaseAdC7execute8loadableySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adL0t_tF",
             "moduleName": "BidmadSDK",
             "declAttributes": [
               "AccessControl",
@@ -7886,8 +7886,8 @@
           },
           {
             "kind": "Function",
-            "name": "performAttempt",
-            "printedName": "performAttempt(loadable:attemptState:completion:)",
+            "name": "attempt",
+            "printedName": "attempt(loadable:attemptState:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7946,8 +7946,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9BidmadSDK18BMCustomRenderedAdC14performAttempt8loadable12attemptState10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aE4UnitC02adQ0t_AA0gJ0CyAA06BMBaseeG7OutcomeOctF",
-            "mangledName": "$s9BidmadSDK18BMCustomRenderedAdC14performAttempt8loadable12attemptState10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aE4UnitC02adQ0t_AA0gJ0CyAA06BMBaseeG7OutcomeOctF",
+            "usr": "s:9BidmadSDK18BMCustomRenderedAdC7attempt8loadable0F5State10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aE4UnitC02adO0t_AA07AttemptH0CyAA06BMBaseeQ7OutcomeOctF",
+            "mangledName": "$s9BidmadSDK18BMCustomRenderedAdC7attempt8loadable0F5State10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aE4UnitC02adO0t_AA07AttemptH0CyAA06BMBaseeQ7OutcomeOctF",
             "moduleName": "BidmadSDK",
             "overriding": true,
             "declAttributes": [
@@ -8007,50 +8007,6 @@
               "ObjC",
               "Override",
               "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reportImpression",
-            "printedName": "reportImpression()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BidmadSDK@objc(cs)BMCustomRenderedAd(im)reportImpression",
-            "mangledName": "$s9BidmadSDK18BMCustomRenderedAdC16reportImpressionyyF",
-            "moduleName": "BidmadSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reportClick",
-            "printedName": "reportClick()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BidmadSDK@objc(cs)BMCustomRenderedAd(im)reportClick",
-            "mangledName": "$s9BidmadSDK18BMCustomRenderedAdC11reportClickyyF",
-            "moduleName": "BidmadSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9264,8 +9220,8 @@
           },
           {
             "kind": "Function",
-            "name": "performAttempt",
-            "printedName": "performAttempt(loadable:attemptState:completion:)",
+            "name": "attempt",
+            "printedName": "attempt(loadable:attemptState:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9324,8 +9280,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9BidmadSDK10BMNativeAdC14performAttempt8loadable12attemptState10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adP0t_AA0fI0CyAA06BMBasedF7OutcomeOctF",
-            "mangledName": "$s9BidmadSDK10BMNativeAdC14performAttempt8loadable12attemptState10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adP0t_AA0fI0CyAA06BMBasedF7OutcomeOctF",
+            "usr": "s:9BidmadSDK10BMNativeAdC7attempt8loadable0E5State10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adN0t_AA07AttemptG0CyAA06BMBasedP7OutcomeOctF",
+            "mangledName": "$s9BidmadSDK10BMNativeAdC7attempt8loadable0E5State10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adN0t_AA07AttemptG0CyAA06BMBasedP7OutcomeOctF",
             "moduleName": "BidmadSDK",
             "overriding": true,
             "declAttributes": [
@@ -10536,8 +10492,8 @@
           },
           {
             "kind": "Function",
-            "name": "performAttempt",
-            "printedName": "performAttempt(loadable:attemptState:completion:)",
+            "name": "attempt",
+            "printedName": "attempt(loadable:attemptState:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10596,8 +10552,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9BidmadSDK10BMSplashAdC14performAttempt8loadable12attemptState10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adP0t_AA0fI0CyAA06BMBasedF7OutcomeOctF",
-            "mangledName": "$s9BidmadSDK10BMSplashAdC14performAttempt8loadable12attemptState10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adP0t_AA0fI0CyAA06BMBasedF7OutcomeOctF",
+            "usr": "s:9BidmadSDK10BMSplashAdC7attempt8loadable0E5State10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adN0t_AA07AttemptG0CyAA06BMBasedP7OutcomeOctF",
+            "mangledName": "$s9BidmadSDK10BMSplashAdC7attempt8loadable0E5State10completionySo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adN0t_AA07AttemptG0CyAA06BMBasedP7OutcomeOctF",
             "moduleName": "BidmadSDK",
             "overriding": true,
             "declAttributes": [
@@ -19194,6 +19150,13 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidmadSDK"
       },
       {
         "kind": "Import",
@@ -49671,6 +49634,125 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "BidmadUtility",
+        "printedName": "BidmadUtility",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isViewVisible",
+            "printedName": "isViewVisible(target:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidmadSDK@@objc(cs)BidmadUtility(cm)isViewVisibleWithTarget:",
+            "mangledName": "$sSo13BidmadUtilityC0A3SDKE13isViewVisible6targetSbSo6UIViewC_tFZ",
+            "moduleName": "BidmadSDK",
+            "static": true,
+            "objc_name": "isViewVisibleWithTarget:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)BidmadUtility",
+        "moduleName": "BidmadSDK",
+        "isOpen": true,
+        "objc_name": "BidmadUtility",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Color",
         "printedName": "Color",
         "children": [
@@ -50893,63 +50975,63 @@
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4133,
+      "offset": 4084,
       "length": 8,
       "value": "\"Banner\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4172,
+      "offset": 4123,
       "length": 14,
       "value": "\"Interstitial\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4211,
+      "offset": 4162,
       "length": 8,
       "value": "\"Reward\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4244,
+      "offset": 4195,
       "length": 8,
       "value": "\"Native\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4278,
+      "offset": 4229,
       "length": 9,
       "value": "\"AppOpen\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4312,
+      "offset": 4263,
       "length": 8,
       "value": "\"Splash\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4353,
+      "offset": 4304,
       "length": 16,
       "value": "\"CustomRendered\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4672,
+      "offset": 4623,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13250,
+      "offset": 13194,
       "length": 5,
       "value": "false"
     },

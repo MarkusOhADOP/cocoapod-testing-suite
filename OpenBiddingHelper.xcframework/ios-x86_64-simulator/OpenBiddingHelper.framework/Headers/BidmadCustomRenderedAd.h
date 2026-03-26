@@ -33,8 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nonnull instancetype)initWithZoneID:(NSString * _Nonnull)zoneID;
 - (void)load;
-- (void)reportImpression;
-- (void)reportClick;
 
 @end
 

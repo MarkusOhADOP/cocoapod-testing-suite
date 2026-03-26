@@ -384,7 +384,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) dispatch_que
 @property (nonatomic, readonly) BOOL isAppActive;
 /// 광고 요청의 공통 진입점입니다. 전제 조건을 검증하고, 플로우를 시작하고,
 /// 시도 루프를 실행합니다. 타입별 로직은 <code>validateRequestContext</code>와
-/// <code>performAttempt</code>에 위임됩니다.
+/// <code>attempt</code>에 위임됩니다.
 - (void)requestCommonWithAdRefresh:(BOOL)adRefresh;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -474,8 +474,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)load;
 - (NSError * _Nullable)validateRequestContextWithAdRefresh:(BOOL)adRefresh SWIFT_WARN_UNUSED_RESULT;
 - (void)onAdLoadCompleteWithAdUnit:(BidmadAdUnit * _Nullable)adUnit error:(NSError * _Nullable)error;
-- (void)reportImpression;
-- (void)reportClick;
 - (void)remove;
 - (nonnull instancetype)initWithZoneId:(NSString * _Nonnull)zoneId OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -702,6 +700,10 @@ SWIFT_CLASS("_TtC9BidmadSDK18BidmadStateManager")
 + (BOOL)checkCollapsibleRequestedPreviouslyFor:(NSString * _Nonnull)zoneId SWIFT_WARN_UNUSED_RESULT;
 + (void)setWithCollapsibleRequested:(BOOL)collapsibleRequested to:(NSString * _Nonnull)zoneId;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@interface BidmadUtility (SWIFT_EXTENSION(BidmadSDK))
++ (BOOL)isViewVisibleWithTarget:(UIView * _Nonnull)targetView SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif

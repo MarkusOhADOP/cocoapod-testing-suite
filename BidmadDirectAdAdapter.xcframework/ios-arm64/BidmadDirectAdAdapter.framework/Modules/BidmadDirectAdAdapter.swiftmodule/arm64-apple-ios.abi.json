@@ -83,6 +83,48 @@
       },
       {
         "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadDirectAdAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidmadDirectAdAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "BidmadDirectAdAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
+        "declKind": "Import",
+        "moduleName": "BidmadDirectAdAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidmadDirectAdAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "BidmadDirectAdAdapter"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -251,32 +293,32 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/BidmadBannerDirectAdAdapter.swift",
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/DirectAdImpressionTracker.swift",
       "kind": "StringLiteral",
-      "offset": 2998,
-      "length": 18,
-      "value": "\"DirectAdJSBridge\""
-    },
-    {
-      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/BidmadBannerDirectAdAdapter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3116,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/BidmadBannerDirectAdAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 3980,
+      "offset": 289,
       "length": 27,
       "value": "\"DirectAdImpressionTracker\""
     },
     {
-      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/BidmadBannerDirectAdAdapter.swift",
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/DirectAdImpressionTracker.swift",
       "kind": "BooleanLiteral",
-      "offset": 4089,
+      "offset": 398,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/DirectAdJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 150,
+      "length": 18,
+      "value": "\"DirectAdJSBridge\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/DirectAdJSBridge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 222,
+      "length": 1,
+      "value": "5"
     }
   ]
 }

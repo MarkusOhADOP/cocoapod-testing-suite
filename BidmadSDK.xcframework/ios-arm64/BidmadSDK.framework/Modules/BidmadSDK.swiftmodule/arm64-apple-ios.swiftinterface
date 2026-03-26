@@ -95,7 +95,7 @@ import _SwiftConcurrencyShims
   }
   @objc final public func load()
   @objc override final public func validateRequestContext(adRefresh: Swift.Bool) -> (any Swift.Error)?
-  override final public func performAttempt(loadable: BidmadSDK.BMBaseAdLoadable, attemptState: BidmadSDK.AttemptState, completion: @escaping (BidmadSDK.BMBaseAdAttemptOutcome) -> Swift.Void)
+  override final public func attempt(loadable: BidmadSDK.BMBaseAdLoadable, attemptState: BidmadSDK.AttemptState, completion: @escaping (BidmadSDK.BMBaseAdAttemptOutcome) -> Swift.Void)
   @objc override final public func onAdLoadComplete(adUnit: BidmadSDK.BidmadAdUnit?, error: (any Swift.Error)?)
   @objc override final public func remove()
   @objc public static func isViewVisible(target targetView: UIKit.UIView) -> Swift.Bool
@@ -163,7 +163,7 @@ public func safeErrorMessage(from error: (any Swift.Error)?) -> Swift.String
   @objc public init(zoneId: Swift.String)
   @objc deinit
   @objc public func validateRequestContext(adRefresh: Swift.Bool) -> (any Swift.Error)?
-  public func performAttempt(loadable: BidmadSDK.BMBaseAdLoadable, attemptState: BidmadSDK.AttemptState, completion: @escaping (BidmadSDK.BMBaseAdAttemptOutcome) -> Swift.Void)
+  public func attempt(loadable: BidmadSDK.BMBaseAdLoadable, attemptState: BidmadSDK.AttemptState, completion: @escaping (BidmadSDK.BMBaseAdAttemptOutcome) -> Swift.Void)
   @objc public func onAdLoadComplete(adUnit: BidmadSDK.BidmadAdUnit?, error: (any Swift.Error)?)
   @objc public func remove()
   public static func processMediationEvents(_ events: [BidmadSDK.MediationEvent])
@@ -187,7 +187,7 @@ public func safeErrorMessage(from error: (any Swift.Error)?) -> Swift.String
   public func selectLoadable(afterFailing adUnit: BidmadSDK.BidmadAdUnit) -> BidmadSDK.BMBaseAdLoadable?
   public func isStale(attemptState: BidmadSDK.AttemptState) -> Swift.Bool
   public func checkNotStale(attemptState: BidmadSDK.AttemptState, completion: @escaping (_ shouldProceed: Swift.Bool) -> Swift.Void)
-  public func runAttempts(start: BidmadSDK.BMBaseAdLoadable)
+  public func execute(loadable: BidmadSDK.BMBaseAdLoadable)
   public static func send(log: BidmadSDK.BMBaseAdLogTypes, adUnit: BidmadSDK.BidmadAdUnit)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class BMBaseAdState : ObjectiveC.NSObject {
@@ -222,10 +222,8 @@ public func safeErrorMessage(from error: (any Swift.Error)?) -> Swift.String
   @objc final public var adContent: BidmadSDK.BidmadCustomRenderedAdContent?
   @objc final public func load()
   @objc override final public func validateRequestContext(adRefresh: Swift.Bool) -> (any Swift.Error)?
-  override final public func performAttempt(loadable: BidmadSDK.BMBaseAdLoadable, attemptState: BidmadSDK.AttemptState, completion: @escaping (BidmadSDK.BMBaseAdAttemptOutcome) -> Swift.Void)
+  override final public func attempt(loadable: BidmadSDK.BMBaseAdLoadable, attemptState: BidmadSDK.AttemptState, completion: @escaping (BidmadSDK.BMBaseAdAttemptOutcome) -> Swift.Void)
   @objc override final public func onAdLoadComplete(adUnit: BidmadSDK.BidmadAdUnit?, error: (any Swift.Error)?)
-  @objc final public func reportImpression()
-  @objc final public func reportClick()
   @objc override final public func remove()
   @objc override public init(zoneId: Swift.String)
   @objc deinit
@@ -261,7 +259,7 @@ public protocol BMMediationBehaviour : Swift.CustomStringConvertible {
   @objc weak public var adBindView: BidmadSDK.BIDMADNativeAdView?
   @objc public func load()
   @objc override public func validateRequestContext(adRefresh: Swift.Bool) -> (any Swift.Error)?
-  override public func performAttempt(loadable: BidmadSDK.BMBaseAdLoadable, attemptState: BidmadSDK.AttemptState, completion: @escaping (BidmadSDK.BMBaseAdAttemptOutcome) -> Swift.Void)
+  override public func attempt(loadable: BidmadSDK.BMBaseAdLoadable, attemptState: BidmadSDK.AttemptState, completion: @escaping (BidmadSDK.BMBaseAdAttemptOutcome) -> Swift.Void)
   @objc override public func onAdLoadComplete(adUnit: BidmadSDK.BidmadAdUnit?, error: (any Swift.Error)?)
   @objc override public func remove()
   @objc(setAdViewController:adView:defaultSize:) public func set(adViewController: UIKit.UIViewController, adView: BidmadSDK.BIDMADNativeAdView, defaultSize: CoreFoundation.CGSize) -> CoreFoundation.CGSize
@@ -298,7 +296,7 @@ extension BidmadSDK.BMNativeAd : BidmadSDK.BidmadNativeAdapterDelegate {
   @objc final public var managedErasableView: BidmadSDK.BidmadErasableView?
   @objc final public func load()
   @objc override final public func validateRequestContext(adRefresh: Swift.Bool) -> (any Swift.Error)?
-  override final public func performAttempt(loadable: BidmadSDK.BMBaseAdLoadable, attemptState: BidmadSDK.AttemptState, completion: @escaping (BidmadSDK.BMBaseAdAttemptOutcome) -> Swift.Void)
+  override final public func attempt(loadable: BidmadSDK.BMBaseAdLoadable, attemptState: BidmadSDK.AttemptState, completion: @escaping (BidmadSDK.BMBaseAdAttemptOutcome) -> Swift.Void)
   @objc override final public func onAdLoadComplete(adUnit: BidmadSDK.BidmadAdUnit?, error: (any Swift.Error)?)
   @objc override final public func remove()
   @objc override public init(zoneId: Swift.String)
@@ -542,6 +540,9 @@ extension BidmadSDK.BidmadAdUnit {
     @objc get
   }
   @objc deinit
+}
+extension BidmadSDK.BidmadUtility {
+  @objc public static func isViewVisible(target targetView: UIKit.UIView) -> Swift.Bool
 }
 @available(iOS 13.0, *)
 extension SwiftUICore.Color {
