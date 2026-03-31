@@ -311,6 +311,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSString;
 SWIFT_CLASS("_TtC19BidmadFlutterBridge31OpenBiddingFlutterBannerRefined")
 @interface OpenBiddingFlutterBannerRefined : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull className;)
++ (NSString * _Nonnull)className SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) OpenBiddingFlutterBannerRefined * _Nullable shared;)
 + (OpenBiddingFlutterBannerRefined * _Nullable)shared SWIFT_WARN_UNUSED_RESULT;
 + (void)setShared:(OpenBiddingFlutterBannerRefined * _Nullable)value;
@@ -352,6 +354,8 @@ SWIFT_CLASS("_TtC19BidmadFlutterBridge43OpenBiddingFlutterBannerRefinedPlatformV
 @protocol FlutterPluginRegistrar;
 SWIFT_CLASS("_TtC19BidmadFlutterBridge32OpenBiddingFlutterCustomRendered")
 @interface OpenBiddingFlutterCustomRendered : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull className;)
++ (NSString * _Nonnull)className SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithRegistrar:(id <FlutterPluginRegistrar> _Nonnull)registrar channelName:(NSString * _Nonnull)channelName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -366,6 +370,8 @@ SWIFT_CLASS("_TtC19BidmadFlutterBridge32OpenBiddingFlutterCustomRendered")
 
 SWIFT_CLASS("_TtC19BidmadFlutterBridge30OpenBiddingFlutterInterstitial")
 @interface OpenBiddingFlutterInterstitial : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull className;)
++ (NSString * _Nonnull)className SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithRegistrar:(id <FlutterPluginRegistrar> _Nonnull)registrar channelName:(NSString * _Nonnull)channelName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -383,6 +389,8 @@ SWIFT_CLASS("_TtC19BidmadFlutterBridge30OpenBiddingFlutterInterstitial")
 
 SWIFT_CLASS("_TtC19BidmadFlutterBridge29OpenBiddingFlutterRewardVideo")
 @interface OpenBiddingFlutterRewardVideo : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull className;)
++ (NSString * _Nonnull)className SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithRegistrar:(id <FlutterPluginRegistrar> _Nonnull)registrar channelName:(NSString * _Nonnull)channelName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -402,6 +410,8 @@ SWIFT_CLASS("_TtC19BidmadFlutterBridge29OpenBiddingFlutterRewardVideo")
 
 SWIFT_CLASS("_TtC19BidmadFlutterBridge24OpenBiddingFlutterSplash")
 @interface OpenBiddingFlutterSplash : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull className;)
++ (NSString * _Nonnull)className SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) OpenBiddingFlutterSplash * _Nullable shared;)
 + (OpenBiddingFlutterSplash * _Nullable)shared SWIFT_WARN_UNUSED_RESULT;
 + (void)setShared:(OpenBiddingFlutterSplash * _Nullable)value;

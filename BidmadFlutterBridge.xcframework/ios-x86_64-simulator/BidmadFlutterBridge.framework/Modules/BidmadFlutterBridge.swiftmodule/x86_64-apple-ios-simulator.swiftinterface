@@ -11,7 +11,10 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_hasMissingDesignatedInitializers @objcMembers open class OpenBiddingFlutterBannerRefined : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @objcMembers open class OpenBiddingFlutterBannerRefined : ObjectiveC.NSObject, BidmadSDK.BidmadLoggable {
+  @objc public static var className: Swift.String {
+    @objc get
+  }
   @objc public static var shared: BidmadFlutterBridge.OpenBiddingFlutterBannerRefined?
   @objc public static func shared(registrar: ObjectiveC.NSObject, chanNm: Swift.String) -> BidmadFlutterBridge.OpenBiddingFlutterBannerRefined
   @objc public static var isInitialized: Swift.Bool {
@@ -39,7 +42,10 @@ extension BidmadFlutterBridge.OpenBiddingFlutterBannerRefined : BidmadSDK.BMBann
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @objcMembers open class OpenBiddingFlutterCustomRendered : ObjectiveC.NSObject {
+@objc @objcMembers open class OpenBiddingFlutterCustomRendered : ObjectiveC.NSObject, BidmadSDK.BidmadLoggable {
+  @objc public static var className: Swift.String {
+    @objc get
+  }
   @objc public init(registrar: any Flutter.FlutterPluginRegistrar, channelName: Swift.String)
   @objc deinit
 }
@@ -47,7 +53,10 @@ extension BidmadFlutterBridge.OpenBiddingFlutterCustomRendered : OpenBiddingHelp
   @objc dynamic public func onLoad(customRenderedAd ad: OpenBiddingHelper.BidmadCustomRenderedAd, content: BidmadSDK.BidmadCustomRenderedAdContent, info: BidmadSDK.BidmadInfo)
   @objc dynamic public func onLoadFail(customRenderedAd ad: OpenBiddingHelper.BidmadCustomRenderedAd, error: any Swift.Error)
 }
-@objc @objcMembers open class OpenBiddingFlutterInterstitial : ObjectiveC.NSObject {
+@objc @objcMembers open class OpenBiddingFlutterInterstitial : ObjectiveC.NSObject, BidmadSDK.BidmadLoggable {
+  @objc public static var className: Swift.String {
+    @objc get
+  }
   @objc public init(registrar: any Flutter.FlutterPluginRegistrar, channelName: Swift.String)
   @objc deinit
 }
@@ -59,7 +68,10 @@ extension BidmadFlutterBridge.OpenBiddingFlutterInterstitial : OpenBiddingHelper
   @objc dynamic public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, error: any Swift.Error)
   @objc dynamic public func onClickAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo)
 }
-@objc @objcMembers open class OpenBiddingFlutterRewardVideo : ObjectiveC.NSObject {
+@objc @objcMembers open class OpenBiddingFlutterRewardVideo : ObjectiveC.NSObject, BidmadSDK.BidmadLoggable {
+  @objc public static var className: Swift.String {
+    @objc get
+  }
   @objc public init(registrar: any Flutter.FlutterPluginRegistrar, channelName: Swift.String)
   @objc deinit
 }
@@ -73,7 +85,10 @@ extension BidmadFlutterBridge.OpenBiddingFlutterRewardVideo : OpenBiddingHelper.
   @objc dynamic public func onCompleteAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
   @objc dynamic public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers open class OpenBiddingFlutterSplash : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @objcMembers open class OpenBiddingFlutterSplash : ObjectiveC.NSObject, BidmadSDK.BidmadLoggable {
+  @objc public static var className: Swift.String {
+    @objc get
+  }
   @objc public static var shared: BidmadFlutterBridge.OpenBiddingFlutterSplash?
   @objc public static func shared(registrar: ObjectiveC.NSObject, chanNm: Swift.String) -> BidmadFlutterBridge.OpenBiddingFlutterSplash
   @objc public static var isInitialized: Swift.Bool {

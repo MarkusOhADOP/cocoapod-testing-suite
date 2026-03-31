@@ -83,6 +83,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidmadDirectAdAdapter"
+      },
+      {
+        "kind": "Import",
         "name": "BidmadSDK",
         "printedName": "BidmadSDK",
         "declKind": "Import",

@@ -359,6 +359,7 @@ SWIFT_CLASS("_TtC9BidmadSDK8BMBaseAd")
 @interface BMBaseAd : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull className;)
 + (NSString * _Nonnull)className SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)safeErrorMessageFrom:(NSError * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) BidmadAdType adType;
 /// Must be read/written only on <code>self.queue</code>.
 @property (nonatomic) BidmadLoadStatus loadStatus;

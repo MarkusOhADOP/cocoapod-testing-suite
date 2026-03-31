@@ -61,8 +61,8 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "BidmadCoviAdapter",
         "declAttributes": [
@@ -71,8 +71,8 @@
       },
       {
         "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
+        "name": "BidmadSDK",
+        "printedName": "BidmadSDK",
         "declKind": "Import",
         "moduleName": "BidmadCoviAdapter"
       },
@@ -80,6 +80,13 @@
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BidmadCoviAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "BidmadCoviAdapter"
       },
@@ -548,21 +555,21 @@
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadCoviAdapter\/Sources\/BidmadCoviVastPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 5748,
+      "offset": 5855,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadCoviAdapter\/Sources\/BidmadCoviVastPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 5794,
+      "offset": 5901,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadCoviAdapter\/Sources\/BidmadCoviVastPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 5893,
+      "offset": 6000,
       "length": 4,
       "value": "true"
     }

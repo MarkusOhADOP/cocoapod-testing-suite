@@ -4735,41 +4735,6 @@
         ]
       },
       {
-        "kind": "Function",
-        "name": "safeErrorMessage",
-        "printedName": "safeErrorMessage(from:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "String",
-            "printedName": "Swift.String",
-            "usr": "s:SS"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "(any Swift.Error)?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:9BidmadSDK16safeErrorMessage4fromSSs0D0_pSg_tF",
-        "mangledName": "$s9BidmadSDK16safeErrorMessage4fromSSs0D0_pSg_tF",
-        "moduleName": "BidmadSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
         "kind": "TypeDecl",
         "name": "BMBaseAd",
         "printedName": "BMBaseAd",
@@ -4820,6 +4785,44 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "safeErrorMessage",
+            "printedName": "safeErrorMessage(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidmadSDK@objc(cs)BMBaseAd(cm)safeErrorMessageFrom:",
+            "mangledName": "$s9BidmadSDK8BMBaseAdC16safeErrorMessage4fromSSs0F0_pSg_tFZ",
+            "moduleName": "BidmadSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Var",
@@ -6113,8 +6116,8 @@
           },
           {
             "kind": "Function",
-            "name": "selectionFlow",
-            "printedName": "selectionFlow(adUnit:)",
+            "name": "tryCreatingLoadable",
+            "printedName": "tryCreatingLoadable(startingFrom:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6158,8 +6161,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9BidmadSDK8BMBaseAdC13selectionFlow6adUnitSo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0adH0CAEtSgAI_tF",
-            "mangledName": "$s9BidmadSDK8BMBaseAdC13selectionFlow6adUnitSo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0adH0CAEtSgAI_tF",
+            "usr": "s:9BidmadSDK8BMBaseAdC19tryCreatingLoadable12startingFromSo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adO0tSgAI_tF",
+            "mangledName": "$s9BidmadSDK8BMBaseAdC19tryCreatingLoadable12startingFromSo0A22AdapterInterfaceAccess_pXp12adapterClass_AA0aD4UnitC02adO0tSgAI_tF",
             "moduleName": "BidmadSDK",
             "declAttributes": [
               "AccessControl"
@@ -13392,6 +13395,44 @@
             "mangledName": "$ss8CopyableP"
           }
         ]
+      },
+      {
+        "kind": "Function",
+        "name": "bidmadLog",
+        "printedName": "bidmadLog(_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "BidmadLogLevel",
+            "printedName": "BidmadSDK.BidmadLogLevel",
+            "usr": "s:9BidmadSDK0A8LogLevelO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:9BidmadSDK9bidmadLogyySS_AA0aD5LevelOSStF",
+        "mangledName": "$s9BidmadSDK9bidmadLogyySS_AA0aD5LevelOSStF",
+        "moduleName": "BidmadSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "Import",
@@ -50961,77 +51002,77 @@
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 1356,
+      "offset": 763,
       "length": 10,
       "value": "\"BMBaseAd\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 1478,
+      "offset": 1525,
       "length": 31,
       "value": "\"Subclass must override adType\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4084,
+      "offset": 4131,
       "length": 8,
       "value": "\"Banner\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4123,
+      "offset": 4170,
       "length": 14,
       "value": "\"Interstitial\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4162,
+      "offset": 4209,
       "length": 8,
       "value": "\"Reward\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4195,
+      "offset": 4242,
       "length": 8,
       "value": "\"Native\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4229,
+      "offset": 4276,
       "length": 9,
       "value": "\"AppOpen\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4263,
+      "offset": 4310,
       "length": 8,
       "value": "\"Splash\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 4304,
+      "offset": 4351,
       "length": 16,
       "value": "\"CustomRendered\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4623,
+      "offset": 4670,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/BMBaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13194,
+      "offset": 13272,
       "length": 5,
       "value": "false"
     },
@@ -53292,14 +53333,14 @@
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/VastClient\/parsers\/VastParser.swift",
       "kind": "StringLiteral",
-      "offset": 653,
+      "offset": 719,
       "length": 8,
       "value": "\"parser\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadSDK\/Sources\/VastClient\/parsers\/VastParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 1821,
+      "offset": 1887,
       "length": 1,
       "value": "0"
     },

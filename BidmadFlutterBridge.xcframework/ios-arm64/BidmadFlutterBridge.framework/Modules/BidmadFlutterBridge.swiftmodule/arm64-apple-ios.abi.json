@@ -35,6 +35,54 @@
         "children": [
           {
             "kind": "Var",
+            "name": "className",
+            "printedName": "className",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidmadFlutterBridge@objc(cs)OpenBiddingFlutterBannerRefined(cpy)className",
+            "mangledName": "$s19BidmadFlutterBridge011OpenBiddingB13BannerRefinedC9classNameSSvpZ",
+            "moduleName": "BidmadFlutterBridge",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidmadFlutterBridge@objc(cs)OpenBiddingFlutterBannerRefined(cm)className",
+                "mangledName": "$s19BidmadFlutterBridge011OpenBiddingB13BannerRefinedC9classNameSSvgZ",
+                "moduleName": "BidmadFlutterBridge",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "shared",
             "printedName": "shared",
             "children": [
@@ -536,6 +584,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "BidmadLoggable",
+            "printedName": "BidmadLoggable",
+            "usr": "s:9BidmadSDK0A8LoggableP",
+            "mangledName": "$s9BidmadSDK0A8LoggableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -979,6 +1034,54 @@
         "printedName": "OpenBiddingFlutterCustomRendered",
         "children": [
           {
+            "kind": "Var",
+            "name": "className",
+            "printedName": "className",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidmadFlutterBridge@objc(cs)OpenBiddingFlutterCustomRendered(cpy)className",
+            "mangledName": "$s19BidmadFlutterBridge011OpenBiddingB14CustomRenderedC9classNameSSvpZ",
+            "moduleName": "BidmadFlutterBridge",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidmadFlutterBridge@objc(cs)OpenBiddingFlutterCustomRendered(cm)className",
+                "mangledName": "$s19BidmadFlutterBridge011OpenBiddingB14CustomRenderedC9classNameSSvgZ",
+                "moduleName": "BidmadFlutterBridge",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(registrar:channelName:)",
@@ -1134,6 +1237,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "BidmadLoggable",
+            "printedName": "BidmadLoggable",
+            "usr": "s:9BidmadSDK0A8LoggableP",
+            "mangledName": "$s9BidmadSDK0A8LoggableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -1226,6 +1336,54 @@
         "name": "OpenBiddingFlutterInterstitial",
         "printedName": "OpenBiddingFlutterInterstitial",
         "children": [
+          {
+            "kind": "Var",
+            "name": "className",
+            "printedName": "className",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidmadFlutterBridge@objc(cs)OpenBiddingFlutterInterstitial(cpy)className",
+            "mangledName": "$s19BidmadFlutterBridge011OpenBiddingB12InterstitialC9classNameSSvpZ",
+            "moduleName": "BidmadFlutterBridge",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidmadFlutterBridge@objc(cs)OpenBiddingFlutterInterstitial(cm)className",
+                "mangledName": "$s19BidmadFlutterBridge011OpenBiddingB12InterstitialC9classNameSSvgZ",
+                "moduleName": "BidmadFlutterBridge",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -1526,6 +1684,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "BidmadLoggable",
+            "printedName": "BidmadLoggable",
+            "usr": "s:9BidmadSDK0A8LoggableP",
+            "mangledName": "$s9BidmadSDK0A8LoggableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -1615,6 +1780,54 @@
         "name": "OpenBiddingFlutterRewardVideo",
         "printedName": "OpenBiddingFlutterRewardVideo",
         "children": [
+          {
+            "kind": "Var",
+            "name": "className",
+            "printedName": "className",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidmadFlutterBridge@objc(cs)OpenBiddingFlutterRewardVideo(cpy)className",
+            "mangledName": "$s19BidmadFlutterBridge011OpenBiddingB11RewardVideoC9classNameSSvpZ",
+            "moduleName": "BidmadFlutterBridge",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidmadFlutterBridge@objc(cs)OpenBiddingFlutterRewardVideo(cm)className",
+                "mangledName": "$s19BidmadFlutterBridge011OpenBiddingB11RewardVideoC9classNameSSvgZ",
+                "moduleName": "BidmadFlutterBridge",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -1987,6 +2200,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "BidmadLoggable",
+            "printedName": "BidmadLoggable",
+            "usr": "s:9BidmadSDK0A8LoggableP",
+            "mangledName": "$s9BidmadSDK0A8LoggableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -2076,6 +2296,54 @@
         "name": "OpenBiddingFlutterSplash",
         "printedName": "OpenBiddingFlutterSplash",
         "children": [
+          {
+            "kind": "Var",
+            "name": "className",
+            "printedName": "className",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidmadFlutterBridge@objc(cs)OpenBiddingFlutterSplash(cpy)className",
+            "mangledName": "$s19BidmadFlutterBridge011OpenBiddingB6SplashC9classNameSSvpZ",
+            "moduleName": "BidmadFlutterBridge",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidmadFlutterBridge@objc(cs)OpenBiddingFlutterSplash(cm)className",
+                "mangledName": "$s19BidmadFlutterBridge011OpenBiddingB6SplashC9classNameSSvgZ",
+                "moduleName": "BidmadFlutterBridge",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "shared",
@@ -2543,6 +2811,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "BidmadLoggable",
+            "printedName": "BidmadLoggable",
+            "usr": "s:9BidmadSDK0A8LoggableP",
+            "mangledName": "$s9BidmadSDK0A8LoggableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -2966,38 +3241,52 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterBannerRefined.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 33,
+      "value": "\"OpenBiddingFlutterBannerRefined\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterBannerRefined.swift",
       "kind": "BooleanLiteral",
-      "offset": 644,
+      "offset": 736,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterBannerRefined.swift",
       "kind": "BooleanLiteral",
-      "offset": 676,
+      "offset": 768,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterBannerRefined.swift",
       "kind": "StringLiteral",
-      "offset": 5459,
+      "offset": 5413,
       "length": 10,
       "value": "\"onLoadAd\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterBannerRefined.swift",
       "kind": "StringLiteral",
-      "offset": 5492,
+      "offset": 5446,
       "length": 10,
       "value": "\"onFailAd\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterBannerRefined.swift",
       "kind": "StringLiteral",
-      "offset": 5526,
+      "offset": 5480,
       "length": 11,
       "value": "\"onClickAd\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterCustomRendered.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 34,
+      "value": "\"OpenBiddingFlutterCustomRendered\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterInterstitial.swift",
@@ -3068,6 +3357,13 @@
       "offset": 542,
       "length": 11,
       "value": "\"onClickAd\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterInterstitial.swift",
+      "kind": "StringLiteral",
+      "offset": 680,
+      "length": 32,
+      "value": "\"OpenBiddingFlutterInterstitial\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterRewardVideo.swift",
@@ -3152,6 +3448,20 @@
       "offset": 466,
       "length": 14,
       "value": "\"onCompleteAd\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterRewardVideo.swift",
+      "kind": "StringLiteral",
+      "offset": 606,
+      "length": 31,
+      "value": "\"OpenBiddingFlutterRewardVideo\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadFlutterBridge\/Sources\/OpenBiddingFlutterSplash.swift",
+      "kind": "StringLiteral",
+      "offset": 358,
+      "length": 26,
+      "value": "\"OpenBiddingFlutterSplash\""
     }
   ]
 }

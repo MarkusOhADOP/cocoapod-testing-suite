@@ -145,11 +145,11 @@ final public class AttemptState {
   public init()
   @objc deinit
 }
-public func safeErrorMessage(from error: (any Swift.Error)?) -> Swift.String
 @objc @objcMembers public class BMBaseAd : ObjectiveC.NSObject, BidmadSDK.BidmadLoggable {
   @objc public class var className: Swift.String {
     @objc get
   }
+  @objc public static func safeErrorMessage(from error: (any Swift.Error)?) -> Swift.String
   @objc public var adType: BidmadSDK.BidmadAdType {
     @objc get
   }
@@ -177,7 +177,7 @@ public func safeErrorMessage(from error: (any Swift.Error)?) -> Swift.String
     @objc get
   }
   public func initiateAdFlow(for zoneId: Swift.String, viewController: UIKit.UIViewController? = nil, adRefresh: Swift.Bool = false, completionHandler: ((BidmadSDK.BMBaseAdLoadable?, (any Swift.Error)?) -> Swift.Void)?)
-  public func selectionFlow(adUnit: BidmadSDK.BidmadAdUnit) -> BidmadSDK.BMBaseAdLoadable?
+  public func tryCreatingLoadable(startingFrom adUnit: BidmadSDK.BidmadAdUnit) -> BidmadSDK.BMBaseAdLoadable?
   @objc public func createAdapterClass(from adUnit: BidmadSDK.BidmadAdUnit) throws -> any BidmadSDK.BidmadAdapterInterfaceAccess.Type
   @objc public func process(error: (any Swift.Error)?, adNetworkName: Swift.String?) -> any Swift.Error
   @objc public var isAppActive: Swift.Bool {
@@ -363,6 +363,7 @@ extension BidmadSDK.BidmadLoggable {
   public static func info(_ log: Swift.String)
   public static func test(_ log: Swift.String)
 }
+public func bidmadLog(_ className: Swift.String, _ level: BidmadSDK.BidmadLogLevel, _ log: Swift.String)
 public enum BidmadSDKReachabilityError : Swift.Error {
   case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
   case failedToCreateWithHostname(Swift.String, Swift.Int32)
