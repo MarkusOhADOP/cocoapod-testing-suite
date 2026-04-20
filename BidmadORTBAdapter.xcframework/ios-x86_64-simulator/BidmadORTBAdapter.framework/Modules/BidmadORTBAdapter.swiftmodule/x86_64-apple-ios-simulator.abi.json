@@ -542,6 +542,13 @@
       "offset": 286,
       "length": 27,
       "value": "\"BidmadORTBWebAppInterface\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadORTBAdapter\/Sources\/WebView\/BidmadORTBWebAppInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 369,
+      "length": 1,
+      "value": "5"
     }
   ]
 }

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BidmadDirectAdAdapter-Swift.h</key>
 		<data>
-		WC7fWDNmJK9F1P7tzGL6ZWdzuzM=
+		W1g1Aj+9fy9qqpk6JgdPRQO4njs=
 		</data>
 		<key>Headers/BidmadDirectAdAdapter.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/BidmadDirectAdAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		c/Y169XseHq28xDpNTaf+wfQK3M=
+		H++SVJx4SFnlrhn3eL3CjbuuETM=
 		</data>
 		<key>Modules/BidmadDirectAdAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bLeE2ueQloo+Pwj7u0+xqamMbw4=
+		RSvoUY8tUGXMD6LwDHnUumIDm94=
 		</data>
 		<key>Modules/BidmadDirectAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,35 +30,15 @@
 		</data>
 		<key>Modules/BidmadDirectAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bLeE2ueQloo+Pwj7u0+xqamMbw4=
+		RSvoUY8tUGXMD6LwDHnUumIDm94=
 		</data>
 		<key>Modules/BidmadDirectAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		awKUn8mqFYZ6ecw+D6eaV2117Fg=
+		JJtMx1uHPfUcvGDLoWA56g7Ljww=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		KeVyOz0soUpPUlHkpSy9qy7lE/4=
-		</data>
-		<key>ic_directad_back.png</key>
-		<data>
-		LHafL9oQl+mdWaAf+Gdx7MMQezA=
-		</data>
-		<key>ic_directad_forward.png</key>
-		<data>
-		pNSQ2enF9/D6KDQsctCdimTkrfE=
-		</data>
-		<key>ic_directad_nav_back.png</key>
-		<data>
-		r1sMAY0dPZAJKfhzQ/Pu1OvHky0=
-		</data>
-		<key>ic_directad_nav_forward.png</key>
-		<data>
-		79HjG+elH5OmZojunL3BczNvvB4=
-		</data>
-		<key>ic_directad_share.png</key>
-		<data>
-		4ay1sjHP3LQalUzBTc1jAexIW5E=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y8/vckzouNnC3Xce16KNdrST3zkd/QIZ+1LZx8K7WsY=
+			YFrT5k37ECdxNS2kaZQSDJzpXXmUETpiKFNfy7IUFnk=
 			</data>
 		</dict>
 		<key>Headers/BidmadDirectAdAdapter.h</key>
@@ -81,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uqey/Yi/8UuyKZxFsTHWm3p6oEoCIq1y5JLDg2xnW4c=
+			CC0b/uVCKmCrNDxUDh2UEmh05D4pTqWanlJ3ab7/m6g=
 			</data>
 		</dict>
 		<key>Modules/BidmadDirectAdAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bhvGL7yC2+DnYOIqA12Ya2EmdD4/8JKf+5dZ7DRLdOc=
+			KJmgO5POJA9xoSRd84OD2VMJ0XW+Y0itF4ZHhDN4xwQ=
 			</data>
 		</dict>
 		<key>Modules/BidmadDirectAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -102,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bhvGL7yC2+DnYOIqA12Ya2EmdD4/8JKf+5dZ7DRLdOc=
+			KJmgO5POJA9xoSRd84OD2VMJ0XW+Y0itF4ZHhDN4xwQ=
 			</data>
 		</dict>
 		<key>Modules/BidmadDirectAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ra03LgkFNEvuJR7/kXl2zNSXd3ZJxAqRiygP6O/cTYI=
+			nQW9WIOZIZL1gFsF9ZtDjY47WoV5Sc8Rt3AXeBKjhLU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -117,41 +97,6 @@
 			<key>hash2</key>
 			<data>
 			/2r6k2D6wPawrWEl8sJxqMXuuGboPspeI0bg4ARh+0g=
-			</data>
-		</dict>
-		<key>ic_directad_back.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8pYjP0o543/gCdA7l8ILfP0zuBfU2iznjW2mMjnc8i4=
-			</data>
-		</dict>
-		<key>ic_directad_forward.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XHOqyi7Jo/sbhnurRz+r0H2ZG2SPsTQ9yF9teKr7xJs=
-			</data>
-		</dict>
-		<key>ic_directad_nav_back.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QfF2fd1CQxUi9pp9XKuZhNjTC3/4akVBUOy5xZxC87w=
-			</data>
-		</dict>
-		<key>ic_directad_nav_forward.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vYRu+7FcActiJjIQ325dxkHCOGTbvjOCVPSxajUBJuI=
-			</data>
-		</dict>
-		<key>ic_directad_share.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cft1hzB9tOKZWwH2TZc4j8QuUhnKxck4VqMS/2nRHrE=
 			</data>
 		</dict>
 	</dict>

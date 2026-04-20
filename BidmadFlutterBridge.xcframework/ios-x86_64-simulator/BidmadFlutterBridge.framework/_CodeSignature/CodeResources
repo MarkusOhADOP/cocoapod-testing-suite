@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BidmadFlutterBridge-Swift.h</key>
 		<data>
-		TZeyPSW2j7JXUG7yiv3AMFSmWjY=
+		tjuFbbUcuQOxaOOzs7AMMGRxU4M=
 		</data>
 		<key>Headers/BidmadFlutterBridge.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/OpenBiddingFlutterCommon.h</key>
 		<data>
-		mUT2Y4veZoLaH5ctJn/2n/Quhq4=
+		CGyJAWMl/zJjmxmscaSsRl9quSE=
 		</data>
 		<key>Headers/OpenBiddingFlutterGDPRforGoogle.h</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/BidmadFlutterBridge.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		fsTyt8qKG6PdVgsH7IDpBGqUb0k=
+		z8TQNwSpI6LOTTQHCSGLZ/cu6kU=
 		</data>
 		<key>Modules/BidmadFlutterBridge.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rDbm3WrVPQbd/Tb5KcfVNqaezXM=
+		MpGyu4VfRxaQAYxoIgix6XavxSE=
 		</data>
 		<key>Modules/BidmadFlutterBridge.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/BidmadFlutterBridge.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rDbm3WrVPQbd/Tb5KcfVNqaezXM=
+		MpGyu4VfRxaQAYxoIgix6XavxSE=
 		</data>
 		<key>Modules/BidmadFlutterBridge.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Tu2r9mylTahtZahftG9JzsyR4ZQ=
+		CaE4jaXIQfFya/atcrDbXdwB3zU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UmgSB0vcI2dpjf8Ik4fuaAewKM9TKqh8KaBL508MaZo=
+			6npGW7FT0p4s8kjpx/fusCMNBAmjrhu6T/CH2S8J6fI=
 			</data>
 		</dict>
 		<key>Headers/BidmadFlutterBridge.h</key>
@@ -95,7 +95,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gzbeBqmXgLkfa9H9qRs8sJ4p4y8KCGW70odzqlVLc/c=
+			H4T6UaiAOOj1/M2q4V0hlMcSstGZbjG13RZrfkPQEp4=
 			</data>
 		</dict>
 		<key>Headers/OpenBiddingFlutterGDPRforGoogle.h</key>
@@ -116,14 +116,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k5cTtbI47PHh7tZpdFSrYg++DVd2+sPayqCrjzutqYs=
+			OQlA9JlRfVYGoyIkRSOVIh05xjRVbMO+4jpJ6Xv9RcA=
 			</data>
 		</dict>
 		<key>Modules/BidmadFlutterBridge.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Df9HNOmEAFS/SYU9Tdnp3Cav3/FYEe3oxndOsu3/IoA=
+			pD9sZc8rLMtCuAPSXAWv5uMiV7RqgrM9AXUQ9ze2LtY=
 			</data>
 		</dict>
 		<key>Modules/BidmadFlutterBridge.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Df9HNOmEAFS/SYU9Tdnp3Cav3/FYEe3oxndOsu3/IoA=
+			pD9sZc8rLMtCuAPSXAWv5uMiV7RqgrM9AXUQ9ze2LtY=
 			</data>
 		</dict>
 		<key>Modules/BidmadFlutterBridge.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eB2gtemmp2VHsSx/ERH6+WLRnDGWK/PX98kmdoWDpAY=
+			hVzoItgsRw9vVBEhFM1FwwxlMGlVs1Cqsd14k4zyB3g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -48,20 +48,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "BidmadDirectAdAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "BidmadDirectAdAdapter"
-      },
-      {
-        "kind": "Import",
         "name": "BidmadSDK",
         "printedName": "BidmadSDK",
         "declKind": "Import",
@@ -69,15 +55,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "BidmadDirectAdAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "BidmadDirectAdAdapter"
       },
@@ -129,171 +108,6 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "BidmadDirectAdAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BidmadDirectAdAdapter"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BidmadDirectAdAdapterResources",
-        "printedName": "BidmadDirectAdAdapterResources",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "bundle",
-            "printedName": "bundle",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bundle",
-                "printedName": "Foundation.Bundle",
-                "usr": "c:objc(cs)NSBundle"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BidmadDirectAdAdapter@objc(cs)BidmadDirectAdAdapterResources(cpy)bundle",
-            "mangledName": "$s21BidmadDirectAdAdapter0abcD9ResourcesC6bundleSo8NSBundleCvpZ",
-            "moduleName": "BidmadDirectAdAdapter",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bundle",
-                    "printedName": "Foundation.Bundle",
-                    "usr": "c:objc(cs)NSBundle"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BidmadDirectAdAdapter@objc(cs)BidmadDirectAdAdapterResources(cm)bundle",
-                "mangledName": "$s21BidmadDirectAdAdapter0abcD9ResourcesC6bundleSo8NSBundleCvgZ",
-                "moduleName": "BidmadDirectAdAdapter",
-                "static": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BidmadDirectAdAdapterResources",
-                "printedName": "BidmadDirectAdAdapter.BidmadDirectAdAdapterResources",
-                "usr": "c:@M@BidmadDirectAdAdapter@objc(cs)BidmadDirectAdAdapterResources"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@BidmadDirectAdAdapter@objc(cs)BidmadDirectAdAdapterResources(im)init",
-            "mangledName": "$s21BidmadDirectAdAdapter0abcD9ResourcesCACycfc",
-            "moduleName": "BidmadDirectAdAdapter",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@BidmadDirectAdAdapter@objc(cs)BidmadDirectAdAdapterResources",
-        "mangledName": "$s21BidmadDirectAdAdapter0abcD9ResourcesC",
-        "moduleName": "BidmadDirectAdAdapter",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
       }
     ],
     "json_format_version": 8
@@ -316,16 +130,44 @@
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/DirectAdJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 150,
+      "offset": 185,
+      "length": 17,
+      "value": "\"onDirectAdReady\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/DirectAdJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 219,
+      "length": 16,
+      "value": "\"onDirectAdFail\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/DirectAdJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 266,
       "length": 18,
       "value": "\"DirectAdJSBridge\""
     },
     {
       "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/DirectAdJSBridge.swift",
       "kind": "IntegerLiteral",
-      "offset": 222,
+      "offset": 338,
       "length": 1,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/DirectAdJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 468,
+      "length": 50,
+      "value": "\"com.bidmad.DirectAdJSBridge.\""
+    },
+    {
+      "filePath": "\/Users\/markus\/Documents\/GitHub\/BidmadSDK-DevSuite-NextGen\/BidmadDirectAdAdapter\/Sources\/DirectAdJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 2,
+      "value": "\"\""
     }
   ]
 }

@@ -374,19 +374,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// Called after load succeeds or all attempts fail. Subclass handles
 /// delegate notification, visibility timer (banner), failure retry, etc.
 - (void)onAdLoadCompleteWithAdUnit:(BidmadAdUnit * _Nullable)adUnit error:(NSError * _Nullable)error;
-/// Destroy ad and clean up. Subclasses override and call super.
+/// Destroy ad and clean up.
+/// Subclasses override <code>performRemove()</code> for type-specific cleanup.
 - (void)remove;
-@property (nonatomic, readonly, copy) NSString * _Nonnull adTypePresentableName;
-@property (nonatomic, readonly, strong) dispatch_queue_t _Nonnull queue;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) dispatch_queue_t _Nonnull logQueue;)
-+ (dispatch_queue_t _Nonnull)logQueue SWIFT_WARN_UNUSED_RESULT;
+/// Destroy ad and clean up, calling <code>completion</code> on the main thread when done.
+/// Subclasses override <code>performRemove()</code> for type-specific cleanup.
+- (void)removeWithCompletion:(void (^ _Nullable)(void))completion;
 - (Class <BidmadAdapterInterfaceAccess> _Nullable)createAdapterClassFrom:(BidmadAdUnit * _Nonnull)adUnit error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSError * _Nonnull)processWithError:(NSError * _Nullable)error adNetworkName:(NSString * _Nullable)adNetworkName SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly) BOOL isAppActive;
-/// 광고 요청의 공통 진입점입니다. 전제 조건을 검증하고, 플로우를 시작하고,
-/// 시도 루프를 실행합니다. 타입별 로직은 <code>validateRequestContext</code>와
-/// <code>attempt</code>에 위임됩니다.
-- (void)requestCommonWithAdRefresh:(BOOL)adRefresh;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -413,12 +408,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @property (nonatomic) BOOL adRefreshEnabled;
 @property (nonatomic, readonly) BOOL isOnceLoadMode;
 - (void)resetRefreshInterval;
-@property (nonatomic) NSUInteger refreshInterval;
+- (void)setRefreshInterval:(NSUInteger)value;
 /// User-initiated ad load. Matches Android’s load() entry point.
 - (void)load;
 - (NSError * _Nullable)validateRequestContextWithAdRefresh:(BOOL)adRefresh SWIFT_WARN_UNUSED_RESULT;
 - (void)onAdLoadCompleteWithAdUnit:(BidmadAdUnit * _Nullable)adUnit error:(NSError * _Nullable)error;
-- (void)remove;
 + (BOOL)isViewVisibleWithTarget:(UIView * _Nonnull)targetView SWIFT_WARN_UNUSED_RESULT;
 - (void)initiateVisibilityTimerWithCheckableView:(UIView * _Nonnull)checkableView;
 - (void)updateViewPosition;
@@ -475,7 +469,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)load;
 - (NSError * _Nullable)validateRequestContextWithAdRefresh:(BOOL)adRefresh SWIFT_WARN_UNUSED_RESULT;
 - (void)onAdLoadCompleteWithAdUnit:(BidmadAdUnit * _Nullable)adUnit error:(NSError * _Nullable)error;
-- (void)remove;
 - (nonnull instancetype)initWithZoneId:(NSString * _Nonnull)zoneId OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -501,7 +494,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)load;
 - (NSError * _Nullable)validateRequestContextWithAdRefresh:(BOOL)adRefresh SWIFT_WARN_UNUSED_RESULT;
 - (void)onAdLoadCompleteWithAdUnit:(BidmadAdUnit * _Nullable)adUnit error:(NSError * _Nullable)error;
-- (void)remove;
 - (CGSize)setAdViewController:(UIViewController * _Nonnull)adViewController adView:(BIDMADNativeAdView * _Nonnull)adView defaultSize:(CGSize)defaultSize SWIFT_WARN_UNUSED_RESULT;
 - (void)setAdViewController:(UIViewController * _Nonnull)adViewController adView:(BIDMADNativeAdView * _Nonnull)adView;
 - (void)removeAdView:(BIDMADNativeAdView * _Nonnull)adView;
@@ -524,6 +516,7 @@ SWIFT_PROTOCOL("_TtP9BidmadSDK18BMNativeAdDelegate_")
 
 @class BidmadSplashAdapter;
 @protocol BMSplashAdDelegate;
+@class BidmadSplashAdContent;
 SWIFT_CLASS("_TtC9BidmadSDK10BMSplashAd")
 @interface BMSplashAd : BMBaseAd
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull className;)
@@ -531,25 +524,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @property (nonatomic, readonly) BidmadAdType adType;
 @property (nonatomic, strong) BidmadSplashAdapter * _Nullable splashAdapter;
 @property (nonatomic, weak) id <BMSplashAdDelegate> _Nullable delegate;
-@property (nonatomic, weak) UIView * _Nullable containerView;
-@property (nonatomic, strong) BidmadErasableView * _Nullable managedErasableView;
+@property (nonatomic, strong) BidmadSplashAdContent * _Nullable adContent;
 - (void)load;
 - (NSError * _Nullable)validateRequestContextWithAdRefresh:(BOOL)adRefresh SWIFT_WARN_UNUSED_RESULT;
 - (void)onAdLoadCompleteWithAdUnit:(BidmadAdUnit * _Nullable)adUnit error:(NSError * _Nullable)error;
-- (void)remove;
 - (nonnull instancetype)initWithZoneId:(NSString * _Nonnull)zoneId OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@interface BMSplashAd (SWIFT_EXTENSION(BidmadSDK)) <BidmadSplashAdapterDelegate>
-- (void)clickedWith:(BidmadSplashAdapter * _Nonnull)ad;
 @end
 
 SWIFT_PROTOCOL("_TtP9BidmadSDK18BMSplashAdDelegate_")
 @protocol BMSplashAdDelegate
 @optional
-- (void)onLoadAd:(BMSplashAd * _Nonnull)ad info:(BidmadInfo * _Nonnull)info;
+- (void)onLoadAd:(BMSplashAd * _Nonnull)ad content:(BidmadSplashAdContent * _Nonnull)content info:(BidmadInfo * _Nonnull)info;
 - (void)onLoadFailAd:(BMSplashAd * _Nonnull)ad error:(NSError * _Nonnull)error;
-- (void)onClickAd:(BMSplashAd * _Nonnull)ad info:(BidmadInfo * _Nonnull)info;
 @end
 
 SWIFT_CLASS("_TtC9BidmadSDK16BidmadAES256Util")

@@ -17,6 +17,7 @@ typedef void (^BidmadInitializeBlock)(NSError * _Nullable error, BOOL isARPM, BO
  * Return booleans, each representing the user's access status of ARPM (BOOL), TestTool (BOOL), and Preload Status (BOOL)
  */
 + (void)requestAppDataWithDomain:(NSString *)appDomain
+                     withSiteIdx:(NSString *)siteIdx
                          withUID:(NSString *)uid
                     withPlatform:(NSString *)platform
                          handler:(BidmadInitializeBlock)handler;

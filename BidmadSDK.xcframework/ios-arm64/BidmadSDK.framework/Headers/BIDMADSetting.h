@@ -107,6 +107,8 @@ extern NSString* _Nonnull const BIDMAD_CCPA_CONSENT;
 
 @property (nonatomic, readonly) BOOL isReachable;
 
+@property (nonatomic, strong) NSString * _Nullable siteIdx;
+
 /// Extra data to be sent encrypted with Compass requests. Set via `setExtraData:`.
 /// Stored in memory only — cleared when the process terminates.
 @property (nonatomic, strong) NSDictionary * _Nullable extraData;

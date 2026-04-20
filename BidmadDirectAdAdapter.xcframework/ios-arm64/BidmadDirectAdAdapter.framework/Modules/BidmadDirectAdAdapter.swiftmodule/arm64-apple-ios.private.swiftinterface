@@ -11,10 +11,3 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @objc public class BidmadDirectAdAdapterResources : ObjectiveC.NSObject {
-  @objc public class var bundle: Foundation.Bundle {
-    @objc get
-  }
-  @objc override dynamic public init()
-  @objc deinit
-}

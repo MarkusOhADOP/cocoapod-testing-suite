@@ -412,36 +412,16 @@ SWIFT_CLASS("_TtC19BidmadFlutterBridge24OpenBiddingFlutterSplash")
 @interface OpenBiddingFlutterSplash : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull className;)
 + (NSString * _Nonnull)className SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) OpenBiddingFlutterSplash * _Nullable shared;)
-+ (OpenBiddingFlutterSplash * _Nullable)shared SWIFT_WARN_UNUSED_RESULT;
-+ (void)setShared:(OpenBiddingFlutterSplash * _Nullable)value;
-+ (OpenBiddingFlutterSplash * _Nonnull)sharedWithRegistrar:(NSObject * _Nonnull)registrar chanNm:(NSString * _Nonnull)chanNm SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isInitialized;)
-+ (BOOL)isInitialized SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly, copy) NSString * _Nonnull chanNm;
+- (nonnull instancetype)initWithRegistrar:(id <FlutterPluginRegistrar> _Nonnull)registrar channelName:(NSString * _Nonnull)channelName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class BMSplashAd;
-@interface OpenBiddingFlutterSplash (SWIFT_EXTENSION(BidmadFlutterBridge)) <BMSplashAdDelegate>
-- (void)onLoadAd:(BMSplashAd * _Nonnull)ad info:(BidmadInfo * _Nonnull)info;
-- (void)onLoadFailAd:(BMSplashAd * _Nonnull)ad error:(NSError * _Nonnull)error;
-@end
-
-SWIFT_CLASS("_TtC19BidmadFlutterBridge31OpenBiddingFlutterSplashFactory")
-@interface OpenBiddingFlutterSplashFactory : NSObject <FlutterPlatformViewFactory>
-- (id <FlutterPlatformView> _Nonnull)createWithFrame:(CGRect)frame viewIdentifier:(int64_t)viewId arguments:(id _Nullable)args SWIFT_WARN_UNUSED_RESULT;
-- (id <FlutterMessageCodec, NSObject> _Nonnull)createArgsCodec SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC19BidmadFlutterBridge36OpenBiddingFlutterSplashPlatformView")
-@interface OpenBiddingFlutterSplashPlatformView : NSObject <FlutterPlatformView>
-- (nonnull instancetype)initWithKey:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
-- (UIView * _Nonnull)view SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@class BidmadSplashAd;
+@class BidmadSplashAdContent;
+@interface OpenBiddingFlutterSplash (SWIFT_EXTENSION(BidmadFlutterBridge)) <BidmadSplashAdDelegate>
+- (void)onLoadSplashAd:(BidmadSplashAd * _Nonnull)ad content:(BidmadSplashAdContent * _Nonnull)content info:(BidmadInfo * _Nonnull)info;
+- (void)onLoadFailSplashAd:(BidmadSplashAd * _Nonnull)ad error:(NSError * _Nonnull)error;
 @end
 
 #endif
